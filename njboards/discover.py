@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 from .classify import (NON_LAND_USE, classify_board, classify_link, looks_like_document)
 from .config import SETTINGS
 from .http import Fetcher
-from .platforms import DocLink, civicplus, civicclerk, granicus
+from .platforms import DocLink, civicplus, civicclerk, granicus, ecodedocs
 from .util import normalize_url, same_site
 
 log = logging.getLogger("njboards.discover")
@@ -92,6 +92,18 @@ def find_code_links(html: str) -> dict:
     return out
 
 
+def resolve_ecode_id(fetcher: Fetcher, url: str) -> Optional[str]:
+    """A link like ecode360.com/33924985 points into a code; the page's own links name the code id."""
+    m = ECODE_ID.search(url)
+    if m:
+        return m.group(1).upper()
+    r = fetcher.get(url, max_age_hours=24 * 30)
+    if not r.ok:
+        return None
+    m = re.search(r"href=[\"']/?([A-Z]{2}\d{4})(?:/|[\"'#?])", r.text) or ECODE_ID.search(r.text)
+    return m.group(1).upper() if m else None
+
+
 def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
              manual_boards: Optional[list[dict]] = None) -> Discovery:
     max_pages = max_pages or SETTINGS.max_pages_per_site
@@ -136,6 +148,10 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
         if not disc.ecode_url:
             for k, v in find_code_links(html).items():
                 setattr(disc, k, v)
+        if disc.ecode_url and not disc.ecode_id and disc.code_platform == "ecode360":
+            disc.ecode_id = resolve_ecode_id(fetcher, disc.ecode_url)
+            if disc.ecode_id:
+                disc.ecode_url = f"https://ecode360.com/{disc.ecode_id}"
 
         # register board pages (one per kind, prefer pages whose title matches)
         if classify_board(title) and not disc.board_for(page_board or ""):
@@ -153,6 +169,10 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
                 adapters_run.add(f"civicclerk:{slug}")
                 for d in civicclerk.list_documents(fetcher, url, html, None):
                     docs.setdefault(d.url, d)
+        if ecodedocs.detect(html, url) and "ecodedocs" not in adapters_run:
+            adapters_run.add("ecodedocs")
+            for d in ecodedocs.list_documents(fetcher, url, html, None):
+                docs.setdefault(d.url, d)
         if granicus.detect(html, url) and page_board:
             for d in granicus.list_documents(fetcher, r.final_url, html, page_board):
                 docs.setdefault(d.url, d)
@@ -179,7 +199,7 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
                                            year=lc.year, context=ctx, platform=disc.platform or "generic")
                 continue
             # follow?
-            if not same_site(absu, homepage) and not (civicclerk.detect("", absu) or granicus.detect("", absu)):
+            if not same_site(absu, homepage) and not (civicclerk.detect("", absu) or granicus.detect("", absu) or ecodedocs.detect("", absu)):
                 continue
             blob = text + " " + href + " " + ctx[:80]
             if depth >= 3:
@@ -189,5 +209,10 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
                 if nu not in seen:
                     # pages linked from a board page inherit its kind unless they name another board
                     queue.append((nu, depth + 1, lc.board_kind or page_board, text))
+    # towns that host minutes on eCode360's document portal without linking it from board pages
+    if disc.ecode_id and "ecodedocs" not in adapters_run and not any(d.doc_type == "minutes" for d in docs.values()):
+        adapters_run.add("ecodedocs")
+        for d in ecodedocs.list_documents(fetcher, "", "", None, code=disc.ecode_id):
+            docs.setdefault(d.url, d)
     disc.docs = list(docs.values())
     return disc

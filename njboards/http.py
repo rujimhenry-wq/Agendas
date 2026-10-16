@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -175,7 +176,10 @@ class Fetcher:
             log.warning("challenge page at %s and no browser fallback: %s", url, b.unavailable)
             return None
         try:
-            status, body, ctype, final = b.get(url)
+            if re.search(r"\.(pdf|docx?|zip)(\?|$)|/document/\d+", url, re.I):
+                status, body, ctype, final = b.download(url)
+            else:
+                status, body, ctype, final = b.get(url)
         except Exception as e:  # noqa: BLE001
             log.warning("browser fetch failed for %s: %s", url, e)
             return None

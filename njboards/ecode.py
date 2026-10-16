@@ -221,6 +221,11 @@ def _waiver_provisions(sections: list[dict]) -> list[dict]:
 
 def fetch_code(fetcher: Fetcher, muni_slug: str, code_url: str, max_chapters: int = 25) -> dict:
     code_id = code_id_from_url(code_url)
+    if not code_id:
+        from .discover import resolve_ecode_id
+        code_id = resolve_ecode_id(fetcher, code_url)
+        if code_id:
+            code_url = f"https://ecode360.com/{code_id}"
     toc = table_of_contents(fetcher, code_url)
     wanted = [c for c in toc if c["wanted"]]
     wanted.sort(key=lambda c: (not c["priority"], c["title"]))

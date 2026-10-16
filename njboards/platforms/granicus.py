@@ -15,7 +15,8 @@ NAME = "granicus"
 
 
 def detect(html: str, url: str) -> bool:
-    return bool(re.search(r"granicus\.com|ViewPublisher\.php|legistar\.com", url + html[:20000], re.I))
+    return bool(re.search(r"[a-z0-9\-]+\.granicus\.com|ViewPublisher\.php|legistar\.com", url, re.I)
+                or re.search(r"ViewPublisher\.php|[a-z0-9\-]+\.granicus\.com/(ViewPublisher|GeneratedAgenda|MetaViewer|player)|legistar\.com", html[:60000], re.I))
 
 
 def list_documents(fetcher, page_url: str, html: str, board_kind: Optional[str]) -> list[DocLink]:

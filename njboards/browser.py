@@ -87,6 +87,32 @@ class Browser:
         ctype = (resp.headers.get("content-type", "text/html") if resp else "text/html")
         return status, html.encode("utf-8"), ctype, self._page.url
 
+    def download(self, url: str, timeout: float = 120.0) -> tuple[int, bytes, str, str]:
+        """Fetch a binary file (PDF) through the browser so the challenge clearance applies.
+
+        Navigating to a PDF either renders it (Chromium's viewer) or triggers a
+        download; we handle both by using the context's request API first, which
+        shares cookies, and falling back to a download event."""
+        self._start()
+        assert self._page is not None and self._ctx is not None
+        try:
+            resp = self._ctx.request.get(url, timeout=timeout * 1000, headers={"Accept": "application/pdf,*/*"})
+            body = resp.body()
+            ctype = resp.headers.get("content-type", "")
+            if resp.status == 200 and not CHALLENGE.search(body[:20000].decode("utf-8", "ignore")):
+                return resp.status, body, ctype, resp.url
+        except Exception as e:  # noqa: BLE001
+            log.debug("context.request failed for %s: %s", url, e)
+        with self._page.expect_download(timeout=timeout * 1000) as dl_info:
+            try:
+                self._page.goto(url, wait_until="commit", timeout=timeout * 1000)
+            except Exception as e:  # noqa: BLE001 - "Download is starting" aborts navigation, which is what we want
+                log.debug("goto for download %s: %s", url, e)
+        dl = dl_info.value
+        path = dl.path()
+        data = open(path, "rb").read() if path else b""
+        return (200 if data else 0), data, "application/pdf", url
+
     def close(self) -> None:
         for obj in (self._ctx, self._browser):
             try:

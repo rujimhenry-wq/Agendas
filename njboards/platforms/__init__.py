@@ -27,9 +27,9 @@ class DocLink:
     extra: dict = field(default_factory=dict)
 
 
-from . import civicplus, civicclerk, granicus  # noqa: E402
+from . import civicplus, civicclerk, granicus, ecodedocs  # noqa: E402
 
-ADAPTERS = [civicplus, civicclerk, granicus]
+ADAPTERS = [civicplus, civicclerk, granicus, ecodedocs]
 
 
 def detect_platform(html: str, url: str) -> Optional[str]:
