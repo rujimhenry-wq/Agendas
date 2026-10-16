@@ -72,8 +72,8 @@ def render_markdown(profile: dict) -> str:
     if rc["category_counts"]:
         L.append("**Comment categories (count):** " + ", ".join(f"{k} {v}" for k, v in list(rc["category_counts"].items())[:14]) + "\n")
     if rc["common_comments"]:
-        L.append(_table(["Times seen", "Category", "Example comment"],
-                        [(g["count"], g["category"], g["examples"][0][:220]) for g in rc["common_comments"][:25]]))
+        L.append(_table(["Applications", "Times seen", "Category", "Example comment"],
+                        [(g.get("applications", g["letters"]), g["count"], g["category"], g["examples"][0][:220]) for g in rc["common_comments"][:25]]))
     elif rc["n_review_letters"] == 0:
         L.append("_No review letters collected. If the town does not post them, request them under OPRA (N.J.S.A. 47:1A) for comparable recent site plan applications._")
     L.append("")
@@ -91,7 +91,7 @@ def render_markdown(profile: dict) -> str:
         L.append("### Denied / not recommended waivers (evidence)\n")
         L.append(_table(["Date", "Source", "Kind", "Items", "Topic", "Text"],
                         [(r.get("date") or "", r["doc_type"], r["kind"], ", ".join(r.get("items", [])),
-                          r.get("topic") or "", r["text"][:260]) for r in wv["denied"][:40]]))
+                          r.get("topic") or ("[" + (r.get("category") or "") + "]"), r["text"][:260]) for r in wv["denied"][:40]]))
     L.append("")
 
     L.append("## Common conditions of approval\n")

@@ -39,11 +39,64 @@ def _norm_name(n: str) -> str:
     return n.title() if n.isupper() else n
 
 
+NICKNAMES = {}
+for _canon, _nicks in {
+    "nicholas": "nick", "thomas": "tom tommy", "robert": "bob rob bobby", "william": "bill will billy", "james": "jim jimmy",
+    "michael": "mike", "kathleen": "kathy kate katie", "gregory": "greg", "daniel": "dan danny", "david": "dave",
+    "stephen": "steve", "steven": "steve", "joseph": "joe joey", "christopher": "chris", "matthew": "matt", "anthony": "tony",
+    "edward": "ed eddie ted", "richard": "rich rick dick", "jonathan": "jon", "patrick": "pat", "patricia": "pat patty",
+    "elizabeth": "liz beth betsy", "jennifer": "jen jenny", "susan": "sue suzy", "andrew": "andy drew", "peter": "pete",
+    "kenneth": "ken kenny", "ronald": "ron", "donald": "don", "frederick": "fred", "lawrence": "larry", "jeffrey": "jeff",
+    "timothy": "tim", "samuel": "sam", "benjamin": "ben", "nathan": "nate", "francis": "frank", "albert": "al",
+    "vincent": "vince", "philip": "phil", "phillip": "phil", "douglas": "doug", "raymond": "ray", "russell": "russ",
+    "walter": "walt", "john": "jack johnny", "theodore": "ted", "charles": "chuck charlie", "alexander": "alex",
+    "margaret": "peggy meg maggie", "deborah": "deb debbie", "barbara": "barb", "rebecca": "becky", "victoria": "vicki",
+    "katherine": "kathy kate katie", "catherine": "cathy kate", "cynthia": "cindy", "pamela": "pam", "sandra": "sandy",
+    "leonard": "len lenny", "eugene": "gene", "gerald": "gerry jerry", "jerome": "jerry", "lewis": "lew", "louis": "lou",
+    "maximilian": "max", "nathaniel": "nate", "abraham": "abe", "harold": "hal harry", "henry": "hank harry",
+}.items():
+    for _n in _nicks.split():
+        NICKNAMES[_n] = _canon
+
+
+def _merge_name_variants(people: dict[str, dict]) -> None:
+    """Fold 'First M. Last' into 'First Last' and 'Word First Last' into 'First Last'."""
+    def key(n: str) -> tuple[str, str]:
+        toks = [t for t in re.split(r"\s+", n) if t]
+        first = toks[0].lower().rstrip(".")
+        return (NICKNAMES.get(first, first), toks[-1].lower()) if len(toks) >= 2 else (n.lower(), "")
+    by_key: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for n in people:
+        by_key[key(n)].append(n)
+    for names in list(by_key.values()):
+        if len(names) < 2:
+            continue
+        names.sort(key=lambda n: (len(n.split()), -people[n]["mentions"]))
+        target = people[names[0]]
+        for other in names[1:]:
+            e = people.pop(other)
+            target["mentions"] += e["mentions"]; target["testified"] += e["testified"]
+            target["meetings"] |= e["meetings"]; target["applications"] |= e["applications"]
+            target["roles"].update(e["roles"]); target["sides"].update(e["sides"])
+            for k in ("credentials", "firm"):
+                if e[k] and len(e[k]) > len(target[k]):
+                    target[k] = e[k]
+    # 'Element Graham Petto' -> 'Graham Petto' when the shorter name exists
+    for n in list(people):
+        toks = n.split()
+        if len(toks) == 3 and " ".join(toks[1:]) in people:
+            e = people.pop(n); t = people[" ".join(toks[1:])]
+            t["mentions"] += e["mentions"]; t["testified"] += e["testified"]
+            t["meetings"] |= e["meetings"]; t["applications"] |= e["applications"]
+            t["roles"].update(e["roles"]); t["sides"].update(e["sides"])
+
+
 def professionals_summary(parsed: list[dict]) -> dict:
     """Who testifies for applicants, and who the board's professionals are."""
-    applicant: dict[str, dict] = {}
-    board: dict[str, dict] = {}
+    people: dict[str, dict] = {}
     for doc in parsed:
+        if doc.get("doc_type") in ("application", "checklist", "notice", "ordinance", "fee_schedule", "schedule"):
+            continue  # forms name the applicant's team but say nothing about who testifies
         meeting = doc.get("meeting_date") or doc.get("letter_date")
         pros = list(doc.get("professionals", [])) + list(doc.get("witnesses", [])) + list(doc.get("board_professionals", []))
         for it in doc.get("items", []):
@@ -52,30 +105,49 @@ def professionals_summary(parsed: list[dict]) -> dict:
             name = _norm_name(p.get("name", ""))
             if not name:
                 continue
-            bucket = board if p.get("side") == "board" else applicant
-            e = bucket.setdefault(name, {"name": name, "credentials": "", "role": "", "firm": "", "meetings": set(),
-                                         "applications": set(), "mentions": 0, "testified": 0})
+            e = people.setdefault(name, {"name": name, "credentials": "", "firm": "", "meetings": set(), "applications": set(),
+                                         "mentions": 0, "testified": 0, "roles": Counter(), "sides": Counter()})
             e["mentions"] += p.get("mentions", 1)
             e["testified"] += 1 if p.get("testified") else 0
+            e["roles"][p.get("role") or ""] += 1
+            e["sides"][p.get("side") or "unknown"] += 1
             if meeting:
                 e["meetings"].add(meeting)
             if p.get("application"):
                 e["applications"].add(str(p["application"])[:60])
-            for k in ("credentials", "role", "firm"):
-                if p.get(k) and not e[k]:
+            for k in ("credentials", "firm"):
+                if p.get(k) and (not e[k] or len(p[k]) > len(e[k])):
                     e[k] = p[k]
+    # merge "Nicholas A. Dickerson" / "Nicholas Dickerson" / "Mr. Dickerson, the Township Planner"-style variants
+    _merge_name_variants(people)
+    applicant: dict[str, dict] = {}
+    board: dict[str, dict] = {}
+    for name, e in people.items():
+        side_counts = e["sides"]
+        side = "board" if side_counts["board"] >= max(1, side_counts["applicant"]) * 0.5 and side_counts["board"] > 0 else "applicant"
+        roles = [r for r, _ in e["roles"].most_common() if r]
+        role = roles[0] if roles else ""
+        if role in ("expert", "consultant", "witness") and len(roles) > 1:
+            role = roles[1]
+        if not role or role in ("expert", "consultant"):
+            from .parse.professionals import role_from_creds
+            role = role_from_creds(e["credentials"]) or role
+        (board if side == "board" else applicant)[name] = {**e, "role": role}
 
     def finish(d: dict, key: str) -> list[dict]:
         rows = []
         for e in d.values():
-            rows.append({**e, "meetings": sorted(e["meetings"]), "n_meetings": len(e["meetings"]),
+            rows.append({k: v for k, v in e.items() if k not in ("roles", "sides")} |
+                        {"meetings": sorted(e["meetings"]), "n_meetings": len(e["meetings"]),
                          "applications": sorted(e["applications"])[:15], "n_applications": len(e["applications"])})
         rows.sort(key=lambda r: (-r["n_meetings"], -r["mentions"], r["name"]))
         return rows
 
     app_rows = finish(applicant, "applicant")
-    # "regularly" = appears at 2+ meetings or on 2+ applications, or testified at 2+
-    regular = [r for r in app_rows if r["n_meetings"] >= 2 or r["n_applications"] >= 2 or r["testified"] >= 2]
+    # "regularly" = seen at 2+ meetings or on 2+ applications. Someone sworn once with no
+    # credentials or role is usually the owner or a member of the public, not a professional.
+    regular = [r for r in app_rows if (r["n_meetings"] >= 2 or r["n_applications"] >= 2)
+               and (r["credentials"] or r["role"] or r["n_meetings"] >= 3)]
     by_role: dict[str, list[dict]] = defaultdict(list)
     for r in regular:
         by_role[r["role"] or "unspecified"].append(r)
@@ -103,11 +175,12 @@ def comments_summary(parsed: list[dict], top_n: int = 15) -> dict:
         if doc.get("doc_type") == "review_letter":
             letters += 1
             author_types[doc.get("author_type") or "unknown"] += 1
+            app = (doc.get("app_numbers") or [None])[0] or (doc.get("re") or "")[:60] or doc.get("letter_date") or ""
             for c in doc.get("comments", []):
                 cat_counts[c["category"]] += 1
                 g = groups.setdefault(c["key"], {"category": c["category"], "count": 0, "examples": [], "letters": set()})
                 g["count"] += 1
-                g["letters"].add(doc.get("re") or doc.get("letter_date") or "")
+                g["letters"].add(app)
                 if len(g["examples"]) < 2:
                     g["examples"].append(c["text"][:300])
                 for f in ("requires_testimony", "requires_variance", "outside_agency", "is_waiver"):
@@ -117,9 +190,10 @@ def comments_summary(parsed: list[dict], top_n: int = 15) -> dict:
             for it in doc.get("items", []):
                 for r in it.get("board_remarks", []):
                     cat_counts["[minutes] " + r["category"]] += 1
-    common = sorted(groups.values(), key=lambda g: (-g["count"], g["category"]))
-    common = [{**g, "letters": len(g["letters"])} for g in common if g["count"] >= 2][:top_n * 2] or \
-             [{**g, "letters": len(g["letters"])} for g in common[:top_n]]
+    # rank by how many distinct applications drew the comment, then by raw count
+    common = sorted(groups.values(), key=lambda g: (-len(g["letters"]), -g["count"], g["category"]))
+    common = [{**g, "applications": len(g["letters"]), "letters": len(g["letters"])} for g in common if g["count"] >= 2][:top_n * 2] or \
+             [{**g, "applications": len(g["letters"]), "letters": len(g["letters"])} for g in common[:top_n]]
     by_cat: dict[str, list[dict]] = defaultdict(list)
     for g in sorted(groups.values(), key=lambda g: -g["count"]):
         if len(by_cat[g["category"]]) < 5:
@@ -134,6 +208,8 @@ def waivers_summary(parsed: list[dict], checklist_items: Optional[list[dict]] = 
     rows: list[dict] = []
     for doc in parsed:
         src = doc.get("doc_type")
+        if src not in ("minutes", "resolution", "review_letter"):
+            continue  # application forms and checklists only describe the waiver *procedure*
         meeting = doc.get("meeting_date") or doc.get("letter_date")
         ws = list(doc.get("waivers", []))
         for it in doc.get("items", []):

@@ -24,6 +24,7 @@ AUTHOR_TYPE = [
     ("zoning officer", re.compile(r"zoning\s+officer|zoning\s+official", re.I)),
 ]
 DOC_LISTING = re.compile(r"^(?:revised\s+|amended\s+|preliminary\s+|final\s+)*(?:site\s+plans?|plans?|architectural\s+(?:plans?|drawings?)|stormwater\s+(?:management\s+)?report|drainage\s+(?:report|calculations)|traffic\s+(?:impact\s+)?(?:study|report)|survey|boundary|topographic|environmental\s+impact|landscap\w+\s+plan|lighting\s+plan|photometric|application|variance\s+plan|subdivision\s+(?:plan|plat)|soil\s+erosion|letter|report|narrative|exhibit|rendering|floor\s+plans?|elevations?)\b[^.]{0,80}?\b(?:titled|entitled|consisting\s+of|prepared\s+by|dated|last\s+revised|\(\d+\s+sheets?\))", re.I)
+NOT_A_COMMENT = re.compile(r"^(/|cc\b|c:|via\s+(e-?mail|email)|form\s*\d+|block\s+\d+|lots?\s+\d+|sheet\s+[\dA-Z]+\b|exhibit\s+[A-Z\d]|tax\s+map|zone\s*:|zoning\s+district\s*:|owner\s*:|applicant\s*:|location\s*:|address\s*:|date\s*:|re\s*:|cc\s*:)", re.I)
 RECOMMEND_COMPLETE = re.compile(r"(recommend|consider|find|deem)\w*\s+(?:that\s+)?(?:the\s+application\s+)?(?:be\s+)?(?:deemed\s+)?(complete|incomplete)\b", re.I)
 
 
@@ -37,8 +38,14 @@ def letter_meta(text: str, title: str = "") -> dict:
         author_type = next((n for n, p in AUTHOR_TYPE if p.search(text[-1500:])), None)  # then the signature block
     if author_type is None:
         author_type = next((n for n, p in AUTHOR_TYPE if p.search(head[:1200])), "unknown")
-    pros = extract_professionals(text[-3000:]) + extract_professionals(head[:1500])
-    author = next((p for p in pros if p.credentials), None)
+    want = {"engineer": re.compile(r"P\.?E|C\.?M\.?E|PTOE", re.I), "planner": re.compile(r"P\.?P\b|AICP", re.I),
+            "landscape architect": re.compile(r"L\.?L\.?A|R\.?L\.?A|ASLA", re.I), "traffic": re.compile(r"P\.?E|PTOE|PTP", re.I)}.get(author_type)
+    tail_pros = [p for p in extract_professionals(text[-3000:]) if p.credentials and p.side != "applicant"]
+    author = next((p for p in reversed(tail_pros) if want is None or want.search(p.credentials)), None)
+    if author is None:
+        author = next((p for p in reversed(tail_pros)), None)
+    if author is None:
+        author = next((p for p in extract_professionals(head[:1500]) if p.credentials and (want is None or want.search(p.credentials))), None)
     comp = None
     m = RECOMMEND_COMPLETE.search(text)
     if m:
@@ -68,7 +75,7 @@ def parse_review_letter(text: str, title: str = "") -> dict:
     comments = []
     documents_reviewed = []
     for it in items:
-        if DOC_LISTING.match(it["text"]):
+        if DOC_LISTING.match(it["text"]) or NOT_A_COMMENT.match(it["text"]) or len(it["text"].split()) < 6 or it["text"].rstrip().endswith(":"):
             documents_reviewed.append(it["text"][:300])
             continue
         cats = categorize(it["text"])

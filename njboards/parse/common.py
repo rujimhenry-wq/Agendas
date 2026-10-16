@@ -364,9 +364,8 @@ def extract_waivers(text: str, source: Optional[str] = None, application: Option
         sorted(len(i["text"]) for i in items)[len(items) // 2] < 700
     units: list[tuple[str, str, str]] = []
     if structured:
-        for n, it in enumerate(items):
-            before = (it["section"] + " " + (items[n - 1]["text"] if n else ""))[-400:]
-            units.append((it["text"], before, ""))
+        for it in items:
+            units.append((it["text"], it["section"], ""))
         # prose outside the numbered items (cover letters, closing paragraphs)
         covered = " || ".join(squash(it["text"]) for it in items)
         sents = sentences(text)

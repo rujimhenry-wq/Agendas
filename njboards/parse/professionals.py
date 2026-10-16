@@ -46,7 +46,7 @@ CRED_ROLE = [
 ]
 
 _FIRM_LIKE = re.compile(r"^(of|with|from|and|or)\s|\b(LLC|L\.L\.C\.|Inc|Group|Associates|Assoc|Engineering|Engineers|Architects?|Architecture|Planning|Consultants|Consulting|Partners|Design|P\.?C|P\.?A|LLP|Company|Corp|Law|Surveying|Landscape|Studio|Services)\.?$", re.I)
-NON_NAME_WORDS = set("""department vote recorded introduced ordinance report meeting public hearing comments comment review approval
+NON_NAME_WORDS = set("""element program ifyes yes no department vote recorded introduced ordinance report meeting public hearing comments comment review approval
 board township borough city town village committee council planning zoning minutes agenda resolution application applicant
 block lot lots street avenue road site plan plans variance subdivision county state jersey police fire health chairman chairwoman
 mayor president secretary member members present absent motion second roll call adjourn adjournment open closed session item items
@@ -82,6 +82,16 @@ def _norm_name(n: str) -> str:
     return n
 
 
+_FAMILIES = {"engineer": "engineer", "traffic engineer": "engineer", "municipal engineer": "engineer", "civil engineer": "engineer",
+             "professional engineer": "engineer", "consulting engineer": "engineer", "planner": "planner", "professional planner": "planner",
+             "attorney": "attorney", "counsel": "attorney", "esquire": "attorney", "architect": "architect", "surveyor": "surveyor",
+             "landscape architect": "landscape architect"}
+
+
+def _family(role: str) -> str:
+    return _FAMILIES.get(role.lower(), "")
+
+
 def role_from_creds(creds: str) -> str:
     for pat, role in CRED_ROLE:
         if pat.search(creds):
@@ -105,8 +115,13 @@ def _role_near(text: str, start: int, end: int, span: int = 110) -> tuple[str, s
                 dist = 0
             # a phrase separated from the name by ';' or a newline belongs to someone else
             between = win[m.end(): ns] if m.end() <= ns else win[ne: m.start()]
-            if re.search(r"[;\n]|\band\b", between):
-                dist += 200
+            if re.search(r"[;\n]|\band\b", between) or re.search(r"\b[A-Z][a-z]+\s+[A-Z][a-z]+\b", between):
+                dist += 200  # another person's name sits between the phrase and this name
+            # "Name, P.E., Board Engineer" / "Board Engineer Name": an adjacent phrase is decisive,
+            # and the one that follows the name wins over one that precedes it
+            adjacent = re.fullmatch(r"[\s,:\-–]*(?:the\s+)?(?:(?:" + CRED + r")[\s,.]*)*", between) is not None
+            if adjacent:
+                dist = -2 if m.start() >= ne else -1
             if best is None or dist < best[0]:
                 best = (dist, m.group(1).lower(), side)
     if best is not None and best[0] < 200:
@@ -150,7 +165,10 @@ def extract_professionals(text: str, application: Optional[str] = None) -> list[
         creds = re.sub(r"\s+", "", m.group(2).upper().replace(" ", ""))
         creds = creds.replace(",", ", ")
         role, side = _role_near(text, m.start(), m.end())
-        role = role or role_from_creds(creds)
+        cred_role = role_from_creds(creds)
+        if cred_role and role and _family(cred_role) and _family(role) and _family(cred_role) != _family(role):
+            role = cred_role  # "Graham Petto, Township Planner, Kevin Boyer, P.E." - credentials beat adjacency
+        role = role or cred_role
         if "traffic" in text[max(0, m.start() - 80): m.end() + 80].lower() and role == "engineer":
             role = "traffic engineer"
         after = text[m.end(): m.end() + 160]
@@ -166,11 +184,16 @@ def extract_professionals(text: str, application: Optional[str] = None) -> list[
     # role phrases are case-insensitive, but names must keep their capitals
     role_then_name = re.compile(rf"((?i:{BOARD_SIDE.pattern}|{APPLICANT_SIDE.pattern}))[,:]?\s+{NAME}")
     name_then_role = re.compile(rf"{NAME}\s*,\s*(?:the\s+)?((?i:{BOARD_SIDE.pattern}|{APPLICANT_SIDE.pattern}))")
-    for pat, name_last in ((role_then_name, True), (name_then_role, False)):
+    for pat, name_last in ((name_then_role, False), (role_then_name, True)):
         for m in pat.finditer(text):
             groups = [g for g in m.groups() if g]
             name = _norm_name(groups[-1] if name_last else groups[0])
             phrase = m.group(0)
+            if name_last:
+                # "Board Planner, Kevin Boyer, Board Engineer": the phrase after the name describes him
+                tail = text[m.end(): m.end() + 60]
+                if re.match(r"\s*,?\s*(?:(?:" + CRED + r")[\s,.]*)*(?:the\s+)?(?:" + BOARD_SIDE.pattern + "|" + APPLICANT_SIDE.pattern + ")", tail, re.I):
+                    continue
             side = "board" if BOARD_SIDE.search(phrase) else "applicant"
             rm = ANY_ROLE.search(phrase)
             role = rm.group(1).lower() if rm else ""

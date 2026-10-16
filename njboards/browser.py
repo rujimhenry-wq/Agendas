@@ -90,28 +90,34 @@ class Browser:
     def download(self, url: str, timeout: float = 120.0) -> tuple[int, bytes, str, str]:
         """Fetch a binary file (PDF) through the browser so the challenge clearance applies.
 
-        Navigating to a PDF either renders it (Chromium's viewer) or triggers a
-        download; we handle both by using the context's request API first, which
-        shares cookies, and falling back to a download event."""
+        The page is parked on the file's origin (so the clearance cookie is sent)
+        and the file is pulled with an in-page fetch() and returned as base64.
+        Chromium's own network stack does the request, which is what Cloudflare
+        fingerprints; Playwright's request API and plain HTTP clients are refused."""
+        from urllib.parse import urlparse
         self._start()
-        assert self._page is not None and self._ctx is not None
-        try:
-            resp = self._ctx.request.get(url, timeout=timeout * 1000, headers={"Accept": "application/pdf,*/*"})
-            body = resp.body()
-            ctype = resp.headers.get("content-type", "")
-            if resp.status == 200 and not CHALLENGE.search(body[:20000].decode("utf-8", "ignore")):
-                return resp.status, body, ctype, resp.url
-        except Exception as e:  # noqa: BLE001
-            log.debug("context.request failed for %s: %s", url, e)
-        with self._page.expect_download(timeout=timeout * 1000) as dl_info:
-            try:
-                self._page.goto(url, wait_until="commit", timeout=timeout * 1000)
-            except Exception as e:  # noqa: BLE001 - "Download is starting" aborts navigation, which is what we want
-                log.debug("goto for download %s: %s", url, e)
-        dl = dl_info.value
-        path = dl.path()
-        data = open(path, "rb").read() if path else b""
-        return (200 if data else 0), data, "application/pdf", url
+        assert self._page is not None
+        origin = "{0.scheme}://{0.netloc}".format(urlparse(url))
+        if not self._page.url.startswith(origin):
+            self._page.goto(origin + "/", wait_until="domcontentloaded", timeout=timeout * 1000)
+            deadline = time.time() + 25
+            while CHALLENGE.search(self._page.content()[:20000]) and time.time() < deadline:
+                self._page.wait_for_timeout(1500)
+        js = """async ([u, ms]) => {
+            const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), ms);
+            const r = await fetch(u, {credentials: 'include', signal: ctl.signal});
+            clearTimeout(t);
+            const buf = await r.arrayBuffer(); const bytes = new Uint8Array(buf);
+            let bin = ''; const CH = 0x8000;
+            for (let i = 0; i < bytes.length; i += CH) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + CH));
+            return {status: r.status, type: r.headers.get('content-type') || '', url: r.url, b64: btoa(bin)};
+        }"""
+        import base64
+        res = self._page.evaluate(js, [url, int(timeout * 1000)])
+        data = base64.b64decode(res["b64"]) if res.get("b64") else b""
+        if CHALLENGE.search(data[:20000].decode("utf-8", "ignore")):
+            return 403, data, res.get("type", ""), res.get("url", url)
+        return int(res.get("status", 0)), data, res.get("type", ""), res.get("url", url)
 
     def close(self) -> None:
         for obj in (self._ctx, self._browser):

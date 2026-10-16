@@ -14,7 +14,7 @@ def parse_generic(text: str, title: str = "") -> dict:
     head = text[:4000]
     return {
         "app_numbers": app_numbers(head)[:3], "block_lots": block_lots(head)[:3], "app_types": app_types(head),
-        "professionals": [p.to_dict() for p in extract_professionals(text)],
+        "professionals": [dict(p.to_dict(), side=("board" if p.side == "board" else "applicant")) for p in extract_professionals(text)],
         "waivers": [w.to_dict() for w in extract_waivers(text, source="other")],
         "topics": categorize(text, top=5),
     }
