@@ -113,8 +113,8 @@ def _page_sections_with_text(html: str) -> int:
     return sum(1 for sec in _split_sections(soup, "x") if len(sec["text"]) > 300 and not COOKIE_HEADING.search(sec["heading"]))
 
 
-def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tuple[str, str, str]:
-    """Return (html, final_url, mode).
+def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tuple[list[str], str, str]:
+    """Return (html_parts, final_url, mode).
 
     eCode360's robots.txt disallows its print view for bots, so the normal
     route is the chapter page, which is only a table of contents: section
@@ -126,10 +126,10 @@ def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tu
         if fetcher.allowed(pu):
             r = fetcher.get(pu, max_age_hours=24 * 30)
             if r.ok and r.is_html and len(r.content) > 200 and re.search(r"<h[1-6]|sectionTitle", r.text):
-                return r.text, r.final_url, "print"
+                return [r.text], r.final_url, "print"
     r = fetcher.get(chapter["url"], max_age_hours=24 * 30)
     if not (r.ok and r.is_html):
-        return "", chapter["url"], "none"
+        return [], chapter["url"], "none"
     html = r.text
     soup = BeautifulSoup(html, "lxml")
     articles, sections_links = [], []
@@ -150,7 +150,7 @@ def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tu
         if r2.ok and r2.is_html and _page_sections_with_text(r2.text):
             parts.append(r2.text)
     if parts:
-        return "\n".join(parts), r.final_url, "articles"
+        return parts, r.final_url, "articles"
     # no articles: a section page renders its siblings too; fetch more only if it did not
     covered = 0
     for guid in sections_links[:120]:
@@ -163,29 +163,31 @@ def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tu
                 parts.append(r2.text)
                 covered += max(n, 1)
     if parts:
-        return "\n".join(parts), r.final_url, "sections"
-    return html, r.final_url, "page"
+        return parts, r.final_url, "sections"
+    return [html], r.final_url, "page"
 
 
 def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> dict:
     """Fetch a chapter and split it into sections."""
-    html, final, mode = _chapter_html(fetcher, code_id, chapter)
-    if not html:
+    parts, final, mode = _chapter_html(fetcher, code_id, chapter)
+    if not parts:
         return {**chapter, "sections": [], "attachments": [], "error": "fetch failed"}
-    soup = BeautifulSoup(html, "lxml")
-    for t in soup(["script", "style", "nav", "header", "footer"]):
-        t.decompose()
-    attachments = []
-    seen_att = set()
-    for a in soup.select("a[href]"):
-        href = a.get("href", "")
-        if ("/attachment/" in href or href.lower().endswith(".pdf")) and href not in seen_att:
-            seen_att.add(href)
-            attachments.append({"title": squash(a.get_text(" ", strip=True))[:160], "url": urljoin(final, href)})
-    sections = _split_sections(soup, chapter["title"])
+    attachments: list[dict] = []
+    seen_att: set[str] = set()
+    sections: list[dict] = []
+    for html in parts:
+        soup = BeautifulSoup(html, "lxml")
+        for t in soup(["script", "style"]):  # eCode360 puts section titles inside <header> elements
+            t.decompose()
+        for a in soup.select("a[href]"):
+            href = a.get("href", "")
+            if ("/attachment/" in href or href.lower().endswith(".pdf")) and href not in seen_att:
+                seen_att.add(href)
+                attachments.append({"title": squash(a.get_text(" ", strip=True))[:160], "url": urljoin(final, href)})
+        sections.extend(_split_sections(soup, chapter["title"]))
     seen, out = set(), []
     for s in sections:
-        key = (s["heading"], s["text"][:200])
+        key = (s["heading"], len(s["text"]) // 50)  # section pages render their neighbours too
         if key in seen or COOKIE_HEADING.search(s["heading"]) and len(s["text"]) < 5000:
             continue
         seen.add(key)
@@ -213,7 +215,7 @@ def _split_sections(soup: BeautifulSoup, fallback_title: str) -> list[dict]:
     heading_tag: Optional[Tag] = None
     for node in body.descendants:
         if isinstance(node, Tag):
-            if node.name in ("script", "style", "nav", "header", "footer"):
+            if node.name in ("script", "style"):
                 continue
             classes = " ".join(node.get("class") or [])
             is_title = node.name in ("h1", "h2", "h3", "h4", "h5", "h6") or bool(_TITLE_CLASS.search(classes))
