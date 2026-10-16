@@ -321,7 +321,8 @@ def code_summary(muni_slug: str) -> Optional[dict]:
     return {
         "code_url": idx.get("code_url"), "code_id": idx.get("code_id"),
         "chapters": [c["title"] for c in idx.get("chapters", [])],
-        "sections_by_topic": {t: [f"{s['heading']} ({s['chapter']})" for s in v[:8]] for t, v in idx.get("sections_by_topic", {}).items()},
+        "sections_by_topic": {t: [f"{s['heading']} ({s['chapter']})" for s in v if not re.search(r"cookie|privacy", s["heading"], re.I)][:8]
+                              for t, v in idx.get("sections_by_topic", {}).items()},
         "checklist_items_in_code": len(idx.get("checklist_items", [])),
         "checklist_items": idx.get("checklist_items", [])[:200],
         "waiver_provisions": idx.get("waiver_provisions", [])[:20],

@@ -188,7 +188,7 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
     seen, out = set(), []
     for s in sections:
         key = (s["heading"], len(s["text"]) // 50)  # section pages render their neighbours too
-        if key in seen or COOKIE_HEADING.search(s["heading"]) and len(s["text"]) < 5000:
+        if key in seen or COOKIE_HEADING.search(s["heading"]):
             continue
         seen.add(key)
         s["text"] = clean_text(s["text"])
@@ -248,7 +248,7 @@ def _split_sections(soup: BeautifulSoup, fallback_title: str) -> list[dict]:
     return sections
 
 
-CHECKLIST_HEADING = re.compile(r"checklist|plan\s+details|required\s+submissions?|submission\s+requirements|application\s+requirements|contents\s+of\s+(the\s+)?(site\s+plan|application|plat|preliminary|final)|details\s+required|information\s+(to\s+be\s+)?(required|shown|submitted)|required\s+(information|data|documents)|application\s+for\s+development|site\s+plan\s+(details|requirements|contents)|plat\s+(details|requirements)", re.I)
+CHECKLIST_HEADING = re.compile(r"checklist|plan\s+details|completeness\s+requirements|requirements\s+for\s+(completeness|a\s+complete)|required\s+submissions?|submission\s+requirements|application\s+requirements|contents\s+of\s+(the\s+)?(site\s+plan|application|plat|preliminary|final)|details\s+required|information\s+(to\s+be\s+)?(required|shown|submitted)|required\s+(information|data|documents)|application\s+for\s+development|site\s+plan\s+(details|requirements|contents)|plat\s+(details|requirements)", re.I)
 
 
 def _extract_checklist_items(sections: list[dict]) -> list[dict]:
