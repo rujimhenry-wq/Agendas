@@ -108,13 +108,19 @@ def table_of_contents(fetcher: Fetcher, code_url: str) -> list[dict]:
     return list(chapters.values())
 
 
+def _page_sections_with_text(html: str) -> int:
+    soup = BeautifulSoup(html, "lxml")
+    return sum(1 for sec in _split_sections(soup, "x") if len(sec["text"]) > 300 and not COOKIE_HEADING.search(sec["heading"]))
+
+
 def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tuple[str, str, str]:
     """Return (html, final_url, mode).
 
     eCode360's robots.txt disallows its print view for bots, so the normal
-    route is the chapter page and, when that page is only a table of contents
-    of articles, each article page, stitched together. The print view is used
-    only where robots.txt permits it."""
+    route is the chapter page, which is only a table of contents: section
+    bodies are rendered on the article pages (one page per article, all of
+    its sections) or, for chapters without articles, on section pages. The
+    print view is used only where robots.txt permits it."""
     if code_id:
         pu = f"https://ecode360.com/print/{code_id}?guid={chapter['guid']}"
         if fetcher.allowed(pu):
@@ -125,24 +131,39 @@ def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tu
     if not (r.ok and r.is_html):
         return "", chapter["url"], "none"
     html = r.text
-    if html.count("sectionTitle") >= 3:
-        return html, r.final_url, "page"
     soup = BeautifulSoup(html, "lxml")
-    seen, parts = set(), []
+    articles, sections_links = [], []
+    seen = set()
     for a in soup.select("a[href]"):
         href = a.get("href", "")
         m = re.search(r"(?:ecode360\.com)?/?(\d{6,})(?:[#?]|$)", href)
         text = squash(a.get_text(" ", strip=True))
-        if not m or m.group(1) in seen or m.group(1) == chapter["guid"] or not re.match(r"^(Article|Part|§|Chapter|Division)", text, re.I):
+        if not m or m.group(1) in seen or m.group(1) == chapter["guid"]:
             continue
-        seen.add(m.group(1))
-        r2 = fetcher.get(f"https://ecode360.com/{m.group(1)}", max_age_hours=24 * 30)
-        if r2.ok and r2.is_html and "sectionTitle" in r2.text:
+        if re.match(r"^(Article|Part|Division)\b", text, re.I):
+            seen.add(m.group(1)); articles.append(m.group(1))
+        elif re.match(r"^§", text):
+            seen.add(m.group(1)); sections_links.append(m.group(1))
+    parts: list[str] = []
+    for guid in articles[:60]:
+        r2 = fetcher.get(f"https://ecode360.com/{guid}", max_age_hours=24 * 30)
+        if r2.ok and r2.is_html and _page_sections_with_text(r2.text):
             parts.append(r2.text)
-        if len(seen) >= 60:
-            break
     if parts:
         return "\n".join(parts), r.final_url, "articles"
+    # no articles: a section page renders its siblings too; fetch more only if it did not
+    covered = 0
+    for guid in sections_links[:120]:
+        if covered >= len(sections_links):
+            break
+        r2 = fetcher.get(f"https://ecode360.com/{guid}", max_age_hours=24 * 30)
+        if r2.ok and r2.is_html:
+            n = _page_sections_with_text(r2.text)
+            if n:
+                parts.append(r2.text)
+                covered += max(n, 1)
+    if parts:
+        return "\n".join(parts), r.final_url, "sections"
     return html, r.final_url, "page"
 
 
@@ -165,7 +186,7 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
     seen, out = set(), []
     for s in sections:
         key = (s["heading"], s["text"][:200])
-        if key in seen:
+        if key in seen or COOKIE_HEADING.search(s["heading"]) and len(s["text"]) < 5000:
             continue
         seen.add(key)
         s["text"] = clean_text(s["text"])
@@ -175,6 +196,7 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
     return {**chapter, "final_url": final, "mode": mode, "sections": out, "attachments": attachments}
 
 
+COOKIE_HEADING = re.compile(r"cookie|privacy|consent|preferences", re.I)
 _TITLE_CLASS = re.compile(r"(section|chapter|article|part|schedule|attachment|title)Title|\btitle\b", re.I)
 _HEAD_TEXT = re.compile(r"^(§\s*[\dA-Za-z][\d\-.:A-Za-z]*|Article\s+[\dIVXLC]+|ARTICLE\s+[\dIVXLC]+|Chapter\s+\d+|CHAPTER\s+\d+|Part\s+[\dIVXLC]+|Schedule\s+[A-Z\d]|Attachment\s+\d)")
 
