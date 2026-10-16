@@ -35,6 +35,7 @@ CHAPTER_WANT = re.compile(
     r"unified\s+development|planning\s+board|board\s+of\s+adjustment|stormwater|storm\s+water|"
     r"sign(s|age)?\b|parking|landscap|lighting|tree|affordable|fees|escrow|flood|steep\s+slope|"
     r"environmental|soil|design\s+standards|improvements|performance\s+standards|redevelopment", re.I)
+CHAPTER_SKIP = re.compile(r"christmas|sales|commission\b|committee\b|authority\b|license|peddl|garage\s+sale|yard\s+sale|holiday", re.I)
 CHAPTER_PRIORITY = re.compile(r"zoning|land\s+use|land\s+development|development\s+regulations|site\s+plan|subdivision|unified", re.I)
 
 TOPICS: dict[str, re.Pattern] = {
@@ -91,7 +92,7 @@ def table_of_contents(fetcher: Fetcher, code_url: str) -> list[dict]:
         guid = m.group(1)
         if guid in chapters:
             continue
-        chapters[guid] = {"title": text[:160], "url": u, "guid": guid, "wanted": bool(CHAPTER_WANT.search(text)),
+        chapters[guid] = {"title": text[:160], "url": u, "guid": guid, "wanted": bool(CHAPTER_WANT.search(text)) and not CHAPTER_SKIP.search(text),
                           "priority": bool(CHAPTER_PRIORITY.search(text))}
     # If the TOC is collapsed and nothing is marked wanted, follow 'Part'/'Title' links one level
     if chapters and not any(c["wanted"] for c in chapters.values()):
@@ -129,25 +130,7 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
         href = a.get("href", "")
         if "/attachment/" in href or href.lower().endswith(".pdf"):
             attachments.append({"title": squash(a.get_text(" ", strip=True))[:160], "url": urljoin(final, href)})
-    # Split by headings. eCode360 marks sections with headings whose text begins with '§'.
-    sections: list[dict] = []
-    cur: Optional[dict] = None
-    body = soup.body or soup
-    for el in body.find_all(["h1", "h2", "h3", "h4", "h5", "p", "li", "td", "div", "span"]):
-        if el.name in ("div", "span") and el.find(["h1", "h2", "h3", "h4", "h5", "p", "li"]):
-            continue  # container; its children will be visited
-        txt = squash(el.get_text(" ", strip=True))
-        if not txt:
-            continue
-        is_head = el.name.startswith("h") or re.match(r"^§\s*[\d\-.:A-Za-z]+\b", txt) or re.match(r"^(Article|ARTICLE|Chapter|CHAPTER)\s+[\dIVXLC]+", txt)
-        if is_head and len(txt) < 220:
-            cur = {"heading": txt, "anchor": el.get("id") or (el.find("a") or {}).get("name") or "", "text": ""}
-            sections.append(cur)
-        elif cur is not None and len(cur["text"]) < 60000:
-            cur["text"] += txt + "\n"
-        elif cur is None:
-            cur = {"heading": chapter["title"], "anchor": "", "text": txt + "\n"}
-            sections.append(cur)
+    sections = _split_sections(soup, chapter["title"])
     # dedupe repeated text (print view nests headings)
     seen, out = set(), []
     for s in sections:
@@ -162,11 +145,63 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
     return {**chapter, "final_url": final, "sections": out, "attachments": attachments}
 
 
+_TITLE_CLASS = re.compile(r"(section|chapter|article|part|schedule|attachment|title)Title|\btitle\b", re.I)
+_HEAD_TEXT = re.compile(r"^(§\s*[\dA-Za-z][\d\-.:A-Za-z]*|Article\s+[\dIVXLC]+|ARTICLE\s+[\dIVXLC]+|Chapter\s+\d+|CHAPTER\s+\d+|Part\s+[\dIVXLC]+|Schedule\s+[A-Z\d]|Attachment\s+\d)")
+
+
+def _split_sections(soup: BeautifulSoup, fallback_title: str) -> list[dict]:
+    """Walk the document in order; every heading (h1-h6, or an element whose
+    class marks it as a title, or a short block starting with '§ 12-3') opens
+    a new section and all following text belongs to it. Walking the strings
+    in document order avoids the duplication that nested containers cause."""
+    from bs4 import NavigableString, Tag
+    body = soup.body or soup
+    sections: list[dict] = []
+    cur: Optional[dict] = None
+    heading_tag: Optional[Tag] = None
+    for node in body.descendants:
+        if isinstance(node, Tag):
+            if node.name in ("script", "style", "nav", "header", "footer"):
+                continue
+            classes = " ".join(node.get("class") or [])
+            is_title = node.name in ("h1", "h2", "h3", "h4", "h5", "h6") or bool(_TITLE_CLASS.search(classes))
+            if not is_title:
+                continue
+            if heading_tag is not None and heading_tag in node.parents:
+                continue  # nested inside the heading we just opened (e.g. <a class="titleLink">)
+            txt = squash(node.get_text(" ", strip=True))
+            if not txt or len(txt) > 220:
+                continue
+            if not (node.name.startswith("h") or _HEAD_TEXT.match(txt)):
+                continue
+            cur = {"heading": txt, "anchor": node.get("id") or "", "text": ""}
+            sections.append(cur)
+            heading_tag = node
+        elif isinstance(node, NavigableString):
+            if node.parent is None or node.parent.name in ("script", "style"):
+                continue
+            if heading_tag is not None and heading_tag in node.parents:
+                continue
+            t = str(node)
+            if not t.strip():
+                continue
+            if cur is None:
+                cur = {"heading": fallback_title, "anchor": "", "text": ""}
+                sections.append(cur)
+            if len(cur["text"]) < 200000:
+                block = node.parent.name in ("p", "div", "li", "td", "th", "tr", "br")
+                cur["text"] += t.strip() + ("\n" if block else " ")
+    return sections
+
+
+CHECKLIST_HEADING = re.compile(r"checklist|plan\s+details|required\s+submissions?|submission\s+requirements|application\s+requirements|contents\s+of\s+(the\s+)?(site\s+plan|application|plat|preliminary|final)|details\s+required|information\s+(to\s+be\s+)?(required|shown|submitted)|required\s+(information|data|documents)|application\s+for\s+development|site\s+plan\s+(details|requirements|contents)|plat\s+(details|requirements)", re.I)
+
+
 def _extract_checklist_items(sections: list[dict]) -> list[dict]:
     from .parse.checklist import parse_checklist
     items = []
     for s in sections:
-        if "checklist" in s["topics"] or re.search(r"checklist", s["heading"], re.I):
+        if CHECKLIST_HEADING.search(s["heading"]):
             parsed = parse_checklist(s["text"], title=s["heading"] + " " + s["text"][:300])
             for it in parsed["items"]:
                 it["section"] = s["heading"]

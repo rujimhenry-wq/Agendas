@@ -48,6 +48,18 @@ def agenda_center_categories(fetcher, site_url: str) -> list[dict]:
             continue
         cid = m.group(2)
         cats.setdefault(cid, {"id": cid, "name": name, "url": urljoin(base, href), "kind": kind})
+    # Newer AgendaCenter pages: <h2>Planning Board</h2> followed by javascript:changeYear(2026, 5, 'a0')
+    for h in soup.select("h2, h3"):
+        name = h.get_text(" ", strip=True)
+        kind = classify_board(name)
+        if not kind:
+            continue
+        a = h.find_next("a", href=re.compile(r"changeYear\("))
+        if a:
+            m = re.search(r"changeYear\(\s*\d{4}\s*,\s*(\d+)", a["href"])
+            if m:
+                cid = m.group(1)
+                cats[cid] = {"id": cid, "name": name, "url": f"{base}/AgendaCenter/{name.replace(' ', '-')}-{cid}", "kind": kind}
     # Headings (h2) sometimes carry the category name while links say "View All"
     for h in soup.select("h2, h3"):
         name = h.get_text(" ", strip=True)
@@ -65,30 +77,36 @@ def agenda_center_categories(fetcher, site_url: str) -> list[dict]:
 
 
 def list_category_files(fetcher, site_url: str, cat: dict, min_year: int = 2000) -> list[DocLink]:
+    """All agenda / minutes / packet files for a category.
+
+    The search endpoint without dates returns only the current year, so we
+    query one calendar year at a time back to `min_year`, stopping after
+    three consecutive empty years.
+    """
+    import datetime as _dt
     base = base_of(site_url)
     out: dict[str, DocLink] = {}
-    urls = [
-        f"{base}/AgendaCenter/Search/?term=&CIDs={cat['id']},&startDate=&endDate=&dateRange=&dateSelector=",
-        cat["url"],
-    ]
-    # category pages are paginated by year via ?year=YYYY on some versions
-    for y in range(2035, min_year - 1, -1):
-        urls.append(f"{cat['url']}?year={y}")
-    seen_pages = set()
-    empty_years = 0
-    for u in urls:
-        if u in seen_pages:
-            continue
-        seen_pages.add(u)
+    this_year = _dt.date.today().year
+    empty = 0
+    for y in range(this_year + 1, min_year - 1, -1):
+        u = (f"{base}/AgendaCenter/Search/?term=&CIDs={cat['id']},&startDate=01/01/{y}&endDate=12/31/{y}"
+             f"&dateRange=&dateSelector=")
         r = fetcher.get(u)
         if not r.ok or not r.is_html:
+            empty += 1
+            if empty >= 3:
+                break
             continue
         before = len(out)
         _collect_files(r.text, base, cat, out)
-        if "?year=" in u:
-            empty_years = empty_years + 1 if len(out) == before else 0
-            if empty_years >= 4:
-                break
+        empty = empty + 1 if len(out) == before else 0
+        if empty >= 3 and y < this_year:
+            break
+    if not out:  # older AgendaCenter versions ignore dates; fall back to the plain search and category page
+        for u in (f"{base}/AgendaCenter/Search/?term=&CIDs={cat['id']},&startDate=&endDate=&dateRange=&dateSelector=", cat["url"]):
+            r = fetcher.get(u)
+            if r.ok and r.is_html:
+                _collect_files(r.text, base, cat, out)
     return [d for d in out.values() if (d.year or 9999) >= min_year]
 
 
@@ -110,10 +128,24 @@ def _collect_files(html: str, base: str, cat: dict, out: dict[str, DocLink]) -> 
                                meeting_date=lc.meeting_date, year=lc.year, context=ctx, platform=NAME)
 
 
+def categories_in_html(html: str, base: str) -> list[dict]:
+    """Land-use category links found on any page (e.g. a board page linking /AgendaCenter/Planning-Board-5)."""
+    out = {}
+    for m in re.finditer(r"href=\"(/AgendaCenter/([A-Za-z0-9\-]+?)-(\d+))\"", html):
+        name = m.group(2).replace("-", " ")
+        kind = classify_board(name)
+        if kind:
+            out[m.group(3)] = {"id": m.group(3), "name": name, "url": base + m.group(1), "kind": kind}
+    return list(out.values())
+
+
 def list_documents(fetcher, page_url: str, html: str, board_kind: Optional[str]) -> list[DocLink]:
     """Called for any page on a CivicPlus site; returns AgendaCenter files for land-use boards."""
     docs: list[DocLink] = []
-    for cat in agenda_center_categories(fetcher, page_url):
+    cats = {c["id"]: c for c in agenda_center_categories(fetcher, page_url)}
+    for c in categories_in_html(html, base_of(page_url)):
+        cats.setdefault(c["id"], c)
+    for cat in cats.values():
         if board_kind and cat["kind"] != board_kind and cat["kind"] != "combined":
             continue
         docs.extend(list_category_files(fetcher, page_url, cat, min_year=fetcher.s.min_year))

@@ -260,7 +260,7 @@ _NEEDED = re.compile(r"\b(waiver|variance|exception|relief)s?\s+(?:from\s+[^.;]{
 ITEM_REF = re.compile(
     r"(?:checklist\s+)?item(?:s)?\s*(?:no\.?|#|number|nos\.?)?\s*:?\s*"
     r"((?:[A-Z]?\d{1,3}[A-Za-z]?(?:\.\d+)?)(?:\s*(?:,|&|and|through|thru|to|-)\s*(?:[A-Z]?\d{1,3}[A-Za-z]?(?:\.\d+)?))*)"
-    r"|#\s*(\d{1,3}[A-Za-z]?)\b|§\s*([\d\-.:A-Za-z]+)|section\s+([\d\-.:A-Za-z]+)", re.I)
+    r"|#\s*(\d{1,3}[A-Za-z]?)\b|§\s*(\d[\d\-.:A-Za-z]*?)(?=[\s,;)]|$)|section\s+(\d[\d\-.:A-Za-z]*?)(?=[\s,;)]|$)", re.I)
 
 
 @dataclass
@@ -307,9 +307,10 @@ def waiver_items(sent: str) -> list[str]:
     for m in ITEM_REF.finditer(sent):
         v = next((g for g in m.groups() if g), None)
         if v:
-            v = squash(v)
+            v = squash(v).rstrip(".,;:")
             for part in re.split(r"\s*(?:,|&|\band\b)\s*", v):
-                if part and part not in out:
+                part = part.strip().rstrip(".,;:")
+                if part and part not in out and len(part) <= 12:
                     out.append(part)
     return out
 

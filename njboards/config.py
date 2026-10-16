@@ -38,6 +38,7 @@ class Settings:
     max_docs_per_board: int = _env("NJBOARDS_MAX_DOCS", 400)
     min_year: int = _env("NJBOARDS_MIN_YEAR", 2019)
     ocr_enabled: bool = _env("NJBOARDS_OCR", False)
+    use_browser: bool = _env("NJBOARDS_BROWSER", True)   # headless Chromium for JS-challenge sites (eCode360)
 
     @property
     def db_path(self) -> Path:

@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 
 import requests
 
+from .browser import looks_like_challenge, shared_browser
 from .config import SETTINGS, Settings
 from .util import sha1_str
 
@@ -146,6 +147,14 @@ class Fetcher:
                         if size > limit:
                             return Response(url, resp.url, resp.status_code, b"", ctype, error="too large")
                     r = Response(url, resp.url, resp.status_code, b"".join(chunks), ctype)
+                if looks_like_challenge(r.status, r.content):
+                    br = self._browser_get(url)
+                    if br is not None:
+                        if use_cache:
+                            self._cache_put(br)
+                        return br
+                    return Response(url, r.final_url, r.status, r.content, r.content_type,
+                                    error="blocked by JavaScript challenge (install playwright for the browser fallback)")
                 if r.status in (429, 500, 502, 503, 504) and attempt < self.s.max_retries:
                     time.sleep(2 ** attempt * 2)
                     continue
@@ -157,6 +166,22 @@ class Fetcher:
                 log.debug("fetch error %s (attempt %d): %s", url, attempt, err)
                 time.sleep(2 ** attempt)
         return Response(url, url, 0, b"", "", error=err or "request failed")
+
+    def _browser_get(self, url: str) -> Optional[Response]:
+        if not self.s.use_browser:
+            return None
+        b = shared_browser()
+        if not b.available():
+            log.warning("challenge page at %s and no browser fallback: %s", url, b.unavailable)
+            return None
+        try:
+            status, body, ctype, final = b.get(url)
+        except Exception as e:  # noqa: BLE001
+            log.warning("browser fetch failed for %s: %s", url, e)
+            return None
+        if looks_like_challenge(status, body) or status >= 400:
+            return Response(url, final, status, body, ctype, error=f"challenge not cleared (HTTP {status})")
+        return Response(url, final, status, body, ctype)
 
     def get_json(self, url: str, **kw):
         r = self.get(url, **kw)

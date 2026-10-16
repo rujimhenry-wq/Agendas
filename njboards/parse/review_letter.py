@@ -23,6 +23,7 @@ AUTHOR_TYPE = [
     ("health", re.compile(r"board\s+of\s+health|health\s+department", re.I)),
     ("zoning officer", re.compile(r"zoning\s+officer|zoning\s+official", re.I)),
 ]
+DOC_LISTING = re.compile(r"^(?:revised\s+|amended\s+|preliminary\s+|final\s+)*(?:site\s+plans?|plans?|architectural\s+(?:plans?|drawings?)|stormwater\s+(?:management\s+)?report|drainage\s+(?:report|calculations)|traffic\s+(?:impact\s+)?(?:study|report)|survey|boundary|topographic|environmental\s+impact|landscap\w+\s+plan|lighting\s+plan|photometric|application|variance\s+plan|subdivision\s+(?:plan|plat)|soil\s+erosion|letter|report|narrative|exhibit|rendering|floor\s+plans?|elevations?)\b[^.]{0,80}?\b(?:titled|entitled|consisting\s+of|prepared\s+by|dated|last\s+revised|\(\d+\s+sheets?\))", re.I)
 RECOMMEND_COMPLETE = re.compile(r"(recommend|consider|find|deem)\w*\s+(?:that\s+)?(?:the\s+application\s+)?(?:be\s+)?(?:deemed\s+)?(complete|incomplete)\b", re.I)
 
 
@@ -31,8 +32,11 @@ def letter_meta(text: str, title: str = "") -> dict:
     re_m = RE_LINE.search(head)
     re_line = squash(re_m.group(1)) if re_m else ""
     dates = find_dates(head, limit=2)
-    author_blob = (title + " " + head[:1200] + " " + text[-2500:])
-    author_type = next((n for n, p in AUTHOR_TYPE if p.search(author_blob)), "unknown")
+    author_type = next((n for n, p in AUTHOR_TYPE if p.search(title)), None)  # the link title is the best signal
+    if author_type is None:
+        author_type = next((n for n, p in AUTHOR_TYPE if p.search(text[-1500:])), None)  # then the signature block
+    if author_type is None:
+        author_type = next((n for n, p in AUTHOR_TYPE if p.search(head[:1200])), "unknown")
     pros = extract_professionals(text[-3000:]) + extract_professionals(head[:1500])
     author = next((p for p in pros if p.credentials), None)
     comp = None
@@ -62,7 +66,11 @@ def parse_review_letter(text: str, title: str = "") -> dict:
     app = meta["app_numbers"][0] if meta["app_numbers"] else (meta["re"][:80] or None)
     items = split_numbered(text)
     comments = []
+    documents_reviewed = []
     for it in items:
+        if DOC_LISTING.match(it["text"]):
+            documents_reviewed.append(it["text"][:300])
+            continue
         cats = categorize(it["text"])
         sec = it["section"].lower()
         if sec and not re.search(r"general|comment|review|follow", sec):
@@ -89,6 +97,7 @@ def parse_review_letter(text: str, title: str = "") -> dict:
         })
     waivers = [w.to_dict() for w in extract_waivers(text, source="review_letter", application=app)]
     return {**meta, "comments": comments, "n_comments": len(comments), "waivers": waivers,
+            "documents_reviewed": documents_reviewed,
             "categories_count": _count([c["category"] for c in comments])}
 
 

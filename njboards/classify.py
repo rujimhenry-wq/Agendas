@@ -28,10 +28,11 @@ _DOC_RULES: list[tuple[str, re.Pattern]] = [
         r"technical\s+(review|comments?)|professional(s')?\s+(reports?|reviews?|letters?|comments?)|"
         r"(board|township|borough|city|town|village)\s+(engineer|planner|landscape\s+architect|traffic)\s*(ing)?\s*(review|report|letter|memo)|"
         r"staff\s+(report|review|memo)|\bTRC\b|technical\s+review\s+committee", re.I)),
+    ("notice", re.compile(r"(legal|public|hearing)\s+notice|notice\s+of\s+(hearing|decision|adoption)", re.I)),
     ("resolution", re.compile(r"\bresolution(s)?\b|\bres(o|olutions?)?[-_ ]?\d|\bmemorializ", re.I)),
     ("agenda", re.compile(r"\bagenda", re.I)),
     ("minutes", re.compile(r"\bminutes?\b|\bmins\b|\bmeeting\s+summary", re.I)),
-    ("notice", re.compile(r"(legal|public|hearing)\s+notice|notice\s+of\s+(hearing|decision)|\bnotices?\b", re.I)),
+    ("notice", re.compile(r"\bnotices?\b", re.I)),
     ("ordinance", re.compile(r"ordinance|ecode360|municode|code\s*book|zoning\s+(map|code|regulations)|land\s+(use|development)\s+(ordinance|code|regulations)|\bLDO\b|\bULDO\b|\bUDO\b", re.I)),
     ("schedule", re.compile(r"meeting\s+(schedule|dates|calendar)|schedule\s+of\s+meetings|annual\s+(meeting\s+)?schedule", re.I)),
     ("site_plan", re.compile(
@@ -106,8 +107,12 @@ def classify_link(url: str, link_text: str = "", context: str = "", page_board: 
     path = unquote(urlparse(url).path)
     fname = path.rsplit("/", 1)[-1]
     blob = " | ".join(x for x in (link_text, fname, path.replace("/", " "), context) if x)
-    doc_type = classify_doc_type(link_text + " " + fname)
     conf = 0.9
+    vf = re.search(r"/AgendaCenter/ViewFile/(Agenda|Minutes|Item)/", url, re.I)
+    if vf:  # CivicPlus encodes the type in the path; link text is often just an icon
+        doc_type = {"agenda": "agenda", "minutes": "minutes"}.get(vf.group(1).lower(), classify_doc_type(link_text + " " + context) if link_text.strip() else "site_plan")
+    else:
+        doc_type = classify_doc_type(link_text + " " + fname)
     if doc_type == "other":
         doc_type = classify_doc_type(blob)
         conf = 0.6

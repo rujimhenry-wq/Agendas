@@ -46,6 +46,17 @@ CRED_ROLE = [
 ]
 
 _FIRM_LIKE = re.compile(r"^(of|with|from|and|or)\s|\b(LLC|L\.L\.C\.|Inc|Group|Associates|Assoc|Engineering|Engineers|Architects?|Architecture|Planning|Consultants|Consulting|Partners|Design|P\.?C|P\.?A|LLP|Company|Corp|Law|Surveying|Landscape|Studio|Services)\.?$", re.I)
+NON_NAME_WORDS = set("""department vote recorded introduced ordinance report meeting public hearing comments comment review approval
+board township borough city town village committee council planning zoning minutes agenda resolution application applicant
+block lot lots street avenue road site plan plans variance subdivision county state jersey police fire health chairman chairwoman
+mayor president secretary member members present absent motion second roll call adjourn adjournment open closed session item items
+discussion approve approved denied carried continued letter dated revised prepared sheet sheets attorney engineer planner architect
+clerk administrator officer official office commission district school library recreation environmental historic preservation
+park parks water sewer utilities authority corporation association management development construction building permit permits
+notice legal adoption amended amendment chapter section article code land use ordinance new old business executive regular special
+work workshop reorganization annual schedule calendar date time place location address premises owner owners holdings realty
+properties property group associates partners company limited liability inc llc llp pa pc esq p e pp aia
+north south east west central main first second third route highway parkway""".split())
 _BAD_NAMES = re.compile(r"^(The|This|That|Board|Planning|Zoning|Township|Borough|City|Town|Village|County|State|New Jersey|Motion|Resolution|Application|Applicant|Block|Lot|Site Plan|Public|Chairman|Chairwoman|Vice|Member|Members|Secretary|Attorney|Engineer|Planner|Mayor|Council|North|South|East|West|Main|Route|Street|Avenue|Road)\b", re.I)
 
 
@@ -112,7 +123,10 @@ def extract_professionals(text: str, application: Optional[str] = None) -> list[
 
     def add(name: str, creds: str, role: str, side: str, firm: str, testified: bool, ctx: str) -> None:
         key = name.lower()
-        if _BAD_NAMES.match(name) or _FIRM_LIKE.search(name) or len(name.split()) < 2:
+        toks = [re.sub(r"[^a-z]", "", t.lower()) for t in name.split()]
+        if _BAD_NAMES.match(name) or _FIRM_LIKE.search(name) or len(toks) < 2 or any(t in NON_NAME_WORDS for t in toks):
+            return
+        if sum(1 for t in name.split() if t[:1].isupper()) < 2:
             return
         p = found.get(key)
         if p is None:
