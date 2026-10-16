@@ -75,6 +75,12 @@ def list_documents(fetcher, page_url: str, html: str, board_kind: Optional[str],
     if not code:
         return []
     docs: dict[str, DocLink] = {}
+    if not fetcher.allowed(f"https://ecode360.com/{code}/documents/Minutes"):
+        import logging
+        logging.getLogger("njboards.ecodedocs").warning(
+            "records for %s are on eCode360's documents portal (https://ecode360.com/%s/documents/Minutes), "
+            "which its robots.txt closes to bots; they are not collected automatically", code, code)
+        return []
     for cat in CATEGORIES:
         url = f"https://ecode360.com/{code}/documents/{cat}"
         r = fetcher.get(url, max_age_hours=24 * 3)

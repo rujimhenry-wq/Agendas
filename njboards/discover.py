@@ -214,5 +214,7 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
         adapters_run.add("ecodedocs")
         for d in ecodedocs.list_documents(fetcher, "", "", None, code=disc.ecode_id):
             docs.setdefault(d.url, d)
+    if "ecodedocs" in adapters_run and disc.ecode_id and not any(d.platform == "ecodedocs" for d in docs.values()):
+        disc.errors.append(f"records portal not collected (robots.txt): https://ecode360.com/{disc.ecode_id}/documents/Minutes")
     disc.docs = list(docs.values())
     return disc

@@ -108,33 +108,60 @@ def table_of_contents(fetcher: Fetcher, code_url: str) -> list[dict]:
     return list(chapters.values())
 
 
-def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> dict:
-    """Fetch a chapter (printable view when possible) and split into sections."""
-    urls = []
+def _chapter_html(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> tuple[str, str, str]:
+    """Return (html, final_url, mode).
+
+    eCode360's robots.txt disallows its print view for bots, so the normal
+    route is the chapter page and, when that page is only a table of contents
+    of articles, each article page, stitched together. The print view is used
+    only where robots.txt permits it."""
     if code_id:
-        urls.append(f"https://ecode360.com/print/{code_id}?guid={chapter['guid']}")
-    urls.append(chapter["url"])
-    html, final = "", chapter["url"]
-    for u in urls:
-        for attempt in range(2):
-            r = fetcher.get(u, max_age_hours=24 * 30, use_cache=attempt == 0)
-            if r.ok and r.is_html and len(r.content) > 200 and (re.search(r"<h[1-6]|sectionTitle", r.text) or "print/" not in u):
-                html, final = r.text, r.final_url
-                break
-        if html:
+        pu = f"https://ecode360.com/print/{code_id}?guid={chapter['guid']}"
+        if fetcher.allowed(pu):
+            r = fetcher.get(pu, max_age_hours=24 * 30)
+            if r.ok and r.is_html and len(r.content) > 200 and re.search(r"<h[1-6]|sectionTitle", r.text):
+                return r.text, r.final_url, "print"
+    r = fetcher.get(chapter["url"], max_age_hours=24 * 30)
+    if not (r.ok and r.is_html):
+        return "", chapter["url"], "none"
+    html = r.text
+    if html.count("sectionTitle") >= 3:
+        return html, r.final_url, "page"
+    soup = BeautifulSoup(html, "lxml")
+    seen, parts = set(), []
+    for a in soup.select("a[href]"):
+        href = a.get("href", "")
+        m = re.search(r"(?:ecode360\.com)?/?(\d{6,})(?:[#?]|$)", href)
+        text = squash(a.get_text(" ", strip=True))
+        if not m or m.group(1) in seen or m.group(1) == chapter["guid"] or not re.match(r"^(Article|Part|§|Chapter|Division)", text, re.I):
+            continue
+        seen.add(m.group(1))
+        r2 = fetcher.get(f"https://ecode360.com/{m.group(1)}", max_age_hours=24 * 30)
+        if r2.ok and r2.is_html and "sectionTitle" in r2.text:
+            parts.append(r2.text)
+        if len(seen) >= 60:
             break
+    if parts:
+        return "\n".join(parts), r.final_url, "articles"
+    return html, r.final_url, "page"
+
+
+def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> dict:
+    """Fetch a chapter and split it into sections."""
+    html, final, mode = _chapter_html(fetcher, code_id, chapter)
     if not html:
         return {**chapter, "sections": [], "attachments": [], "error": "fetch failed"}
     soup = BeautifulSoup(html, "lxml")
     for t in soup(["script", "style", "nav", "header", "footer"]):
         t.decompose()
     attachments = []
+    seen_att = set()
     for a in soup.select("a[href]"):
         href = a.get("href", "")
-        if "/attachment/" in href or href.lower().endswith(".pdf"):
+        if ("/attachment/" in href or href.lower().endswith(".pdf")) and href not in seen_att:
+            seen_att.add(href)
             attachments.append({"title": squash(a.get_text(" ", strip=True))[:160], "url": urljoin(final, href)})
     sections = _split_sections(soup, chapter["title"])
-    # dedupe repeated text (print view nests headings)
     seen, out = set(), []
     for s in sections:
         key = (s["heading"], s["text"][:200])
@@ -145,7 +172,7 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
         s["topics"] = [t for t, p in TOPICS.items() if p.search(s["heading"]) or len(p.findall(s["text"])) >= 3]
         s["chars"] = len(s["text"])
         out.append(s)
-    return {**chapter, "final_url": final, "sections": out, "attachments": attachments}
+    return {**chapter, "final_url": final, "mode": mode, "sections": out, "attachments": attachments}
 
 
 _TITLE_CLASS = re.compile(r"(section|chapter|article|part|schedule|attachment|title)Title|\btitle\b", re.I)
@@ -239,6 +266,9 @@ def fetch_attachments(fetcher: Fetcher, out_dir, attachments: list[dict], max_n:
         if n >= max_n:
             break
         n += 1
+        if not fetcher.allowed(a["url"]):
+            a["error"] = "not fetched: robots.txt disallows this path for bots; download it by hand from the link"
+            continue
         r = fetcher.get(a["url"])
         if not r.ok or not r.content.startswith(b"%PDF"):
             a["error"] = r.error or f"HTTP {r.status}"

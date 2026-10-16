@@ -27,8 +27,18 @@ pip install -e .            # or: pip install -r requirements.txt
 njboards --help
 ```
 
-Optional: `pdftotext` (poppler) improves PDF extraction; `tesseract` + `pdftoppm`
-enable OCR of scanned minutes (`njboards extract --ocr`, or `NJBOARDS_OCR=1`).
+Two optional pieces matter in practice:
+
+- **OCR.** Roughly half of the resolutions, applications and older minutes
+  towns post are scanned images. Install `tesseract-ocr` (plus `poppler-utils`
+  for `pdftoppm`) and run `njboards extract --ocr` or set `NJBOARDS_OCR=1`.
+  Without it those documents extract as empty text.
+- **Headless browser.** eCode360 (the code host and, for some towns, the
+  minutes/resolutions portal) sits behind a Cloudflare JavaScript challenge
+  that refuses every plain HTTP client. `pip install playwright && playwright
+  install chromium` enables the fallback; `njboards` switches to it
+  automatically when a site answers with a challenge page
+  (`NJBOARDS_BROWSER=0` disables it).
 
 ## Quick start
 
@@ -123,6 +133,39 @@ Municode / ClerkBase codes are recorded but not pulled yet.
   200-ft list...). Denied ones are listed with their evidence sentence and,
   when the town's checklist was parsed, the text of the checklist item.
 
+## What the live runs showed
+
+Tested on Cranford, Summit, Westfield (CivicPlus sites) and Montclair
+(Granicus govAccess site with records on eCode360's document portal):
+
+| Town | Found | Notes |
+|---|---|---|
+| Cranford | 282 agendas, 30 minutes, 17 review letters, 17 resolutions, 80 site plan exhibits, 22 applications; code CR1142 | Board engineer/planner letters are posted per application and revision ("Review No. 8"); half the PDFs needed OCR |
+| Summit | 548 agendas, 283 minutes, 285 exhibits, 117 applications, checklists; code SU4097 | The ordinance's "Appendix E, Development Application Checklists" is an attachment, pulled and parsed |
+| Westfield | 319 agendas, 199 minutes, 23 resolutions; code via guid link | No review letters posted |
+| Montclair | 281 agendas, 265 minutes, 399 resolutions on ecode360.com/MO0769/documents | Nothing on the town site itself beyond forms |
+
+Things that only showed up on real sites and are now handled: CivicPlus
+AgendaCenter returns only the current year unless you search year by year;
+its minutes links are bare icons (the type is in the URL path); board
+categories are exposed through `changeYear(year, id)` JavaScript; roll-call
+lines read "Name, Role, Name, Role" so the phrase *after* a name wins;
+letter authors must come from the signature block, not the cc list;
+application forms name the applicant's team and the waiver *procedure*, so
+they are excluded from the testify and waiver tables.
+
+## robots.txt
+
+The crawler honours robots.txt everywhere. That matters on eCode360: its
+robots.txt closes the print view, attachments (`/attachment/`, where
+Schedule-A checklists and bulk tables often live) and the public documents
+portal (`/<CODE>/documents/`, where some towns such as Montclair publish
+minutes and resolutions) to all bots. `njboards` therefore reads the code
+through the ordinary chapter and article pages, lists attachment and portal
+links in the profile without downloading them, and tells you in
+`discovery.json` when a town's records sit on that portal so you can pull
+them by hand.
+
 ## Reading the results honestly
 
 This is regex-and-heuristics text mining over inconsistent municipal
@@ -181,7 +224,8 @@ njboards/
   municipalities.py  seed CSV, Wikipedia import, website lookup
   classify.py     link → doc type / board / date
   discover.py     site crawler + online-code detection
-  platforms/      CivicPlus, CivicClerk, Granicus adapters
+  platforms/      CivicPlus, CivicClerk, Granicus, eCode360 document portal adapters
+  browser.py      headless Chromium fallback for JavaScript-challenge sites
   fetch.py        downloads
   extract.py      PDF / DOCX / HTML → text (+ optional OCR)
   parse/          common taxonomy + agenda, minutes, review_letter, resolution, checklist, professionals

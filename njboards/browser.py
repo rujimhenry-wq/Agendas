@@ -89,6 +89,10 @@ class Browser:
             self._page.wait_for_timeout(1500)
             html = self._page.content()
         if not CHALLENGE.search(html[:20000]):
+            try:  # code pages fill in their sections after load
+                self._page.wait_for_selector(".sectionTitle, .titleLink, main, #content, article", timeout=20000)
+            except Exception:  # noqa: BLE001
+                pass
             self._page.wait_for_timeout(int(self.settle * 1000))
             html = self._page.content()
             status = 200 if status in (403, 503) else status
