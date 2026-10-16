@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "njboards"
+version = "0.1.0"
+description = "Scrape and analyze NJ municipal planning / zoning board records (agendas, minutes, review letters, resolutions, checklists, eCode360 zoning code) to prepare site plan applications."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=4.9",
+    "pdfplumber>=0.10",
+    "pypdf>=3.0",
+    "PyYAML>=6.0",
+    "click>=8.1",
+    "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+ocr = ["pytesseract>=0.3"]
+
+[project.scripts]
+njboards = "njboards.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["njboards*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

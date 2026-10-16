@@ -1,0 +1,90 @@
+slug,name,county,muni_type,website,ecode_id,ecode_url,planning_url,zoning_url,notes
+princeton-mercer,Princeton,Mercer,Municipality,https://www.princetonnj.gov/,,,,,"seed; verify website before relying on it"
+hamilton-township-mercer,Hamilton Township,Mercer,Township,https://www.hamiltonnj.com/,,,,,seed; verify
+lawrence-township-mercer,Lawrence Township,Mercer,Township,https://www.lawrencetwp.com/,,,,,seed; verify
+ewing-township-mercer,Ewing Township,Mercer,Township,https://www.ewingnj.org/,,,,,seed; verify
+west-windsor-township-mercer,West Windsor Township,Mercer,Township,https://www.westwindsornj.org/,,,,,seed; verify
+hopewell-township-mercer,Hopewell Township,Mercer,Township,https://www.hopewelltwp.org/,,,,,seed; verify
+montclair-essex,Montclair,Essex,Township,https://www.montclairnjusa.org/,,,,,seed; verify
+newark-essex,Newark,Essex,City,https://www.newarknj.gov/,,,,,seed; verify
+livingston-essex,Livingston,Essex,Township,https://www.livingstonnj.org/,,,,,seed; verify
+west-orange-essex,West Orange,Essex,Township,https://www.westorange.org/,,,,,seed; verify
+bloomfield-essex,Bloomfield,Essex,Township,https://www.bloomfieldtwpnj.com/,,,,,seed; verify
+cranford-union,Cranford,Union,Township,https://www.cranfordnj.org/,,,,,seed; verify
+westfield-union,Westfield,Union,Town,https://www.westfieldnj.gov/,,,,,seed; verify
+summit-union,Summit,Union,City,https://www.cityofsummit.org/,,,,,seed; verify
+union-township-union,Union Township,Union,Township,https://uniontownship.com/,,,,,seed; verify
+elizabeth-union,Elizabeth,Union,City,https://www.elizabethnj.org/,,,,,seed; verify
+hoboken-hudson,Hoboken,Hudson,City,https://www.hobokennj.gov/,,,,,seed; verify
+jersey-city-hudson,Jersey City,Hudson,City,https://www.jerseycitynj.gov/,,,,,seed; verify
+bayonne-hudson,Bayonne,Hudson,City,https://www.bayonnenj.org/,,,,,seed; verify
+secaucus-hudson,Secaucus,Hudson,Town,https://www.secaucusnj.gov/,,,,,seed; verify
+kearny-hudson,Kearny,Hudson,Town,https://www.kearnynj.org/,,,,,seed; verify
+edison-middlesex,Edison,Middlesex,Township,https://www.edisonnj.org/,,,,,seed; verify
+woodbridge-township-middlesex,Woodbridge Township,Middlesex,Township,https://www.twp.woodbridge.nj.us/,,,,,seed; verify
+piscataway-middlesex,Piscataway,Middlesex,Township,https://www.piscatawaynj.org/,,,,,seed; verify
+old-bridge-middlesex,Old Bridge,Middlesex,Township,https://www.oldbridge.com/,,,,,seed; verify
+east-brunswick-middlesex,East Brunswick,Middlesex,Township,https://www.eastbrunswick.org/,,,,,seed; verify
+new-brunswick-middlesex,New Brunswick,Middlesex,City,https://www.thecityofnewbrunswick.org/,,,,,seed; verify
+south-brunswick-middlesex,South Brunswick,Middlesex,Township,https://www.sbtnj.net/,,,,,seed; verify
+monroe-township-middlesex,Monroe Township,Middlesex,Township,https://www.monroetwp.com/,,,,,seed; verify
+sayreville-middlesex,Sayreville,Middlesex,Borough,https://www.sayreville.com/,,,,,seed; verify
+plainsboro-middlesex,Plainsboro,Middlesex,Township,https://www.plainsboronj.com/,,,,,seed; verify
+toms-river-ocean,Toms River,Ocean,Township,https://www.tomsrivertownship.com/,,,,,seed; verify
+lakewood-ocean,Lakewood,Ocean,Township,https://www.lakewoodnj.gov/,,,,,seed; verify
+brick-ocean,Brick,Ocean,Township,https://www.bricktownship.net/,,,,,seed; verify
+jackson-township-ocean,Jackson Township,Ocean,Township,https://www.jacksontwpnj.net/,,,,,seed; verify
+stafford-township-ocean,Stafford Township,Ocean,Township,https://www.staffordnj.gov/,,,,,seed; verify
+berkeley-township-ocean,Berkeley Township,Ocean,Township,https://www.twp.berkeley.nj.us/,,,,,seed; verify
+manchester-township-ocean,Manchester Township,Ocean,Township,https://www.manchestertwp.com/,,,,,seed; verify
+cherry-hill-camden,Cherry Hill,Camden,Township,https://www.cherryhill-nj.com/,,,,,seed; verify
+gloucester-township-camden,Gloucester Township,Camden,Township,https://www.glotwp.com/,,,,,seed; verify
+voorhees-camden,Voorhees,Camden,Township,https://www.voorheesnj.com/,,,,,seed; verify
+morristown-morris,Morristown,Morris,Town,https://www.townofmorristown.org/,,,,,seed; verify
+parsippany-troy-hills-morris,Parsippany-Troy Hills,Morris,Township,https://www.parsippany.net/,,,,,seed; verify
+randolph-morris,Randolph,Morris,Township,https://www.randolphnj.org/,,,,,seed; verify
+denville-morris,Denville,Morris,Township,https://www.denvillenj.org/,,,,,seed; verify
+chatham-borough-morris,Chatham Borough,Morris,Borough,https://www.chathamborough.org/,,,,,seed; verify
+madison-morris,Madison,Morris,Borough,https://www.rosenet.org/,,,,,seed; verify
+morris-township-morris,Morris Township,Morris,Township,https://www.morristwp.com/,,,,,seed; verify
+middletown-monmouth,Middletown,Monmouth,Township,https://www.middletownnj.org/,,,,,seed; verify
+howell-monmouth,Howell,Monmouth,Township,https://www.twp.howell.nj.us/,,,,,seed; verify
+freehold-township-monmouth,Freehold Township,Monmouth,Township,https://www.twp.freehold.nj.us/,,,,,seed; verify
+red-bank-monmouth,Red Bank,Monmouth,Borough,https://www.redbanknj.org/,,,,,seed; verify
+manalapan-monmouth,Manalapan,Monmouth,Township,https://www.mtnj.org/,,,,,seed; verify
+marlboro-monmouth,Marlboro,Monmouth,Township,https://www.marlboro-nj.gov/,,,,,seed; verify
+long-branch-monmouth,Long Branch,Monmouth,City,https://www.longbranch.org/,,,,,seed; verify
+bridgewater-somerset,Bridgewater,Somerset,Township,https://www.bridgewaternj.gov/,,,,,seed; verify
+franklin-township-somerset,Franklin Township,Somerset,Township,https://www.franklintwpnj.org/,,,,,seed; verify
+hillsborough-somerset,Hillsborough,Somerset,Township,https://www.hillsborough-nj.org/,,,,,seed; verify
+montgomery-somerset,Montgomery,Somerset,Township,https://www.montgomerynj.gov/,,,,,seed; verify
+warren-township-somerset,Warren Township,Somerset,Township,https://www.warrennj.org/,,,,,seed; verify
+bernards-township-somerset,Bernards Township,Somerset,Township,https://www.bernards.org/,,,,,seed; verify
+paramus-bergen,Paramus,Bergen,Borough,https://www.paramusborough.org/,,,,,seed; verify
+hackensack-bergen,Hackensack,Bergen,City,https://www.hackensack.org/,,,,,seed; verify
+teaneck-bergen,Teaneck,Bergen,Township,https://www.teanecknj.gov/,,,,,seed; verify
+fort-lee-bergen,Fort Lee,Bergen,Borough,https://www.fortleenj.org/,,,,,seed; verify
+ridgewood-bergen,Ridgewood,Bergen,Village,https://www.ridgewoodnj.net/,,,,,seed; verify
+mahwah-bergen,Mahwah,Bergen,Township,https://www.mahwahtwp.org/,,,,,seed; verify
+englewood-bergen,Englewood,Bergen,City,https://www.cityofenglewood.org/,,,,,seed; verify
+fair-lawn-bergen,Fair Lawn,Bergen,Borough,https://www.fairlawn.org/,,,,,seed; verify
+clifton-passaic,Clifton,Passaic,City,https://www.cliftonnj.org/,,,,,seed; verify
+wayne-passaic,Wayne,Passaic,Township,https://www.waynetownship.com/,,,,,seed; verify
+paterson-passaic,Paterson,Passaic,City,https://www.patersonnj.gov/,,,,,seed; verify
+mount-laurel-burlington,Mount Laurel,Burlington,Township,https://www.mountlaurel.com/,,,,,seed; verify
+evesham-burlington,Evesham,Burlington,Township,https://www.evesham-nj.org/,,,,,seed; verify
+moorestown-burlington,Moorestown,Burlington,Township,https://www.moorestown.nj.us/,,,,,seed; verify
+washington-township-gloucester,Washington Township,Gloucester,Township,https://www.twp.washington.nj.us/,,,,,seed; verify
+glassboro-gloucester,Glassboro,Gloucester,Borough,https://www.glassboroonline.com/,,,,,seed; verify
+deptford-gloucester,Deptford,Gloucester,Township,https://www.deptford-nj.org/,,,,,seed; verify
+vineland-cumberland,Vineland,Cumberland,City,https://www.vinelandcity.org/,,,,,seed; verify
+egg-harbor-township-atlantic,Egg Harbor Township,Atlantic,Township,https://www.ehtgov.org/,,,,,seed; verify
+galloway-atlantic,Galloway,Atlantic,Township,https://www.gallowaytwp-nj.gov/,,,,,seed; verify
+hammonton-atlantic,Hammonton,Atlantic,Town,https://www.townofhammonton.org/,,,,,seed; verify
+ocean-city-cape-may,Ocean City,Cape May,City,https://www.ocnj.us/,,,,,seed; verify
+middle-township-cape-may,Middle Township,Cape May,Township,https://www.middletownship.com/,,,,,seed; verify
+clinton-township-hunterdon,Clinton Township,Hunterdon,Township,https://www.clintontwpnj.com/,,,,,seed; verify
+readington-hunterdon,Readington,Hunterdon,Township,https://www.readingtontwp.org/,,,,,seed; verify
+sparta-sussex,Sparta,Sussex,Township,https://www.spartanj.org/,,,,,seed; verify
+vernon-sussex,Vernon,Sussex,Township,https://www.vernontwp.com/,,,,,seed; verify
+phillipsburg-warren,Phillipsburg,Warren,Town,https://www.phillipsburgnj.org/,,,,,seed; verify

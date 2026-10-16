@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+# scraped data (large, regenerable)
+data/cache/
+data/raw/
+data/text/
+data/parsed/
+data/code/
+data/reports/
+data/njboards.db
+.venv/

@@ -1,0 +1,1157 @@
+{
+  "municipality": {
+    "slug": "example-somerset",
+    "name": "Example Township (fictional sample)",
+    "county": "Somerset",
+    "muni_type": null,
+    "website": "https://www.example-nj.org/",
+    "ecode_id": "EX1234",
+    "ecode_url": "https://ecode360.com/EX1234",
+    "code_platform": "ecode360"
+  },
+  "boards": [
+    {
+      "id": 1,
+      "muni_id": 1,
+      "kind": "planning",
+      "name": "Planning Board",
+      "url": "https://www.example-nj.org/boards/planning-board",
+      "platform": null,
+      "source": "discovered"
+    },
+    {
+      "id": 2,
+      "muni_id": 1,
+      "kind": "zoning",
+      "name": "Zoning Board of Adjustment",
+      "url": "https://www.example-nj.org/boards/zoning-board-of-adjustment",
+      "platform": null,
+      "source": "discovered"
+    }
+  ],
+  "availability": {
+    "counts": {
+      "Minutes": 3,
+      "Agendas": 2,
+      "Review letters": 2,
+      "Application forms": 1,
+      "Checklists": 1,
+      "Fee schedules": 1,
+      "Resolutions": 1,
+      "Site plans / exhibits": 1
+    },
+    "posts_agendas": true,
+    "posts_minutes": true,
+    "posts_resolutions": true,
+    "posts_review_letters": true,
+    "posts_site_plans": true,
+    "posts_applications": true,
+    "posts_checklists": true,
+    "years_covered": "2024\u20132024",
+    "status": {
+      "error": 6,
+      "parsed": 6
+    },
+    "by_board": {
+      "zoning": 2,
+      "planning": 10
+    },
+    "needs_ocr": 0
+  },
+  "n_parsed_documents": 6,
+  "professionals": {
+    "applicant_side_regulars": [
+      {
+        "name": "Dana Feld",
+        "credentials": "ESQ.",
+        "role": "attorney",
+        "firm": "",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-09"
+        ],
+        "mentions": 5,
+        "testified": 5,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "Peter Nowak",
+        "credentials": "P.E.",
+        "role": "engineer",
+        "firm": "Nowak Civil Engineering",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-09"
+        ],
+        "mentions": 5,
+        "testified": 5,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "Anthony Petrillo",
+        "credentials": "P.P., AICP",
+        "role": "planner",
+        "firm": "Petrillo Planning Group",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-07"
+        ],
+        "mentions": 4,
+        "testified": 4,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "James R. Kowalski",
+        "credentials": "P.E., P.P.",
+        "role": "engineer",
+        "firm": "Kowalski Engineering Associates",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-07"
+        ],
+        "mentions": 4,
+        "testified": 4,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "Laura Bennett",
+        "credentials": "AIA",
+        "role": "architect",
+        "firm": "Bennett Architects",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-07"
+        ],
+        "mentions": 4,
+        "testified": 4,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "Michael D. Torres",
+        "credentials": "ESQ.",
+        "role": "attorney",
+        "firm": "Torres & Blum",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-07"
+        ],
+        "mentions": 4,
+        "testified": 4,
+        "n_meetings": 2,
+        "n_applications": 1
+      }
+    ],
+    "applicant_side_by_role": {
+      "attorney": [
+        {
+          "name": "Dana Feld",
+          "credentials": "ESQ.",
+          "role": "attorney",
+          "firm": "",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-09"
+          ],
+          "mentions": 5,
+          "testified": 5,
+          "n_meetings": 2,
+          "n_applications": 1
+        },
+        {
+          "name": "Michael D. Torres",
+          "credentials": "ESQ.",
+          "role": "attorney",
+          "firm": "Torres & Blum",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-07"
+          ],
+          "mentions": 4,
+          "testified": 4,
+          "n_meetings": 2,
+          "n_applications": 1
+        }
+      ],
+      "engineer": [
+        {
+          "name": "Peter Nowak",
+          "credentials": "P.E.",
+          "role": "engineer",
+          "firm": "Nowak Civil Engineering",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-09"
+          ],
+          "mentions": 5,
+          "testified": 5,
+          "n_meetings": 2,
+          "n_applications": 1
+        },
+        {
+          "name": "James R. Kowalski",
+          "credentials": "P.E., P.P.",
+          "role": "engineer",
+          "firm": "Kowalski Engineering Associates",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-07"
+          ],
+          "mentions": 4,
+          "testified": 4,
+          "n_meetings": 2,
+          "n_applications": 1
+        }
+      ],
+      "planner": [
+        {
+          "name": "Anthony Petrillo",
+          "credentials": "P.P., AICP",
+          "role": "planner",
+          "firm": "Petrillo Planning Group",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-07"
+          ],
+          "mentions": 4,
+          "testified": 4,
+          "n_meetings": 2,
+          "n_applications": 1
+        }
+      ],
+      "architect": [
+        {
+          "name": "Laura Bennett",
+          "credentials": "AIA",
+          "role": "architect",
+          "firm": "Bennett Architects",
+          "meetings": [
+            "2024-08-08",
+            "2024-09-12"
+          ],
+          "applications": [
+            "PB-24-07"
+          ],
+          "mentions": 4,
+          "testified": 4,
+          "n_meetings": 2,
+          "n_applications": 1
+        }
+      ]
+    },
+    "applicant_side_all_count": 6,
+    "board_professionals": [
+      {
+        "name": "Linda Morrow",
+        "credentials": "",
+        "role": "secretary",
+        "firm": "",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [
+          "PB-24-05"
+        ],
+        "mentions": 9,
+        "testified": 0,
+        "n_meetings": 2,
+        "n_applications": 1
+      },
+      {
+        "name": "Thomas J. Albright",
+        "credentials": "P.E., C.M.E.",
+        "role": "engineer",
+        "firm": "Albright & Keller",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [],
+        "mentions": 6,
+        "testified": 0,
+        "n_meetings": 2,
+        "n_applications": 0
+      },
+      {
+        "name": "Karen M. Whitfield",
+        "credentials": "ESQ.",
+        "role": "attorney",
+        "firm": "",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [],
+        "mentions": 4,
+        "testified": 0,
+        "n_meetings": 2,
+        "n_applications": 0
+      },
+      {
+        "name": "Susan Hale",
+        "credentials": "P.P.",
+        "role": "planner",
+        "firm": "",
+        "meetings": [
+          "2024-08-08",
+          "2024-09-12"
+        ],
+        "applications": [],
+        "mentions": 4,
+        "testified": 0,
+        "n_meetings": 2,
+        "n_applications": 0
+      }
+    ],
+    "board_by_role": {
+      "secretary": [
+        "Linda Morrow [2 mtgs]"
+      ],
+      "engineer": [
+        "Thomas J. Albright (Albright & Keller) [2 mtgs]"
+      ],
+      "attorney": [
+        "Karen M. Whitfield [2 mtgs]"
+      ],
+      "planner": [
+        "Susan Hale [2 mtgs]"
+      ]
+    }
+  },
+  "review_comments": {
+    "n_review_letters": 1,
+    "author_types": {
+      "engineer": 1
+    },
+    "category_counts": {
+      "stormwater": 4,
+      "parking": 4,
+      "completeness": 3,
+      "[minutes] stormwater": 2,
+      "[minutes] lighting": 2,
+      "[minutes] completeness": 2,
+      "[minutes] landscaping": 2,
+      "[minutes] outside_agencies": 2,
+      "grading": 2,
+      "landscaping": 2,
+      "outside_agencies": 2,
+      "utilities": 1,
+      "lighting": 1,
+      "zoning_bulk": 1,
+      "plan_corrections": 1
+    },
+    "common_comments": [
+      {
+        "category": "completeness",
+        "count": 1,
+        "examples": [
+          "Item 14 \u2013 Environmental Impact Statement. The site is fully developed and previously disturbed. We have no objection to the Board granting this waiver."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "completeness",
+        "count": 1,
+        "examples": [
+          "Item 22 \u2013 Traffic Impact Study. The proposed use generates more than 100 peak hour trips. We do not recommend that this waiver be granted; a traffic impact study must be submitted."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "completeness",
+        "count": 1,
+        "examples": [
+          "Item 31 \u2013 Aerial photograph at 1\"=200'. We recommend the waiver be granted as the key map provides adequate context."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "grading",
+        "count": 1,
+        "examples": [
+          "Spot elevations shall be provided at all building corners, curb returns and high/low points in the parking area."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "grading",
+        "count": 1,
+        "examples": [
+          "The retaining wall along the easterly property line exceeds four feet in height; design calculations signed and sealed by a licensed engineer shall be provided."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "landscaping",
+        "count": 1,
+        "examples": [
+          "Street trees shall be provided along the Maple Street frontage at 40 feet on center per Section 190-52."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "landscaping",
+        "count": 1,
+        "examples": [
+          "A trash enclosure detail shall be provided, including gates and screening."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "lighting",
+        "count": 1,
+        "examples": [
+          "The photometric plan indicates 0.8 foot-candles at the residential property line; the ordinance limits spillover to 0.5 foot-candles. Fixtures shall be full cutoff."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "outside_agencies",
+        "count": 1,
+        "examples": [
+          "Approval of the Somerset-Union Soil Conservation District is required."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "outside_agencies",
+        "count": 1,
+        "examples": [
+          "Approval of the County Planning Board is required as the site fronts on a county road."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "parking",
+        "count": 1,
+        "examples": [
+          "Twenty-four (24) parking spaces are proposed where 27 are required under Section 190-45; a variance or design waiver is required. The applicant should provide testimony regarding the parking demand."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "parking",
+        "count": 1,
+        "examples": [
+          "Two accessible parking spaces are required under the ADA and the Barrier Free Subcode; the plan shows one. The accessible route to the building entrance shall be shown."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "parking",
+        "count": 1,
+        "examples": [
+          "Make-ready parking spaces for electric vehicle supply equipment shall be provided in accordance with P.L. 2021, c.171."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "parking",
+        "count": 1,
+        "examples": [
+          "Truck turning templates for the delivery vehicle (SU-30) shall be provided to demonstrate access to the loading area."
+        ],
+        "letters": 1
+      },
+      {
+        "category": "plan_corrections",
+        "count": 1,
+        "examples": [
+          "All plans shall be signed and sealed by the engineer of record."
+        ],
+        "letters": 1
+      }
+    ],
+    "by_category": {
+      "completeness": [
+        {
+          "count": 1,
+          "example": "Item 14 \u2013 Environmental Impact Statement. The site is fully developed and previously disturbed. We have no objection to the Board granting this waiver."
+        },
+        {
+          "count": 1,
+          "example": "Item 22 \u2013 Traffic Impact Study. The proposed use generates more than 100 peak hour trips. We do not recommend that this waiver be granted; a traffic impact study must be submitted."
+        },
+        {
+          "count": 1,
+          "example": "Item 31 \u2013 Aerial photograph at 1\"=200'. We recommend the waiver be granted as the key map provides adequate context."
+        }
+      ],
+      "stormwater": [
+        {
+          "count": 1,
+          "example": "The drainage calculations shall be revised to demonstrate compliance with N.J.A.C. 7:8 as amended in 2023, including the use of NOAA Atlas 14 rainfall data with the required climate adjustment factors."
+        },
+        {
+          "count": 1,
+          "example": "A stormwater maintenance plan and operations manual shall be provided for the proposed subsurface infiltration basin in accordance with N.J.A.C. 7:8-5.8."
+        },
+        {
+          "count": 1,
+          "example": "Soil permeability testing shall be performed at the location of the proposed infiltration basin and the results submitted for review."
+        },
+        {
+          "count": 1,
+          "example": "The plan should show the proposed inlet and pipe sizing calculations; the 15-inch outlet pipe appears undersized for the 100-year storm."
+        }
+      ],
+      "grading": [
+        {
+          "count": 1,
+          "example": "Spot elevations shall be provided at all building corners, curb returns and high/low points in the parking area."
+        },
+        {
+          "count": 1,
+          "example": "The retaining wall along the easterly property line exceeds four feet in height; design calculations signed and sealed by a licensed engineer shall be provided."
+        }
+      ],
+      "utilities": [
+        {
+          "count": 1,
+          "example": "The applicant shall provide a will-serve letter from the Township Municipal Utilities Authority for the sanitary sewer connection. Treatment Works Approval from NJDEP may be required."
+        }
+      ],
+      "parking": [
+        {
+          "count": 1,
+          "example": "Twenty-four (24) parking spaces are proposed where 27 are required under Section 190-45; a variance or design waiver is required. The applicant should provide testimony regarding the parking demand."
+        },
+        {
+          "count": 1,
+          "example": "Two accessible parking spaces are required under the ADA and the Barrier Free Subcode; the plan shows one. The accessible route to the building entrance shall be shown."
+        },
+        {
+          "count": 1,
+          "example": "Make-ready parking spaces for electric vehicle supply equipment shall be provided in accordance with P.L. 2021, c.171."
+        },
+        {
+          "count": 1,
+          "example": "Truck turning templates for the delivery vehicle (SU-30) shall be provided to demonstrate access to the loading area."
+        }
+      ],
+      "landscaping": [
+        {
+          "count": 1,
+          "example": "Street trees shall be provided along the Maple Street frontage at 40 feet on center per Section 190-52."
+        },
+        {
+          "count": 1,
+          "example": "A trash enclosure detail shall be provided, including gates and screening."
+        }
+      ],
+      "lighting": [
+        {
+          "count": 1,
+          "example": "The photometric plan indicates 0.8 foot-candles at the residential property line; the ordinance limits spillover to 0.5 foot-candles. Fixtures shall be full cutoff."
+        }
+      ],
+      "outside_agencies": [
+        {
+          "count": 1,
+          "example": "Approval of the Somerset-Union Soil Conservation District is required."
+        },
+        {
+          "count": 1,
+          "example": "Approval of the County Planning Board is required as the site fronts on a county road."
+        }
+      ],
+      "zoning_bulk": [
+        {
+          "count": 1,
+          "example": "The zoning table on Sheet 2 shall be revised to list the proposed lot coverage and all required variances."
+        }
+      ],
+      "plan_corrections": [
+        {
+          "count": 1,
+          "example": "All plans shall be signed and sealed by the engineer of record."
+        }
+      ]
+    },
+    "flags": {
+      "is_waiver": 4,
+      "outside_agency": 3,
+      "requires_testimony": 1,
+      "requires_variance": 2
+    }
+  },
+  "waivers": {
+    "n_waiver_mentions": 14,
+    "by_disposition": {
+      "granted": 5,
+      "denied": 6,
+      "needed": 1,
+      "requested": 1,
+      "mentioned": 1
+    },
+    "by_kind": {
+      "checklist": 10,
+      "design": 4
+    },
+    "topics_by_disposition": {
+      "environmental impact statement": {
+        "granted": 3
+      },
+      "traffic impact study": {
+        "denied": 3
+      },
+      "landscape plan": {
+        "denied": 2,
+        "granted": 1
+      },
+      "aerial photograph": {
+        "granted": 1
+      }
+    },
+    "denied_topics": {
+      "traffic impact study": 3,
+      "landscape plan": 2
+    },
+    "granted_topics": {
+      "environmental impact statement": 3,
+      "aerial photograph": 1,
+      "landscape plan": 1
+    },
+    "denied": [
+      {
+        "text": "Application No. PB-24-09 \u2013 Harbor Logistics, Inc. \u2013 Block 7, Lots 12 & 13 \u2013 400 Industrial Way \u2013 I-1 Zone Minor Site Plan for a 6,000 sq. ft. warehouse addition. Dana Feld, Esq., appeared on behalf of the applicant. Peter Nowak, P.E., of Nowak Civil Engineering, LLC, was sworn and testified regarding the site plan, grading and the truck circulation. The applicant requested a waiver from the requirement to submit a landscape plan prepared by a licensed landscape architect. The waiver was granted. The applicant also requested a design waiver from the 50-foot buffer requirement. The Board denied ",
+        "kind": "design",
+        "disposition": "denied",
+        "items": [],
+        "topic": "landscape plan",
+        "category": "landscaping",
+        "source": "minutes",
+        "application": "PB-24-09",
+        "doc_type": "minutes",
+        "date": "2024-08-08",
+        "item_text": []
+      },
+      {
+        "text": "Application No. PB-24-09 \u2013 Harbor Logistics, Inc. \u2013 Block 7, Lots 12 & 13 \u2013 400 Industrial Way \u2013 I-1 Zone Minor Site Plan for a 6,000 sq. ft. warehouse addition. Dana Feld, Esq., appeared on behalf of the applicant. Peter Nowak, P.E., of Nowak Civil Engineering, LLC, was sworn and testified regarding the site plan, grading and the truck circulation. The applicant requested a waiver from the requirement to submit a landscape plan prepared by a licensed landscape architect. The waiver was granted. The applicant also requested a design waiver from the 50-foot buffer requirement. The Board denied ",
+        "kind": "design",
+        "disposition": "denied",
+        "items": [],
+        "topic": "landscape plan",
+        "category": "landscaping",
+        "source": "minutes",
+        "application": "PB-24-09",
+        "doc_type": "minutes",
+        "date": "2024-09-12",
+        "item_text": []
+      },
+      {
+        "text": "The Board Engineer did not support the waiver for the Traffic Impact Study; the applicant will be required to submit a traffic study prior to the next hearing.",
+        "kind": "checklist",
+        "disposition": "denied",
+        "items": [
+          "14",
+          "22"
+        ],
+        "topic": "traffic impact study",
+        "category": "traffic",
+        "source": "minutes",
+        "application": "PB-24-07",
+        "doc_type": "minutes",
+        "date": "2024-08-08",
+        "item_text": [
+          "Environmental Impact Statement per Section 190-35. (W)",
+          "Traffic impact study prepared by a licensed professional engineer for any use generating more than 100 peak hour trips. "
+        ]
+      },
+      {
+        "text": "Item 22 \u2013 Traffic Impact Study. The proposed use generates more than 100 peak hour trips. We do not recommend that this waiver be granted; a traffic impact study must be submitted.",
+        "kind": "checklist",
+        "disposition": "denied",
+        "items": [
+          "22"
+        ],
+        "topic": "traffic impact study",
+        "category": "traffic",
+        "source": "review_letter",
+        "application": "PB-24-07",
+        "doc_type": "review_letter",
+        "date": "2024-08-29",
+        "item_text": [
+          "Traffic impact study prepared by a licensed professional engineer for any use generating more than 100 peak hour trips. "
+        ]
+      },
+      {
+        "text": "The Board Engineer did not support the waiver for the Traffic Impact Study; the applicant will be required to submit a traffic study prior to the next hearing.",
+        "kind": "checklist",
+        "disposition": "denied",
+        "items": [
+          "14",
+          "22"
+        ],
+        "topic": "traffic impact study",
+        "category": "traffic",
+        "source": "minutes",
+        "application": "PB-24-07",
+        "doc_type": "minutes",
+        "date": "2024-09-12",
+        "item_text": [
+          "Environmental Impact Statement per Section 190-35. (W)",
+          "Traffic impact study prepared by a licensed professional engineer for any use generating more than 100 peak hour trips. "
+        ]
+      },
+      {
+        "text": "WHEREAS, the Applicant requested a design waiver from the fifty (50) foot buffer requirement of Section 190-60, which the Board denied, the Applicant having agreed to provide the full buffer.",
+        "kind": "design",
+        "disposition": "denied",
+        "items": [
+          "190-60"
+        ],
+        "topic": null,
+        "category": "landscaping",
+        "source": "resolution",
+        "application": "PB-2024-18",
+        "doc_type": "resolution",
+        "date": "2024-09-12",
+        "item_text": []
+      }
+    ],
+    "requested_or_deferred": [
+      {
+        "text": "COMPLETENESS The applicant has requested waivers from the following checklist items: 1.",
+        "kind": "checklist",
+        "disposition": "requested",
+        "items": [],
+        "topic": null,
+        "category": "completeness",
+        "source": "review_letter",
+        "application": "PB-24-07",
+        "doc_type": "review_letter",
+        "date": "2024-08-29",
+        "item_text": []
+      }
+    ]
+  },
+  "conditions": {
+    "n_resolutions": 1,
+    "decisions": {
+      "approved": 1
+    },
+    "category_counts": {
+      "fees_escrow": 2,
+      "comply_with_review_letters": 1,
+      "outside_agencies": 1,
+      "plan_corrections": 1,
+      "landscaping": 1,
+      "lighting": 1,
+      "operations": 1
+    },
+    "common_conditions": [
+      {
+        "category": "comply_with_review_letters",
+        "count": 1,
+        "example": "The Applicant shall comply with all comments in the Board Engineer's review letter dated August 29, 2024 and the Board Planner's review letter dated August 30, 2024, except as modified by the testimony at the hearing.",
+        "standard": false
+      },
+      {
+        "category": "outside_agencies",
+        "count": 1,
+        "example": "The Applicant shall obtain all required outside agency approvals, including but not limited to the Somerset-Union Soil Conservation District, the County Planning Board and the Township Municipal Utilities Authority.",
+        "standard": true
+      },
+      {
+        "category": "plan_corrections",
+        "count": 1,
+        "example": "The Applicant shall submit revised plans incorporating the conditions of this approval for review and approval by the Board Engineer prior to the signing of the plans.",
+        "standard": false
+      },
+      {
+        "category": "landscaping",
+        "count": 1,
+        "example": "The Applicant shall provide a 50-foot landscaped buffer with evergreen plantings along the residential property line, as shown on the revised landscape plan.",
+        "standard": false
+      },
+      {
+        "category": "fees_escrow",
+        "count": 1,
+        "example": "The Applicant shall post performance guarantees and inspection fees in accordance with Section 190-70 of the Township Code prior to the issuance of any construction permits.",
+        "standard": true
+      },
+      {
+        "category": "lighting",
+        "count": 1,
+        "example": "All site lighting shall be full cutoff and shall not exceed 0.5 foot-candles at any property line.",
+        "standard": false
+      },
+      {
+        "category": "fees_escrow",
+        "count": 1,
+        "example": "The Applicant shall pay all outstanding escrow fees and taxes prior to the release of the signed plans.",
+        "standard": true
+      },
+      {
+        "category": "operations",
+        "count": 1,
+        "example": "Hours of truck deliveries shall be limited to 6:00 a.m. to 10:00 p.m.",
+        "standard": false
+      }
+    ]
+  },
+  "applications": {
+    "application_types": {
+      "preliminary & final major site plan": 3,
+      "minor site plan": 3,
+      "bulk variance (c)": 2,
+      "preliminary major subdivision": 2
+    },
+    "outcomes": {
+      "carried": 2,
+      "denied": 2,
+      "approved_with_conditions": 2,
+      "approved": 2
+    },
+    "recent_site_plans": [
+      {
+        "date": "2024-09-12",
+        "first_seen": "2024-08-08",
+        "board": "planning",
+        "application": "PB-24-07",
+        "applicant": "Maple Street Holdings, LLC",
+        "block_lots": [
+          {
+            "block": "412",
+            "lots": "3.01"
+          }
+        ],
+        "types": [
+          "preliminary & final major site plan",
+          "bulk variance (c)"
+        ],
+        "status": "carried",
+        "hearings": 3
+      },
+      {
+        "date": "2024-09-12",
+        "first_seen": "2024-08-08",
+        "board": "planning",
+        "application": "PB-24-09",
+        "applicant": "Harbor Logistics, Inc.",
+        "block_lots": [
+          {
+            "block": "7",
+            "lots": "12 & 13"
+          }
+        ],
+        "types": [
+          "minor site plan"
+        ],
+        "status": "denied",
+        "hearings": 3
+      }
+    ],
+    "n_site_plan_applications": 2
+  },
+  "checklist_items": [
+    {
+      "number": "1",
+      "section": "\u00a7 190-31 Submission requirements; checklist.",
+      "checklist": "site plan",
+      "text": "Key map at a scale of not less than 1\" = 1,000'.",
+      "topic": "key map / location map",
+      "waivable": null
+    },
+    {
+      "number": "2",
+      "section": "\u00a7 190-31 Submission requirements; checklist.",
+      "checklist": "site plan",
+      "text": "Boundary and topographic survey with contours at two-foot intervals.",
+      "topic": "survey / topography",
+      "waivable": null
+    },
+    {
+      "number": "3",
+      "section": "\u00a7 190-31 Submission requirements; checklist.",
+      "checklist": "site plan",
+      "text": "Stormwater management report demonstrating compliance with N.J.A.C. 7:8.",
+      "topic": "stormwater management report",
+      "waivable": null
+    },
+    {
+      "number": "1",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Completed application form, signed by the applicant and owner. (NW)",
+      "topic": null,
+      "waivable": false
+    },
+    {
+      "number": "2",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Application and escrow fees per Section 190-70. (NW)",
+      "topic": "fee / escrow",
+      "waivable": false
+    },
+    {
+      "number": "3",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Certification that taxes are paid to date. (NW)",
+      "topic": null,
+      "waivable": false
+    },
+    {
+      "number": "4",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Certified list of property owners within 200 feet. (NW)",
+      "topic": "200-foot radius / property owner list",
+      "waivable": false
+    },
+    {
+      "number": "5",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Corporate disclosure statement pursuant to N.J.S.A. 40:55D-48.1. (NW)",
+      "topic": "deed / easement / title",
+      "waivable": false
+    },
+    {
+      "number": "6",
+      "section": "GENERAL REQUIREMENTS \u2013 ALL APPLICATIONS",
+      "checklist": "general",
+      "text": "Twelve (12) copies of plans at 24\" x 36\" and one digital PDF copy. (W)",
+      "topic": "digital / electronic submission",
+      "waivable": true
+    },
+    {
+      "number": "7",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Key map at a scale of not less than 1\" = 1,000' showing the site in relation to surrounding streets and zone boundaries.",
+      "topic": "key map / location map",
+      "waivable": null
+    },
+    {
+      "number": "8",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Zoning table listing required, existing and proposed bulk standards and all variances requested. (NW)",
+      "topic": "zoning / bulk table",
+      "waivable": false
+    },
+    {
+      "number": "9",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Boundary and topographic survey signed and sealed by a New Jersey licensed land surveyor, with contours at 2-foot intervals extending 100 feet beyond the property. (W)",
+      "topic": "survey / topography",
+      "waivable": true
+    },
+    {
+      "number": "10",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Grading and drainage plan with spot elevations. (W)",
+      "topic": "stormwater management report",
+      "waivable": true
+    },
+    {
+      "number": "11",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Stormwater management report demonstrating compliance with N.J.A.C. 7:8, including soil permeability testing. (W)",
+      "topic": "stormwater management report",
+      "waivable": true
+    },
+    {
+      "number": "12",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Landscape plan prepared by a licensed landscape architect. (W)",
+      "topic": "landscape plan",
+      "waivable": true
+    },
+    {
+      "number": "13",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Lighting plan with photometric data and fixture details. (W)",
+      "topic": "lighting plan",
+      "waivable": true
+    },
+    {
+      "number": "14",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Environmental Impact Statement per Section 190-35. (W)",
+      "topic": "environmental impact statement",
+      "waivable": true
+    },
+    {
+      "number": "15",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Architectural floor plans and elevations. (W)",
+      "topic": "architectural plans",
+      "waivable": true
+    },
+    {
+      "number": "16",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Soil erosion and sediment control plan. (W)",
+      "topic": "soil erosion plan",
+      "waivable": true
+    },
+    {
+      "number": "17",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Utility plan showing sanitary sewer, water, gas and electric service. (W)",
+      "topic": "utility plan",
+      "waivable": true
+    },
+    {
+      "number": "18",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Sign plan showing location, size, and illumination of all signs. (W)",
+      "topic": "signage plan",
+      "waivable": true
+    },
+    {
+      "number": "19",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Truck turning templates and sight triangle easements. (W)",
+      "topic": "parking / circulation plan",
+      "waivable": true
+    },
+    {
+      "number": "20",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Aerial photograph of the site and surrounding 200 feet. (W)",
+      "topic": "aerial photograph",
+      "waivable": true
+    },
+    {
+      "number": "21",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Construction details for all site improvements. (W)",
+      "topic": "construction details",
+      "waivable": true
+    },
+    {
+      "number": "22",
+      "section": "PRELIMINARY MAJOR SITE PLAN",
+      "checklist": "preliminary major site plan",
+      "text": "Traffic impact study prepared by a licensed professional engineer for any use generating more than 100 peak hour trips. (W)",
+      "topic": "traffic impact study",
+      "waivable": true
+    }
+  ],
+  "zoning_code": {
+    "code_url": "https://ecode360.com/EX1234",
+    "code_id": "EX1234",
+    "chapters": [
+      "Chapter 190 Land Use and Development",
+      "Chapter 200 Stormwater Management"
+    ],
+    "sections_by_topic": {
+      "site_plan_procedure": [
+        "\u00a7 190-30 Site plan review required. (Chapter 190 Land Use and Development)"
+      ],
+      "checklist": [
+        "\u00a7 190-31 Submission requirements; checklist. (Chapter 190 Land Use and Development)",
+        "\u00a7 190-32 Waiver of submission requirements. (Chapter 190 Land Use and Development)"
+      ],
+      "completeness_waiver": [
+        "\u00a7 190-32 Waiver of submission requirements. (Chapter 190 Land Use and Development)"
+      ],
+      "parking": [
+        "\u00a7 190-45 Off-street parking requirements. (Chapter 190 Land Use and Development)"
+      ],
+      "landscaping": [
+        "\u00a7 190-60 Buffers and landscaping. (Chapter 190 Land Use and Development)"
+      ]
+    },
+    "checklist_items_in_code": 3,
+    "checklist_items": [
+      {
+        "number": "1",
+        "section": "\u00a7 190-31 Submission requirements; checklist.",
+        "checklist": "site plan",
+        "text": "Key map at a scale of not less than 1\" = 1,000'.",
+        "topic": "key map / location map",
+        "waivable": null
+      },
+      {
+        "number": "2",
+        "section": "\u00a7 190-31 Submission requirements; checklist.",
+        "checklist": "site plan",
+        "text": "Boundary and topographic survey with contours at two-foot intervals.",
+        "topic": "survey / topography",
+        "waivable": null
+      },
+      {
+        "number": "3",
+        "section": "\u00a7 190-31 Submission requirements; checklist.",
+        "checklist": "site plan",
+        "text": "Stormwater management report demonstrating compliance with N.J.A.C. 7:8.",
+        "topic": "stormwater management report",
+        "waivable": null
+      }
+    ],
+    "waiver_provisions": [
+      {
+        "section": "\u00a7 190-32 Waiver of submission requirements.",
+        "text": "The Board may waive any checklist item upon a finding that the information is not necessary to make an informed decision."
+      },
+      {
+        "section": "\u00a7 190-32 Waiver of submission requirements.",
+        "text": "Items 1 through 5 of the general requirements shall not be waived."
+      }
+    ],
+    "attachments": [
+      {
+        "title": "Schedule A Site Plan Checklist",
+        "url": "https://ecode360.com/attachment/EX1234/EX1234-190a Schedule A Site Plan Checklist.pdf"
+      }
+    ]
+  }
+}
