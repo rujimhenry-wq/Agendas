@@ -35,7 +35,7 @@ CHAPTER_WANT = re.compile(
     r"unified\s+development|planning\s+board|board\s+of\s+adjustment|stormwater|storm\s+water|"
     r"sign(s|age)?\b|parking|landscap|lighting|tree|affordable|fees|escrow|flood|steep\s+slope|"
     r"environmental|soil|design\s+standards|improvements|performance\s+standards|redevelopment", re.I)
-CHAPTER_SKIP = re.compile(r"christmas|sales|commission\b|committee\b|authority\b|license|peddl|garage\s+sale|yard\s+sale|holiday", re.I)
+CHAPTER_SKIP = re.compile(r"christmas|sales|board\s+of\s+health|health\s+fees|commission\b|committee\b|authority\b|license|peddl|garage\s+sale|yard\s+sale|holiday", re.I)
 CHAPTER_PRIORITY = re.compile(r"zoning|land\s+use|land\s+development|development\s+regulations|site\s+plan|subdivision|unified", re.I)
 
 TOPICS: dict[str, re.Pattern] = {
@@ -116,9 +116,12 @@ def fetch_chapter(fetcher: Fetcher, code_id: Optional[str], chapter: dict) -> di
     urls.append(chapter["url"])
     html, final = "", chapter["url"]
     for u in urls:
-        r = fetcher.get(u, max_age_hours=24 * 30)
-        if r.ok and r.is_html and len(r.content) > 200:
-            html, final = r.text, r.final_url
+        for attempt in range(2):
+            r = fetcher.get(u, max_age_hours=24 * 30, use_cache=attempt == 0)
+            if r.ok and r.is_html and len(r.content) > 200 and (re.search(r"<h[1-6]|sectionTitle", r.text) or "print/" not in u):
+                html, final = r.text, r.final_url
+                break
+        if html:
             break
     if not html:
         return {**chapter, "sections": [], "attachments": [], "error": "fetch failed"}
@@ -219,6 +222,40 @@ def _waiver_provisions(sections: list[dict]) -> list[dict]:
     return out[:60]
 
 
+ATTACHMENT_WANT = re.compile(r"checklist|application\s+requirements|submission|schedule\s+of\s+(area|bulk|zone|district|space|dimensional|yard)|bulk\s+(table|schedule|requirements)|area\s+and\s+bulk|fee\s+schedule|design\s+guidelines|parking\s+(schedule|standards)|sign\s+(matrix|schedule)", re.I)
+
+
+def fetch_attachments(fetcher: Fetcher, out_dir, attachments: list[dict], max_n: int = 12) -> list[dict]:
+    """Download checklist / bulk-schedule attachments, extract their text and
+    parse checklist-like ones into items. Returns the enriched attachment list."""
+    from .extract import extract_file
+    from .parse.checklist import parse_checklist
+    att_dir = out_dir / "attachments"
+    att_dir.mkdir(parents=True, exist_ok=True)
+    n = 0
+    for a in attachments:
+        if not ATTACHMENT_WANT.search(a.get("title", "") + " " + a.get("url", "")) or not re.search(r"\.pdf(\?|$)", a["url"], re.I):
+            continue
+        if n >= max_n:
+            break
+        n += 1
+        r = fetcher.get(a["url"])
+        if not r.ok or not r.content.startswith(b"%PDF"):
+            a["error"] = r.error or f"HTTP {r.status}"
+            continue
+        path = att_dir / (slugify(a["title"] or a["url"].rsplit("/", 1)[-1])[:80] + ".pdf")
+        path.write_bytes(r.content)
+        info = extract_file(path, ocr=True)
+        (path.with_suffix(".txt")).write_text(info["text"], encoding="utf-8")
+        a["local_path"] = str(path)
+        a["chars"] = info["chars"]
+        if re.search(r"checklist|application\s+requirements|submission", a.get("title", ""), re.I):
+            parsed = parse_checklist(info["text"], title=a["title"])
+            a["checklist_items"] = parsed["items"]
+            a["checklists"] = parsed["checklists"]
+    return attachments
+
+
 def fetch_code(fetcher: Fetcher, muni_slug: str, code_url: str, max_chapters: int = 25) -> dict:
     code_id = code_id_from_url(code_url)
     if not code_id:
@@ -236,15 +273,20 @@ def fetch_code(fetcher: Fetcher, muni_slug: str, code_url: str, max_chapters: in
         for t in s["topics"]:
             by_topic.setdefault(t, []).append({"chapter": s["chapter"], "heading": s["heading"], "chars": s["chars"],
                                                "url": s["chapter_url"] + ("#" + s["anchor"] if s["anchor"] else "")})
+    out_dir = SETTINGS.code_dir / muni_slug
+    attachments = fetch_attachments(fetcher, out_dir, [a for c in chapters for a in c["attachments"]])
+    checklist_items = _extract_checklist_items(all_sections)
+    for a in attachments:
+        for it in a.get("checklist_items", []):
+            checklist_items.append(dict(it, section=a["title"], source="attachment"))
     result = {
         "code_url": code_url, "code_id": code_id, "n_chapters_total": len(toc), "n_chapters_fetched": len(chapters),
         "chapters": [{k: v for k, v in c.items() if k != "sections"} | {"n_sections": len(c["sections"])} for c in chapters],
         "sections_by_topic": by_topic,
-        "checklist_items": _extract_checklist_items(all_sections),
+        "checklist_items": checklist_items,
         "waiver_provisions": _waiver_provisions(all_sections),
-        "attachments": [a for c in chapters for a in c["attachments"]],
+        "attachments": attachments,
     }
-    out_dir = SETTINGS.code_dir / muni_slug
     out_dir.mkdir(parents=True, exist_ok=True)
     for c in chapters:
         (out_dir / f"{slugify(c['title'])[:80]}.txt").write_text(

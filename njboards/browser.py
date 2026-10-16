@@ -69,11 +69,19 @@ class Browser:
         self._ctx = self._browser.new_context(user_agent=self.ua, viewport={"width": 1280, "height": 900})
         self._page = self._ctx.new_page()
 
-    def get(self, url: str, timeout: float = 90.0, max_wait: float = 25.0) -> tuple[int, bytes, str, str]:
-        """Return (status, html_bytes, content_type, final_url). Waits out a challenge page."""
+    def get(self, url: str, timeout: float = 180.0, max_wait: float = 45.0) -> tuple[int, bytes, str, str]:
+        """Return (status, html_bytes, content_type, final_url). Waits out a challenge page.
+
+        Print views of long chapters run to several megabytes, so the
+        navigation timeout is generous and a timed-out navigation is retried once."""
         self._start()
         assert self._page is not None
-        resp = self._page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+        try:
+            resp = self._page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+        except Exception as e:  # noqa: BLE001 - usually a navigation timeout on a huge page
+            log.info("browser retry for %s after: %s", url, str(e)[:120])
+            self._page.wait_for_timeout(3000)
+            resp = self._page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000 * 2)
         status = resp.status if resp else 0
         deadline = time.time() + max_wait
         html = self._page.content()

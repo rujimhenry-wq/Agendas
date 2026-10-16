@@ -46,7 +46,7 @@ CRED_ROLE = [
 ]
 
 _FIRM_LIKE = re.compile(r"^(of|with|from|and|or)\s|\b(LLC|L\.L\.C\.|Inc|Group|Associates|Assoc|Engineering|Engineers|Architects?|Architecture|Planning|Consultants|Consulting|Partners|Design|P\.?C|P\.?A|LLP|Company|Corp|Law|Surveying|Landscape|Studio|Services)\.?$", re.I)
-NON_NAME_WORDS = set("""element program ifyes yes no department vote recorded introduced ordinance report meeting public hearing comments comment review approval
+NON_NAME_WORDS = set("""for ordinary element program ifyes yes no department vote recorded introduced ordinance report meeting public hearing comments comment review approval
 board township borough city town village committee council planning zoning minutes agenda resolution application applicant
 block lot lots street avenue road site plan plans variance subdivision county state jersey police fire health chairman chairwoman
 mayor president secretary member members present absent motion second roll call adjourn adjournment open closed session item items
