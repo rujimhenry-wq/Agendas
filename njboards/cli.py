@@ -24,7 +24,7 @@ from .ecode import fetch_code
 from .extract import extract_all
 from .fetch import fetch_all
 from .http import Fetcher
-from .municipalities import (export_from_db, find_website, import_from_wikipedia, load_into_db, make_slug, read_csv, write_csv)
+from .municipalities import (export_from_db, find_website, import_from_wikipedia, load_into_db, make_slug, read_csv, write_csv)  # noqa: E501
 from .pipeline import run_all, run_discover, run_parse
 from .report import write_report, write_summary_csv
 
@@ -106,13 +106,19 @@ def import_towns(find_websites: bool, limit: Optional[int]) -> None:
         if slug not in {r["slug"] for r in merged}:
             merged.append(old)
     if find_websites:
+        from .municipalities import website_from_wikipedia
+        fetcher.s.delay_seconds = max(fetcher.s.delay_seconds, 2.5)  # be gentle with Wikipedia
         for r in merged:
-            if not r.get("website"):
-                w = find_website(fetcher, r["name"], r.get("county"))
-                if w:
-                    r["website"] = w
-                    r["notes"] = (r.get("notes") or "") + " website auto-found; verify"
-                    click.echo(f"{r['slug']}: {w}")
+            if r.get("website"):
+                continue
+            w = website_from_wikipedia(fetcher, r.get("wiki_url", "")) or find_website(fetcher, r["name"], r.get("county"))
+            if w:
+                r["website"] = w
+                r["notes"] = (r.get("notes") or "") + " website from Wikipedia infobox; verify"
+                click.echo(f"{r['slug']}: {w}")
+            else:
+                click.echo(f"{r['slug']}: no website found", err=True)
+            write_csv(SETTINGS.municipalities_file, merged)  # checkpoint
     write_csv(SETTINGS.municipalities_file, merged)
     n = load_into_db(db)
     click.echo(f"{len(rows)} municipalities imported; {n} rows now in {SETTINGS.municipalities_file}")
@@ -136,11 +142,24 @@ def find_website_cmd(slug: str) -> None:
 @click.option("--county")
 @click.option("--all", "all_", is_flag=True)
 @click.option("--max-pages", type=int, default=None)
-def discover(slug: Optional[str], county: Optional[str], all_: bool, max_pages: Optional[int]) -> None:
+@click.option("--workers", type=int, default=1, help="towns to crawl side by side (each town is its own host)")
+@click.option("--skip-done", is_flag=True, help="skip towns that already have boards discovered")
+def discover(slug: Optional[str], county: Optional[str], all_: bool, max_pages: Optional[int], workers: int, skip_done: bool) -> None:
     """Find board pages, document links and the online code for a town."""
     db = DB()
+    slugs = [s for s in _slugs(db, slug, county, all_) if db.municipality(s)["website"]]
+    if skip_done:
+        slugs = [s for s in slugs if not db.boards(db.muni_id(s))]
+    if workers > 1:
+        from .parallel import run_parallel
+        db.close()
+        def report(r):
+            click.echo(f"{r['slug']}: " + (f"{r['result']['documents_found']} docs, boards {[b['kind'] for b in r['result']['boards']]}" if r["ok"] else f"ERROR {r['error']}"))
+        res = run_parallel(slugs, "discover", workers=workers, progress=report, max_pages=max_pages)
+        click.echo(f"done: {sum(1 for r in res if r['ok'])} ok, {sum(1 for r in res if not r['ok'])} failed")
+        return
     fetcher = Fetcher()
-    for s in _slugs(db, slug, county, all_):
+    for s in slugs:
         try:
             _echo_json(run_discover(fetcher, db, s, max_pages=max_pages))
         except Exception as e:  # noqa: BLE001
@@ -240,12 +259,25 @@ def report(slug: Optional[str], county: Optional[str], all_: bool) -> None:
 @click.option("--limit", type=int, default=None, help="max documents to download per town")
 @click.option("--types", help="comma-separated doc types to download")
 @click.option("--no-code", is_flag=True, help="skip eCode360")
-def run(slug: Optional[str], county: Optional[str], all_: bool, limit: Optional[int], types: Optional[str], no_code: bool) -> None:
+@click.option("--workers", type=int, default=1, help="towns to process side by side")
+def run(slug: Optional[str], county: Optional[str], all_: bool, limit: Optional[int], types: Optional[str], no_code: bool, workers: int) -> None:
     """Full pipeline for one town, a county, or everything."""
     db = DB()
+    slugs = [s for s in _slugs(db, slug, county, all_) if db.municipality(s)["website"]]
+    if workers > 1:
+        from .parallel import run_parallel
+        db.close()
+        def report(r):
+            click.echo(f"{r['slug']}: " + ("ok" if r["ok"] else f"ERROR {r['error']}"))
+        run_parallel(slugs, "run", workers=workers, progress=report, fetch_limit=limit, with_code=not no_code,
+                     doc_types=types.split(",") if types else None)
+        db = DB()
+        profiles = [analyze_municipality(db, s) for s in slugs]
+        click.echo(f"summary: {write_summary_csv(profiles)}")
+        return
     fetcher = Fetcher()
     profiles = []
-    for s in _slugs(db, slug, county, all_):
+    for s in slugs:
         try:
             summary = run_all(fetcher, db, s, fetch_limit=limit, with_code=not no_code,
                               doc_types=types.split(",") if types else None)
@@ -256,6 +288,35 @@ def run(slug: Optional[str], county: Optional[str], all_: bool, limit: Optional[
             db.set_muni_fields(s, status=f"error: {e}"[:200])
     if profiles:
         click.echo(f"summary: {write_summary_csv(profiles)}")
+
+
+@main.command()
+@click.option("--county")
+@click.option("--all", "all_", is_flag=True, default=True, help="all towns with a website (default)")
+@click.option("--workers", type=int, default=6)
+@click.option("--horizon", type=int, default=30, help="days ahead to look for agendas")
+@click.option("--limit", type=int, default=12, help="documents to download per town this week")
+@click.option("--since", default=None, help="YYYY-MM-DD; default: last digest date or 7 days ago")
+@click.option("--no-crawl", is_flag=True, help="only build the digest from what is already parsed")
+def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit: int, since: Optional[str], no_crawl: bool) -> None:
+    """Weekly refresh of every town plus the statewide digest (data/digests/<date>.md)."""
+    from datetime import date, timedelta
+    from .digest import build_digest, last_digest_date, write_digest
+    db = DB()
+    slugs = [m["slug"] for m in db.municipalities(county)] if county else [m["slug"] for m in db.municipalities()]
+    slugs = [s for s in slugs if db.municipality(s)["website"]]
+    if not no_crawl:
+        from .parallel import run_parallel
+        db.close()
+        def report(r):
+            click.echo(f"{r['slug']}: " + (str(r["result"]) if r["ok"] else f"ERROR {r['error']}"))
+        res = run_parallel(slugs, "weekly", workers=workers, progress=report, horizon_days=horizon, fetch_limit=limit)
+        click.echo(f"refresh done: {sum(1 for r in res if r['ok'])} ok, {sum(1 for r in res if not r['ok'])} failed")
+        db = DB()
+    since_d = date.fromisoformat(since) if since else (last_digest_date() or date.today() - timedelta(days=7))
+    d = build_digest(db, since=since_d, horizon_days=horizon)
+    path = write_digest(d)
+    click.echo(f"digest: {path} ({d['n_towns_with_data']} towns, {d['n_upcoming_items']} upcoming items, {d['n_recent_decisions']} recent decisions)")
 
 
 @main.command()

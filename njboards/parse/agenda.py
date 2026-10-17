@@ -69,10 +69,11 @@ def _applicant_name(chunk: str, heading: str) -> Optional[str]:
         return squash(m.group(1))
     # "PB-24-03  ABC Holdings, LLC – Preliminary and Final Site Plan"
     h = re.sub(r"^\s*(?:\d{1,3}|[A-Za-z])\s*[.):\-]\s+", "", heading)
-    h = re.sub(r"^\s*(?:Application|Appl\.|App\.|Case|Docket|Cal\.)?\s*(?:No\.?|#)?\s*[A-Z]{0,5}[-\s]?\d{1,4}[-/]\d{1,4}(?:[-/]\d{1,4})?[A-Z]?\s*[-–:,]?\s*", "", h, flags=re.I)
+    h = re.sub(r"^\s*(?:Application|Appl\.?|App\.?|Case|Docket|Cal\.|File)?\s*(?:No\.?|#|Number)?\s*[A-Z]{0,5}[-\s]?\d{1,4}(?:[-/]\d{1,4}){0,2}[A-Z]?\s*[-–:,.]?\s*", "", h, flags=re.I)
+    h = re.sub(r"^\s*(?:Block|Lot)s?\s*[\d.,&\s]+(?:Lots?\s*[\d.,&\s]+)?[-–:,]?\s*", "", h, flags=re.I)
     parts = re.split(r"\s+[–\-—]\s+|:\s+|\s*,\s*(?=(?:Block|Lot|\d+\s+[A-Z]|Preliminary|Final|Minor|Major|Site|Use|Bulk|Variance|Subdivision))", h, maxsplit=1)
     cand = squash(parts[0]) if parts else ""
-    if 3 <= len(cand) <= 100 and not re.match(r"^(Block|Lot|Preliminary|Final|Minor|Major|Site|Use|Bulk|Variance|Subdivision|Resolution|Public)", cand, re.I):
+    if 3 <= len(cand) <= 100 and not re.match(r"^(Block|Lot|Preliminary|Final|Minor|Major|Site|Use|Bulk|Variance|Subdivision|Resolution|Public|App\.?\s*\d|Application|Case|Docket|Continued|Carried|Hearing|Memorializ)", cand, re.I):
         return cand.rstrip(",;")
     return None
 

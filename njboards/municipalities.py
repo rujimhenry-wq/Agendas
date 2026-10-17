@@ -18,7 +18,7 @@ from .util import slugify
 log = logging.getLogger("njboards.munis")
 
 CSV_FIELDS = ["slug", "name", "county", "muni_type", "website", "ecode_id", "ecode_url",
-              "planning_url", "zoning_url", "notes"]
+              "planning_url", "zoning_url", "notes", "wiki_url"]
 
 WIKI_LIST_URL = "https://en.wikipedia.org/wiki/List_of_municipalities_in_New_Jersey"
 NJ_COUNTIES = [
@@ -77,6 +77,7 @@ def load_into_db(db: DB, path: Optional[Path] = None) -> int:
 
 
 def export_from_db(db: DB, path: Path) -> int:
+    existing = {r["slug"]: r for r in read_csv(path)}
     rows = []
     for m in db.municipalities():
         boards = {b["kind"]: b["url"] for b in db.boards(m["id"])}
@@ -84,7 +85,7 @@ def export_from_db(db: DB, path: Path) -> int:
             "slug": m["slug"], "name": m["name"], "county": m["county"], "muni_type": m["muni_type"],
             "website": m["website"], "ecode_id": m["ecode_id"], "ecode_url": m["ecode_url"],
             "planning_url": boards.get("planning", ""), "zoning_url": boards.get("zoning", ""),
-            "notes": m["notes"],
+            "notes": m["notes"], "wiki_url": existing.get(m["slug"], {}).get("wiki_url", ""),
         })
     write_csv(path, rows)
     return len(rows)
@@ -115,12 +116,14 @@ def import_from_wikipedia(fetcher: Fetcher) -> list[dict]:
             name = re.sub(r"\[.*?\]", "", name).strip()
             if not name or name.lower() in ("municipality", "name"):
                 continue
+            link = tds[name_i].find("a", href=re.compile(r"^/wiki/"))
+            wiki_url = "https://en.wikipedia.org" + link["href"] if link else ""
             county = tds[county_i].get_text(" ", strip=True) if county_i is not None else ""
             county = county.replace(" County", "").strip()
             mtype = tds[type_i].get_text(" ", strip=True) if type_i is not None else ""
             if county and county not in NJ_COUNTIES:
                 continue
-            rows.append({"slug": make_slug(name, county), "name": name, "county": county, "muni_type": mtype})
+            rows.append({"slug": make_slug(name, county), "name": name, "county": county, "muni_type": mtype, "wiki_url": wiki_url})
     # dedupe
     seen, out = set(), []
     for r in rows:
@@ -131,6 +134,27 @@ def import_from_wikipedia(fetcher: Fetcher) -> list[dict]:
 
 
 # --- website discovery ------------------------------------------------------
+
+_INFOBOX_BAD = re.compile(r"wikipedia|wikimedia|archive\.org|census\.gov|facebook|twitter", re.I)
+
+
+def website_from_wikipedia(fetcher: Fetcher, wiki_url: str) -> Optional[str]:
+    """The municipality's Wikipedia article infobox carries an official 'Website' row."""
+    if not wiki_url:
+        return None
+    r = fetcher.get(wiki_url, max_age_hours=24 * 90)
+    if not r.ok:
+        return None
+    soup = BeautifulSoup(r.text, "lxml")
+    th = soup.find("th", string=re.compile(r"^\s*Website\s*$"))
+    if not th:
+        return None
+    a = th.find_next("a", href=re.compile(r"^https?://"))
+    if not a or _INFOBOX_BAD.search(a["href"]):
+        return None
+    p = urlparse(a["href"].strip())
+    return f"{p.scheme}://{p.netloc.lower()}/"
+
 
 _BAD_HOSTS = re.compile(r"wikipedia|facebook|twitter|instagram|linkedin|yelp|zillow|realtor|nj\.com|patch\.com|"
                         r"tapinto|google|youtube|njspotlight|usnews|niche\.com|city-data|wikimapia|mapquest|"

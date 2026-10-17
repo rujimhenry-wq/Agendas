@@ -157,7 +157,12 @@ class Fetcher:
                     return Response(url, r.final_url, r.status, r.content, r.content_type,
                                     error="blocked by JavaScript challenge (install playwright for the browser fallback)")
                 if r.status in (429, 500, 502, 503, 504) and attempt < self.s.max_retries:
-                    time.sleep(2 ** attempt * 2)
+                    retry_after = resp.headers.get("Retry-After") if 'resp' in dir() else None
+                    try:
+                        wait = float(retry_after) if retry_after else (30.0 if r.status == 429 else 2 ** attempt * 2)
+                    except ValueError:
+                        wait = 30.0
+                    time.sleep(min(wait, 120))
                     continue
                 if r.ok and use_cache:
                     self._cache_put(r)
