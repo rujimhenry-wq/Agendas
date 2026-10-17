@@ -348,8 +348,11 @@ def prune() -> None:
     db = DB()
     rows = read_csv(SETTINGS.municipalities_file)
     stats = _prune(db, {r["slug"] for r in rows}, {r["slug"]: r.get("website") or "" for r in rows})
-    # parsed JSON of removed documents is orphaned; analyze/digest only read JSON for documents still in the db
-    click.echo(str(stats))
+    import shutil
+    for slug in stats["purged_slugs"]:  # parsed text/JSON of purged records would otherwise feed the digest
+        for d in (SETTINGS.parsed_dir / slug, SETTINGS.text_dir / slug, SETTINGS.raw_dir / slug):
+            shutil.rmtree(d, ignore_errors=True)
+    click.echo(f"{ {k: v for k, v in stats.items() if k != 'purged_slugs'} } purged: {len(stats['purged_slugs'])} towns")
 
 
 @main.command()

@@ -220,7 +220,7 @@ def prune(db: "DB", valid_slugs: set[str], websites: dict[str, str]) -> dict:
     """Remove municipalities no longer in the list, and the boards/documents of
     municipalities whose website changed (their records came from the wrong site)."""
     from urllib.parse import urlparse
-    stats = {"municipalities_removed": 0, "documents_removed": 0, "boards_removed": 0}
+    stats = {"municipalities_removed": 0, "documents_removed": 0, "boards_removed": 0, "purged_slugs": []}
     with db.tx() as c:
         for m in db.municipalities():
             slug, mid = m["slug"], m["id"]
@@ -247,6 +247,8 @@ def prune(db: "DB", valid_slugs: set[str], websites: dict[str, str]) -> dict:
                     c.execute("DELETE FROM pages WHERE muni_id=?", (mid,))
                 stats["documents_removed"] += n_docs
                 stats["boards_removed"] += n_boards
+                if n_docs or n_boards or slug not in valid_slugs:
+                    stats["purged_slugs"].append(slug)
     return stats
 
 
