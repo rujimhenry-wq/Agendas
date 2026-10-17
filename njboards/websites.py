@@ -130,7 +130,6 @@ def guess_website(fetcher: Fetcher, name: str, muni_type: str = "", max_tries: i
     fetcher.s.delay_seconds = min(fetcher.s.delay_seconds, 0.5)
     fetcher.s.max_retries = 0
     fetcher.s.timeout_seconds = min(fetcher.s.timeout_seconds, 10.0)
-    fetcher.s.respect_robots = False  # a HEAD-like existence probe of the homepage; robots re-applies at discovery
     for host in candidate_domains(name, muni_type)[:max_tries]:
         for scheme in ("https://",):
             url = scheme + host + "/"
