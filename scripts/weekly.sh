@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 WORKERS="${1:-8}"
 python3 -m pip install -q -e . >/dev/null 2>&1 || python3 -m pip install -q -r requirements.txt
 njboards init
-njboards weekly --workers "$WORKERS" --limit 12 --horizon 35
+njboards weekly --workers "$WORKERS" --limit 10 --horizon 35 --pages 25 --skip-fresh 5
 # keep the discovered board pages so next week's run starts warm
 python3 - <<'PY'
 from njboards.db import DB

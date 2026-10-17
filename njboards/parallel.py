@@ -35,7 +35,8 @@ def _worker(slug: str, step: str, kwargs: dict, data_dir: str, settings_override
         elif step == "weekly":
             from .digest import weekly_town_pass
             out = weekly_town_pass(Fetcher(), db, slug, horizon_days=kwargs.get("horizon_days", 30),
-                                   fetch_limit=kwargs.get("fetch_limit", 12))
+                                   fetch_limit=kwargs.get("fetch_limit", 12), crawl_pages=kwargs.get("crawl_pages", 25),
+                                   ocr=kwargs.get("ocr", False))
         else:
             raise ValueError(step)
         return {"slug": slug, "ok": True, "result": out}

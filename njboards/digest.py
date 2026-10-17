@@ -38,7 +38,8 @@ def _dt(s: Optional[str]) -> Optional[date]:
 
 
 # --------------------------------------------------------------- per-town pass
-def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30, fetch_limit: int = 12) -> dict:
+def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30, fetch_limit: int = 12,
+                     crawl_pages: int = 25, ocr: bool = False) -> dict:
     """Refresh one town cheaply: re-crawl its known board pages (depth-limited),
     download agendas dated within the horizon plus the newest minutes and
     resolutions, extract and parse them."""
@@ -47,7 +48,7 @@ def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30
         return {"slug": slug, "skipped": "no website"}
     mid = m["id"]
     boards = [{"kind": b["kind"], "url": b["url"], "name": b["name"]} for b in db.boards(mid)]
-    disc = discover(fetcher, m["website"], max_pages=40 if boards else SETTINGS.max_pages_per_site, manual_boards=boards)
+    disc = discover(fetcher, m["website"], max_pages=crawl_pages if boards else SETTINGS.max_pages_per_site, manual_boards=boards)
     board_ids = {b["kind"]: db.upsert_board(mid, b["kind"], b["name"], b["url"], platform=disc.platform, source=b.get("source", "discovered")) for b in disc.boards}
     new = 0
     for d in disc.docs:
@@ -75,7 +76,7 @@ def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30
         from .fetch import fetch_document
         ok = fetch_document(fetcher, db, d, slug)
         stats["fetched" if ok else "errors"] += 1
-    stats["extracted"] = extract_all(db, slug, ocr=True)["extracted"]  # OCR when tesseract is installed
+    stats["extracted"] = extract_all(db, slug, ocr=ocr)["extracted"]
     stats["parsed"] = run_parse(db, slug)["parsed"]
     db.set_muni_fields(slug, status="weekly " + today.isoformat())
     return stats
@@ -117,7 +118,7 @@ def _load_parsed(slug: str) -> list[dict]:
     return out
 
 
-HEADING_ROW = re.compile(r"^\s*(?:[IVX]+\.|[A-Z]\.|\d+\.)?\s*(applications?|public\s+hearings?|new\s+business|old\s+business|resolutions?|minutes|completeness|memorializ\w*|discussion|adjournment|roll\s+call|open\s+(to\s+the\s+)?public|correspondence|unfinished\s+business|continued|carried|other\s+business|agenda|work\s*session)\s*:?\s*$", re.I)
+HEADING_ROW = re.compile(r"^\s*(?:[IVX]+\.|[A-Z]\.|\d+\.)?\s*(?:(?:applications?|public\s+hearings?|new\s+business|old\s+business|resolutions?|minutes|completeness|memorializ\w*|discussion|adjournment|roll\s+call|open\s+(?:to\s+the\s+)?public|correspondence|unfinished\s+business|continued(?:\s+applications?)?|carried|other\s+business|agenda|work\s*session|pending\s+applications?|hearings?)\s*[/&,]?\s*)+:?\s*$", re.I)
 JUNK_APPLICANT = re.compile(r"^\s*(\(?[a-z]\)?|application\s+documents?|documents?|app\.?|continued|carried|hearing|variance|site\s+plan|the|re|cont'?d?)\s*[:.]?\s*$", re.I)
 
 
@@ -125,6 +126,9 @@ def _clean_applicant(name: Optional[str]) -> Optional[str]:
     if not name:
         return None
     name = re.sub(r"\s*\((?:application\s+)?documents?\)\s*", " ", name, flags=re.I)
+    # cut trailing status text: "TESLA, INC. 1199 AMBOY AVE IS CARRIED TO DECEMBER 14"
+    name = re.split(r"\s+(?:is\s+|was\s+|has\s+been\s+)?(?:carried|continued|adjourned|postponed|rescheduled|withdrawn|tabled|approved|denied|dismissed)\b", name, maxsplit=1, flags=re.I)[0]
+    name = re.split(r"\s+(?:total\s+for\s+account|block\s+\d|lots?\s+\d|tax\s+map)\b", name, maxsplit=1, flags=re.I)[0]
     name = re.sub(r"\s*[-–]\s*(application\s+)?documents?\s*$", "", name, flags=re.I)
     name = squash(name).strip(" -–:,.")
     if not name or JUNK_APPLICANT.match(name) or len(name) < 3:
@@ -139,7 +143,7 @@ def _clean_applicant(name: Optional[str]) -> Optional[str]:
 
 def _is_real_item(it: dict) -> bool:
     heading = it.get("heading") or ""
-    if HEADING_ROW.match(heading):
+    if HEADING_ROW.match(heading) or HEADING_ROW.match(_app_key(it)):
         return False
     return bool(it.get("app_numbers") or it.get("block_lots") or it.get("applicant") or it.get("app_types"))
 

@@ -319,19 +319,28 @@ def run(slug: Optional[str], county: Optional[str], all_: bool, limit: Optional[
 @click.option("--limit", type=int, default=12, help="documents to download per town this week")
 @click.option("--since", default=None, help="YYYY-MM-DD; default: last digest date or 7 days ago")
 @click.option("--no-crawl", is_flag=True, help="only build the digest from what is already parsed")
-def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit: int, since: Optional[str], no_crawl: bool) -> None:
+@click.option("--pages", type=int, default=25, help="pages to re-crawl per town (known board pages are the seeds)")
+@click.option("--ocr", is_flag=True, help="OCR scanned PDFs (slow; agendas are usually text)")
+@click.option("--skip-fresh", type=int, default=0, metavar="DAYS", help="skip towns refreshed within DAYS (resume an interrupted run)")
+def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit: int, since: Optional[str], no_crawl: bool,
+           pages: int, ocr: bool, skip_fresh: int) -> None:
     """Weekly refresh of every town plus the statewide digest (data/digests/<date>.md)."""
     from datetime import date, timedelta
     from .digest import build_digest, last_digest_date, write_digest
     db = DB()
     slugs = [m["slug"] for m in db.municipalities(county)] if county else [m["slug"] for m in db.municipalities()]
     slugs = [s for s in slugs if db.municipality(s)["website"]]
+    if skip_fresh:
+        cutoff = (date.today() - timedelta(days=skip_fresh)).isoformat()
+        slugs = [s for s in slugs if not ((db.municipality(s)["status"] or "").startswith("weekly ") and db.municipality(s)["status"][7:] >= cutoff)]
+        click.echo(f"{len(slugs)} towns not refreshed in the last {skip_fresh} days")
     if not no_crawl:
         from .parallel import run_parallel
         db.close()
         def report(r):
             click.echo(f"{r['slug']}: " + (str(r["result"]) if r["ok"] else f"ERROR {r['error']}"))
-        res = run_parallel(slugs, "weekly", workers=workers, progress=report, horizon_days=horizon, fetch_limit=limit)
+        res = run_parallel(slugs, "weekly", workers=workers, progress=report, horizon_days=horizon, fetch_limit=limit,
+                           crawl_pages=pages, ocr=ocr)
         click.echo(f"refresh done: {sum(1 for r in res if r['ok'])} ok, {sum(1 for r in res if not r['ok'])} failed")
         db = DB()
     since_d = date.fromisoformat(since) if since else (last_digest_date() or date.today() - timedelta(days=7))
