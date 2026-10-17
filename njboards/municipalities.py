@@ -116,8 +116,8 @@ def import_from_wikipedia(fetcher: Fetcher) -> list[dict]:
             name = re.sub(r"\[.*?\]", "", name).strip()
             if not name or name.lower() in ("municipality", "name"):
                 continue
-            link = tds[name_i].find("a", href=re.compile(r"^/wiki/"))
-            wiki_url = "https://en.wikipedia.org" + link["href"] if link else ""
+            link = tds[name_i].find("a", href=re.compile(r"^(https?://en\.wikipedia\.org)?/wiki/"))
+            wiki_url = (link["href"] if link["href"].startswith("http") else "https://en.wikipedia.org" + link["href"]) if link else ""
             county = tds[county_i].get_text(" ", strip=True) if county_i is not None else ""
             county = county.replace(" County", "").strip()
             mtype = tds[type_i].get_text(" ", strip=True) if type_i is not None else ""
