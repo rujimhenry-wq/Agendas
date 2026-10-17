@@ -226,11 +226,13 @@ def prune(db: "DB", valid_slugs: set[str], websites: dict[str, str]) -> dict:
             slug, mid = m["slug"], m["id"]
             site = (websites.get(slug) or "").lower()
             stale_site = False
-            if slug in valid_slugs and site:
+            db_site = (m["website"] or "").lower().rstrip("/")
+            if slug in valid_slugs and site and db_site and db_site != site.rstrip("/"):
+                # the town's site was reassigned since these records were collected (many towns
+                # keep agendas on a vendor host, so a host mismatch alone proves nothing)
                 host = urlparse(site).netloc.replace("www.", "")
                 rows = c.execute("SELECT url FROM documents WHERE muni_id=? LIMIT 200", (mid,)).fetchall()
                 hosts = {urlparse(r["url"]).netloc.replace("www.", "") for r in rows}
-                hosts.discard("ecode360.com")
                 stale_site = bool(hosts) and host not in hosts and not any(h.endswith(host) or host.endswith(h) for h in hosts)
             if slug not in valid_slugs or stale_site or (slug in valid_slugs and not site):
                 n_docs = c.execute("SELECT COUNT(*) FROM documents WHERE muni_id=?", (mid,)).fetchone()[0]
