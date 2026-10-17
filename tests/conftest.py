@@ -26,7 +26,7 @@ class StubFetcher(Fetcher):
         self.routes = routes
         self.requested: list[str] = []
 
-    def get(self, url, max_age_hours=None, use_cache=True, stream_limit=None):  # type: ignore[override]
+    def get(self, url, max_age_hours=None, use_cache=True, stream_limit=None, **kw):  # type: ignore[override]
         self.requested.append(url)
         key = url.split("#")[0]
         for k, (body, ctype) in self.routes.items():
