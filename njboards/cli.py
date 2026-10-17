@@ -342,6 +342,17 @@ def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit:
 
 
 @main.command()
+def prune() -> None:
+    """Drop towns no longer in data/municipalities.csv and records collected under a since-changed website."""
+    from .db import prune as _prune
+    db = DB()
+    rows = read_csv(SETTINGS.municipalities_file)
+    stats = _prune(db, {r["slug"] for r in rows}, {r["slug"]: r.get("website") or "" for r in rows})
+    # parsed JSON of removed documents is orphaned; analyze/digest only read JSON for documents still in the db
+    click.echo(str(stats))
+
+
+@main.command()
 @click.argument("slug", required=False)
 def status(slug: Optional[str]) -> None:
     """Show what has been collected."""

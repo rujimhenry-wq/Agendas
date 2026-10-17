@@ -216,6 +216,40 @@ class DB:
         return {r["doc_type"] or "other": int(r["n"]) for r in rows}
 
 
+def prune(db: "DB", valid_slugs: set[str], websites: dict[str, str]) -> dict:
+    """Remove municipalities no longer in the list, and the boards/documents of
+    municipalities whose website changed (their records came from the wrong site)."""
+    from urllib.parse import urlparse
+    stats = {"municipalities_removed": 0, "documents_removed": 0, "boards_removed": 0}
+    with db.tx() as c:
+        for m in db.municipalities():
+            slug, mid = m["slug"], m["id"]
+            site = (websites.get(slug) or "").lower()
+            stale_site = False
+            if slug in valid_slugs and site:
+                host = urlparse(site).netloc.replace("www.", "")
+                rows = c.execute("SELECT url FROM documents WHERE muni_id=? LIMIT 200", (mid,)).fetchall()
+                hosts = {urlparse(r["url"]).netloc.replace("www.", "") for r in rows}
+                hosts.discard("ecode360.com")
+                stale_site = bool(hosts) and host not in hosts and not any(h.endswith(host) or host.endswith(h) for h in hosts)
+            if slug not in valid_slugs or stale_site or (slug in valid_slugs and not site):
+                n_docs = c.execute("SELECT COUNT(*) FROM documents WHERE muni_id=?", (mid,)).fetchone()[0]
+                n_boards = c.execute("SELECT COUNT(*) FROM boards WHERE muni_id=?", (mid,)).fetchone()[0]
+                if slug not in valid_slugs:
+                    c.execute("DELETE FROM documents WHERE muni_id=?", (mid,))
+                    c.execute("DELETE FROM boards WHERE muni_id=?", (mid,))
+                    c.execute("DELETE FROM pages WHERE muni_id=?", (mid,))
+                    c.execute("DELETE FROM municipalities WHERE id=?", (mid,))
+                    stats["municipalities_removed"] += 1
+                elif n_docs or n_boards:
+                    c.execute("DELETE FROM documents WHERE muni_id=?", (mid,))
+                    c.execute("DELETE FROM boards WHERE muni_id=?", (mid,))
+                    c.execute("DELETE FROM pages WHERE muni_id=?", (mid,))
+                stats["documents_removed"] += n_docs
+                stats["boards_removed"] += n_boards
+    return stats
+
+
 def row_to_dict(row: sqlite3.Row) -> dict[str, Any]:
     return {k: row[k] for k in row.keys()}
 
