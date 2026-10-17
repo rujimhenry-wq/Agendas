@@ -50,13 +50,23 @@ def name_tokens(name: str) -> list[str]:
     return toks or [slugify(name).replace("-", "")]
 
 
+def _domain_label(host: str) -> str:
+    """'www.twp.howell.nj.us' -> 'twphowellnj'; 'www.cranfordnj.org' -> 'cranfordnj'."""
+    h = re.sub(r"^(www\d?|web|portal|home)\.", "", host.lower())
+    h = re.sub(r"\.(gov|org|com|net|us|info)$", "", h)
+    h = re.sub(r"\.nj$", "", h)
+    return re.sub(r"[^a-z0-9]", "", h)
+
+
 def _host_matches(host: str, name: str) -> bool:
-    flat = re.sub(r"[^a-z0-9]", "", host.lower())
+    label = _domain_label(host)
     toks = name_tokens(name)
     joined = "".join(toks)
-    if len(joined) >= 5 and joined in flat:
+    if len(joined) >= 5 and joined in label:
         return True
-    return all(t in flat for t in toks if len(t) >= 4) and any(len(t) >= 4 for t in toks)
+    long_toks = [t for t in toks if len(t) >= 4]
+    return bool(long_toks) and all(t in label for t in long_toks) and (
+        len("".join(long_toks)) >= 6 or label.startswith(long_toks[0]))
 
 
 # ----------------------------------------------------------------- county directories
@@ -173,9 +183,11 @@ def find_websites(rows: list[dict], workers: int = 8, progress=None) -> dict[str
             continue
         host = urlparse(url).netloc.lower()
         def fits(r):
-            t = (r.get("muni_type") or r["name"]).lower()
-            return (("borough" in t and re.search(r"boro", host)) or ("township" in t and re.search(r"twp|township", host))
-                    or ("city" in t and re.search(r"city", host)) or ("village" in t and "village" in host) or ("town" == t.strip() and "town" in host))
+            t = (r.get("muni_type") or r["name"]).lower().strip()
+            label = _domain_label(host)
+            return (("borough" in t and "boro" in label) or ("township" in t and re.search(r"twp|township", label))
+                    or ("city" in t and "city" in label) or ("village" in t and "village" in label)
+                    or (t == "town" and re.search(r"town(?!ship)", label)))
         keep = [r for r in rs if fits(r)]
         for r in rs:
             if len(keep) != 1 or r is not keep[0]:
