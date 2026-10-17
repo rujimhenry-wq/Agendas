@@ -119,6 +119,8 @@ def import_towns(find_websites: bool, limit: Optional[int]) -> None:
             else:
                 click.echo(f"{r['slug']}: no website found", err=True)
             write_csv(SETTINGS.municipalities_file, merged)  # checkpoint
+    from .municipalities import dedupe_rows
+    merged = dedupe_rows(merged)
     write_csv(SETTINGS.municipalities_file, merged)
     n = load_into_db(db)
     click.echo(f"{len(rows)} municipalities imported; {n} rows now in {SETTINGS.municipalities_file}")

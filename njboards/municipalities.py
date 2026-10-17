@@ -93,6 +93,32 @@ def export_from_db(db: DB, path: Path) -> int:
 
 # --- full list import -------------------------------------------------------
 
+def _match_key(name: str, county: str) -> str:
+    base = re.sub(r"\b(township|borough|city|town|village|of|the)\b", " ", name, flags=re.I)
+    return slugify(base) + "|" + slugify(county or "")
+
+
+def dedupe_rows(rows: list[dict]) -> list[dict]:
+    """Merge rows that describe the same municipality under different slugs
+    ('Hamilton Township' vs 'Hamilton', Mercer). The Wikipedia-derived row keeps
+    its slug; the other row's website / code / board URLs are carried over."""
+    by_key: dict[str, dict] = {}
+    for r in rows:
+        k = _match_key(r["name"], r.get("county", ""))
+        if k not in by_key:
+            by_key[k] = dict(r)
+            continue
+        keep = by_key[k]
+        # prefer the row that came from the Wikipedia list (has wiki_url)
+        if r.get("wiki_url") and not keep.get("wiki_url"):
+            keep, r = dict(r), keep
+        for col in CSV_FIELDS:
+            if not keep.get(col) and r.get(col):
+                keep[col] = r[col]
+        by_key[k] = keep
+    return list(by_key.values())
+
+
 def import_from_wikipedia(fetcher: Fetcher) -> list[dict]:
     """Scrape the Wikipedia list of NJ municipalities (name, county, type)."""
     r = fetcher.get(WIKI_LIST_URL, max_age_hours=24 * 30)
