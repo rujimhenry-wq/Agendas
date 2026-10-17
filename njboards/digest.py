@@ -96,7 +96,7 @@ def engineer_for(item: dict, texts: list[str]) -> list[str]:
     for t in texts:
         for m in PREPARED_BY.finditer(t):
             firm = squash(m.group(1)).rstrip(",.")
-            if len(firm) < 80 and firm not in out and not re.search(r"architect|planning|law|esq|attorney|counsel|\bP\.?A\.?$|LLP$", firm, re.I):
+            if len(firm) < 80 and firm not in out and not re.search(r"architect|planning|\blaw\b|esq|attorney|counsel|LLP$", firm, re.I):
                 out.append(firm)
         for m in ENGINEER_FIELD.finditer(t):
             v = squash(m.group(1)).rstrip(",.")
