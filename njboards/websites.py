@@ -108,7 +108,9 @@ def candidate_domains(name: str, muni_type: str = "") -> list[str]:
     c = []
     for stem in dict.fromkeys([core, dashed]):
         c += [f"www.{stem}nj.org", f"www.{stem}nj.gov", f"www.{stem}-nj.org", f"www.{stem}nj.com", f"www.{stem}.nj.us",
-              f"www.{stem}nj.net", f"{stem}nj.org", f"{stem}nj.gov", f"www.{stem}.org", f"www.{stem}.com"]
+              f"www.{stem}nj.net", f"{stem}nj.org", f"{stem}nj.gov", f"www.{stem}.org", f"www.{stem}.com", f"www.{stem}.net",
+              f"www.{stem}nj.us", f"{stem}nj.us", f"www.{stem}online.org", f"www.{stem}-nj.com", f"www.{stem}-nj.gov", f"{stem}-nj.gov",
+              f"www.{stem}njgov.com", f"www.{stem}.gov"]
         if "township" in t or not t:
             c += [f"www.{stem}twp.org", f"www.{stem}township.org", f"www.{stem}twp.com", f"twp.{stem}.nj.us", f"www.twp.{stem}.nj.us",
                   f"www.{stem}township.com", f"www.{stem}-twp.org", f"{stem}township.org", f"www.{stem}twp.nj.us", f"www.{stem}townshipnj.org"]
@@ -135,7 +137,7 @@ def verify_site(fetcher: Fetcher, url: str, name: str) -> bool:
     return bool(re.search(r"new jersey|\bnj\b", text)) and bool(re.search(r"municipal|township|borough|council|mayor|clerk|zoning|planning|ordinance", text))
 
 
-def guess_website(fetcher: Fetcher, name: str, muni_type: str = "", max_tries: int = 14) -> Optional[str]:
+def guess_website(fetcher: Fetcher, name: str, muni_type: str = "", max_tries: int = 22) -> Optional[str]:
     # each candidate is a different host, and most do not exist: no retries, short timeout
     fetcher.s.delay_seconds = min(fetcher.s.delay_seconds, 0.5)
     fetcher.s.max_retries = 0
