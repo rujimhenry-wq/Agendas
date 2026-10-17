@@ -1,6 +1,6 @@
 # NJ Land Use Boards — Weekly Digest (2026-10-17)
 
-Covers activity since 2026-10-17 and agendas through the next 35 days. 246 of 564 municipalities have parsed records. Upcoming agenda items: 323 · recent decisions: 25.
+Covers activity since 2026-10-17 and agendas through the next 35 days. 235 of 564 municipalities have parsed records. Upcoming agenda items: 317 · recent decisions: 25.
 
 Engineer = the applicant's engineer named in the agenda, minutes, resolution or review letter (blank when not stated).
 
@@ -16,11 +16,11 @@ Engineer = the applicant's engineer named in the agenda, minutes, resolution or 
 | 2026-10-14 | Warren Township | planning | PB26-02 | Toll NJ I, LLC | preliminary & final major site plan, minor subdivision |  |
 | 2026-10-14 | Summit | planning | PB-26-289 |  | preliminary & final major site plan, variance |  |
 | 2026-10-15 | Princeton | planning | Adarsh K. Bajaj TO BE | Adarsh K. Bajaj TO BE | subdivision |  |
-| 2026-10-15 | Hazlet | combined | 26-06L | Carryover case #26-06L | preliminary & final major site plan, bulk variance (c) | Najarian Associates |
-| 2026-10-15 | Howell | planning | Patrick F Bennett as applicant and William & Linda | Patrick F Bennett as applicant and William & Linda Bennett as | minor subdivision |  |
-| 2026-10-15 | Howell | planning | Township of Howell as applicant and owner seeking  | Township of Howell as applicant and owner seeking approval | preliminary & final major subdivision, bulk variance (c) |  |
-| 2026-10-15 | Howell | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed to be removed on premises known as Block 69 | final major site plan, amended site plan, bulk variance (c) |  |
-| 2026-10-15 | Howell | planning | A-Life Residential LLC as applicant and 270B Antho | A-Life Residential LLC as applicant and 270B Anthony LLC as | preliminary & final major subdivision |  |
+| 2026-10-15 | Hazlet | combined | 26-06L |  | preliminary & final major site plan, bulk variance (c) | Najarian Associates |
+| 2026-10-15 | Howell | planning | Patrick F Bennett | Patrick F Bennett | minor subdivision |  |
+| 2026-10-15 | Howell | planning | Township of Howell | Township of Howell | preliminary & final major subdivision, bulk variance (c) |  |
+| 2026-10-15 | Howell | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed | final major site plan, amended site plan, bulk variance (c) |  |
+| 2026-10-15 | Howell | planning | A-Life Residential LLC | A-Life Residential LLC | preliminary & final major subdivision |  |
 | 2026-10-15 | Manalapan | zoning | PRC Development Co., Inc | PRC Development Co., Inc | final major site plan, use variance (d) |  |
 | 2026-10-15 | Lincoln Park | planning | B22305 L1 |  | minor subdivision, variance |  |
 | 2026-10-15 | Upper Pittsgrove | combined | B5 L46 & 47 | 222/226 Route 40 | major site plan, minor subdivision, use variance (d), bulk variance (c) |  |
@@ -40,7 +40,6 @@ Engineer = the applicant's engineer named in the agenda, minutes, resolution or 
 | 2026-10-19 | Randolph | planning | B44 L8, 9, 879 | Route 10 | final major site plan |  |
 | 2026-10-19 | Rockaway Township | planning | B11001 L6.01 |  | minor site plan, minor subdivision, variance |  |
 | 2026-10-19 | Paterson | planning | LING1-973-321 |  | site plan, subdivision, bulk variance (c) |  |
-| 2026-10-19 | Blairstown | combined | B101 L10.06 | Fritschy | site plan, minor subdivision, use variance (d), interpretation |  |
 | 2026-10-20 | Ramsey | planning | B3603 L1 |  | subdivision |  |
 | 2026-10-20 | Ramsey | planning | B3608 L21 |  | site plan, subdivision |  |
 | 2026-10-20 | Livingston | planning | 2026-58 | PFSP | preliminary & final major site plan, major subdivision, variance |  |
@@ -110,17 +109,6 @@ New documents since last digest: 368 (agenda, minutes, notice, ordinance, resolu
 New documents since last digest: 358 (agenda, minutes, notice)
 
 ## Bergen County
-
-### Allendale
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
-|---|---|---|---|---|---|---|
-| 2026-10-14 | combined | 2026-13 | Regenity Biosciences |  | — |  |
-
-New documents since last digest: 237 (agenda, minutes)
 
 ### Cresskill
 
@@ -225,11 +213,6 @@ New documents since last digest: 1299 (agenda, minutes, notice)
 
 
 New documents since last digest: 316 (agenda, minutes, notice)
-
-### Montvale
-
-
-New documents since last digest: 1019 (agenda, application, minutes, notice, ordinance, resolution)
 
 ### New Milford
 
@@ -665,7 +648,7 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20
 | Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
 |---|---|---|---|---|---|---|
 | 2026-10-14 | zoning | LING1-646 |  |  | — |  |
-| 2026-10-14 | zoning | 26-04 | • Case 26-04 B72 L56 VAN ARSDALE 10 Birch Street- Applicant is seeking |  | bulk variance (c) |  |
+| 2026-10-14 | zoning | 26-04 | • Case 26-04 B72 L56 VAN ARSDALE 10 Birch Street- Applicant is |  | bulk variance (c) |  |
 | 2026-10-19 | zoning | B89.01 L5 | VETERAN EXEMPTION GRANTED ON BLOCK 89.01 | B89.01 L5 | — |  |
 | 2026-10-20 | combined | LING1-646-876 |  |  | — |  |
 | 2026-10-20 | combined | V. Planning and Zoning Board Applications | V. Planning and Zoning Board Applications |  | — |  |
@@ -941,11 +924,6 @@ New documents since last digest: 518 (agenda, fee_schedule, minutes, notice, ord
 
 ## Hunterdon County
 
-### Califon
-
-
-New documents since last digest: 26 (agenda, minutes)
-
 ### Clinton Town
 
 
@@ -1017,11 +995,6 @@ New documents since last digest: 110 (agenda, minutes, notice)
 
 ## Mercer County
 
-### Ewing Township
-
-
-New documents since last digest: 518 (agenda, minutes, notice, resolution)
-
 ### Hopewell Township
 
 Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20  
@@ -1031,7 +1004,7 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20
 | Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
 |---|---|---|---|---|---|---|
 | 2026-10-14 | zoning | LING1-646 |  |  | — |  |
-| 2026-10-14 | zoning | 26-04 | • Case 26-04 B72 L56 VAN ARSDALE 10 Birch Street- Applicant is seeking |  | bulk variance (c) |  |
+| 2026-10-14 | zoning | 26-04 | • Case 26-04 B72 L56 VAN ARSDALE 10 Birch Street- Applicant is |  | bulk variance (c) |  |
 | 2026-10-19 | zoning | B89.01 L5 | VETERAN EXEMPTION GRANTED ON BLOCK 89.01 | B89.01 L5 | — |  |
 | 2026-10-20 | combined | Zoning Board Application Documents | Zoning Board Application Documents |  | — |  |
 | 2026-10-20 | combined | LING1-646-876 |  |  | — |  |
@@ -1264,21 +1237,6 @@ New documents since last digest: 1117 (agenda, application, minutes, resolution,
 
 New documents since last digest: 858 (agenda, application, minutes, notice, site_plan)
 
-### Eatontown
-
-Upcoming meetings with posted agendas: 2026-10-19  
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
-|---|---|---|---|---|---|---|
-| 2026-10-19 | zoning | ZB2025-11 | Certificate of Appropriateness |  | — |  |
-| 2026-10-19 | zoning | ZB08-2026 | Thomas Schmidt and Sandra Gordon |  | certificate of nonconformity |  |
-| 2026-10-19 | zoning | ZB2026-11 | Drapkin, Dulce & Darren |  | variance |  |
-| 2026-10-19 | zoning | ZB2026-09 |  |  | site plan, use variance (d) |  |
-
-New documents since last digest: 915 (agenda, minutes, notice)
-
 ### Englishtown
 
 
@@ -1335,8 +1293,8 @@ New documents since last digest: 491 (agenda, minutes, notice)
 | 2026-10-15 | combined | 19-04L |  | B62 L1 | extension |  |
 | 2026-10-15 | combined | 26-13L | New case #26-13L | B210 L14 | variance |  |
 | 2026-10-15 | combined | 26-14L | New case #26-14L | B257 L19 | variance |  |
-| 2026-10-15 | combined | 25-12L | Carryover case #25-12L | B211 L7.01 & 8.01 | amended site plan |  |
-| 2026-10-15 | combined | 26-06L | Carryover case #26-06L | B68.13 L17 | preliminary & final major site plan, bulk variance (c) | Najarian Associates |
+| 2026-10-15 | combined | 25-12L |  | B211 L7.01 & 8.01 | amended site plan |  |
+| 2026-10-15 | combined | 26-06L |  | B68.13 L17 | preliminary & final major site plan, bulk variance (c) | Najarian Associates |
 
 New documents since last digest: 493 (agenda, minutes)
 
@@ -1367,13 +1325,13 @@ Upcoming meetings with posted agendas: 2026-10-26
 
 | Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
 |---|---|---|---|---|---|---|
-| 2026-10-15 | planning | Patrick F Bennett as applicant and William & Linda | Patrick F Bennett as applicant and William & Linda Bennett as |  | minor subdivision |  |
+| 2026-10-15 | planning | Patrick F Bennett | Patrick F Bennett |  | minor subdivision |  |
 | 2026-10-15 | planning | B138 L20 | driveway and drywell on premises known as Block 138 | B138 L20 | — |  |
-| 2026-10-15 | planning | Township of Howell as applicant and owner seeking  | Township of Howell as applicant and owner seeking approval |  | preliminary & final major subdivision, bulk variance (c) |  |
-| 2026-10-15 | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed to be removed on premises known as Block 69 | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | final major site plan, amended site plan, bulk variance (c) |  |
+| 2026-10-15 | planning | Township of Howell | Township of Howell |  | preliminary & final major subdivision, bulk variance (c) |  |
+| 2026-10-15 | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | final major site plan, amended site plan, bulk variance (c) |  |
 | 2026-10-15 | planning | Diversified Acquisitions | Diversified Acquisitions |  | site plan |  |
 | 2026-10-15 | planning | B168 L11.01 and 8.05, 940 | first time across both buildings on premises known as Block 168 | B168 L11.01 and 8.05, 940 | — |  |
-| 2026-10-15 | planning | A-Life Residential LLC as applicant and 270B Antho | A-Life Residential LLC as applicant and 270B Anthony LLC as |  | preliminary & final major subdivision |  |
+| 2026-10-15 | planning | A-Life Residential LLC | A-Life Residential LLC |  | preliminary & final major subdivision |  |
 | 2026-10-15 | planning | B164 L5.01, 29 | known as Block 164 | B164 L5.01, 29 | — |  |
 | 2026-10-26 | zoning | BA23-11 | / Christ Church of Howell, Inc |  | extension |  |
 | 2026-10-26 | zoning | BA25-05 | / Jacob and Shira Ely |  | bulk variance (c) |  |
@@ -1875,16 +1833,6 @@ Upcoming meetings with posted agendas: 2026-10-20
 
 New documents since last digest: 90 (agenda, application, notice, ordinance, other, resolution)
 
-### Bernardsville
-
-
-New documents since last digest: 67 (application, checklist, notice, ordinance, other, resolution, site_plan)
-
-### Bound Brook
-
-
-New documents since last digest: 96 (minutes)
-
 ### Bridgewater Township
 
 
@@ -1894,11 +1842,6 @@ New documents since last digest: 81 (agenda, application, notice, resolution)
 
 
 New documents since last digest: 736 (agenda, minutes, notice)
-
-### Franklin Township
-
-
-New documents since last digest: 201 (agenda, minutes, notice, ordinance, resolution, site_plan)
 
 ### Green Brook Township
 
@@ -2101,11 +2044,6 @@ New documents since last digest: 674 (agenda, minutes, notice)
 
 New documents since last digest: 15 (application, minutes, notice, ordinance, resolution)
 
-### Mountainside
-
-
-New documents since last digest: 279 (agenda, minutes)
-
 ### Plainfield
 
 
@@ -2128,11 +2066,6 @@ New documents since last digest: 639 (agenda, minutes)
 
 
 New documents since last digest: 333 (agenda, minutes, notice)
-
-### Scotch Plains
-
-
-New documents since last digest: 100 (agenda, minutes, ordinance, resolution)
 
 ### Summit
 
@@ -2191,18 +2124,6 @@ New documents since last digest: 92 (agenda, minutes)
 
 
 New documents since last digest: 212 (agenda, minutes, resolution)
-
-### Blairstown
-
-Upcoming meetings with posted agendas: 2026-10-19  
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
-|---|---|---|---|---|---|---|
-| 2026-10-19 | combined | B101 L10.06 | Fritschy | B101 L10.06; B2003 L26 | site plan, minor subdivision, use variance (d), interpretation |  |
-
-New documents since last digest: 343 (agenda, application, fee_schedule, minutes, notice, ordinance, resolution, site_plan)
 
 ### Hackettstown
 
