@@ -1,6 +1,6 @@
 # NJ Land Use Boards — Weekly Digest (2026-10-17)
 
-Covers activity since 2026-10-17 and agendas through the next 35 days. 235 of 564 municipalities have parsed records. Upcoming agenda items: 317 · recent decisions: 25.
+Covers activity since 2026-10-17 and agendas through the next 35 days. 245 of 564 municipalities have parsed records. Upcoming agenda items: 323 · recent decisions: 25.
 
 Engineer = the applicant's engineer named in the agenda, minutes, resolution or review letter (blank when not stated).
 
@@ -40,6 +40,7 @@ Engineer = the applicant's engineer named in the agenda, minutes, resolution or 
 | 2026-10-19 | Randolph | planning | B44 L8, 9, 879 | Route 10 | final major site plan |  |
 | 2026-10-19 | Rockaway Township | planning | B11001 L6.01 |  | minor site plan, minor subdivision, variance |  |
 | 2026-10-19 | Paterson | planning | LING1-973-321 |  | site plan, subdivision, bulk variance (c) |  |
+| 2026-10-19 | Blairstown | combined | B101 L10.06 | Fritschy | site plan, minor subdivision, use variance (d), interpretation |  |
 | 2026-10-20 | Ramsey | planning | B3603 L1 |  | subdivision |  |
 | 2026-10-20 | Ramsey | planning | B3608 L21 |  | site plan, subdivision |  |
 | 2026-10-20 | Livingston | planning | 2026-58 | PFSP | preliminary & final major site plan, major subdivision, variance |  |
@@ -109,6 +110,17 @@ New documents since last digest: 368 (agenda, minutes, notice, ordinance, resolu
 New documents since last digest: 358 (agenda, minutes, notice)
 
 ## Bergen County
+
+### Allendale
+
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
+|---|---|---|---|---|---|---|
+| 2026-10-14 | combined | 2026-13 | Regenity Biosciences |  | — |  |
+
+New documents since last digest: 97 (agenda, minutes, resolution)
 
 ### Cresskill
 
@@ -213,6 +225,11 @@ New documents since last digest: 1299 (agenda, minutes, notice)
 
 
 New documents since last digest: 316 (agenda, minutes, notice)
+
+### Montvale
+
+
+New documents since last digest: 1019 (agenda, application, minutes, notice, ordinance, resolution)
 
 ### New Milford
 
@@ -995,6 +1012,11 @@ New documents since last digest: 110 (agenda, minutes, notice)
 
 ## Mercer County
 
+### Ewing Township
+
+
+New documents since last digest: 516 (agenda, minutes, notice, resolution)
+
 ### Hopewell Township
 
 Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20  
@@ -1236,6 +1258,21 @@ New documents since last digest: 1117 (agenda, application, minutes, resolution,
 
 
 New documents since last digest: 858 (agenda, application, minutes, notice, site_plan)
+
+### Eatontown
+
+Upcoming meetings with posted agendas: 2026-10-19  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
+|---|---|---|---|---|---|---|
+| 2026-10-19 | zoning | ZB2025-11 | Certificate of Appropriateness |  | — |  |
+| 2026-10-19 | zoning | ZB08-2026 | Thomas Schmidt and Sandra Gordon |  | certificate of nonconformity |  |
+| 2026-10-19 | zoning | ZB2026-11 | Drapkin, Dulce & Darren |  | variance |  |
+| 2026-10-19 | zoning | ZB2026-09 |  |  | site plan, use variance (d) |  |
+
+New documents since last digest: 837 (agenda, minutes, notice)
 
 ### Englishtown
 
@@ -1833,6 +1870,16 @@ Upcoming meetings with posted agendas: 2026-10-20
 
 New documents since last digest: 90 (agenda, application, notice, ordinance, other, resolution)
 
+### Bernardsville
+
+
+New documents since last digest: 67 (application, checklist, notice, ordinance, other, resolution, site_plan)
+
+### Bound Brook
+
+
+New documents since last digest: 92 (minutes)
+
 ### Bridgewater Township
 
 
@@ -1842,6 +1889,11 @@ New documents since last digest: 81 (agenda, application, notice, resolution)
 
 
 New documents since last digest: 736 (agenda, minutes, notice)
+
+### Franklin Township
+
+
+New documents since last digest: 131 (agenda, minutes, notice, ordinance, resolution, site_plan)
 
 ### Green Brook Township
 
@@ -2044,6 +2096,11 @@ New documents since last digest: 674 (agenda, minutes, notice)
 
 New documents since last digest: 15 (application, minutes, notice, ordinance, resolution)
 
+### Mountainside
+
+
+New documents since last digest: 279 (agenda, minutes)
+
 ### Plainfield
 
 
@@ -2066,6 +2123,11 @@ New documents since last digest: 639 (agenda, minutes)
 
 
 New documents since last digest: 333 (agenda, minutes, notice)
+
+### Scotch Plains
+
+
+New documents since last digest: 100 (agenda, minutes, ordinance, resolution)
 
 ### Summit
 
@@ -2124,6 +2186,18 @@ New documents since last digest: 92 (agenda, minutes)
 
 
 New documents since last digest: 212 (agenda, minutes, resolution)
+
+### Blairstown
+
+Upcoming meetings with posted agendas: 2026-10-19  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
+|---|---|---|---|---|---|---|
+| 2026-10-19 | combined | B101 L10.06 | Fritschy | B101 L10.06; B2003 L26 | site plan, minor subdivision, use variance (d), interpretation |  |
+
+New documents since last digest: 343 (agenda, application, fee_schedule, minutes, notice, ordinance, resolution, site_plan)
 
 ### Hackettstown
 
