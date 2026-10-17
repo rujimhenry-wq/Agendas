@@ -73,7 +73,7 @@ def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30
         from .fetch import fetch_document
         ok = fetch_document(fetcher, db, d, slug)
         stats["fetched" if ok else "errors"] += 1
-    extract_all(db, slug)
+    stats["extracted"] = extract_all(db, slug, ocr=True)["extracted"]  # OCR when tesseract is installed
     stats["parsed"] = run_parse(db, slug)["parsed"]
     db.set_muni_fields(slug, status="weekly " + today.isoformat())
     return stats

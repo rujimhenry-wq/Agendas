@@ -159,7 +159,7 @@ class Fetcher:
                 if r.status in (429, 500, 502, 503, 504) and attempt < self.s.max_retries:
                     retry_after = resp.headers.get("Retry-After") if 'resp' in dir() else None
                     try:
-                        wait = float(retry_after) if retry_after else (30.0 if r.status == 429 else 2 ** attempt * 2)
+                        wait = float(retry_after) if retry_after else (8.0 if r.status == 429 else 2 ** attempt * 2)
                     except ValueError:
                         wait = 30.0
                     time.sleep(min(wait, 120))
