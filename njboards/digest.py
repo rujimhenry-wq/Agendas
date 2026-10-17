@@ -96,7 +96,7 @@ def engineer_for(item: dict, texts: list[str]) -> list[str]:
     for t in texts:
         for m in PREPARED_BY.finditer(t):
             firm = squash(m.group(1)).rstrip(",.")
-            if len(firm) < 80 and firm not in out and not re.search(r"architect|planning|law|esq", firm, re.I):
+            if len(firm) < 80 and firm not in out and not re.search(r"architect|planning|law|esq|attorney|counsel|\bP\.?A\.?$|LLP$", firm, re.I):
                 out.append(firm)
         for m in ENGINEER_FIELD.finditer(t):
             v = squash(m.group(1)).rstrip(",.")
@@ -128,7 +128,8 @@ def _clean_applicant(name: Optional[str]) -> Optional[str]:
     name = re.sub(r"\s*\((?:application\s+)?documents?\)\s*", " ", name, flags=re.I)
     # cut trailing status text: "TESLA, INC. 1199 AMBOY AVE IS CARRIED TO DECEMBER 14"
     name = re.split(r"\s+(?:is\s+|was\s+|has\s+been\s+)?(?:carried|continued|adjourned|postponed|rescheduled|withdrawn|tabled|approved|denied|dismissed)\b", name, maxsplit=1, flags=re.I)[0]
-    name = re.split(r"\s+(?:total\s+for\s+account|block\s+\d|lots?\s+\d|tax\s+map)\b", name, maxsplit=1, flags=re.I)[0]
+    name = re.split(r"\s+(?:total\s+for\s+account|block\s+\d|lots?\s+\d|tax\s+map|as\s+applicant|as\s+owner|seeking|to\s+be\s+(?:heard|carried)?|\(carryover|carryover)\b", name, maxsplit=1, flags=re.I)[0]
+    name = re.sub(r"^(?:carryover\s+)?case\s*#?\s*[\w-]+\s*$", "", name, flags=re.I)
     name = re.sub(r"\s*[-–]\s*(application\s+)?documents?\s*$", "", name, flags=re.I)
     name = squash(name).strip(" -–:,.")
     if not name or JUNK_APPLICANT.match(name) or len(name) < 3:
