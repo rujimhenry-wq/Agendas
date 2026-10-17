@@ -23,10 +23,16 @@ DEFAULT_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 CHROMIUM_CANDIDATES = ["/opt/pw-browsers/chromium", os.environ.get("NJBOARDS_CHROMIUM", "")]
 
 
+WALL = re.compile(r"_Incapsula_Resource|incapsula|distil_r_captcha|\bakamai\b.{0,40}bot|/_imp_apg_|aws-waf-token|awswaf|radware|perimeterx|px-captcha|queue-it", re.I)
+
+
 def looks_like_challenge(status: int, body: bytes) -> bool:
+    head = body[:20000].decode("utf-8", "ignore")
+    if WALL.search(head) and len(body) < 50000:
+        return True  # Imperva/Incapsula and similar serve the wall with HTTP 200
     if status not in (403, 503, 429):
         return False
-    return bool(CHALLENGE.search(body[:20000].decode("utf-8", "ignore")))
+    return bool(CHALLENGE.search(head))
 
 
 class Browser:
@@ -85,10 +91,10 @@ class Browser:
         status = resp.status if resp else 0
         deadline = time.time() + max_wait
         html = self._page.content()
-        while CHALLENGE.search(html[:20000]) and time.time() < deadline:
+        while (CHALLENGE.search(html[:20000]) or WALL.search(html[:20000])) and time.time() < deadline:
             self._page.wait_for_timeout(1500)
             html = self._page.content()
-        if not CHALLENGE.search(html[:20000]):
+        if not (CHALLENGE.search(html[:20000]) or WALL.search(html[:20000])):
             try:  # code pages fill in their sections after load
                 self._page.wait_for_selector(".sectionTitle, .titleLink, main, #content, article", timeout=20000)
             except Exception:  # noqa: BLE001

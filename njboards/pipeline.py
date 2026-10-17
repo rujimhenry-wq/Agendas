@@ -39,6 +39,9 @@ def run_discover(fetcher: Fetcher, db: DB, slug: str, max_pages: Optional[int] =
         after = db.conn.execute("SELECT COUNT(*) FROM documents WHERE muni_id=?", (m["id"],)).fetchone()[0]
         n_new += after - before
     fields = {}
+    if disc.homepage and disc.homepage.rstrip("/") != (m["website"] or "").rstrip("/") and not disc.homepage.startswith((m["website"] or "").rstrip("/")):
+        fields["website"] = disc.homepage if disc.homepage.endswith("/") else disc.homepage + "/"
+        fields["notes"] = ((m["notes"] or "") + " site redirected; updated").strip()
     if disc.ecode_id and not m["ecode_id"]:
         fields["ecode_id"] = disc.ecode_id
     if disc.ecode_url and not m["ecode_url"]:

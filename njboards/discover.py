@@ -25,6 +25,10 @@ MUNICODE = re.compile(r"https?://(?:library\.)?municode\.com/nj/[a-z0-9_\-]+", r
 GENERALCODE = re.compile(r"https?://(?:www\.)?generalcode\.com/[^\s\"']*", re.I)
 CLERKBASE = re.compile(r"https?://[a-z0-9\-]+\.clerkbase\.com[^\s\"']*", re.I)
 
+COMMON_PATHS = ["/planning-board", "/zoning-board", "/zoning-board-of-adjustment", "/boards-commissions", "/boards-and-commissions",
+                "/boards", "/government/boards-commissions", "/government/boards-and-commissions", "/AgendaCenter", "/agendas-minutes",
+                "/agendas-and-minutes", "/departments/planning", "/departments/planning-zoning", "/planning-zoning", "/planning",
+                "/zoning", "/land-use", "/land-use-board", "/government", "/departments", "/minutes", "/agendas", "/sitemap", "/sitemap.xml"]
 FOLLOW_WORDS = re.compile(
     r"planning|zoning|adjustment|land\s*use|agenda|minutes|resolution|application|checklist|"
     r"site\s*plan|subdivision|variance|development|board|document|archive|forms?|permits?|"
@@ -135,6 +139,9 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
                                              meeting_date=lc.meeting_date, year=lc.year))
             continue
         disc.pages_visited += 1
+        if depth == 0 and not same_site(r.final_url, homepage):
+            homepage = normalize_url(r.final_url)  # the town moved domains; follow the new one
+            disc.homepage = homepage
         html = r.text
         soup = BeautifulSoup(html, "lxml")
         title = _page_title(soup)
@@ -209,6 +216,66 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
                 if nu not in seen:
                     # pages linked from a board page inherit its kind unless they name another board
                     queue.append((nu, depth + 1, lc.board_kind or page_board, text))
+    # menus rendered by JavaScript hide the board pages from a plain crawl: probe the usual paths
+    if not disc.boards and disc.pages_visited < max_pages:
+        base = homepage.rstrip("/")
+        for path in COMMON_PATHS:
+            u = normalize_url(base + path)
+            if u in seen:
+                continue
+            seen.add(u)
+            r = fetcher.get(u, browser_on_block=True)
+            if not (r.ok and r.is_html):
+                continue
+            disc.pages_visited += 1
+            soup = BeautifulSoup(r.text, "lxml")
+            title = _page_title(soup)
+            kind = classify_board(title) or classify_board(u)
+            if kind and not disc.board_for(kind):
+                disc.boards.append({"kind": kind, "name": title.split("|")[0].strip(), "url": r.final_url, "source": "probed"})
+            for a in soup.select("a[href]"):
+                text = a.get_text(" ", strip=True)
+                absu = urljoin(r.final_url, a.get("href", ""))
+                lc = classify_link(absu, text, _heading_context(a), page_board=kind)
+                if lc.board_kind and same_site(absu, homepage) and normalize_url(absu) not in seen:
+                    queue.append((normalize_url(absu), 1, lc.board_kind, text))
+                elif lc.is_document and lc.doc_type != "other" and (lc.board_kind or kind):
+                    docs.setdefault(absu.split("#")[0], DocLink(url=absu.split("#")[0], title=text or u, doc_type=lc.doc_type,
+                                                              board_kind=lc.board_kind or kind, meeting_date=lc.meeting_date, year=lc.year))
+            if len(disc.boards) >= 2:
+                break
+        # crawl what the probes turned up
+        while queue and disc.pages_visited < max_pages:
+            url, depth, hint, ltext = queue.popleft()
+            if url in seen:
+                continue
+            seen.add(url)
+            r = fetcher.get(url, browser_on_block=True)
+            if not (r.ok and r.is_html):
+                continue
+            disc.pages_visited += 1
+            soup = BeautifulSoup(r.text, "lxml")
+            title = _page_title(soup)
+            page_board = classify_board(title) or hint
+            if classify_board(title) and not disc.board_for(page_board or ""):
+                disc.boards.append({"kind": page_board, "name": title.split("|")[0].strip(), "url": r.final_url, "source": "probed"})
+            if civicplus.detect(r.text, url) and "civicplus" not in adapters_run:
+                adapters_run.add("civicplus")
+                for d in civicplus.list_documents(fetcher, r.final_url, r.text, None):
+                    docs.setdefault(d.url, d)
+            for a in soup.select("a[href]"):
+                text = a.get_text(" ", strip=True)
+                absu = urljoin(r.final_url, a.get("href", "")).split("#")[0]
+                if not absu.startswith("http") or SKIP_WORDS.search(absu):
+                    continue
+                lc = classify_link(absu, text, _heading_context(a), page_board=page_board)
+                if lc.is_document and lc.doc_type != "other" and (lc.board_kind or page_board):
+                    docs.setdefault(absu, DocLink(url=absu, title=text or absu, doc_type=lc.doc_type, board_kind=lc.board_kind or page_board,
+                                                  meeting_date=lc.meeting_date, year=lc.year, context=_heading_context(a)))
+                elif same_site(absu, homepage) and depth < 3 and (lc.board_kind or FOLLOW_WORDS.search(text + " " + absu)):
+                    nu = normalize_url(absu)
+                    if nu not in seen:
+                        queue.append((nu, depth + 1, lc.board_kind or page_board, text))
     # towns that host minutes on eCode360's document portal without linking it from board pages
     if disc.ecode_id and "ecodedocs" not in adapters_run and not any(d.doc_type == "minutes" for d in docs.values()):
         adapters_run.add("ecodedocs")

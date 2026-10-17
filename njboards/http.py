@@ -150,7 +150,7 @@ class Fetcher:
                         if size > limit:
                             return Response(url, resp.url, resp.status_code, b"", ctype, error="too large")
                     r = Response(url, resp.url, resp.status_code, b"".join(chunks), ctype)
-                if looks_like_challenge(r.status, r.content) or (browser_on_block and r.status in (403, 406, 503) and "html" in ctype):
+                if looks_like_challenge(r.status, r.content) or (browser_on_block and r.status in (403, 406, 503)):
                     br = self._browser_get(url)
                     if br is not None:
                         if use_cache:
