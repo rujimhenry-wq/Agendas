@@ -25,7 +25,7 @@ from .pipeline import run_parse
 from .util import squash
 
 FIRM = r"(?:[A-Z][\w&.'\-]*[ ,]*){1,6}(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|& Associates)"
-PREPARED_BY = re.compile(r"(?:plans?|drawings?|survey|report|site\s+plan[s]?|set)[^.\n]{0,80}?\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:P\.?E\.?,?\s*)?(?:of\s+)?)?(" + FIRM + ")", re.I)
+PREPARED_BY = re.compile(r"\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:(?:P\.?E\.?|P\.?L\.?S\.?|L\.?S\.?|P\.?P\.?|AIA|R\.?A\.?)[.,]?\s*)*(?:of\s+)?)?([A-Z][\w&.'\-]*(?:[ ,]+[A-Z][\w&.'\-]*){0,6}[ ,]*(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|Surveys|Surveyors))", re.I)
 ENGINEER_FIELD = re.compile(r"\b(?:applicant'?s?\s+)?engineer(?:\s+of\s+record)?\s*[:\-]\s*([A-Z][^\n;|]{3,100})", re.I)
 WEEK_NAMES = re.compile(r"\b(first|second|third|fourth|last|1st|2nd|3rd|4th)\s+(monday|tuesday|wednesday|thursday)\b", re.I)
 
@@ -127,7 +127,14 @@ def _clean_applicant(name: Optional[str]) -> Optional[str]:
     name = re.sub(r"\s*\((?:application\s+)?documents?\)\s*", " ", name, flags=re.I)
     name = re.sub(r"\s*[-–]\s*(application\s+)?documents?\s*$", "", name, flags=re.I)
     name = squash(name).strip(" -–:,.")
-    return None if (not name or JUNK_APPLICANT.match(name) or len(name) < 3) else name
+    if not name or JUNK_APPLICANT.match(name) or len(name) < 3:
+        return None
+    if re.search(r"%[0-9A-F]{2}|\.pdf\b|https?://|\bp\d{2,4}-\d{2,4}\b", name, re.I):
+        return None  # link text or page references, not a party
+    if re.search(r"\b(Road|Rd\.?|Avenue|Ave\.?|Street|St\.?|Lane|Ln\.?|Drive|Dr\.?|Court|Ct\.?|Place|Pl\.?|Way|Terrace|Boulevard|Blvd\.?|Route|Highway|Pike|Turnpike|Parkway|Circle)\s*$", name, re.I) \
+            and not re.search(r"\b(LLC|Inc|Corp|Associates|Partners|Realty|Holdings|Properties|Group)\b", name, re.I):
+        return None  # an address used as the item heading
+    return name
 
 
 def _is_real_item(it: dict) -> bool:

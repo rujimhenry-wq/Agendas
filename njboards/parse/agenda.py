@@ -50,9 +50,20 @@ def split_items(text: str) -> list[dict]:
             if starts and i - starts[-1] <= 3 and not app_numbers(s) and not re.search(r"^\s*\d{1,3}\s*[.)]", s):
                 continue
             starts.append(i)
-    items = []
+    # an applicant line immediately followed by an application-number line is one item
+    merged_starts = []
     for n, st in enumerate(starts):
-        end = starts[n + 1] if n + 1 < len(starts) else len(lines)
+        nxt = starts[n + 1] if n + 1 < len(starts) else None
+        if merged_starts and st - merged_starts[-1] <= 3:
+            prev_chunk = "\n".join(lines[merged_starts[-1]:st])
+            this_line = lines[st]
+            if (not app_numbers(prev_chunk) and app_numbers(this_line) and not block_lots(prev_chunk)) or \
+               (app_numbers(prev_chunk) and not app_numbers(this_line) and not block_lots(this_line) and len(prev_chunk) < 60):
+                continue  # fold into the previous item
+        merged_starts.append(st)
+    items = []
+    for n, st in enumerate(merged_starts):
+        end = merged_starts[n + 1] if n + 1 < len(merged_starts) else len(lines)
         chunk = "\n".join(lines[st:end]).strip()
         if len(chunk) < 20:
             continue
@@ -61,6 +72,10 @@ def split_items(text: str) -> list[dict]:
 
 
 def _applicant_name(chunk: str, heading: str) -> Optional[str]:
+    first = chunk.splitlines()[0].strip()
+    if re.fullmatch(r"[A-Z][\w.'&,\- ]{2,80}?(?:\s*\((?:Application\s+)?Documents?\))?", first) and not app_numbers(first) and not block_lots(first) \
+            and re.search(r"[a-z]", first) and not re.match(r"^(Application|Resolution|Minutes|Public|New|Old|Continued|Carried)\b", first, re.I):
+        return re.sub(r"\s*\((?:Application\s+)?Documents?\)\s*$", "", first).strip(" ,")
     m = re.search(r"\bApplicant\s*(?:/\s*Owner)?\s*[:\-]\s*([^\n]{3,120})", chunk, re.I)
     if m:
         return squash(m.group(1)).rstrip(",;")
