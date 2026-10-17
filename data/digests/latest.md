@@ -1,6 +1,6 @@
 # NJ Land Use Boards — Weekly Digest (2026-10-17)
 
-Covers activity since 2026-10-17 and agendas through the next 30 days. 4 of 89 municipalities have parsed records. Upcoming agenda items: 28 · recent decisions: 1.
+Covers activity since 2026-10-17 and agendas through the next 30 days. 4 of 576 municipalities have parsed records. Upcoming agenda items: 24 · recent decisions: 1.
 
 Engineer = the applicant's engineer named in the agenda, minutes, resolution or review letter (blank when not stated).
 
@@ -34,19 +34,15 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20, 2026-10-21
 | Date | Board | Application | Applicant | Block/Lot | Types | Engineer |
 |---|---|---|---|---|---|---|
 | 2026-10-14 | planning | PB-26-289 |  |  | preliminary & final major site plan, variance |  |
-| 2026-10-19 | zoning | Emma and Craig Ahrens | Emma and Craig Ahrens |  | — |  |
-| 2026-10-19 | zoning | ZB-26-2345 |  |  | variance |  |
-| 2026-10-19 | zoning | Adam and Caitlin Daniels | Adam and Caitlin Daniels |  | — |  |
-| 2026-10-19 | zoning | ZB-26-2348 |  |  | variance |  |
-| 2026-10-19 | zoning | Irene R. Convers Esposito | Irene R. Convers Esposito |  | — |  |
-| 2026-10-19 | zoning | ZB-26-2322 |  |  | variance |  |
-| 2026-10-19 | zoning | James and Kaela Kennedy | James and Kaela Kennedy |  | — |  |
-| 2026-10-19 | zoning | ZB-26-2351 |  |  | variance |  |
-| 2026-10-21 | planning | Blackburn Road | Blackburn Road |  | variance |  |
-| 2026-10-21 | planning | Huntley Road | Huntley Road |  | variance |  |
-| 2026-10-21 | planning | Chapel Street | Chapel Street |  | variance |  |
-| 2026-10-21 | planning | P517-518 | %201%20Beechwood%20Avenue%20to%201%20Crestwood%20Lane.pdf p517-518 |  | — |  |
-| 2026-10-21 | planning | Woodland Avenue | Woodland Avenue |  | variance |  |
+| 2026-10-19 | zoning | ZB-26-2345 | Emma and Craig Ahrens |  | variance |  |
+| 2026-10-19 | zoning | ZB-26-2348 | Adam and Caitlin Daniels |  | variance |  |
+| 2026-10-19 | zoning | ZB-26-2322 | Irene R. Convers Esposito |  | variance |  |
+| 2026-10-19 | zoning | ZB-26-2351 | James and Kaela Kennedy |  | variance |  |
+| 2026-10-21 | planning | 1. 202 Blackburn Road: (c) variances for front yar |  |  | variance |  |
+| 2026-10-21 | planning | 2. 56 Huntley Road: (c) variance for no required g |  |  | variance |  |
+| 2026-10-21 | planning | 4. 8 Chapel Street: (d) variance for FAR and (c) v |  |  | variance |  |
+| 2026-10-21 | planning | P517-518 |  |  | — |  |
+| 2026-10-21 | planning | 5. 268 Woodland Avenue: (d) variance for FAR and ( |  |  | variance |  |
 | 2026-10-21 | planning | Demolition applications/permits | Demolition applications/permits |  | — |  |
 | 2026-10-21 | planning | Planning Board Applications | Planning Board Applications |  | — |  |
 

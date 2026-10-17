@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-17T16:11",
+  "generated": "2026-10-17T16:42",
   "since": "2026-10-17",
   "horizon_days": 30,
   "n_towns_with_data": 4,
-  "n_towns_total": 89,
-  "n_upcoming_items": 28,
+  "n_towns_total": 576,
+  "n_upcoming_items": 24,
   "n_recent_decisions": 1,
   "towns": [
     {
@@ -195,70 +195,40 @@
         {
           "meeting_date": "2026-10-19",
           "board": "zoning",
-          "application": "Emma and Craig Ahrens",
+          "application": "ZB-26-2345",
           "applicant": "Emma and Craig Ahrens",
           "block_lots": [],
           "addresses": [
             "168 Ashland Road"
           ],
-          "types": [],
-          "engineers": []
-        },
-        {
-          "meeting_date": "2026-10-19",
-          "board": "zoning",
-          "application": "ZB-26-2345",
-          "applicant": null,
-          "block_lots": [],
-          "addresses": [],
           "types": [
             "variance"
           ],
-          "engineers": []
-        },
-        {
-          "meeting_date": "2026-10-19",
-          "board": "zoning",
-          "application": "Adam and Caitlin Daniels",
-          "applicant": "Adam and Caitlin Daniels",
-          "block_lots": [],
-          "addresses": [
-            "27 Warwick Road"
-          ],
-          "types": [],
           "engineers": []
         },
         {
           "meeting_date": "2026-10-19",
           "board": "zoning",
           "application": "ZB-26-2348",
-          "applicant": null,
+          "applicant": "Adam and Caitlin Daniels",
           "block_lots": [],
-          "addresses": [],
+          "addresses": [
+            "27 Warwick Road"
+          ],
           "types": [
             "variance"
           ],
-          "engineers": []
-        },
-        {
-          "meeting_date": "2026-10-19",
-          "board": "zoning",
-          "application": "Irene R. Convers Esposito",
-          "applicant": "Irene R. Convers Esposito",
-          "block_lots": [],
-          "addresses": [
-            "18 Linden Place"
-          ],
-          "types": [],
           "engineers": []
         },
         {
           "meeting_date": "2026-10-19",
           "board": "zoning",
           "application": "ZB-26-2322",
-          "applicant": null,
+          "applicant": "Irene R. Convers Esposito",
           "block_lots": [],
-          "addresses": [],
+          "addresses": [
+            "18 Linden Place"
+          ],
           "types": [
             "variance"
           ],
@@ -267,22 +237,12 @@
         {
           "meeting_date": "2026-10-19",
           "board": "zoning",
-          "application": "James and Kaela Kennedy",
+          "application": "ZB-26-2351",
           "applicant": "James and Kaela Kennedy",
           "block_lots": [],
           "addresses": [
             "41 Webster Avenue"
           ],
-          "types": [],
-          "engineers": []
-        },
-        {
-          "meeting_date": "2026-10-19",
-          "board": "zoning",
-          "application": "ZB-26-2351",
-          "applicant": null,
-          "block_lots": [],
-          "addresses": [],
           "types": [
             "variance"
           ],
@@ -291,8 +251,8 @@
         {
           "meeting_date": "2026-10-21",
           "board": "planning",
-          "application": "Blackburn Road",
-          "applicant": "Blackburn Road",
+          "application": "1. 202 Blackburn Road: (c) variances for front yar",
+          "applicant": null,
           "block_lots": [],
           "addresses": [
             "202 Blackburn Road"
@@ -305,8 +265,8 @@
         {
           "meeting_date": "2026-10-21",
           "board": "planning",
-          "application": "Huntley Road",
-          "applicant": "Huntley Road",
+          "application": "2. 56 Huntley Road: (c) variance for no required g",
+          "applicant": null,
           "block_lots": [],
           "addresses": [
             "56 Huntley Road",
@@ -320,8 +280,8 @@
         {
           "meeting_date": "2026-10-21",
           "board": "planning",
-          "application": "Chapel Street",
-          "applicant": "Chapel Street",
+          "application": "4. 8 Chapel Street: (d) variance for FAR and (c) v",
+          "applicant": null,
           "block_lots": [],
           "addresses": [
             "8 Chapel Street"
@@ -335,7 +295,7 @@
           "meeting_date": "2026-10-21",
           "board": "planning",
           "application": "P517-518",
-          "applicant": "%201%20Beechwood%20Avenue%20to%201%20Crestwood%20Lane.pdf p517-518",
+          "applicant": null,
           "block_lots": [],
           "addresses": [],
           "types": [],
@@ -344,8 +304,8 @@
         {
           "meeting_date": "2026-10-21",
           "board": "planning",
-          "application": "Woodland Avenue",
-          "applicant": "Woodland Avenue",
+          "application": "5. 268 Woodland Avenue: (d) variance for FAR and (",
+          "applicant": null,
           "block_lots": [],
           "addresses": [
             "268 Woodland Avenue"

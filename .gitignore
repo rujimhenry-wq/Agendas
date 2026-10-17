@@ -14,3 +14,4 @@ data/reports/
 !data/digests/
 data/njboards.db
 .venv/
+data/*.db-journal
