@@ -108,6 +108,7 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
              manual_boards: Optional[list[dict]] = None) -> Discovery:
     max_pages = max_pages or SETTINGS.max_pages_per_site
     homepage = homepage if homepage.startswith("http") else "https://" + homepage
+    homepage = re.sub(r"^http://", "https://", homepage)  # plain http rarely works anywhere now
     disc = Discovery(homepage=homepage)
     seen: set[str] = set()
     queue: deque[tuple[str, int, Optional[str], str]] = deque()  # url, depth, board hint, link text
@@ -123,10 +124,9 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
         if url in seen:
             continue
         seen.add(url)
-        r = fetcher.get(url)
+        r = fetcher.get(url, browser_on_block=True)
         if not r.ok:
-            if r.error:
-                disc.errors.append(f"{url}: {r.error}")
+            disc.errors.append(f"{url}: {r.error or 'HTTP ' + str(r.status)}")
             continue
         if not r.is_html:
             if looks_like_document(url, r.content_type):

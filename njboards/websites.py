@@ -95,7 +95,7 @@ def county_directory_links(fetcher: Fetcher, county: str, max_pages: int = 25) -
                 if re.search(r"municipal|town|borough|cities|communit|links|directory|government", text + " " + p.path, re.I) and len(seen) + len(queue) < max_pages * 2:
                     queue.append(href)
             elif not NOT_MUNI_HOSTS.search(p.netloc) and re.search(r"\.(gov|org|us|net|com)$", p.netloc, re.I):
-                found.setdefault(p.netloc.lower(), f"{p.scheme}://{p.netloc}/")
+                found.setdefault(p.netloc.lower(), f"https://{p.netloc}/")
     return found
 
 

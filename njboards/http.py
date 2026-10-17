@@ -124,7 +124,9 @@ class Fetcher:
         self._last_hit[host] = time.time()
 
     def get(self, url: str, max_age_hours: Optional[float] = None, use_cache: bool = True,
-            stream_limit: Optional[int] = None) -> Response:
+            stream_limit: Optional[int] = None, browser_on_block: bool = False) -> Response:
+        """browser_on_block: when a *page* answers 403/406/503 to the plain client (a WAF
+        rejecting non-browser agents), load it once in the headless browser instead."""
         if use_cache:
             cached = self._cache_get(url, max_age_hours)
             if cached:
@@ -148,7 +150,7 @@ class Fetcher:
                         if size > limit:
                             return Response(url, resp.url, resp.status_code, b"", ctype, error="too large")
                     r = Response(url, resp.url, resp.status_code, b"".join(chunks), ctype)
-                if looks_like_challenge(r.status, r.content):
+                if looks_like_challenge(r.status, r.content) or (browser_on_block and r.status in (403, 406, 503) and "html" in ctype):
                     br = self._browser_get(url)
                     if br is not None:
                         if use_cache:
