@@ -11,5 +11,6 @@ data/text/
 data/parsed/
 data/code/
 data/reports/
+!data/digests/
 data/njboards.db
 .venv/

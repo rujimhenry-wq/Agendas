@@ -316,6 +316,7 @@ def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit:
     since_d = date.fromisoformat(since) if since else (last_digest_date() or date.today() - timedelta(days=7))
     d = build_digest(db, since=since_d, horizon_days=horizon)
     path = write_digest(d)
+    export_from_db(db, SETTINGS.municipalities_file)  # discovered board pages seed next week's run
     click.echo(f"digest: {path} ({d['n_towns_with_data']} towns, {d['n_upcoming_items']} upcoming items, {d['n_recent_decisions']} recent decisions)")
 
 
