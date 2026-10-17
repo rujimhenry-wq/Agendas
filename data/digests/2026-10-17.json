@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-17T16:00",
-  "since": "2026-09-01",
+  "generated": "2026-10-17T16:11",
+  "since": "2026-10-17",
   "horizon_days": 30,
   "n_towns_with_data": 4,
   "n_towns_total": 89,
-  "n_upcoming_items": 0,
-  "n_recent_decisions": 9,
+  "n_upcoming_items": 28,
+  "n_recent_decisions": 1,
   "towns": [
     {
       "slug": "montclair-essex",
@@ -14,276 +14,9 @@
       "website": "https://www.montclairnjusa.org/",
       "upcoming_meetings": [],
       "upcoming": [],
-      "recent": [
-        {
-          "meeting_date": "2026-09-14",
-          "board": "planning",
-          "application": "B1711 L30",
-          "applicant": "App. 2945",
-          "types": [
-            "site plan",
-            "bulk variance (c)"
-          ],
-          "decision": "approved",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
-        },
-        {
-          "meeting_date": "2026-08-19",
-          "board": "zoning",
-          "application": "B1503 L19.",
-          "applicant": "App. 2953",
-          "types": [],
-          "decision": "approved",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
-        }
-      ],
-      "new_documents": [
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 10-21-2026",
-          "date": "2026-10-21",
-          "url": "https://ecode360.com/MO0769/document/753296624.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 9-28-26",
-          "date": "2026-09-28",
-          "url": "https://ecode360.com/MO0769/document/753287533.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 09-16-2026",
-          "date": "2026-09-16",
-          "url": "https://ecode360.com/MO0769/document/753282504.pdf"
-        },
-        {
-          "type": "notice",
-          "title": "O-26-37",
-          "date": "2026-09-15",
-          "url": "https://www.montclairnjusa.org/files/sharedassets/public/v/1/public-notices/2026-ordinance-adoptions/september-15-2026/adopted-o-26-37-corrected-o-development-escrow-fees.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 9-14-2026",
-          "date": "2026-09-14",
-          "url": "https://ecode360.com/MO0769/document/753291013.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 9-14-26",
-          "date": "2026-09-14",
-          "url": "https://ecode360.com/MO0769/document/753282123.pdf"
-        },
-        {
-          "type": "notice",
-          "title": "Notice of Special Planning Board Meeting - August 31, 2026",
-          "date": "2026-08-31",
-          "url": "https://www.montclairnjusa.org/files/sharedassets/public/v/1/public-notices/sunshine-notice-aug-31-2026.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 8-31-2026",
-          "date": "2026-08-31",
-          "url": "https://ecode360.com/MO0769/document/753284378.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 8-31-26",
-          "date": "2026-08-31",
-          "url": "https://ecode360.com/MO0769/document/753278655.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 08-19-26",
-          "date": "2026-08-19",
-          "url": "https://ecode360.com/MO0769/document/753295950.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 08-19-2026",
-          "date": "2026-08-19",
-          "url": "https://ecode360.com/MO0769/document/753275617.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 8-17-2026",
-          "date": "2026-08-17",
-          "url": "https://ecode360.com/MO0769/document/753280225.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 8-17-26",
-          "date": "2026-08-17",
-          "url": "https://ecode360.com/MO0769/document/753275828.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 8-3-2026",
-          "date": "2026-08-03",
-          "url": "https://ecode360.com/MO0769/document/753277197.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 8-3-26",
-          "date": "2026-08-03",
-          "url": "https://ecode360.com/MO0769/document/753272212.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 7-20-2026",
-          "date": "2026-07-20",
-          "url": "https://ecode360.com/MO0769/document/753273473.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 7-20-26",
-          "date": "2026-07-20",
-          "url": "https://ecode360.com/MO0769/document/753270719.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 07-15-26",
-          "date": "2026-07-15",
-          "url": "https://ecode360.com/MO0769/document/753282542.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 07-15-2026",
-          "date": "2026-07-15",
-          "url": "https://ecode360.com/MO0769/document/753267852.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 7-6-2026",
-          "date": "2026-07-06",
-          "url": "https://ecode360.com/MO0769/document/753270718.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 7-6-26",
-          "date": "2026-07-06",
-          "url": "https://ecode360.com/MO0769/document/753266917.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 06-17-26",
-          "date": "2026-06-17",
-          "url": "https://ecode360.com/MO0769/document/753275683.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 06-17-2026",
-          "date": "2026-06-17",
-          "url": "https://ecode360.com/MO0769/document/753262711.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 6-15-2026",
-          "date": "2026-06-15",
-          "url": "https://ecode360.com/MO0769/document/753267469.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 6-15-26",
-          "date": "2026-06-15",
-          "url": "https://ecode360.com/MO0769/document/753261761.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 06-03-26",
-          "date": "2026-06-03",
-          "url": "https://ecode360.com/MO0769/document/753266685.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 06-03-2026",
-          "date": "2026-06-03",
-          "url": "https://ecode360.com/MO0769/document/753259865.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 6-1-2026",
-          "date": "2026-06-01",
-          "url": "https://ecode360.com/MO0769/document/753263390.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 6-1-26",
-          "date": "2026-06-01",
-          "url": "https://ecode360.com/MO0769/document/753261760.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 05-20-26",
-          "date": "2026-05-20",
-          "url": "https://ecode360.com/MO0769/document/753262025.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 05-20-2026",
-          "date": "2026-05-20",
-          "url": "https://ecode360.com/MO0769/document/753254735.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 5-18-2026",
-          "date": "2026-05-18",
-          "url": "https://ecode360.com/MO0769/document/753263389.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 5-18-26",
-          "date": "2026-05-18",
-          "url": "https://ecode360.com/MO0769/document/753260585.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 5-4-2026",
-          "date": "2026-05-04",
-          "url": "https://ecode360.com/MO0769/document/753260591.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 5-4-26",
-          "date": "2026-05-04",
-          "url": "https://ecode360.com/MO0769/document/753251181.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 4-27-2026",
-          "date": "2026-04-27",
-          "url": "https://ecode360.com/MO0769/document/753260592.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda 4-27-26",
-          "date": "2026-04-27",
-          "url": "https://ecode360.com/MO0769/document/753251184.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Board of Adjustment Minutes 04-22-26",
-          "date": "2026-04-22",
-          "url": "https://ecode360.com/MO0769/document/753258773.pdf"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Agenda 04-22-2026",
-          "date": "2026-04-22",
-          "url": "https://ecode360.com/MO0769/document/753245008.pdf"
-        },
-        {
-          "type": "minutes",
-          "title": "Planning Board Minutes 4-13-2026",
-          "date": "2026-04-13",
-          "url": "https://ecode360.com/MO0769/document/753251527.pdf"
-        }
-      ],
-      "n_new_documents": 967
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
     },
     {
       "slug": "cranford-union",
@@ -303,833 +36,940 @@
           "n_conditions": 0,
           "engineers": [],
           "source": "resolution"
-        },
-        {
-          "meeting_date": "2026-09-18",
-          "board": "planning",
-          "application": "PB24-002",
-          "applicant": null,
-          "types": [
-            "amended site plan"
-          ],
-          "decision": "approved",
-          "n_conditions": 0,
-          "engineers": [],
-          "source": "resolution"
         }
       ],
       "new_documents": [
         {
-          "type": "notice",
-          "title": "Sunshine Notice - Planning Board Meeting Cancellation 10.21.26",
-          "date": "2026-10-21",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10742/Sunshine-Notice---Planning-Board-Meeting-Cancellation-102126"
+          "type": "review_letter",
+          "title": "Planner Report  No. 1 9.16.26 730-740 Walnut Ave",
+          "date": "2026-09-16",
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/10686/Planner-Report--No-1-91626-730-740-Walnut-Ave"
         },
         {
-          "type": "agenda",
-          "title": "October 2026 Agenda",
-          "date": "2026-10-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10152026-506"
+          "type": "application",
+          "title": "740-730 Wlanut Ave_Appeal Application rcvd. 6.23.26",
+          "date": "2026-06-23",
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/10665/740-730-Wlanut-Ave_Appeal-Application-rcvd-62326"
         },
         {
-          "type": "resolution",
-          "title": "Downtown",
-          "date": "2026-10-13",
-          "url": "https://downtowncranford.org/"
-        },
-        {
-          "type": "notice",
-          "title": "PB Legal Notice - 73-91 Myrtle Street - AVIDD - 10.7.26",
-          "date": "2026-10-07",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10741/PB-Legal-Notice---73-91-Myrtle-Street---AVIDD---10726"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Agenda - October 7, 2026",
-          "date": "2026-10-07",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10072026-505"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Tuesday, October 6, 2026, 7:00 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10062026-502"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, October 6, 7:30 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10062026-503"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Tuesday, October 6, 2026, 7:00 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-644"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Monday, October 6, 2026, 7:00 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-640"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, October 6, 7:30 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-645"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, October 6, 7:30 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-643"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, October 6, 7:30 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-642"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, October 6, 7:30 p.m.",
-          "date": "2026-10-06",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_10062026-641"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Workshop Meeting Agenda - Monday, October 5, 2026, 7:00 p.m.",
-          "date": "2026-10-05",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10052026-501"
-        },
-        {
-          "type": "agenda",
-          "title": "Zoning Board of Adjustment Agenda - 10.5.26",
-          "date": "2026-10-05",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_10052026-504"
-        },
-        {
-          "type": "notice",
-          "title": "ZBA Legal Notice - 9.28.26",
-          "date": "2026-09-28",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10740/ZBA-Legal-Notice---92826"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Special Meeting (Remote Public Meeting)Agenda - Monday, September 28, 2026, 12:00 p.m. (12 noon)",
-          "date": "2026-09-28",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09282026-499"
-        },
-        {
-          "type": "agenda",
-          "title": "Zoning Board of Adjustment Agenda - 9.28.26",
-          "date": "2026-09-28",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09282026-500"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Special Meeting (Remote Public Meeting)Agenda - Monday, September 28, 2026, 12:00 p.m. (12 noon)",
-          "date": "2026-09-28",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09282026-638"
+          "type": "application",
+          "title": "letter_from_mr._meese_regarding_shpo_concurrence-3.4.20",
+          "date": "2020-03-04",
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2983/letter_from_mr_meese_regarding_shpo_concurrence-3420"
         },
         {
           "type": "site_plan",
-          "title": "REVISED Site Plan_09242026",
-          "date": "2026-09-24",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10763/REVISED-Site-Plan_09242026"
+          "title": "7_mohican_pl_architectural-site_plans_4.21.25",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2826/7_mohican_pl_architectural-site_plans_42125"
         },
         {
-          "type": "resolution",
-          "title": "PB Legal Notice - Adoption of Resolution Wonder Group",
-          "date": "2026-09-18",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10679/PB-Legal-Notice---Adoption-of-Resolution-Wonder-Group"
+          "type": "site_plan",
+          "title": "7_mohican_pl_property_survey_1.21.25",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2827/7_mohican_pl_property_survey_12125"
+        },
+        {
+          "type": "site_plan",
+          "title": "704_gallows_hill_rd_architectural_plans_4-30-25",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2831/704_gallows_hill_rd_architectural_plans_4-30-25"
+        },
+        {
+          "type": "site_plan",
+          "title": "704_gallows_hill_rd_property_survey_11.4.21",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2833/704_gallows_hill_rd_property_survey_11421"
         },
         {
           "type": "application",
-          "title": "REVISED Application 1/2 Quine Street 9.18.26",
-          "date": "2026-09-18",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10757/REVISED-Application-12-Quine-Street-91826"
+          "title": "01_zba-19-010_-_ucc_cellular_tower_-_full_applicationrevised",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2996/01_zba-19-010_-_ucc_cellular_tower_-_full_applicationrevised"
         },
         {
           "type": "application",
-          "title": "REVISED Application 9.18.26",
-          "date": "2026-09-18",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10752/REVISED-Application-91826"
+          "title": "2024.11.26_-_stipulation_of_settlement_and_consent_judgment_-_executed_by_the_carriers",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2980/20241126_-_stipulation_of_settlement_and_consent_judgment_-_executed_by_the_carriers"
         },
         {
-          "type": "agenda",
-          "title": "September 2026 Agenda",
-          "date": "2026-09-17",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09172026-498"
+          "type": "application",
+          "title": "application_addendum_-_alternative_location",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2984/application_addendum_-_alternative_location"
         },
         {
-          "type": "agenda",
-          "title": " | Sep 17, 2026",
-          "date": "2026-09-17",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Minutes/_09172026-498"
+          "type": "application",
+          "title": "fast_bw_scan_to_a_pdf_file_1_20190701102334209",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2994/fast_bw_scan_to_a_pdf_file_1_20190701102334209"
         },
         {
-          "type": "agenda",
-          "title": "September 2026 Agenda",
-          "date": "2026-09-17",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09172026-646"
+          "type": "application",
+          "title": "revised_cell_tower_applicatin_10.10.19",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2995/revised_cell_tower_applicatin_101019"
         },
         {
-          "type": "agenda",
-          "title": "Planning Board Agenda - September 16, 2026",
-          "date": "2026-09-16",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09162026-497"
+          "type": "application",
+          "title": "revised_tolling_agreement_3_3_2020",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2985/revised_tolling_agreement_3_3_2020"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, September 15, 2026, 7:30 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09152026-493"
+          "type": "application",
+          "title": "tolling_agreement",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2990/tolling_agreement"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Tuesday, September 15, 2026, 7:00 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09152026-495"
+          "type": "application",
+          "title": "ucc_propagation_parameters",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2989/ucc_propagation_parameters"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, September 15, 2026, 7:30 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09152026-635"
+          "type": "application",
+          "title": "union_county_college_letter_-_leasing_of_parking_area",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2981/union_county_college_letter_-_leasing_of_parking_area"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, September 15, 2026, 7:30 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09152026-634"
+          "type": "application",
+          "title": "westfield_4_-_acoustical_report_l2019011a",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2991/westfield_4_-_acoustical_report_l2019011a"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Official Meeting Agenda - Tuesday, September 15, 2026, 7:30 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09152026-633"
+          "type": "application",
+          "title": "westfield_4_-_ucc_-_airspace_-_nnr",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2982/westfield_4_-_ucc_-_airspace_-_nnr"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Tuesday, September 15, 2026, 7:00 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09152026-632"
+          "type": "site_plan",
+          "title": "westfield_4_rev_2_zoning_drawings_05.15.19",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2998/westfield_4_rev_2_zoning_drawings_051519"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Conference Meeting Agenda - Tuesday, September 15, 2026, 7:00 p.m.",
-          "date": "2026-09-15",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09152026-630"
+          "type": "site_plan",
+          "title": "westfield_4_rev_4_zoning_drawings_09.09.19_x-small",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2997/westfield_4_rev_4_zoning_drawings_090919_x-small"
         },
         {
-          "type": "agenda",
-          "title": "Township Committee Workshop Meeting Agenda - Monday, September 14, 2026, 7:00 p.m.",
-          "date": "2026-09-14",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09142026-494"
-        },
-        {
-          "type": "agenda",
-          "title": "Zoning Board of Adjustment Agenda  9.14.26",
-          "date": "2026-09-14",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/Agenda/_09142026-496"
-        },
-        {
-          "type": "agenda",
-          "title": "Township Committee Workshop Meeting Agenda - Monday, September 14, 2026",
-          "date": "2026-09-14",
-          "url": "https://www.cranfordnj.org/AgendaCenter/ViewFile/ArchivedAgenda/_09142026-631"
-        },
-        {
-          "type": "review_letter",
-          "title": "Board Engineer Review Letter No. 8   9.10.26",
-          "date": "2026-09-10",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10609/Board-Engineer-Review-Letter-No-8---91026"
-        },
-        {
-          "type": "review_letter",
-          "title": "Board Planner's  Report No. 7   9.10.26",
-          "date": "2026-09-10",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10608/Board-Planners--Report-No-7---91026"
-        },
-        {
-          "type": "notice",
-          "title": "Sunshine Notice - Planning Board Meeting Cancelled 9.2.26",
-          "date": "2026-09-02",
-          "url": "https://www.cranfordnj.org/DocumentCenter/View/10543/Sunshine-Notice---Planning-Board-Meeting-Cancelled-9226"
+          "type": "application",
+          "title": "wetland_investigation_report_for_cell_tower_application",
+          "date": null,
+          "url": "https://www.cranfordnj.org/DocumentCenter/View/2993/wetland_investigation_report_for_cell_tower_application"
         }
       ],
-      "n_new_documents": 484
+      "n_new_documents": 21
     },
     {
       "slug": "summit-union",
       "name": "Summit",
       "county": "Union",
       "website": "https://www.cityofsummit.org/",
-      "upcoming_meetings": [],
-      "upcoming": [],
-      "recent": [
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
         {
-          "meeting_date": "2026-08-17",
+          "meeting_date": "2026-10-14",
           "board": "planning",
           "application": "PB-26-289",
-          "applicant": "Application",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
           "types": [
             "preliminary & final major site plan",
             "variance"
           ],
-          "decision": "memorialized",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
+          "engineers": []
         },
         {
-          "meeting_date": "2026-08-17",
-          "board": "planning",
-          "application": "PB-26-297",
-          "applicant": "\u00a2 527 Morris Avenue, Temple Hill Associates, LLC, BL",
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "Emma and Craig Ahrens",
+          "applicant": "Emma and Craig Ahrens",
+          "block_lots": [],
+          "addresses": [
+            "168 Ashland Road"
+          ],
           "types": [],
-          "decision": "approved",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2345",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "Adam and Caitlin Daniels",
+          "applicant": "Adam and Caitlin Daniels",
+          "block_lots": [],
+          "addresses": [
+            "27 Warwick Road"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2348",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "Irene R. Convers Esposito",
+          "applicant": "Irene R. Convers Esposito",
+          "block_lots": [],
+          "addresses": [
+            "18 Linden Place"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2322",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "James and Kaela Kennedy",
+          "applicant": "James and Kaela Kennedy",
+          "block_lots": [],
+          "addresses": [
+            "41 Webster Avenue"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2351",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Blackburn Road",
+          "applicant": "Blackburn Road",
+          "block_lots": [],
+          "addresses": [
+            "202 Blackburn Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Huntley Road",
+          "applicant": "Huntley Road",
+          "block_lots": [],
+          "addresses": [
+            "56 Huntley Road",
+            "190 River Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Chapel Street",
+          "applicant": "Chapel Street",
+          "block_lots": [],
+          "addresses": [
+            "8 Chapel Street"
+          ],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P517-518",
+          "applicant": "%201%20Beechwood%20Avenue%20to%201%20Crestwood%20Lane.pdf p517-518",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Woodland Avenue",
+          "applicant": "Woodland Avenue",
+          "block_lots": [],
+          "addresses": [
+            "268 Woodland Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Demolition applications/permits",
+          "applicant": "Demolition applications/permits",
+          "block_lots": [],
+          "addresses": [
+            "49 Canoe Brook Parkway",
+            "795 Old Springfield Avenue",
+            "565 Morris Avenue"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Planning Board Applications",
+          "applicant": "Planning Board Applications",
+          "block_lots": [],
+          "addresses": [
+            "190 River Road",
+            "527 Morris Avenue"
+          ],
+          "types": [],
+          "engineers": []
         }
       ],
+      "recent": [],
       "new_documents": [
         {
           "type": "agenda",
-          "title": "Historic Preservation Commission Meeting Agenda",
-          "date": "2026-10-21",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10212026-1366"
+          "title": "AGENDA: Download the 2/18/2025 Agenda with ZOOM info",
+          "date": "2025-02-18",
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/13278"
         },
         {
           "type": "agenda",
-          "title": "10-20-26 Common Council Meeting Agenda",
-          "date": "2026-10-20",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10202026-1367?html=true"
+          "title": "AGENDA: Download the 2/12/2024 Agenda with ZOOM info",
+          "date": "2024-02-12",
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/11175"
+        },
+        {
+          "type": "minutes",
+          "title": "MINUTES: Download the 2/12/2024 AH Committee meeting minutes",
+          "date": "2024-02-12",
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/11553"
+        },
+        {
+          "type": "notice",
+          "title": "NOTICE: \u00a0Download the 2/12/2024 Publication Notice",
+          "date": "2024-02-12",
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/11260"
         },
         {
           "type": "agenda",
-          "title": "PDF",
-          "date": "2026-10-20",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10202026-1367"
+          "title": "Download the 2/13/2023 Agenda with ZOOM info",
+          "date": "2023-02-13",
+          "url": "https://cityofsummit.org/DocumentCenter/View/9094"
+        },
+        {
+          "type": "minutes",
+          "title": "Download the 2/13/2023 minutes",
+          "date": "2023-02-13",
+          "url": "https://cityofsummit.org/DocumentCenter/View/9481"
+        },
+        {
+          "type": "notice",
+          "title": "Download the 2/13/2023 Publication Notice",
+          "date": "2023-02-13",
+          "url": "https://cityofsummit.org/DocumentCenter/View/9219"
         },
         {
           "type": "agenda",
-          "title": "Packet",
-          "date": "2026-10-20",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10202026-1367?packet=true"
+          "title": "Download the 2/7/2022 agenda",
+          "date": "2022-02-07",
+          "url": "https://cityofsummit.org/DocumentCenter/View/6404"
+        },
+        {
+          "type": "minutes",
+          "title": "Download the 2/7/2022 minutes",
+          "date": "2022-02-07",
+          "url": "https://cityofsummit.org/DocumentCenter/View/7064"
         },
         {
           "type": "agenda",
-          "title": "Zoning Board of Adjustment Meeting Agenda",
-          "date": "2026-10-19",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10192026-1365"
+          "title": "https://leckingtonadvisors.com/",
+          "date": "2021-10-25",
+          "url": "https://leckingtonadvisors.com/"
+        },
+        {
+          "type": "minutes",
+          "title": "Download the 10/25/2021 minutes",
+          "date": "2021-10-25",
+          "url": "https://cityofsummit.org/DocumentCenter/View/6358"
         },
         {
           "type": "agenda",
-          "title": "Special Planning Board Meeting Agenda",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/AgendaCenter/ViewFile/Agenda/_10142026-1364"
+          "title": "Download the 2/3/2021 agenda",
+          "date": "2021-02-03",
+          "url": "https://cityofsummit.org/DocumentCenter/View/5167"
+        },
+        {
+          "type": "minutes",
+          "title": "Download the 2/3/2021 minutes",
+          "date": "2021-02-03",
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/5358/AH-Minutes_2_3_-2021_Final"
+        },
+        {
+          "type": "agenda",
+          "title": "Download the 2/27/2020 agenda",
+          "date": "2020-02-27",
+          "url": "https://cityofsummit.org/DocumentCenter/View/3635"
+        },
+        {
+          "type": "minutes",
+          "title": "Download the 2/27/2020 minutes",
+          "date": "2020-02-27",
+          "url": "https://cityofsummit.org/DocumentCenter/View/3758"
         },
         {
           "type": "application",
-          "title": "Application",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16942"
+          "title": "volunteer application portal",
+          "date": null,
+          "url": "https://summitnj.granicus.com/boards/w/ffb45e7f75aee8db"
         },
         {
-          "type": "site_plan",
-          "title": "Preliminary and Final Site Plan",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16956"
+          "type": "checklist",
+          "title": "Green Building Checklist",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/564"
         },
         {
-          "type": "site_plan",
-          "title": "Architectural Plans",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16948"
+          "type": "checklist",
+          "title": "Doing Business in Summit checklist",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/8092/Checklist-Doing-Business-in-Summit"
         },
         {
-          "type": "site_plan",
-          "title": "ALTA Survey",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16943"
+          "type": "ordinance",
+          "title": "Click this link to see the List of Historic Properties as established in Chapter 35, Development Regulations Ordinance, Part V, Historic Preservation by year constructed.",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/16546"
         },
         {
-          "type": "site_plan",
-          "title": "Landscape Plans",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16949"
+          "type": "ordinance",
+          "title": "Ordinance and Design Guidelines | Ordinance and Design Guidelines",
+          "date": null,
+          "url": "https://ecode360.com/attachment/SU4097/SU4097-035a%20Appendix%20A.pdf"
         },
         {
-          "type": "site_plan",
-          "title": "Traffic Impact Study",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16945"
+          "type": "ordinance",
+          "title": "Historic Preservation Ordinance",
+          "date": null,
+          "url": "https://ecode360.com/SU4097/laws/LF2492963.pdf"
         },
         {
-          "type": "review_letter",
-          "title": "Sanitary Sewer and Potable Water Engineer's Report",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16947"
+          "type": "ordinance",
+          "title": "Design & Preservation Guidelines",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/1670/HPC-Design-and-Preservation-Guidelines?bidId="
         },
         {
-          "type": "site_plan",
-          "title": "Fire Truck Reach Exhibit",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16950"
+          "type": "application",
+          "title": "Historic Plaque Application",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/514/Plaque-Application-PDF?bidId="
         },
         {
-          "type": "site_plan",
-          "title": "Steep Slopes Exhibit",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16940"
+          "type": "application",
+          "title": "Preservation Award Nomination Form",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/8977/HPC-Award-Nomination-Form"
         },
         {
-          "type": "resolution",
-          "title": "Resolution Authorizing Mayor to Execute a Mediation Agreement Between City of Summit and Fair Share Housing Center",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/16978"
+          "type": "notice",
+          "title": "Fair Eviction Notice Act",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/5719/Fair-Eviction-Notice-Act"
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-1",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17024"
+          "type": "application",
+          "title": "Property use application",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/12309/BuildingBusiness-Owner-Information-Form?bidId="
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-2",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17025"
+          "type": "application",
+          "title": "Employee parking permit",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/2947/2022-Downtown-Employee-Digital-Permit-Application-PDF?bidId="
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-3",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17023"
+          "type": "application",
+          "title": "Zoning Certificate of Occupancy Form",
+          "date": null,
+          "url": "https://cityofsummit.org/DocumentCenter/View/78/Zoning-Certificate-of-Occupancy-Application-PDF-?bidId="
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-4",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17140"
+          "type": "application",
+          "title": "Handicap Placard PERM Application",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/472/Handicap-Placard-PERM-Application-PDF"
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-5",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17141"
+          "type": "application",
+          "title": "Handicap Placard TEMP Application",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/473/Handicap-Placard-TEMP-Application-PDF"
         },
         {
-          "type": "site_plan",
-          "title": "Exhibit A-6",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17142"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-7",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17143"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-8",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17144"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-9",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17145"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-10",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17146"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-11",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17147"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-12",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17148"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-13",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17149"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-14",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17150"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-15",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17151"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-16",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17139"
-        },
-        {
-          "type": "review_letter",
-          "title": "Sanitary Sewer & Potable Water Engineer's Report",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17178"
-        },
-        {
-          "type": "site_plan",
-          "title": "Revised Landscape Plan",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17185"
-        },
-        {
-          "type": "site_plan",
-          "title": "Revised ALTA Survey",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17186"
-        },
-        {
-          "type": "site_plan",
-          "title": "Revised Site Plan",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17173"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-17",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17238"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-18",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17239"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-19",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17240"
-        },
-        {
-          "type": "site_plan",
-          "title": "Exhibit A-20",
-          "date": "2026-10-14",
-          "url": "https://www.cityofsummit.org/DocumentCenter/View/17241"
+          "type": "application",
+          "title": "Business Registration application",
+          "date": null,
+          "url": "https://www.cityofsummit.org/DocumentCenter/View/282/Business-Registration-Application-PDF"
         }
       ],
-      "n_new_documents": 1270
+      "n_new_documents": 31
     },
     {
       "slug": "westfield-union",
       "name": "Westfield",
       "county": "Union",
       "website": "https://www.westfieldnj.gov/",
-      "upcoming_meetings": [],
-      "upcoming": [],
-      "recent": [
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
         {
-          "meeting_date": "2026-09-09",
-          "board": "planning",
-          "application": "PB26-003",
-          "applicant": "4 PB 26-003",
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-006",
+          "applicant": "Andrew & Maria Bausch",
+          "block_lots": [],
+          "addresses": [
+            "126 Hyslip Avenue"
+          ],
           "types": [],
-          "decision": "approved",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
+          "engineers": []
         },
         {
-          "meeting_date": "2026-09-09",
-          "board": "planning",
-          "application": "PB23-006",
-          "applicant": "19 application number PB 23-006, and the applicant is",
-          "types": [
-            "variance"
-          ],
-          "decision": "approved",
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-017",
+          "applicant": "Jacob & Jasmin Kriss",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "engineers": []
         },
         {
-          "meeting_date": "2026-09-09",
-          "board": "planning",
-          "application": "PB26-003",
-          "applicant": "20 brings us to our new appeal, PB 26-003. Mr. Hehl.",
-          "types": [
-            "preliminary & final major site plan",
-            "bulk variance (c)"
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-018",
+          "applicant": "Lorenzina Ciccia",
+          "block_lots": [],
+          "addresses": [
+            "552 Downer Street"
           ],
-          "decision": null,
-          "vote": null,
-          "engineers": [],
-          "source": "minutes"
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-020",
+          "applicant": "Robert & Elizabeth Munier",
+          "block_lots": [],
+          "addresses": [
+            "244 Sylvania Place"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-022",
+          "applicant": "Steven & Brianna Jeszeck",
+          "block_lots": [],
+          "addresses": [
+            "520 Hort Street"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA25-059",
+          "applicant": "*ZBA 25-059",
+          "block_lots": [],
+          "addresses": [
+            "531 Topping Hill Road"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA25-039",
+          "applicant": "*ZBA 25-039",
+          "block_lots": [],
+          "addresses": [
+            "725 Willow Grove Road"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-031",
+          "applicant": "*ZBA 26-031",
+          "block_lots": [],
+          "addresses": [
+            "115 Osborn Avenue"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-025",
+          "applicant": "Jennifer & Gregory Madden",
+          "block_lots": [],
+          "addresses": [
+            "702 Shadowlawn Drive"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA25-044",
+          "applicant": "*ZBA 25-044",
+          "block_lots": [],
+          "addresses": [
+            "222 Sylvania Place"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-016",
+          "applicant": "Eugene & Ksenia Zaydfudim",
+          "block_lots": [],
+          "addresses": [
+            "715 Rahway Avenue"
+          ],
+          "types": [],
+          "engineers": []
+        },
+        {
+          "meeting_date": "2026-10-14",
+          "board": "zoning",
+          "application": "ZBA26-013",
+          "applicant": "Nikki Maizel",
+          "block_lots": [],
+          "addresses": [
+            "535 Highland Avenue"
+          ],
+          "types": [],
+          "engineers": []
         }
       ],
+      "recent": [],
       "new_documents": [
         {
-          "type": "notice",
-          "title": "BOA Meeting Public Notice - 11-09-2026",
-          "date": "2026-11-09",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10712/BOA-Meeting-Public-Notice---11-09-2026"
+          "type": "agenda",
+          "title": "Downtown Westfield Corporation Board Meeting Agenda",
+          "date": "2026-10-21",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_10212026-1038"
         },
         {
           "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
-          "date": "2026-10-14",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_10142026-1037"
-        },
-        {
-          "type": "notice",
-          "title": "BOA Meeting Public Notice - 10-14-2026",
-          "date": "2026-10-14",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10586/BOA-Meeting-Public-Notice---10-14-2026"
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-10-06",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_10062026-1036"
         },
         {
           "type": "agenda",
-          "title": "Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers.",
+          "title": "October 2026 Recreation Commission Meeting Agenda",
           "date": "2026-10-05",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_10052026-1033"
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_10052026-1035"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-10-05",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_10052026-1033"
-        },
-        {
-          "type": "agenda",
-          "title": "Special Board of Adjustment Meeting Agenda. Meeting to be held via Zoom",
+          "title": "Historic Preservation Commission meeting agenda. Meeting to be held in Town Hall Council Chambers.",
           "date": "2026-09-28",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09282026-1030"
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09282026-1032"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-09-28",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_09282026-1030"
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-09-22",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09222026-1031"
         },
         {
-          "type": "notice",
-          "title": "BOA Special Meeting Public Notice - 09-28-2026",
-          "date": "2026-09-28",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10552/BOA-Special-Meeting-Public-Notice---09-28-2026"
+          "type": "minutes",
+          "title": " | Sep 22, 2026",
+          "date": "2026-09-22",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_09222026-1031"
         },
         {
           "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
+          "title": "Downtown Westfield Corporation Board Meeting Agenda",
+          "date": "2026-09-16",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09162026-1028"
+        },
+        {
+          "type": "agenda",
+          "title": "Board of Health Regular Meeting Agenda September 14, 2026",
           "date": "2026-09-14",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09142026-1027"
-        },
-        {
-          "type": "notice",
-          "title": "BOA Meeting Public Notice - 09-14-2026",
-          "date": "2026-09-14",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10498/BOA-Meeting-Public-Notice---09-14-2026"
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09142026-1029"
         },
         {
           "type": "agenda",
-          "title": "Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers.",
-          "date": "2026-09-09",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09092026-1025"
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-09-08",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09082026-1026"
         },
         {
           "type": "minutes",
-          "title": "Sep 9, 2026 Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers. Download\u00a0\u25bc Agenda Previous ",
-          "date": "2026-09-09",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_09092026-1025"
+          "title": " | Sep 8, 2026",
+          "date": "2026-09-08",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_09082026-1026"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-09-09",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_09092026-1025"
-        },
-        {
-          "type": "notice",
-          "title": "PB Public Notice 9-9-2026 - 415-427 South Avenue",
-          "date": "2026-09-09",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10541/PB-Public-Notice-9-9-2026---415-427-South-Avenue"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
-          "date": "2026-08-10",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08102026-1019"
+          "title": "September 2026 Recreation Commission Meeting Agenda",
+          "date": "2026-09-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_09012026-1024"
         },
         {
           "type": "minutes",
-          "title": "Aug 10, 2026 Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers Download\u00a0\u25bc Agenda Prev",
-          "date": "2026-08-10",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_08102026-1019"
+          "title": " | Sep 1, 2026",
+          "date": "2026-09-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_09012026-1024"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-08-10",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_08102026-1019"
-        },
-        {
-          "type": "notice",
-          "title": "BOA - Notice of Decision for 8-10-2026",
-          "date": "2026-08-10",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10617/BOA---Notice-of-Decision-for-8-10-2026"
-        },
-        {
-          "type": "notice",
-          "title": "BOA Meeting Public Notice - 08-10-2026",
-          "date": "2026-08-10",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10388/BOA-Meeting-Public-Notice---08-10-2026-"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers.",
-          "date": "2026-08-03",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08032026-1018"
+          "title": "Historic Preservation Commission meeting agenda. Meeting to be held in Town Hall Council Chambers.",
+          "date": "2026-08-24",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08242026-1022"
         },
         {
           "type": "minutes",
-          "title": "Aug 3, 2026 Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers. Download\u00a0\u25bc Agenda",
-          "date": "2026-08-03",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_08032026-1018"
-        },
-        {
-          "type": "notice",
-          "title": "PB Public Notice 8-3-2026 - 184 Elm Street",
-          "date": "2026-08-03",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10415/PB-Public-Notice-8-3-2026---184-Elm-Street"
-        },
-        {
-          "type": "notice",
-          "title": "PB Public Notice 8-3-2026 - 320 Lenox Avenue",
-          "date": "2026-08-03",
-          "url": "https://www.westfieldnj.gov/DocumentCenter/View/10385/PB-Public-Notice-8-3-2026---320-Lenox-Avenue"
+          "title": " | Aug 24, 2026",
+          "date": "2026-08-24",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_08242026-1022"
         },
         {
           "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
-          "date": "2026-07-13",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_07132026-1014"
+          "title": "Downtown Westfield Corporation Board Meeting Agenda",
+          "date": "2026-08-19",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08192026-1021"
+        },
+        {
+          "type": "agenda",
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-08-11",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08112026-1020"
         },
         {
           "type": "minutes",
-          "title": "Jul 13, 2026 Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers Download\u00a0\u25bc Agenda Prev",
-          "date": "2026-07-13",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_07132026-1014"
+          "title": " | Aug 11, 2026",
+          "date": "2026-08-11",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_08112026-1020"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-07-13",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_07132026-1014"
+          "title": "August 3, 2026 Regular Board of Health Meeting",
+          "date": "2026-08-03",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_08032026-1017"
+        },
+        {
+          "type": "minutes",
+          "title": " | Aug 3, 2026",
+          "date": "2026-08-03",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_08032026-1017"
         },
         {
           "type": "agenda",
-          "title": "Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers.",
+          "title": "Historic Preservation Commission meeting agenda. Meeting to be held in Town Hall Council Chambers.",
+          "date": "2026-07-27",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_07272026-1016"
+        },
+        {
+          "type": "minutes",
+          "title": " | Jul 27, 2026",
+          "date": "2026-07-27",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_07272026-1016"
+        },
+        {
+          "type": "agenda",
+          "title": "Town Council Regular & Conference Meeting Agenda (PDF)",
+          "date": "2026-07-14",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_07142026-1015"
+        },
+        {
+          "type": "minutes",
+          "title": " | Jul 14, 2026",
+          "date": "2026-07-14",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_07142026-1015"
+        },
+        {
+          "type": "agenda",
+          "title": "July 2026 Recreation Commission Meeting Agenda",
           "date": "2026-07-06",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_07062026-1013"
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_07062026-1023"
         },
         {
           "type": "minutes",
-          "title": "Jul 6, 2026 Planning Board meeting agenda. Meeting to be held in Town Hall Council Chambers. Download\u00a0\u25bc Agenda Previous ",
+          "title": " | Jul 6, 2026",
           "date": "2026-07-06",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_07062026-1013"
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_07062026-1023"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-07-06",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_07062026-1013"
-        },
-        {
-          "type": "agenda",
-          "title": "June 29, 2026 - Special Board of Adjustment Meeting Agenda. Meeting to be held via Zoom",
-          "date": "2026-06-29",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06292026-1012"
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-06-23",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06232026-1011"
         },
         {
           "type": "minutes",
-          "title": "Jun 29, 2026 June 29, 2026 - Special Board of Adjustment Meeting Agenda. Meeting to be held via Zoom Download\u00a0\u25bc Agenda P",
-          "date": "2026-06-29",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06292026-1012"
+          "title": " | Jun 23, 2026",
+          "date": "2026-06-23",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06232026-1011"
         },
         {
           "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-06-29",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_06292026-1012"
-        },
-        {
-          "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
-          "date": "2026-06-08",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06082026-1008"
-        },
-        {
-          "type": "minutes",
-          "title": "Jun 8, 2026 Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers Download\u00a0\u25bc Agenda Previ",
-          "date": "2026-06-08",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06082026-1008"
-        },
-        {
-          "type": "agenda",
-          "title": "Previous Versions",
-          "date": "2026-06-08",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/PreviousVersions/_06082026-1008"
-        },
-        {
-          "type": "agenda",
-          "title": "Planning Board Meeting - CANCELLED\nApplication PB 26-005 Brick Building, LLC - 440 East Broad Street has been adjourned to July 6, 2026",
-          "date": "2026-06-01",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06012026-1005?html=true"
+          "title": "Historic Preservation Commission meeting agenda. CANCELLED",
+          "date": "2026-06-22",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06222026-1034?html=true"
         },
         {
           "type": "agenda",
           "title": "PDF",
-          "date": "2026-06-01",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06012026-1005"
+          "date": "2026-06-22",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06222026-1034"
         },
         {
           "type": "agenda",
           "title": "Packet",
-          "date": "2026-06-01",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06012026-1005?packet=true"
+          "date": "2026-06-22",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06222026-1034?packet=true"
         },
         {
           "type": "agenda",
-          "title": "Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers",
-          "date": "2026-05-11",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_05112026-1000"
+          "title": "Downtown Westfield Corporation Board Meeting Agenda",
+          "date": "2026-06-17",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06172026-1010"
+        },
+        {
+          "type": "agenda",
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-06-09",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06092026-1009"
         },
         {
           "type": "minutes",
-          "title": "May 11, 2026 Board of Adjustment Meeting Agenda. Meeting to be held in Town Hall Council Chambers Download\u00a0\u25bc Agenda Prev",
-          "date": "2026-05-11",
-          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_05112026-1000"
+          "title": " | Jun 9, 2026",
+          "date": "2026-06-09",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06092026-1009"
+        },
+        {
+          "type": "agenda",
+          "title": "Board of Health Regular Meeting Agenda June 1, 2026",
+          "date": "2026-06-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06012026-1006"
+        },
+        {
+          "type": "minutes",
+          "title": " | Jun 1, 2026",
+          "date": "2026-06-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06012026-1006"
+        },
+        {
+          "type": "agenda",
+          "title": "June 2026 Recreation Commission Meeting Agenda",
+          "date": "2026-06-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_06012026-1007"
+        },
+        {
+          "type": "minutes",
+          "title": " | Jun 1, 2026",
+          "date": "2026-06-01",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_06012026-1007"
+        },
+        {
+          "type": "agenda",
+          "title": "Downtown Westfield Board Meeting Agenda",
+          "date": "2026-05-20",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_05202026-1002"
+        },
+        {
+          "type": "agenda",
+          "title": "Town Council Conference & Regular Meeting Agenda (PDF)",
+          "date": "2026-05-19",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Agenda/_05192026-1004"
+        },
+        {
+          "type": "minutes",
+          "title": " | May 19, 2026",
+          "date": "2026-05-19",
+          "url": "https://www.westfieldnj.gov/AgendaCenter/ViewFile/Minutes/_05192026-1004"
         }
       ],
-      "n_new_documents": 655
+      "n_new_documents": 92
     }
   ]
 }

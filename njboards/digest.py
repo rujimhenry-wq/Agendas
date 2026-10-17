@@ -67,6 +67,8 @@ def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30
             wanted.append(d)
         elif d["doc_type"] in ("minutes", "resolution", "review_letter") and (md is None or md >= lookback):
             wanted.append(d)
+        elif d["doc_type"] in ("application", "site_plan") and md and today - timedelta(days=14) <= md <= horizon:
+            wanted.append(d)
     wanted.sort(key=lambda d: (d["doc_type"] != "agenda", d["meeting_date"] or ""), reverse=False)
     stats = {"slug": slug, "new_docs": new, "fetched": 0, "errors": 0}
     for d in wanted[:fetch_limit]:
@@ -115,13 +117,33 @@ def _load_parsed(slug: str) -> list[dict]:
     return out
 
 
+HEADING_ROW = re.compile(r"^\s*(?:[IVX]+\.|[A-Z]\.|\d+\.)?\s*(applications?|public\s+hearings?|new\s+business|old\s+business|resolutions?|minutes|completeness|memorializ\w*|discussion|adjournment|roll\s+call|open\s+(to\s+the\s+)?public|correspondence|unfinished\s+business|continued|carried|other\s+business|agenda|work\s*session)\s*:?\s*$", re.I)
+JUNK_APPLICANT = re.compile(r"^\s*(\(?[a-z]\)?|application\s+documents?|documents?|app\.?|continued|carried|hearing|variance|site\s+plan|the|re|cont'?d?)\s*[:.]?\s*$", re.I)
+
+
+def _clean_applicant(name: Optional[str]) -> Optional[str]:
+    if not name:
+        return None
+    name = re.sub(r"\s*\((?:application\s+)?documents?\)\s*", " ", name, flags=re.I)
+    name = re.sub(r"\s*[-–]\s*(application\s+)?documents?\s*$", "", name, flags=re.I)
+    name = squash(name).strip(" -–:,.")
+    return None if (not name or JUNK_APPLICANT.match(name) or len(name) < 3) else name
+
+
+def _is_real_item(it: dict) -> bool:
+    heading = it.get("heading") or ""
+    if HEADING_ROW.match(heading):
+        return False
+    return bool(it.get("app_numbers") or it.get("block_lots") or it.get("applicant") or it.get("app_types"))
+
+
 def _app_key(it: dict) -> str:
     if it.get("app_numbers"):
         return it["app_numbers"][0]
     if it.get("block_lots"):
         b = it["block_lots"][0]
         return f"B{b['block']} L{b['lots']}"
-    return (it.get("applicant") or it.get("heading") or "")[:50]
+    return (_clean_applicant(it.get("applicant")) or it.get("heading") or "")[:50]
 
 
 def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optional[dict]:
@@ -141,8 +163,28 @@ def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optio
                 mention_texts[key].append(blob)
             for b in doc.get("block_lots", []):
                 mention_texts[f"B{b['block']} L{b['lots']}"].append(blob)
+        elif doc.get("doc_type") in ("application", "site_plan", "other"):
+            head = (doc.get("head_text") or "")[:4000]
+            for key in (doc.get("app_numbers") or []) + [f"B{b['block']} L{b['lots']}" for b in doc.get("block_lots", [])]:
+                mention_texts[key].append(head)
+            title = (doc.get("title") or "").lower()
+            if title:
+                mention_texts["title:" + title[:60]].append(head)
         for it in doc.get("items", []):
             mention_texts[_app_key(it)].append(it.get("text", "")[:3000])
+            ap = _clean_applicant(it.get("applicant"))
+            if ap:
+                mention_texts["applicant:" + ap.lower()].append(it.get("text", "")[:3000])
+
+    def texts_for(it: dict) -> list[str]:
+        key = _app_key(it)
+        out = list(mention_texts.get(key, [])) + [it.get("text", "")]
+        ap = _clean_applicant(it.get("applicant"))
+        if ap:
+            out += mention_texts.get("applicant:" + ap.lower(), [])
+            last = ap.split()[-1].lower()
+            out += [t for k, v in mention_texts.items() if k.startswith("title:") and last in k for t in v]
+        return out
     upcoming: dict[str, dict] = {}
     recent: list[dict] = []
     new_docs = []
@@ -151,20 +193,24 @@ def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optio
         dt = doc.get("doc_type")
         if dt == "agenda" and md and today - timedelta(days=3) <= md <= horizon:
             for it in doc.get("items", []):
+                if not _is_real_item(it):
+                    continue
                 key = _app_key(it)
                 e = upcoming.setdefault(key, {"meeting_date": md.isoformat(), "board": doc.get("board_kind"), "application": key,
-                                              "applicant": it.get("applicant"), "block_lots": it.get("block_lots"),
+                                              "applicant": _clean_applicant(it.get("applicant")), "block_lots": it.get("block_lots"),
                                               "addresses": it.get("addresses"), "types": it.get("app_types"),
-                                              "engineers": engineer_for(it, mention_texts.get(key, []) + [it.get("text", "")])})
+                                              "engineers": engineer_for(it, texts_for(it))})
                 e["meeting_date"] = min(e["meeting_date"], md.isoformat())
+                if not e["engineers"]:
+                    e["engineers"] = engineer_for(it, texts_for(it))
         elif dt in ("minutes", "resolution") and md and md >= since - timedelta(days=21):
             if dt == "minutes":
                 for it in doc.get("items", []):
-                    if not (it.get("decision") or it.get("app_types")):
+                    if not _is_real_item(it) or not (it.get("decision") or it.get("app_types")):
                         continue
                     recent.append({"meeting_date": md.isoformat(), "board": doc.get("board_kind"), "application": _app_key(it),
-                                   "applicant": it.get("applicant"), "types": it.get("app_types"), "decision": it.get("decision"),
-                                   "vote": it.get("vote"), "engineers": engineer_for(it, mention_texts.get(_app_key(it), []) + [it.get("text", "")]),
+                                   "applicant": _clean_applicant(it.get("applicant")), "types": it.get("app_types"), "decision": it.get("decision"),
+                                   "vote": it.get("vote"), "engineers": engineer_for(it, texts_for(it)),
                                    "source": "minutes"})
             else:
                 recent.append({"meeting_date": md.isoformat(), "board": doc.get("board_kind"),

@@ -24,7 +24,7 @@ class Settings:
     data_dir: Path = field(default_factory=lambda: Path(_env("NJBOARDS_DATA", "data")).resolve())
     user_agent: str = _env(
         "NJBOARDS_UA",
-        "njboards/0.1 (+public-records research bot; contact: set NJBOARDS_UA)",
+        "njboards/0.1 (+https://github.com/rujimhenry-wq/Agendas; public-records research; set NJBOARDS_UA to add your contact)",
     )
     # polite crawling
     delay_seconds: float = _env("NJBOARDS_DELAY", 1.5)
