@@ -126,6 +126,25 @@ def import_towns(find_websites: bool, limit: Optional[int]) -> None:
     click.echo(f"{len(rows)} municipalities imported; {n} rows now in {SETTINGS.municipalities_file}")
 
 
+@main.command("find-websites")
+@click.option("--workers", type=int, default=8)
+def find_websites_cmd(workers: int) -> None:
+    """Fill in missing municipal websites from county directories and domain patterns (no third parties)."""
+    from .websites import find_websites
+    db = DB()
+    rows = read_csv(SETTINGS.municipalities_file)
+    def progress(slug, url, how):
+        click.echo(f"{slug}: {url} ({how})")
+    found = find_websites(rows, workers=workers, progress=progress)
+    for r in rows:
+        if r["slug"] in found:
+            r["website"] = found[r["slug"]]
+            r["notes"] = ((r.get("notes") or "") + " website auto-found; verify").strip()
+    write_csv(SETTINGS.municipalities_file, rows)
+    load_into_db(db)
+    click.echo(f"found {len(found)} websites; {sum(1 for r in rows if r['website'])} of {len(rows)} rows now have one")
+
+
 @main.command("find-website")
 @click.argument("slug")
 def find_website_cmd(slug: str) -> None:
