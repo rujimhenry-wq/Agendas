@@ -161,9 +161,28 @@ def find_websites(rows: list[dict], workers: int = 8, progress=None) -> dict[str
         for host, url in links_by_county.get(r.get("county", ""), {}).items():
             if _host_matches(host, r["name"]):
                 found[r["slug"]] = url
-                if progress:
-                    progress(r["slug"], url, "county directory")
                 break
+    # one site matched several towns (Neptune City / Neptune Township, Andover Borough / Township):
+    # keep the town whose type the host names; otherwise drop the ambiguous match entirely
+    by_url: dict[str, list[dict]] = {}
+    for r in todo:
+        if r["slug"] in found:
+            by_url.setdefault(found[r["slug"]], []).append(r)
+    for url, rs in by_url.items():
+        if len(rs) < 2:
+            continue
+        host = urlparse(url).netloc.lower()
+        def fits(r):
+            t = (r.get("muni_type") or r["name"]).lower()
+            return (("borough" in t and re.search(r"boro", host)) or ("township" in t and re.search(r"twp|township", host))
+                    or ("city" in t and re.search(r"city", host)) or ("village" in t and "village" in host) or ("town" == t.strip() and "town" in host))
+        keep = [r for r in rs if fits(r)]
+        for r in rs:
+            if len(keep) != 1 or r is not keep[0]:
+                found.pop(r["slug"], None)
+    if progress:
+        for slug, url in found.items():
+            progress(slug, url, "county directory")
     # 2. domain guessing for the rest
     rest = [r for r in todo if r["slug"] not in found]
     with ThreadPoolExecutor(max_workers=workers) as ex:
