@@ -149,6 +149,15 @@ class Browser:
 _SHARED: Optional[Browser] = None
 
 
+def _close_shared() -> None:
+    if _SHARED is not None:
+        _SHARED.close()
+
+
+import atexit  # noqa: E402
+atexit.register(_close_shared)
+
+
 def shared_browser() -> Browser:
     global _SHARED
     if _SHARED is None:

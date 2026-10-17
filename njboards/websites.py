@@ -174,26 +174,7 @@ def find_websites(rows: list[dict], workers: int = 8, progress=None) -> dict[str
             if _host_matches(host, r["name"]):
                 found[r["slug"]] = url
                 break
-    # one site matched several towns (Neptune City / Neptune Township, Andover Borough / Township):
-    # keep the town whose type the host names; otherwise drop the ambiguous match entirely
-    by_url: dict[str, list[dict]] = {}
-    for r in todo:
-        if r["slug"] in found:
-            by_url.setdefault(found[r["slug"]], []).append(r)
-    for url, rs in by_url.items():
-        if len(rs) < 2:
-            continue
-        host = urlparse(url).netloc.lower()
-        def fits(r):
-            t = (r.get("muni_type") or r["name"]).lower().strip()
-            label = _domain_label(host)
-            return (("borough" in t and "boro" in label) or ("township" in t and re.search(r"twp|township", label))
-                    or ("city" in t and "city" in label) or ("village" in t and "village" in label)
-                    or (t == "town" and re.search(r"town(?!ship)", label)))
-        keep = [r for r in rs if fits(r)]
-        for r in rs:
-            if len(keep) != 1 or r is not keep[0]:
-                found.pop(r["slug"], None)
+    disambiguate(found, todo, Fetcher())
     if progress:
         for slug, url in found.items():
             progress(slug, url, "county directory")
@@ -210,6 +191,40 @@ def find_websites(rows: list[dict], workers: int = 8, progress=None) -> dict[str
                 url = None
             if url:
                 found[r["slug"]] = url
-                if progress:
-                    progress(r["slug"], url, "domain guess")
+    before = set(found)
+    disambiguate(found, rest, Fetcher())
+    if progress:
+        for slug in before & set(found):
+            if slug in {r["slug"] for r in rest}:
+                progress(slug, found[slug], "domain guess")
     return found
+
+
+def type_fits(r: dict, host: str) -> bool:
+    t = (r.get("muni_type") or r["name"]).lower().strip()
+    label = _domain_label(host)
+    return bool(("borough" in t and "boro" in label) or ("township" in t and re.search(r"twp|township", label))
+                or ("city" in t and "city" in label) or ("village" in t and "village" in label)
+                or (t == "town" and re.search(r"town(?!ship)", label)))
+
+
+def disambiguate(found: dict[str, str], rows: list[dict], fetcher: Fetcher) -> None:
+    """One site matched several towns (Freehold Borough / Township; Lawrence Township in Mercer
+    and Cumberland). Keep the town whose type the host names; for towns in different counties,
+    the one whose county the homepage mentions; otherwise drop the match for all of them."""
+    by_url: dict[str, list[dict]] = {}
+    for r in rows:
+        if r["slug"] in found:
+            by_url.setdefault(found[r["slug"]], []).append(r)
+    for url, rs in by_url.items():
+        if len(rs) < 2:
+            continue
+        host = urlparse(url).netloc.lower()
+        keep = [r for r in rs if type_fits(r, host)]
+        if len(keep) != 1 and len({r.get("county") for r in rs}) > 1:
+            resp = fetcher.get(url, max_age_hours=24 * 14)
+            text = resp.text.lower() if resp.ok else ""
+            keep = [r for r in rs if r.get("county") and (r["county"].lower() + " county") in text]
+        for r in rs:
+            if len(keep) != 1 or r is not keep[0]:
+                found.pop(r["slug"], None)
