@@ -102,21 +102,25 @@ def dedupe_rows(rows: list[dict]) -> list[dict]:
     """Merge rows that describe the same municipality under different slugs
     ('Hamilton Township' vs 'Hamilton', Mercer). The Wikipedia-derived row keeps
     its slug; the other row's website / code / board URLs are carried over."""
-    by_key: dict[str, dict] = {}
-    for r in rows:
-        k = _match_key(r["name"], r.get("county", ""))
-        if k not in by_key:
-            by_key[k] = dict(r)
-            continue
-        keep = by_key[k]
-        # prefer the row that came from the Wikipedia list (has wiki_url)
-        if r.get("wiki_url") and not keep.get("wiki_url"):
-            keep, r = dict(r), keep
-        for col in CSV_FIELDS:
-            if not keep.get(col) and r.get(col):
-                keep[col] = r[col]
-        by_key[k] = keep
-    return list(by_key.values())
+    # Wikipedia rows are authoritative and distinct (Andover Borough and Andover Township both exist);
+    # only a hand-entered seed row without wiki_url is folded into its Wikipedia twin.
+    wiki = [dict(r) for r in rows if r.get("wiki_url")]
+    seeds = [dict(r) for r in rows if not r.get("wiki_url")]
+    out = {r["slug"]: r for r in wiki}
+    for sr in seeds:
+        k = _match_key(sr["name"], sr.get("county", ""))
+        twins = [w for w in wiki if _match_key(w["name"], w.get("county", "")) == k]
+        if len(twins) > 1:  # ambiguous: prefer same type word in the name, else exact name
+            twins = [w for w in twins if w["name"].lower() == sr["name"].lower()] or \
+                    [w for w in twins if any(t in w["name"].lower() for t in ("township", "borough", "city", "town") if t in sr["name"].lower())]
+        if len(twins) == 1:
+            keep = out[twins[0]["slug"]]
+            for col in CSV_FIELDS:
+                if not keep.get(col) and sr.get(col):
+                    keep[col] = sr[col]
+        elif sr["slug"] not in out:
+            out[sr["slug"]] = sr
+    return list(out.values())
 
 
 def import_from_wikipedia(fetcher: Fetcher) -> list[dict]:
