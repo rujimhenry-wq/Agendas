@@ -22,7 +22,7 @@ from .fetch import fetch_all
 from .http import Fetcher
 from .parse.common import app_numbers, block_lots
 from .pipeline import run_parse
-from .util import squash
+from .util import sentences, squash
 
 FIRM = r"(?:[A-Z][\w&.'\-]*[ ,]*){1,6}(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|& Associates)"
 PREPARED_BY = re.compile(r"\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:(?:(?:P\.?E\.?|P\.?L\.?S\.?|L\.?S\.?|P\.?P\.?|AIA|R\.?A\.?)[.,]?\s*)+(?:of\s+)?|of\s+))?([A-Z][\w&.'\-]*(?:[ ,]+[A-Z][\w&.'\-]*){0,6}[ ,]*(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|Surveys|Surveyors))", re.I)
@@ -82,6 +82,46 @@ def weekly_town_pass(fetcher: Fetcher, db: DB, slug: str, horizon_days: int = 30
     return stats
 
 
+# --------------------------------------------------------------- what is proposed
+PROPOSAL_FIELD = re.compile(r"\b(?:proposal|proposed\s+(?:use|development|project|improvements?)|description(?:\s+of\s+(?:project|application|proposal))?|nature\s+of\s+(?:application|request)|project|relief\s+(?:sought|requested)|purpose)\s*[:\-]\s*([^\n]{8,240})", re.I)
+PROPOSAL_WORDS = re.compile(r"\b(construct\w*|propos\w*|build\w*|addition|convert\w*|demoli\w*|erect\w*|install\w*|renovat\w*|expan\w*|new\s+(?:single|two|multi|mixed|commercial|residential|dwelling|home|house|building|warehouse|retail|office|restaurant)|"
+                            r"dwelling|units?\b|apartments?|townho\w+|condominium|warehouse|distribution|self[-\s]storage|retail|restaurant|office|medical|daycare|day\s+care|school|church|house\s+of\s+worship|gas\s+station|car\s+wash|hotel|cannabis|dispensary|"
+                            r"parking\s+(?:lot|garage|deck)|solar|cell\s+tower|wireless|drive[-\s]thru|subdivide|subdivision\s+of|square\s+f|sq\.?\s*ft|\bsf\b|stor(?:y|ies)\b|bedroom|garage|deck|pool|fence|shed|addition)", re.I)
+_PROPOSAL_SKIP = re.compile(r"^(?:block|lot|applicant|owner|attorney|engineer|planner|zone|zoning|address|location|premises|application|carried|continued|resolution|memorializ|minutes|motion|roll|present|absent|adjourn|page\s+no|file\s+[A-Z]{1,4}-?\d)\b", re.I)
+
+
+def describe(it: dict, max_len: int = 170) -> str:
+    """A short description of what the applicant proposes, from the item text."""
+    fields = it.get("fields") or {}
+    for key in ("proposal", "description", "project", "relief", "type"):
+        for fk, fv in fields.items():
+            if fk.startswith(key) and fv and len(fv) >= 8:
+                return squash(fv)[:max_len].rstrip(" ,;")
+    text = it.get("text") or ""
+    m = PROPOSAL_FIELD.search(text)
+    if m:
+        return squash(m.group(1))[:max_len].rstrip(" ,;")
+    best, best_score = "", 0
+    for sent in sentences(text[:4000]):
+        s_ = squash(sent)
+        if len(s_) < 15 or _PROPOSAL_SKIP.match(s_):
+            continue
+        hits = len(PROPOSAL_WORDS.findall(s_))
+        # prefer sentences that say what is being built, penalise boilerplate
+        score = hits - (2 if re.search(r"hereby|notice|pursuant|N\.J\.S\.A|public\s+hearing|opened\s+to\s+the\s+public", s_, re.I) else 0)
+        if score > best_score:
+            best, best_score = s_, score
+    if best_score <= 0:
+        return ""
+    m = re.search(r"\b(?:the\s+)?applicants?\s+(?:is\s+|are\s+)?(?:seeks|seeking|requests?|requesting|proposes|proposing|has\s+applied|wishes|intends)\s+(?:approval\s+)?(?:for\s+|to\s+)?(.+)$", best, re.I) \
+        or re.search(r"\b(?:for|to)\s+((?:the\s+)?(?:construct\w*|build\w*|erect\w*|install\w*|convert\w*|demoli\w*|renovat\w*|expan\w*|subdivide|permit|allow|operate|establish|create|develop|add)\b.+)$", best, re.I) \
+        or re.search(r"\b((?:preliminary|final|minor|major|amended)\s+(?:and\s+final\s+)?(?:major\s+|minor\s+)?(?:site\s+plan|subdivision)\b.+)$", best, re.I)
+    if m:
+        best = m.group(1)
+    best = re.sub(r"\s+(?:on\s+)?(?:the\s+)?(?:property|premises)\s+(?:known\s+as|located\s+at)\s.*$", "", best, flags=re.I)
+    return best[:max_len].rstrip(" ,;.") 
+
+
 # --------------------------------------------------------------- engineers
 def engineer_for(item: dict, texts: list[str]) -> list[str]:
     """Applicant-side engineer (person and/or firm) for an application item."""
@@ -103,6 +143,66 @@ def engineer_for(item: dict, texts: list[str]) -> list[str]:
             if 3 < len(v) < 90 and v not in out and not re.match(r"^(review|report|letter|comments|the|board|township|borough|city)\b", v, re.I):
                 out.append(v)
     return out[:3]
+
+
+_PERSON = r"([A-Z][a-z]+(?:\s+[A-Z]\.?)?(?:\s+(?:[A-Z][a-z]+|O'[A-Z][a-z]+|Mc[A-Z][a-z]+|De[A-Z][a-z]+)){1,2}(?:,?\s+(?:Jr|Sr|II|III)\.?)?)"
+_FIRM = r"((?:[A-Z][\w&.'\-]*[ ,]*){1,6}(?:LLC|LLP|L\.L\.C\.|P\.?C\.?|P\.?A\.?|Esqs?\.?|Law\s+(?:Group|Firm|Offices?)|Associates|Engineering|Engineers|Consultants|Group|Inc\.?))"
+TEAM_FIELDS = {
+    "attorney": [re.compile(r"\b(?:attorney|counsel)\s*[:\-]\s*" + _PERSON, re.I * 0),
+                 re.compile(r"\brepresented\s+by\s+" + _PERSON + r"(?:,\s*Esq\.?)?"),
+                 re.compile(_PERSON + r",\s*Esq(?:uire)?\.?(?:,?\s+(?:of|from)\s+" + _FIRM + r")?")],
+    "planner": [re.compile(r"\b(?:planner|planning\s+consultant)\s*[:\-]\s*" + _PERSON),
+                re.compile(_PERSON + r",\s*(?:P\.?P\.?|AICP)\b")],
+    "traffic engineer": [re.compile(r"\btraffic\s+(?:engineer|consultant|expert)\s*[:\-]?\s*" + _PERSON),
+                         re.compile(_PERSON + r",\s*(?:P\.?E\.?,?\s*)?PTOE\b")],
+    "architect": [re.compile(r"\barchitect\s*[:\-]\s*" + _PERSON),
+                  re.compile(_PERSON + r",\s*(?:AIA|R\.?A\.?)\b")],
+}
+TEAM_LABELS = {"engineer": "Eng", "attorney": "Atty", "planner": "Planner", "traffic engineer": "Traffic", "architect": "Arch"}
+_ROLE_FAMILY = {"engineer": "engineer", "civil engineer": "engineer", "professional engineer": "engineer", "municipal engineer": "engineer",
+                "surveyor": "engineer", "traffic engineer": "traffic engineer", "attorney": "attorney", "counsel": "attorney", "esquire": "attorney",
+                "planner": "planner", "professional planner": "planner", "architect": "architect", "landscape architect": "architect"}
+
+
+def team_for(it: dict, texts: list[str]) -> dict[str, list[str]]:
+    """The applicant's professionals on this job, by role: engineer, attorney, planner, traffic engineer, architect."""
+    team: dict[str, list[str]] = {}
+
+    def add(role: str, label: str) -> None:
+        label = squash(label).strip(" ,.;")
+        if len(label) < 4 or label.lower().startswith(("the ", "board ", "township ", "borough ", "city ")):
+            return
+        team.setdefault(role, [])
+        if label not in team[role] and len(team[role]) < 2:
+            team[role].append(label)
+
+    for p in it.get("professionals", []):
+        if p.get("side") == "board":
+            continue
+        fam = _ROLE_FAMILY.get((p.get("role") or "").lower())
+        if not fam:
+            from .parse.professionals import role_from_creds
+            fam = _ROLE_FAMILY.get(role_from_creds(p.get("credentials") or ""))
+        if not fam:
+            continue
+        add(fam, p["name"] + (f", {p['credentials']}" if p.get("credentials") else "") + (f" ({p['firm']})" if p.get("firm") else ""))
+    for e in engineer_for(it, texts):
+        add("engineer", e)
+    from .parse.professionals import NON_NAME_WORDS
+    for t in texts:
+        for role, pats in TEAM_FIELDS.items():
+            for pat in pats:
+                for m in pat.finditer(t):
+                    name = m.group(1)
+                    if any(tok.lower().strip(".,") in NON_NAME_WORDS for tok in name.split()):
+                        continue
+                    firm = m.group(2) if m.lastindex and m.lastindex >= 2 and m.group(2) else ""
+                    add(role, name + (f" ({squash(firm)})" if firm else ""))
+    return team
+
+
+def fmt_team(team: dict[str, list[str]]) -> str:
+    return "; ".join(f"{TEAM_LABELS[r]}: {', '.join(v)}" for r, v in team.items() if v and r in TEAM_LABELS)
 
 
 # --------------------------------------------------------------- digest
@@ -211,10 +311,15 @@ def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optio
                 e = upcoming.setdefault(key, {"meeting_date": md.isoformat(), "board": doc.get("board_kind"), "application": key,
                                               "applicant": _clean_applicant(it.get("applicant")), "block_lots": it.get("block_lots"),
                                               "addresses": it.get("addresses"), "types": it.get("app_types"),
-                                              "engineers": engineer_for(it, texts_for(it))})
+                                              "proposal": describe(it), "engineers": engineer_for(it, texts_for(it)),
+                                              "team": team_for(it, texts_for(it))})
                 e["meeting_date"] = min(e["meeting_date"], md.isoformat())
                 if not e["engineers"]:
                     e["engineers"] = engineer_for(it, texts_for(it))
+                if not e.get("team"):
+                    e["team"] = team_for(it, texts_for(it))
+                if not e.get("proposal"):
+                    e["proposal"] = describe(it)
         elif dt in ("minutes", "resolution") and md and md >= since - timedelta(days=21):
             if dt == "minutes":
                 for it in doc.get("items", []):
@@ -222,8 +327,8 @@ def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optio
                         continue
                     recent.append({"meeting_date": md.isoformat(), "board": doc.get("board_kind"), "application": _app_key(it),
                                    "applicant": _clean_applicant(it.get("applicant")), "types": it.get("app_types"), "decision": it.get("decision"),
-                                   "vote": it.get("vote"), "engineers": engineer_for(it, texts_for(it)),
-                                   "source": "minutes"})
+                                   "vote": it.get("vote"), "proposal": describe(it), "engineers": engineer_for(it, texts_for(it)),
+                                   "team": team_for(it, texts_for(it)), "source": "minutes"})
             else:
                 recent.append({"meeting_date": md.isoformat(), "board": doc.get("board_kind"),
                                "application": (doc.get("app_numbers") or [None])[0] or (doc.get("applicant") or doc.get("title") or "")[:50],
@@ -231,6 +336,7 @@ def town_digest(db: DB, slug: str, since: date, horizon_days: int = 30) -> Optio
                                "n_conditions": doc.get("n_conditions"),
                                "engineers": [f"{w['name']}, {w['credentials']}" + (f" ({w['firm']})" if w.get("firm") else "")
                                              for w in doc.get("witnesses", []) if re.search(r"engineer", w.get("role", ""), re.I)][:2],
+                               "team": team_for({"professionals": doc.get("witnesses", [])}, [" ".join(doc.get("testimony", []))[:3000]]),
                                "source": "resolution"})
     # documents that appeared since the last digest
     for d in db.documents(m["id"]):
@@ -269,7 +375,7 @@ def render_digest(d: dict) -> str:
          f"Covers activity since {d['since']} and agendas through the next {d['horizon_days']} days. "
          f"{d['n_towns_with_data']} of {d['n_towns_total']} municipalities have parsed records. "
          f"Upcoming agenda items: {d['n_upcoming_items']} · recent decisions: {d['n_recent_decisions']}.\n",
-         "Engineer = the applicant's engineer named in the agenda, minutes, resolution or review letter (blank when not stated).\n"]
+         "Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect where the agenda, minutes, resolution, review letter or application packet names them; blank when not stated.\n"]
     by_county: dict[str, list[dict]] = defaultdict(list)
     for t in d["towns"]:
         by_county[t["county"] or "Unknown"].append(t)
@@ -277,10 +383,10 @@ def render_digest(d: dict) -> str:
     big = [(t["name"], u) for t in d["towns"] for u in t["upcoming"] if any("major site plan" in x or "subdivision" in x for x in (u["types"] or []))]
     if big:
         L.append("## Major site plans and subdivisions on upcoming agendas\n")
-        L.append("| Date | Town | Board | Application | Applicant | Types | Engineer |")
-        L.append("|---|---|---|---|---|---|---|")
+        L.append("| Date | Town | Board | Application | Applicant | What's proposed | Types | Professionals |")
+        L.append("|---|---|---|---|---|---|---|---|")
         for name, u in sorted(big, key=lambda x: x[1]["meeting_date"])[:60]:
-            L.append(f"| {u['meeting_date']} | {name} | {u['board'] or ''} | {u['application']} | {u['applicant'] or ''} | {_fmt_types(u['types'])} | {'; '.join(u['engineers'])} |")
+            L.append(f"| {u['meeting_date']} | {name} | {u['board'] or ''} | {u['application']} | {u['applicant'] or ''} | {u.get('proposal') or ''} | {_fmt_types(u['types'])} | {fmt_team(u.get('team') or {})} |")
         L.append("")
     for county in sorted(by_county):
         L.append(f"## {county} County\n")
@@ -292,18 +398,18 @@ def render_digest(d: dict) -> str:
                 L.append("Upcoming meetings with posted agendas: " + ", ".join(t["upcoming_meetings"]) + "  ")
             if t["upcoming"]:
                 L.append("\n**Coming up**\n")
-                L.append("| Date | Board | Application | Applicant | Block/Lot | Types | Engineer |")
-                L.append("|---|---|---|---|---|---|---|")
+                L.append("| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |")
+                L.append("|---|---|---|---|---|---|---|---|")
                 for u in t["upcoming"][:20]:
                     bl = "; ".join(f"B{b['block']} L{b['lots']}" for b in (u["block_lots"] or []))
-                    L.append(f"| {u['meeting_date']} | {u['board'] or ''} | {u['application']} | {u['applicant'] or ''} | {bl} | {_fmt_types(u['types'])} | {'; '.join(u['engineers'])} |")
+                    L.append(f"| {u['meeting_date']} | {u['board'] or ''} | {u['application']} | {u['applicant'] or ''} | {bl} | {u.get('proposal') or ''} | {_fmt_types(u['types'])} | {fmt_team(u.get('team') or {})} |")
             if t["recent"]:
                 L.append("\n**Recent decisions / hearings**\n")
-                L.append("| Date | Board | Application | Applicant | Types | Outcome | Engineer |")
-                L.append("|---|---|---|---|---|---|---|")
+                L.append("| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |")
+                L.append("|---|---|---|---|---|---|---|---|")
                 for r in t["recent"][:15]:
                     outcome = (r.get("decision") or "heard") + (f" ({r['vote']})" if r.get("vote") else "") + (f", {r['n_conditions']} conditions" if r.get("n_conditions") else "")
-                    L.append(f"| {r['meeting_date']} | {r['board'] or ''} | {r['application']} | {r['applicant'] or ''} | {_fmt_types(r['types'])} | {outcome} | {'; '.join(r['engineers'])} |")
+                    L.append(f"| {r['meeting_date']} | {r['board'] or ''} | {r['application']} | {r['applicant'] or ''} | {r.get('proposal') or ''} | {_fmt_types(r['types'])} | {outcome} | {fmt_team(r.get('team') or {})} |")
             if t["new_documents"]:
                 L.append(f"\nNew documents since last digest: {t['n_new_documents']} (" +
                          ", ".join(sorted({x['type'] or 'other' for x in t['new_documents']})) + ")")

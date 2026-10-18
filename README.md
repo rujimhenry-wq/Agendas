@@ -63,6 +63,17 @@ Raw files are kept in `data/raw/<slug>/<board>/<doc_type>/`, extracted text in
 `data/text/`, per-document parse results in `data/parsed/`, and code chapters
 in `data/code/<slug>/` (one text file per chapter plus `code_index.json`).
 
+## Weekly digest
+
+`njboards weekly` refreshes every town (known board pages, agendas in the
+next 35 days, newest minutes / resolutions / review letters / application
+packets) and writes `data/digests/<date>.md`: per county and town, what is
+coming up (date, board, application, applicant, what is proposed, types) and
+what was decided, with the applicant's professionals (engineer, attorney,
+planner, traffic engineer, architect) wherever a document names them.
+`scripts/weekly.sh` is the scheduled-job wrapper; `--skip-fresh 5` resumes an
+interrupted run.
+
 ## Adding towns
 
 `data/municipalities.csv` ships with ~90 larger municipalities as a seed. The
