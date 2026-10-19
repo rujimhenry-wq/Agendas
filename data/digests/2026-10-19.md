@@ -1,6 +1,6 @@
 # NJ Land Use Boards — Weekly Digest (2026-10-19)
 
-Covers activity since 2026-10-18 and agendas through the next 35 days. 245 of 564 municipalities have parsed records. Upcoming agenda items: 186 · recent decisions: 25.
+Covers activity since 2026-10-19 and agendas through the next 35 days. 245 of 564 municipalities have parsed records. Upcoming agenda items: 186 · recent decisions: 25.
 
 Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect: the person, their firm in parentheses, and [testified] when the minutes record them being sworn; blank when no document names them.
 
@@ -526,7 +526,7 @@ Upcoming meetings with posted agendas: 2026-10-21, 2026-10-22
 | 2026-10-22 | zoning | Z25-53 |  |  | construct a new single-family dwelling. *Postponed from 6/25/26 and 8/6/26 | bulk variance (c) |  |
 | 2026-10-22 | zoning | Z26-42 |  |  | construct a new two story single family dwelling | bulk variance (c) | Atty: Timothy Little |
 | 2026-10-22 | zoning | Z26-04 |  |  |  | minor site plan, use variance (d) | Atty: Brian Chewcaski |
-| 2026-10-22 | zoning | Z26-15 |  |  |  | minor site plan, bulk variance (c) | Atty: Thomas W. Sharlow (Jr., Esq), Thomas W. Sharlow, Jr |
+| 2026-10-22 | zoning | Z26-15 |  |  |  | minor site plan, bulk variance (c) | Atty: Thomas W. Sharlow, Jr |
 
 ## Monmouth County
 

@@ -164,7 +164,35 @@ _ROLE_FAMILY = {"engineer": "engineer", "civil engineer": "engineer", "professio
                 "planner": "planner", "professional planner": "planner", "architect": "architect", "landscape architect": "architect"}
 
 
-_FIRM_SUFFIX = r"(?:LLC|L\.L\.C\.|LLP|P\.?C\.?|P\.?A\.?|Inc\.?|Associates|Assoc\.?|Engineering|Engineers|Consultants|Consulting|Group|Partners|Design|Surveying|Esqs?\.?|Law\s+(?:Group|Firm|Offices?))"
+_FIRM_SUFFIX = r"(?:LLC|L\.L\.C\.|LLP|P\.?C\.?|P\.?A\.?|Inc\.?|Associates|Assoc\.?|Engineering|Engineers|Consultants|Consulting|Group|Partners|Design|Surveying|Law\s+(?:Group|Firm|Offices?))"
+_BARE_SUFFIX = re.compile(r"^(?:LLC|L\.L\.C\.|LLP|P\.?C\.?|P\.?A\.?|Inc\.?)$", re.I)
+_CRED_TOKEN = re.compile(r"^(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|Esq\.?|AIA|R\.?A\.?|P\.?L\.?S\.?|L\.?S\.?|C\.?M\.?E\.?|Jr\.?|Sr\.?|II|III)$", re.I)
+
+
+def split_name_firm(e: str) -> tuple[str, str, str]:
+    """'John Doe, P.E., Doe Engineering LLC' -> ('John Doe', 'P.E.', 'Doe Engineering LLC')."""
+    e = e.strip(" ,.;")
+    m = re.match(r"^(.+?)\s*\((.+)\)$", e)
+    if m:
+        name_part, firm = m.group(1), m.group(2)
+    else:
+        segs = [x.strip() for x in re.split(r"\s*[,\-–]\s*", e) if x.strip()]
+        firm_segs: list[str] = []
+        while segs and (_BARE_SUFFIX.match(segs[-1]) or (re.search(_FIRM_SUFFIX + r"$", segs[-1]) and not _CRED_TOKEN.match(segs[-1]))):
+            firm_segs.insert(0, segs.pop())
+            if not _BARE_SUFFIX.match(firm_segs[0]):
+                break
+        firm = ", ".join(firm_segs) if firm_segs else ""
+        if firm and _BARE_SUFFIX.match(firm_segs[0]) and segs:  # 'Albright & Keller Engineering, LLC'
+            firm = segs.pop() + ", " + firm
+        name_part = ", ".join(segs)
+    toks = [x.strip() for x in name_part.split(",") if x.strip()]
+    name = toks[0] if toks else ""
+    creds = ", ".join(t for t in toks[1:] if _CRED_TOKEN.match(t))
+    if re.search(_FIRM_SUFFIX + r"$", name) and not firm:
+        name, firm = "", name
+    return name, creds, firm
+
 _FIRM_TOKENS = r"(?:(?:[A-Z][\w&.'\-]*|&)[ ,]*){1,7}"
 _NAME_FIRM = re.compile(_PERSON + r"(?:,?\s*(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|Esq\.?|AIA|R\.?A\.?|P\.?L\.?S\.?|L\.?S\.?|C\.?M\.?E\.?)[.,]?\s*)*,?\s+(?:of|with|from)\s+(" + _FIRM_TOKENS + _FIRM_SUFFIX + ")")
 _FIELD_NAME_FIRM = re.compile(r"\b(engineer|attorney|counsel|planner|traffic\s+(?:engineer|consultant)|architect)\s*[:\-]\s*" + _PERSON + r"(?:,?\s*(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|Esq\.?|AIA|R\.?A\.?)[.,]?\s*)*[,(\-–]\s*(" + _FIRM_TOKENS + _FIRM_SUFFIX + ")", re.I)
@@ -182,6 +210,8 @@ def team_for(it: dict, texts: list[str]) -> dict[str, list[dict]]:
         if not name and not firm:
             return
         entries = team.setdefault(role, [])
+        if not name and any(e["firm"] and (firm.lower() in e["firm"].lower() or e["firm"].lower() in firm.lower()) for e in entries):
+            return
         for e in entries:  # merge: same person gains a firm, same firm gains a person
             if name and e["name"] and e["name"].split()[-1].lower() == name.split()[-1].lower():
                 e["firm"] = e["firm"] or firm; e["credentials"] = e["credentials"] or creds; e["testified"] = e["testified"] or testified
@@ -230,20 +260,7 @@ def team_for(it: dict, texts: list[str]) -> dict[str, list[dict]]:
                     firm = m.group(2) if m.lastindex and m.lastindex >= 2 and m.group(2) else ""
                     add(role, name, firm)
     for e in engineer_for(it, texts):  # "prepared by <firm>", "Engineer: Name, P.E., Firm", bare mentions
-        e = e.strip(" ,.;")
-        m = re.match(r"^(.+?)\s*\((.+)\)$", e)
-        if m:
-            nm, firm = m.group(1), m.group(2)
-        else:
-            fm = re.search(r"(?:^|[,\-–(]\s*)(" + _FIRM_TOKENS + _FIRM_SUFFIX + r")\s*\)?$", e)
-            firm = fm.group(1).strip(" ,") if fm else ""
-            nm = e[: fm.start()].strip(" ,-–(") if fm else e
-        creds = ""
-        cm = re.match(r"^(.+?),\s*((?:(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|P\.?L\.?S\.?|L\.?S\.?|C\.?M\.?E\.?)[.,\s]*)+)$", nm)
-        if cm:
-            nm, creds = cm.group(1), cm.group(2).strip(" ,.")
-        if nm and re.search(_FIRM_SUFFIX + r"$", nm) and not firm:
-            nm, firm = "", nm
+        nm, creds, firm = split_name_firm(e)
         add("engineer", nm, firm, creds)
     return team
 

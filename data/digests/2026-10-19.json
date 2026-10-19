@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-19T15:57",
-  "since": "2026-10-18",
+  "generated": "2026-10-19T15:58",
+  "since": "2026-10-19",
   "horizon_days": 35,
   "n_towns_with_data": 245,
   "n_towns_total": 564,
@@ -3775,12 +3775,6 @@
           "engineers": [],
           "team": {
             "attorney": [
-              {
-                "name": "Thomas W. Sharlow",
-                "firm": "Jr., Esq",
-                "credentials": "",
-                "testified": false
-              },
               {
                 "name": "Thomas W. Sharlow, Jr",
                 "firm": "",
