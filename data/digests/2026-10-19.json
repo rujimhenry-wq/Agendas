@@ -1,0 +1,6658 @@
+{
+  "generated": "2026-10-19T15:57",
+  "since": "2026-10-18",
+  "horizon_days": 35,
+  "n_towns_with_data": 245,
+  "n_towns_total": 564,
+  "n_upcoming_items": 186,
+  "n_recent_decisions": 25,
+  "towns": [
+    {
+      "slug": "absecon-atlantic",
+      "name": "Absecon",
+      "county": "Atlantic",
+      "website": "https://www.abseconnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "buena-vista-township-atlantic",
+      "name": "Buena Vista Township",
+      "county": "Atlantic",
+      "website": "https://www.buenavistanj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hammonton-atlantic",
+      "name": "Hammonton",
+      "county": "Atlantic",
+      "website": "https://www.townofhammonton.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "margate-city-atlantic",
+      "name": "Margate City",
+      "county": "Atlantic",
+      "website": "https://www.margate-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2027-03-01",
+          "board": "planning",
+          "application": "Notice of Award of Contract-",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mullica-township-atlantic",
+      "name": "Mullica Township",
+      "county": "Atlantic",
+      "website": "https://www.mullicatownship.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "northfield-atlantic",
+      "name": "Northfield",
+      "county": "Atlantic",
+      "website": "https://www.cityofnorthfield.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "port-republic-atlantic",
+      "name": "Port Republic",
+      "county": "Atlantic",
+      "website": "https://www.portrepublicnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "allendale-bergen",
+      "name": "Allendale",
+      "county": "Bergen",
+      "website": "https://www.allendalenj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cresskill-bergen",
+      "name": "Cresskill",
+      "county": "Bergen",
+      "website": "https://www.cresskillboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "demarest-bergen",
+      "name": "Demarest",
+      "county": "Bergen",
+      "website": "https://www.demarestnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "east-rutherford-bergen",
+      "name": "East Rutherford",
+      "county": "Bergen",
+      "website": "https://www.eastrutherfordnj.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-01",
+          "board": "zoning",
+          "application": "Resolution #ZB26-05  Lowe's Seasonal Outdoor Laydo",
+          "applicant": null,
+          "types": [
+            "use variance (d)",
+            "bulk variance (c)"
+          ],
+          "decision": "memorialized",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "edgewater-bergen",
+      "name": "Edgewater",
+      "county": "Bergen",
+      "website": "https://www.edgewaternj.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B85.02 L4 & 5.01.",
+          "applicant": "Commonly known as 440-456 River Road, Edgewater, NJ. Block 85.02",
+          "block_lots": [
+            {
+              "block": "85.02",
+              "lots": "4 & 5.01."
+            }
+          ],
+          "addresses": [
+            "440-456 River Road"
+          ],
+          "types": [
+            "amended site plan",
+            "variance"
+          ],
+          "proposal": "amended site plan and variance approval for the mixed-use building under construction at 440-456 River Road, which will require \"D\" and \"C\" variance approval, located in",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "elmwood-park-bergen",
+      "name": "Elmwood Park",
+      "county": "Bergen",
+      "website": "https://www.elmwoodparknj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "englewood-bergen",
+      "name": "Englewood",
+      "county": "Bergen",
+      "website": "https://www.cityofenglewood.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-26-015",
+          "applicant": "United Development of America",
+          "block_lots": [
+            {
+              "block": "2111",
+              "lots": "9"
+            }
+          ],
+          "addresses": [
+            "217 Third St"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-26-016",
+          "applicant": "Tots Play Haus LLC, dba Canvas",
+          "block_lots": [
+            {
+              "block": "2801",
+              "lots": "2"
+            }
+          ],
+          "addresses": [
+            "202 S Deans St"
+          ],
+          "types": [
+            "site plan",
+            "use variance (d)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-26-014",
+          "applicant": "229 S Dean St QOZ LLC, Steinberg",
+          "block_lots": [
+            {
+              "block": "2802",
+              "lots": "12"
+            }
+          ],
+          "addresses": [
+            "229 S Dean St",
+            "67 E Forest Ave"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-26-012",
+          "applicant": "Marc & Jordanna Nadritch",
+          "block_lots": [
+            {
+              "block": "3103",
+              "lots": "8"
+            }
+          ],
+          "addresses": [
+            "383 Mountain Rd"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "fort-lee-bergen",
+      "name": "Fort Lee",
+      "county": "Bergen",
+      "website": "https://www.fortleenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "glen-rock-bergen",
+      "name": "Glen Rock",
+      "county": "Bergen",
+      "website": "https://www.glenrocknj.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hackensack-bergen",
+      "name": "Hackensack",
+      "county": "Bergen",
+      "website": "https://www.hackensack.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-07",
+          "board": "zoning",
+          "application": "Resolution No. 264-26",
+          "applicant": "Resolution No. 264-26",
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        },
+        {
+          "meeting_date": "2026-10-07",
+          "board": "zoning",
+          "application": "Resolution No. 196-26",
+          "applicant": "Resolution No. 196-26",
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Kellie M. Reyes",
+                "firm": "",
+                "credentials": "ESQ",
+                "testified": false
+              }
+            ]
+          },
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "harrington-park-bergen",
+      "name": "Harrington Park",
+      "county": "Bergen",
+      "website": "https://www.harringtonparknj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mahwah-bergen",
+      "name": "Mahwah",
+      "county": "Bergen",
+      "website": "https://www.mahwahtwp.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "26-1624",
+          "applicant": "Luiz Pinheiro-Guimaraes",
+          "block_lots": [
+            {
+              "block": "38",
+              "lots": "8 & 23"
+            }
+          ],
+          "addresses": [
+            "136 Johnson Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "1) Docket #26-1624 \u2013 Luiz Pinheiro-Guimaraes 136 Johnson Avenue, Block 38, Lots 8 & 23 Resolution for \"C\" Variance for 12' by 16' oval above ground pool, with stairs and",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "26-1626",
+          "applicant": "Hindu Samaj, Inc",
+          "block_lots": [
+            {
+              "block": "132",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "247 West Ramapo Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "permit the installation of a 6-foot security fence, Resolution for Approval",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "26-1625",
+          "applicant": "Sarah Gentile",
+          "block_lots": [
+            {
+              "block": "173",
+              "lots": "107"
+            }
+          ],
+          "addresses": [
+            "111 Greene Street"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct a covered front-entry portico over an existing concrete landing where front-yard setback is not met",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "midland-park-bergen",
+      "name": "Midland Park",
+      "county": "Bergen",
+      "website": "https://www.midlandparknj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "montvale-bergen",
+      "name": "Montvale",
+      "county": "Bergen",
+      "website": "https://www.montvalenj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "new-milford-bergen",
+      "name": "New Milford",
+      "county": "Bergen",
+      "website": "https://www.milfordnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "oakland-bergen",
+      "name": "Oakland",
+      "county": "Bergen",
+      "website": "https://www.oakland-nj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-08",
+          "board": "planning",
+          "application": "B4202 L2",
+          "applicant": "is located in the RA-2-AH Zone and is the portion of the Ridings at Oakland",
+          "types": [
+            "site plan",
+            "subdivision"
+          ],
+          "decision": "approved",
+          "vote": null,
+          "proposal": "The subject property contains two affordable residential buildings: \u2022 One building containing 24 units, which has been completed and received certificates of occupancy; a",
+          "engineers": [],
+          "team": {},
+          "source": "minutes"
+        },
+        {
+          "meeting_date": "2026-10-08",
+          "board": "planning",
+          "application": "B4202 L2",
+          "applicant": "Accordingly, the Planner recommended that Block 4202",
+          "types": [],
+          "decision": "approved",
+          "vote": null,
+          "proposal": "The Planner confirmed that the two buildings on the subject lot contain the development's affordable units and that no zoning change or new development proposal was being",
+          "engineers": [],
+          "team": {},
+          "source": "minutes"
+        },
+        {
+          "meeting_date": "2026-10-08",
+          "board": "planning",
+          "application": "B4202 L2.",
+          "applicant": "James Lower Properties",
+          "types": [],
+          "decision": "approved",
+          "vote": null,
+          "proposal": "These concerns were previously provided to the developer in writing with a request for a response within ten calendar days; no response was received. \u2022 An additional stop",
+          "engineers": [],
+          "team": {
+            "engineer": [
+              {
+                "name": "Caroline Reiter",
+                "firm": "T&M Associates",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          },
+          "source": "minutes"
+        },
+        {
+          "meeting_date": "2026-10-08",
+          "board": "planning",
+          "application": "B201 L6 and 7.",
+          "applicant": "LLC, concerning property located at 59\u201365 Edison Avenue, identified as Block 201",
+          "types": [
+            "preliminary & final major site plan",
+            "bulk variance (c)"
+          ],
+          "decision": null,
+          "vote": null,
+          "proposal": "8 Owner Testimony \u2013 Jim Frank \u2022 Jim Frank testified that he was one of the former owners of James Construction and remains a co-owner of the subject property with Mr. Dow",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Robert Fiore",
+                "firm": "",
+                "credentials": "ESQ",
+                "testified": false
+              }
+            ]
+          },
+          "source": "minutes"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "old-tappan-bergen",
+      "name": "Old Tappan",
+      "county": "Bergen",
+      "website": "https://www.oldtappan.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "oradell-bergen",
+      "name": "Oradell",
+      "county": "Bergen",
+      "website": "https://www.oradell.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "874-24",
+          "applicant": "CAL# 874-24____________________________________________________________",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "899-26",
+          "applicant": "CAL #899-26 _________________________________________________________________",
+          "block_lots": [],
+          "addresses": [
+            "492 Oak Tree Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "palisades-park-bergen",
+      "name": "Palisades Park",
+      "county": "Bergen",
+      "website": "https://www.palisadesparknj.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "B505 L3 & 4",
+          "applicant": "#505 Lots #3 & 4",
+          "block_lots": [
+            {
+              "block": "505",
+              "lots": "3 & 4"
+            }
+          ],
+          "addresses": [
+            "232 Broad Avenue"
+          ],
+          "types": [
+            "site plan",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "B602 L23 & 4",
+          "applicant": "#602 Lots #23 & 4",
+          "block_lots": [
+            {
+              "block": "602",
+              "lots": "23 & 4"
+            },
+            {
+              "block": "716",
+              "lots": "20, 21 & 22"
+            }
+          ],
+          "addresses": [
+            "139-141 Bergen Boulevard"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "park-ridge-bergen",
+      "name": "Park Ridge",
+      "county": "Bergen",
+      "website": "https://www.parkridgeboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "ramsey-bergen",
+      "name": "Ramsey",
+      "county": "Bergen",
+      "website": "https://www.ramseynj.com/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B3603 L1",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "3603",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "1 Constantine Drive"
+          ],
+          "types": [
+            "subdivision"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B3608 L21",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "3608",
+              "lots": "21"
+            }
+          ],
+          "addresses": [
+            "24 Grant Street"
+          ],
+          "types": [
+            "site plan",
+            "subdivision"
+          ],
+          "proposal": "24 Grant Street, Block 3608, Lot 21 Old Business Puleo Construction LLC \u2013 Carried to December 1, 2026 Site Plan, Subdivision and Soil Movement",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B4401 L27",
+          "applicant": "Airmount Avenue; Block 4401",
+          "block_lots": [
+            {
+              "block": "4401",
+              "lots": "27"
+            }
+          ],
+          "addresses": [
+            "290 Airmount Avenue"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B2903 L7",
+          "applicant": "Richard Chaffiotte & Marissa Stokes",
+          "block_lots": [
+            {
+              "block": "2903",
+              "lots": "7"
+            }
+          ],
+          "addresses": [
+            "190 South Central Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "allow Front Yard Setback of 35.6' where 40' is required, Side Yard Setback of 9.7' where 10' if required, Rear Yard Setback of 20.2' where 25' is required, Maximum Buildi",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B2201 L3",
+          "applicant": "Sean & Kaysha Menge",
+          "block_lots": [
+            {
+              "block": "2201",
+              "lots": "3"
+            }
+          ],
+          "addresses": [
+            "216 Darlington Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "allow Rear Yard Setback of 42.5' where 50' is required and Maximum Building Coverage of 15.51% where 15% is maximum required",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B5501 L3",
+          "applicant": "Justin & Mary Smith",
+          "block_lots": [
+            {
+              "block": "5501",
+              "lots": "3"
+            }
+          ],
+          "addresses": [
+            "40 East Crescent Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "allow Living Space of 4,370 sf where 3,500 sf is maximum allowed",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "ridgewood-bergen",
+      "name": "Ridgewood",
+      "county": "Bergen",
+      "website": "https://www.ridgewoodnj.net/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "saddle-brook-bergen",
+      "name": "Saddle Brook",
+      "county": "Bergen",
+      "website": "https://saddlebrooknj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "teaneck-bergen",
+      "name": "Teaneck",
+      "county": "Bergen",
+      "website": "https://www.teanecknj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "tenafly-bergen",
+      "name": "Tenafly",
+      "county": "Bergen",
+      "website": "https://www.tenaflynj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "wallington-bergen",
+      "name": "Wallington",
+      "county": "Bergen",
+      "website": "https://www.wallingtonnj.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B71 L33.02",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "71",
+              "lots": "33.02"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "site plan waiver"
+          ],
+          "proposal": "c. SITE PLAN WAIVER APPLICATION FRIENDS PRODUCTS LLC 495 MAIN AVE BLOCK 71, LOT 33.02 RESTAURANT/CATERING VI",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "westwood-bergen",
+      "name": "Westwood",
+      "county": "Bergen",
+      "website": "https://www.westwoodnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "wyckoff-bergen",
+      "name": "Wyckoff",
+      "county": "Bergen",
+      "website": "https://www.wyckoffnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bass-river-township-burlington",
+      "name": "Bass River Township",
+      "county": "Burlington",
+      "website": "https://www.bassriver-nj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "burlington-city-burlington",
+      "name": "Burlington City",
+      "county": "Burlington",
+      "website": "https://twp.burlington.nj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-08",
+          "board": "planning",
+          "application": "PKST BURLINGTON NECK LLC",
+          "applicant": "PKST BURLINGTON NECK LLC",
+          "types": [
+            "minor site plan"
+          ],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "burlington-township-burlington",
+      "name": "Burlington Township",
+      "county": "Burlington",
+      "website": "https://www.burlingtonnj.us/",
+      "upcoming_meetings": [
+        "2026-10-28"
+      ],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-09-29",
+          "board": "combined",
+          "application": "NJ Division of Pensions and Benefits (pdf)",
+          "applicant": null,
+          "types": [],
+          "decision": "approved",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "delran-township-burlington",
+      "name": "Delran Township",
+      "county": "Burlington",
+      "website": "https://www.delrantownship.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "florence-township-burlington",
+      "name": "Florence Township",
+      "county": "Burlington",
+      "website": "https://www.florence-nj.gov/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "maple-shade-burlington",
+      "name": "Maple Shade",
+      "county": "Burlington",
+      "website": "https://www.mapleshade.com/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "combined",
+          "application": "B101.01 L1",
+          "applicant": "Bekas Holdings, LLC",
+          "block_lots": [
+            {
+              "block": "101.01",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "400 E Main St"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "combined",
+          "application": "JLUB-26-11",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "Restaurant",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "combined",
+          "application": "Application: Request for Waiver from Site Plan Rev",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "200 Stiles Avenue"
+          ],
+          "types": [
+            "site plan",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "medford-lakes-burlington",
+      "name": "Medford Lakes",
+      "county": "Burlington",
+      "website": "https://www.medfordlakes.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "moorestown-burlington",
+      "name": "Moorestown",
+      "county": "Burlington",
+      "website": "https://www.moorestown.nj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "north-hanover-township-burlington",
+      "name": "North Hanover Township",
+      "county": "Burlington",
+      "website": "https://www.northhanovertwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "riverside-burlington",
+      "name": "Riverside",
+      "county": "Burlington",
+      "website": "https://www.riversidetwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "riverton-burlington",
+      "name": "Riverton",
+      "county": "Burlington",
+      "website": "https://www.riverton-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "shamong-burlington",
+      "name": "Shamong",
+      "county": "Burlington",
+      "website": "https://www.shamong.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-09",
+          "board": "combined",
+          "application": "Minutes and Resolutions",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bellmawr-camden",
+      "name": "Bellmawr",
+      "county": "Camden",
+      "website": "https://www.bellmawr.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "berlin-borough-camden",
+      "name": "Berlin Borough",
+      "county": "Camden",
+      "website": "https://www.berlinnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "berlin-township-camden",
+      "name": "Berlin Township",
+      "county": "Camden",
+      "website": "https://www.berlinnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "brooklawn-camden",
+      "name": "Brooklawn",
+      "county": "Camden",
+      "website": "https://www.brooklawn-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cherry-hill-township-camden",
+      "name": "Cherry Hill Township",
+      "county": "Camden",
+      "website": "https://www.chnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "chesilhurst-camden",
+      "name": "Chesilhurst",
+      "county": "Camden",
+      "website": "https://www.chesilhurstboro.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2027-06-30",
+          "board": "combined",
+          "application": "Resolution 2026-106 Dhanrala, LLC",
+          "applicant": null,
+          "types": [],
+          "decision": "approved",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "collingswood-camden",
+      "name": "Collingswood",
+      "county": "Camden",
+      "website": "https://www.collingswood.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "gloucester-city-camden",
+      "name": "Gloucester City",
+      "county": "Camden",
+      "website": "https://www.glotwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "gloucester-township-camden",
+      "name": "Gloucester Township",
+      "county": "Camden",
+      "website": "https://www.glotwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "haddon-township-camden",
+      "name": "Haddon Township",
+      "county": "Camden",
+      "website": "https://www.haddontwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "haddonfield-camden",
+      "name": "Haddonfield",
+      "county": "Camden",
+      "website": "https://www.haddonfieldnj.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-32",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-0023",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "635 Redman Avenue"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-33",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-0027",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "115 Tavistock Lane"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-0029",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "27 S. Hinchman Avenue"
+          ],
+          "types": [
+            "bulk variance (c)",
+            "interpretation"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-0028",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "225 Oak Avenue"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "bulk variance relief for a proposed addition to an existing single-family dwelling",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "ZBA-2026-0030",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "65 Lane"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "bulk variance relief to construct a 2nd floor addition",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lawnside-camden",
+      "name": "Lawnside",
+      "county": "Camden",
+      "website": "https://www.lawnside.net/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lindenwold-camden",
+      "name": "Lindenwold",
+      "county": "Camden",
+      "website": "https://www.lindenwoldnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "somerdale-camden",
+      "name": "Somerdale",
+      "county": "Camden",
+      "website": "https://www.somerdale-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stratford-camden",
+      "name": "Stratford",
+      "county": "Camden",
+      "website": "https://www.stratfordnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "tavistock-camden",
+      "name": "Tavistock",
+      "county": "Camden",
+      "website": "https://www.tavistocknj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "voorhees-camden",
+      "name": "Voorhees",
+      "county": "Camden",
+      "website": "https://www.voorheesnj.com/",
+      "upcoming_meetings": [
+        "2026-10-22"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "waterford-township-camden",
+      "name": "Waterford Township",
+      "county": "Camden",
+      "website": "https://www.waterfordtwp.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "combined",
+          "application": "2026-11",
+          "applicant": "Lori & Ehren O'Donnell (App #2026-11)",
+          "block_lots": [],
+          "addresses": [
+            "613 Blueberry Drive"
+          ],
+          "types": [
+            "bulk variance (c)",
+            "conditional use"
+          ],
+          "proposal": "#26-17 Lori & Ehren O'Donnell (App #2026-11) RE: 613 Blueberry Drive, Atco Block: 3004 Lot: 4 Zone: R-2 Memorialize the variance relief granted to reduce required setback",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "combined",
+          "application": "2020-11E",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "275 White Horse Pike"
+          ],
+          "types": [
+            "amended site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "Mauriello #26-22 Proposed Amendments to the Haines Boulevard Redevelopment Plan Memorialize the Joint Land Use Board review of the Board Planner, Scott Smith's study and",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cape-may-point-cape-may",
+      "name": "Cape May Point",
+      "county": "Cape May",
+      "website": "https://www.capemaypoint.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "PB2026-02",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "203 Lighthouse Ave"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "middle-township-cape-may",
+      "name": "Middle Township",
+      "county": "Cape May",
+      "website": "https://www.middletownship.com/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stone-harbor-cape-may",
+      "name": "Stone Harbor",
+      "county": "Cape May",
+      "website": "https://www.stoneharbornj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-wildwood-cape-may",
+      "name": "West Wildwood",
+      "county": "Cape May",
+      "website": "https://www.westwildwood.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "wildwood-crest-cape-may",
+      "name": "Wildwood Crest",
+      "county": "Cape May",
+      "website": "https://www.wildwoodcrest.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "fairfield-township-cumberland",
+      "name": "Fairfield Township",
+      "county": "Cumberland",
+      "website": "https://www.fairfieldtownshipnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hopewell-township-cumberland",
+      "name": "Hopewell Township",
+      "county": "Cumberland",
+      "website": "https://www.hopewelltwp.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "B89.01 L5",
+          "applicant": "VETERAN EXEMPTION GRANTED ON BLOCK 89.01",
+          "block_lots": [
+            {
+              "block": "89.01",
+              "lots": "5"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "ADJOURNMENT October 15, 2026 TOWNSHIP OF HOPEWELL Page No: 1 01:27 PM Bill List By Budget Account P.O. Type: All Print Alpha, Revenue, & G/L Accounts: Y Open: N Void: N P",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "LING1-646-876",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "V. Planning and Zoning Board Applications",
+          "applicant": "V. Planning and Zoning Board Applications",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "Planning Board Application Documents",
+          "applicant": "Planning Board Application Documents",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "Discuss",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "Zoning Board Application Documents",
+          "applicant": "Zoning Board Application Documents",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "maurice-river-township-cumberland",
+      "name": "Maurice River Township",
+      "county": "Cumberland",
+      "website": "https://www.mauricerivertwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "millville-cumberland",
+      "name": "Millville",
+      "county": "Cumberland",
+      "website": "https://www.millvillenj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stow-creek-township-cumberland",
+      "name": "Stow Creek Township",
+      "county": "Cumberland",
+      "website": "https://www.stowcreektwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "upper-deerfield-township-cumberland",
+      "name": "Upper Deerfield Township",
+      "county": "Cumberland",
+      "website": "https://www.upperdeerfield.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "vineland-cumberland",
+      "name": "Vineland",
+      "county": "Cumberland",
+      "website": "https://www.vinelandcity.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "Brewster 1 SPV, LLC",
+          "applicant": "Brewster 1 SPV, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "site plan",
+            "subdivision",
+            "use variance (d)"
+          ],
+          "proposal": "(\"D\") \u2022 Minimum Lot Area, Lot 21 \u2013 17,001 sq.ft. proposed vs. 18,000 sq.ft. required (\"C\") \u2022 Minimum Lot Frontage, Various Interior Lots \u2013 80-90 feet proposed vs. 110 fee",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "Douglas A Albrecht",
+          "applicant": "Douglas A Albrecht",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "site plan waiver",
+            "use variance (d)"
+          ],
+          "proposal": "The subject property currently has an existing single-family residential home in addition to the commercial building",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bloomfield-essex",
+      "name": "Bloomfield",
+      "county": "Essex",
+      "website": "https://www.bloomfieldtwpnj.com/",
+      "upcoming_meetings": [
+        "2026-10-20",
+        "2026-10-22",
+        "2026-11-05"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "II. Application for Certificate of Appropriateness",
+          "applicant": "II. Application for Certificate of Appropriateness",
+          "block_lots": [],
+          "addresses": [
+            "27 Oakland Avenue"
+          ],
+          "types": [],
+          "proposal": "the installation of two (2) condensers for a new Heating, Ventilation, and Air Conditioning Unit (HVAC)",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "B280 L10 and 11",
+          "applicant": "Integrity Holdings and Development",
+          "block_lots": [
+            {
+              "block": "280",
+              "lots": "10 and 11"
+            }
+          ],
+          "addresses": [
+            "118-128 Liberty Street"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Application: seeking a D(1) Use variance for propo",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "Townhouses are not a permitted use",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "B1203 L14",
+          "applicant": "Miguel Garcia",
+          "block_lots": [
+            {
+              "block": "1203",
+              "lots": "14"
+            }
+          ],
+          "addresses": [
+            "45 Elmbrook Place"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "Application: seeking Class C Bulk variance and any",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "29 Stone Street"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "B913 L12",
+          "applicant": "Brian and Nicole Chirlo",
+          "block_lots": [
+            {
+              "block": "913",
+              "lots": "12"
+            }
+          ],
+          "addresses": [
+            "6 Stone Street"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "B912 L1",
+          "applicant": "James Hwang",
+          "block_lots": [
+            {
+              "block": "912",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "50 Beach Street"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "B282 L43",
+          "applicant": "Sean Egan",
+          "block_lots": [
+            {
+              "block": "282",
+              "lots": "43"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "zoning",
+          "application": "B1265 L50",
+          "applicant": "Kyle Hallenbeck",
+          "block_lots": [
+            {
+              "block": "1265",
+              "lots": "50"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cedar-grove-essex",
+      "name": "Cedar Grove",
+      "county": "Essex",
+      "website": "https://www.cedargrovenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "east-orange-essex",
+      "name": "East Orange",
+      "county": "Essex",
+      "website": "https://www.eastorange-nj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "fairfield-essex",
+      "name": "Fairfield",
+      "county": "Essex",
+      "website": "https://www.fairfieldtownshipnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "livingston-essex",
+      "name": "Livingston",
+      "county": "Essex",
+      "website": "https://www.livingstonnj.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "2026-58",
+          "applicant": "PFSP",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "major subdivision",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "2026-51",
+          "applicant": "PFSP & MAJSUBV",
+          "block_lots": [
+            {
+              "block": "2906",
+              "lots": "56"
+            }
+          ],
+          "addresses": [
+            "46 Sycamore Avenue"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B2906 L56",
+          "applicant": "Applicant proposes a major subdivision of Block 2906",
+          "block_lots": [
+            {
+              "block": "2906",
+              "lots": "56"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "major subdivision"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "millburn-essex",
+      "name": "Millburn",
+      "county": "Essex",
+      "website": "https://www.twp.millburn.nj.us/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4081-25",
+          "applicant": "Cal#4081-25, Russell Speeders Car Wash",
+          "block_lots": [],
+          "addresses": [
+            "17 E. Willow Street"
+          ],
+          "types": [],
+          "proposal": "Cal#4081-25, Russell Speeders Car Wash, 17 E. Willow Street, Millburn",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4091-26",
+          "applicant": "Cal#4091-26, Lie/Zeng",
+          "block_lots": [],
+          "addresses": [
+            "96 Meadowbrook Road"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4097-26",
+          "applicant": "Cal#4097-26, Reichgott",
+          "block_lots": [],
+          "addresses": [
+            "80 Great Oak Drive"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4084-26",
+          "applicant": "389 Millburn LLC",
+          "block_lots": [
+            {
+              "block": "1211",
+              "lots": "5"
+            }
+          ],
+          "addresses": [
+            "389 Millburn Avenue",
+            "75 Main Street"
+          ],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "construct apartments over existing retail space Violation of: 606.7g3",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4089-26",
+          "applicant": "A. Young/S. Keating",
+          "block_lots": [
+            {
+              "block": "4705",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "46 Troy Drive",
+            "75 Main Street"
+          ],
+          "types": [],
+          "proposal": "install a pool/patio/fence Violation of: 609.1c",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4098-26",
+          "applicant": "27 Willow Street LLC",
+          "block_lots": [
+            {
+              "block": "1001",
+              "lots": "8"
+            }
+          ],
+          "addresses": [
+            "45 Ocean Street",
+            "27 Willow Street"
+          ],
+          "types": [],
+          "proposal": "install a front yard fence Violation of: 609.6a",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4099-26",
+          "applicant": "Amanda/Matthew Plotkin",
+          "block_lots": [
+            {
+              "block": "4304",
+              "lots": "9"
+            }
+          ],
+          "addresses": [
+            "50 Kean Road"
+          ],
+          "types": [],
+          "proposal": "construct an addition Violation of: 606.2e1f",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "4025-25",
+          "applicant": "Triple One Holdings",
+          "block_lots": [
+            {
+              "block": "703",
+              "lots": "9"
+            }
+          ],
+          "addresses": [
+            "44 Essex Street",
+            "600 Parsippany Road",
+            "200 Glen Avenue"
+          ],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "construct 4 apartment units over existing restaurant Violation of: 606.7h1",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "montclair-essex",
+      "name": "Montclair",
+      "county": "Essex",
+      "website": "https://www.montclairnjusa.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B2903 L36.",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "2903",
+              "lots": "36."
+            },
+            {
+              "block": "1303",
+              "lots": "17."
+            }
+          ],
+          "addresses": [
+            "89 High Street",
+            "83 Plymouth Street",
+            "104 Undercliff Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "Addition of barrel sauna and deck in the front yard",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B102 L5.01.",
+          "applicant": "Installation of raised plunge pool and patio at rear of dwelling",
+          "block_lots": [
+            {
+              "block": "102",
+              "lots": "5.01."
+            },
+            {
+              "block": "1301",
+              "lots": "30 and 31."
+            }
+          ],
+          "addresses": [
+            "95 South Mountain Avenue"
+          ],
+          "types": [],
+          "proposal": "Installation of raised plunge pool and patio at rear of dwelling",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B3302 L10.",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "3302",
+              "lots": "10."
+            },
+            {
+              "block": "3112",
+              "lots": "5."
+            }
+          ],
+          "addresses": [
+            "150-152 Forest Street",
+            "18 Miller Street"
+          ],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "Construction of new two-family home",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "north-caldwell-essex",
+      "name": "North Caldwell",
+      "county": "Essex",
+      "website": "https://www.northcaldwell.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "orange-essex",
+      "name": "Orange",
+      "county": "Essex",
+      "website": "https://www.orangenj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B5105 L1, 2, 3, 4 and 5",
+          "applicant": "the Local Finance Board requesting approval to issue not to",
+          "block_lots": [
+            {
+              "block": "5105",
+              "lots": "1, 2, 3, 4 and 5"
+            }
+          ],
+          "addresses": [
+            "539 Nassau Street",
+            "541 Nassau Street",
+            "456 South Jefferson Street"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B3704 L33, 34, 35 and 36.",
+          "applicant": "Orange Township as Block 3704",
+          "block_lots": [
+            {
+              "block": "3704",
+              "lots": "33, 34, 35 and 36."
+            },
+            {
+              "block": "3704",
+              "lots": "33, 34, 35 and 36"
+            }
+          ],
+          "addresses": [
+            "355 Henry Street"
+          ],
+          "types": [],
+          "proposal": "the installation of the Salto Access Control Security System for the City of Orange Township Fire Department from Hogan Security Group LLC, 1569 Reed Road, Pennington, NJ",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B2101 L1, 2, 3 and 29",
+          "applicant": "official",
+          "block_lots": [
+            {
+              "block": "2101",
+              "lots": "1, 2, 3 and 29"
+            },
+            {
+              "block": "6003",
+              "lots": "24"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "construction of the emergency operations center project, in an amount not to exceed $160,000. *516-2026 A resolution of the Municipal Council of the City of Orange Townsh",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "roseland-essex",
+      "name": "Roseland",
+      "county": "Essex",
+      "website": "https://www.roselandnj.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "B30 L4",
+          "applicant": "property situate block 30",
+          "block_lots": [
+            {
+              "block": "30",
+              "lots": "4"
+            },
+            {
+              "block": "32",
+              "lots": "9.01"
+            }
+          ],
+          "addresses": [
+            "4 Becker Farm Rd",
+            "81 High Street",
+            "10 Eisenhower Parkway"
+          ],
+          "types": [
+            "major site plan",
+            "extension"
+          ],
+          "proposal": "Major Site Plan approval for a new 265-unit residential building with associated site improvements b.) Appeal # 26-02 of 81 High Street LLC, owner of property situate blo",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "B30 L1",
+          "applicant": "under contract of property situate block 30",
+          "block_lots": [
+            {
+              "block": "30",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "65 Livingston Avenue"
+          ],
+          "types": [
+            "major site plan"
+          ],
+          "proposal": "Major Site Plan approval in conjunction with proposed residential development with a 181unit Assisted Living & Memory Care Facility and 42 Affordable Housing Units and as",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "verona-essex",
+      "name": "Verona",
+      "county": "Essex",
+      "website": "https://www.veronanj.org/",
+      "upcoming_meetings": [
+        "2026-10-22"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-22",
+          "board": "planning",
+          "application": "2026-04",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "1806",
+              "lots": "13"
+            }
+          ],
+          "addresses": [
+            "22 Lakeside Avenue"
+          ],
+          "types": [],
+          "proposal": "New improvements will include the construction/reconfiguration of the parking lot to provide additional parking stalls, stormwater management improvements, and improvemen",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-orange-essex",
+      "name": "West Orange",
+      "county": "Essex",
+      "website": "https://www.westorange.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "harrison-township-gloucester",
+      "name": "Harrison Township",
+      "county": "Gloucester",
+      "website": "https://www.harrisontwp.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "monroe-township-gloucester",
+      "name": "Monroe Township",
+      "county": "Gloucester",
+      "website": "https://www.monroetownshipnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "pitman-gloucester",
+      "name": "Pitman",
+      "county": "Gloucester",
+      "website": "https://www.pitman.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "south-harrison-township-gloucester",
+      "name": "South Harrison Township",
+      "county": "Gloucester",
+      "website": "https://www.southharrison-nj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "westville-gloucester",
+      "name": "Westville",
+      "county": "Gloucester",
+      "website": "https://www.westville-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-12-31",
+          "board": "combined",
+          "application": "Resolution No. 2026-02",
+          "applicant": null,
+          "types": [],
+          "decision": "memorialized",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "woodbury-gloucester",
+      "name": "Woodbury",
+      "county": "Gloucester",
+      "website": "https://woodbury.nj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bayonne-hudson",
+      "name": "Bayonne",
+      "county": "Hudson",
+      "website": "https://www.bayonnenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "harrison-hudson",
+      "name": "Harrison",
+      "county": "Hudson",
+      "website": "https://www.townofharrison.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "jersey-city-hudson",
+      "name": "Jersey City",
+      "county": "Hudson",
+      "website": "https://www.jerseycitynj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "secaucus-hudson",
+      "name": "Secaucus",
+      "county": "Hudson",
+      "website": "https://www.secaucusnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-new-york-hudson",
+      "name": "West New York",
+      "county": "Hudson",
+      "website": "https://www.westnewyorknj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "clinton-town-hunterdon",
+      "name": "Clinton Town",
+      "county": "Hunterdon",
+      "website": "https://www.clintonnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "clinton-township-hunterdon",
+      "name": "Clinton Township",
+      "county": "Hunterdon",
+      "website": "https://www.clintonnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "delaware-township-hunterdon",
+      "name": "Delaware Township",
+      "county": "Hunterdon",
+      "website": "https://www.delawaretwpnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "east-amwell-township-hunterdon",
+      "name": "East Amwell Township",
+      "county": "Hunterdon",
+      "website": "https://www.eastamwelltownship.com/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "flemington-hunterdon",
+      "name": "Flemington",
+      "county": "Hunterdon",
+      "website": "https://www.historicflemington.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "franklin-township-hunterdon",
+      "name": "Franklin Township",
+      "county": "Hunterdon",
+      "website": "https://www.franklin-twp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hampton-borough-hunterdon",
+      "name": "Hampton Borough",
+      "county": "Hunterdon",
+      "website": "https://www.hamptonboro.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "kingwood-hunterdon",
+      "name": "Kingwood",
+      "county": "Hunterdon",
+      "website": "https://www.kingwoodtownship.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lambertville-hunterdon",
+      "name": "Lambertville",
+      "county": "Hunterdon",
+      "website": "https://www.lambertvillenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "milford-hunterdon",
+      "name": "Milford",
+      "county": "Hunterdon",
+      "website": "https://www.milfordnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "readington-township-hunterdon",
+      "name": "Readington Township",
+      "county": "Hunterdon",
+      "website": "https://www.readingtontwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-amwell-township-hunterdon",
+      "name": "West Amwell Township",
+      "county": "Hunterdon",
+      "website": "https://www.westamwelltwp.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "14: Preliminary & Final Site Plan Approval with Bu",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "Discussion: Proposed Amendments to Township Code Chapters 75 \"Dogs and Other Animals\" and Chapter 109, Article XVI \"Accessory Uses and Structures\" \u2013 Status Update Bill Li",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B21 L15 & 16",
+          "applicant": "Staff Report from DRCC dated 9/29/26, re",
+          "block_lots": [
+            {
+              "block": "21",
+              "lots": "15 & 16"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "ewing-township-mercer",
+      "name": "Ewing Township",
+      "county": "Mercer",
+      "website": "https://www.ewingnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hopewell-township-mercer",
+      "name": "Hopewell Township",
+      "county": "Mercer",
+      "website": "https://www.hopewelltwp.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "B89.01 L5",
+          "applicant": "VETERAN EXEMPTION GRANTED ON BLOCK 89.01",
+          "block_lots": [
+            {
+              "block": "89.01",
+              "lots": "5"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "ADJOURNMENT October 15, 2026 TOWNSHIP OF HOPEWELL Page No: 1 01:27 PM Bill List By Budget Account P.O. Type: All Print Alpha, Revenue, & G/L Accounts: Y Open: N Void: N P",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "Zoning Board Application Documents",
+          "applicant": "Zoning Board Application Documents",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "LING1-646-876",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "V. Planning and Zoning Board Applications",
+          "applicant": "V. Planning and Zoning Board Applications",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "Planning Board Application Documents",
+          "applicant": "Planning Board Application Documents",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "Discuss",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "princeton-mercer",
+      "name": "Princeton",
+      "county": "Mercer",
+      "website": "https://www.princetonnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "robbinsville-township-mercer",
+      "name": "Robbinsville Township",
+      "county": "Mercer",
+      "website": "https://www.robbinsville.net/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B41.01 L31.01",
+          "applicant": "be secured by a fence and a guard house. (Block 41.01",
+          "block_lots": [
+            {
+              "block": "41.01",
+              "lots": "31.01"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "minor subdivision",
+            "use variance (d)"
+          ],
+          "proposal": "Preliminary and Final site plan use variance and minor subdivision application for eight (8) stacked townhomes to be contained in one building which will be adjacent to t",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B8 L1.18",
+          "applicant": "temporary parking. (Block 8",
+          "block_lots": [
+            {
+              "block": "8",
+              "lots": "1.18"
+            }
+          ],
+          "addresses": [
+            "201 Hutchinson Rd"
+          ],
+          "types": [],
+          "proposal": "(V. Donavalli) Proposed installation of 6ft",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B3 L18.01",
+          "applicant": "privacy fence within the front yard of a corner lot. (Block 3",
+          "block_lots": [
+            {
+              "block": "3",
+              "lots": "18.01"
+            },
+            {
+              "block": "21",
+              "lots": "27.03"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "build 6 affordable single-family homes.(Block 21, Lot 27.03)",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-windsor-mercer",
+      "name": "West Windsor",
+      "county": "Mercer",
+      "website": "https://www.westwindsortwp.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "carteret-middlesex",
+      "name": "Carteret",
+      "county": "Middlesex",
+      "website": "https://www.carteret.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cranbury-middlesex",
+      "name": "Cranbury",
+      "county": "Middlesex",
+      "website": "https://www.cranburytownship.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "dunellen-middlesex",
+      "name": "Dunellen",
+      "county": "Middlesex",
+      "website": "https://www.dunellen-nj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "east-brunswick-middlesex",
+      "name": "East Brunswick",
+      "county": "Middlesex",
+      "website": "https://www.eastbrunswick.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "26-09",
+          "applicant": "Tamav Irini Land LLC",
+          "block_lots": [
+            {
+              "block": "317.14",
+              "lots": "6.03, 9, 16 & 17"
+            }
+          ],
+          "addresses": [
+            "100 Dutch Road"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "edison-middlesex",
+      "name": "Edison",
+      "county": "Middlesex",
+      "website": "https://www.edisonnj.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P02-2024",
+          "applicant": "BLUEBERRY VILLAGE INC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "final major site plan",
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P08-2025",
+          "applicant": "ARMA CONTRACTING, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "final major site plan",
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P07-2024",
+          "applicant": "WHITMAN RENEWAL, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P06-2026",
+          "applicant": "RARITAN PLAZA III, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P07-2026",
+          "applicant": "NIRALI PATEL",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P04-2026",
+          "applicant": "TORSIELLO ORGANIZATION",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P09-2026",
+          "applicant": "TESLA, INC. 1199 AMBOY AVE",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "subdivision"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-16",
+          "board": "planning",
+          "application": "P11-2026",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "final major site plan",
+            "conditional use"
+          ],
+          "proposal": "Prelim and Final Site plan along with conditional use approval to construct a carwash",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z08-2025",
+          "applicant": "SACRED FOUNDATION DENIAL",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z24-2026",
+          "applicant": "JAY BADIANI APPROVAL",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z15-2022",
+          "applicant": "AMERICAN OUTDOOR REMAND FOR VOTE ONLY",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z16-2026",
+          "applicant": "MIDDLESEX WATER COMPANY",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z21-2024",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "variance"
+          ],
+          "proposal": "amend the previously approved preliminary and final site plan with Bulk and Use/\" D\" variances to construct the house of worship; the amendment is to indicate the existin",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "Z20-2026",
+          "applicant": "779 NEW DURHAM EDISON, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "Preliminary and Final Site plan with Bulk and Use/\" D\" v to construct a house of worship",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "helmetta-middlesex",
+      "name": "Helmetta",
+      "county": "Middlesex",
+      "website": "https://www.helmettaboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "metuchen-middlesex",
+      "name": "Metuchen",
+      "county": "Middlesex",
+      "website": "https://www.metuchennj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "monroe-township-middlesex",
+      "name": "Monroe Township",
+      "county": "Middlesex",
+      "website": "https://www.monroetwp.com/",
+      "upcoming_meetings": [
+        "2026-10-22"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-22",
+          "board": "planning",
+          "application": "PB-1282-26",
+          "applicant": "Solar Landscape, LLC",
+          "block_lots": [
+            {
+              "block": "58",
+              "lots": "25"
+            }
+          ],
+          "addresses": [
+            "4 South Middlesex Avenue"
+          ],
+          "types": [
+            "minor site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "Install rooftop solar panels for use in the State's",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "planning",
+          "application": "PB-1273-26",
+          "applicant": "BioZen Therapeutics, Inc",
+          "block_lots": [
+            {
+              "block": "55",
+              "lots": "5.1"
+            }
+          ],
+          "addresses": [
+            "22 Abeel Road"
+          ],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "Installation of storage tank",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [
+        {
+          "meeting_date": "2026-10-05",
+          "board": "combined",
+          "application": "Draft Resolutions on the October 5, 2026 Agenda",
+          "applicant": null,
+          "types": [],
+          "decision": "approved",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "north-brunswick-middlesex",
+      "name": "North Brunswick",
+      "county": "Middlesex",
+      "website": "https://www.northbrunswicknj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "perth-amboy-middlesex",
+      "name": "Perth Amboy",
+      "county": "Middlesex",
+      "website": "https://www.perthamboynj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "plainsboro-township-middlesex",
+      "name": "Plainsboro Township",
+      "county": "Middlesex",
+      "website": "https://www.plainsboronj.com/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "P26-03",
+          "applicant": "NY SMSA LTD. d/b/a/ Verizon Wireless- Install on PSEG Tower # 20/6-1",
+          "block_lots": [
+            {
+              "block": "33012",
+              "lots": "27"
+            }
+          ],
+          "addresses": [
+            "641 Plainsboro Road"
+          ],
+          "types": [
+            "minor site plan"
+          ],
+          "proposal": "Minor Site Plan Block 33012, Lot 27 Application materials are available on the Plainsboro Township website Planning and Zoning Department's Meeting Documents page",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "sayreville-middlesex",
+      "name": "Sayreville",
+      "county": "Middlesex",
+      "website": "https://www.sayreville.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "south-river-middlesex",
+      "name": "South River",
+      "county": "Middlesex",
+      "website": "https://www.southrivernj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "spotswood-middlesex",
+      "name": "Spotswood",
+      "county": "Middlesex",
+      "website": "https://www.spotswoodboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "woodbridge-township-middlesex",
+      "name": "Woodbridge Township",
+      "county": "Middlesex",
+      "website": "https://www.twp.woodbridge.nj.us/",
+      "upcoming_meetings": [
+        "2026-10-21",
+        "2026-10-22"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P26-06",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P26-10",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P25-22",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "minor subdivision",
+            "bulk variance (c)"
+          ],
+          "proposal": "expand the existing 2,375 sq. ft. building with a 1,177 sq. ft. two (2) story addition to operate a commercial office under the trade name Decorcci",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Miles Hunter",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P26-20",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "500 Riverside Drive"
+          ],
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "proposal": "expand the existing warehouse facility by approximately 90,440 sq. ft. for use as a refrigerated warehouse to address increased perishable distribution capacity and opera",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Jennifer M. Porter",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z25-22",
+          "applicant": "World Liberation Ministries, Inc. #Z25-22",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-38",
+          "applicant": "Aarti Patel #Z26-38 Granted 10/8/26",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-40",
+          "applicant": "Gurcharan Singh #Z26-40 Granted 10/8/26",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-36",
+          "applicant": "Abida Arshas #Z26-36 Granted 10/8/26",
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-12",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "447 Florida Grove Road"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-22",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "7 Ling Street"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Cruz Larry Lavender",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-41",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "40 Chain O'Hills Road"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "widen the driveway at a single family dwelling. *Postponed from 10/8/26",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-35",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "13 Falmouth Road"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "construct two attached rear additions, a deck, portico over the front landing, and a small walkway connecting to a widened existing driveway at a single-family dwelling",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-37",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "148 Elizabeth Avenue"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "reconstruct the first floor, construct a second floor addition, a rear two story addition, and an attached 1 car garage at a single family dwelling. *Postponed from 10/8/",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z25-53",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "181 Cutter Avenue"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "construct a new single-family dwelling. *Postponed from 6/25/26 and 8/6/26",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-42",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "71 Elm Avenue"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "construct a new two story single family dwelling",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Timothy Little",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-04",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "400 Blair Road"
+          ],
+          "types": [
+            "minor site plan",
+            "use variance (d)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Brian Chewcaski",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "Z26-15",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "167 Main Street"
+          ],
+          "types": [
+            "minor site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Thomas W. Sharlow",
+                "firm": "Jr., Esq",
+                "credentials": "",
+                "testified": false
+              },
+              {
+                "name": "Thomas W. Sharlow, Jr",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "aberdeen-monmouth",
+      "name": "Aberdeen",
+      "county": "Monmouth",
+      "website": "https://www.aberdeennj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "allenhurst-monmouth",
+      "name": "Allenhurst",
+      "county": "Monmouth",
+      "website": "https://www.allenhurstnj.org/",
+      "upcoming_meetings": [
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "asbury-park-monmouth",
+      "name": "Asbury Park",
+      "county": "Monmouth",
+      "website": "https://www.cityofasburypark.com/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bradley-beach-monmouth",
+      "name": "Bradley Beach",
+      "county": "Monmouth",
+      "website": "https://www.bradleybeachnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "eatontown-monmouth",
+      "name": "Eatontown",
+      "county": "Monmouth",
+      "website": "https://eatontownnj.com/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB2025-11",
+          "applicant": "Certificate of Appropriateness",
+          "block_lots": [],
+          "addresses": [
+            "40 Byrnes Lane"
+          ],
+          "types": [],
+          "proposal": "ZB 2025-11 Diego Ferreira 40 Byrnes Lane Blk 1002 lot 11 Proposed subdivision; proposed new home",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Paul Edinger",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB08-2026",
+          "applicant": "Thomas Schmidt and Sandra Gordon",
+          "block_lots": [],
+          "addresses": [
+            "58 Monmouth Road"
+          ],
+          "types": [
+            "certificate of nonconformity"
+          ],
+          "proposal": "ZB 08-2026 Thomas Schmidt and Sandra Gordon 58 Monmouth Road Blk 2701 Lot 67 Certificate of Non-conformity/pre-existing use Two single family dwelling structures existing",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB2026-11",
+          "applicant": "Drapkin, Dulce & Darren",
+          "block_lots": [],
+          "addresses": [
+            "22 Corlies Ave"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "ZB 2026-11 Drapkin, Dulce & Darren 22 Corlies Ave Blk 908 Lot 24 Proposal to replace existing front porch with a 7' x 8' portico on an existing non- conforming single fam",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB2026-09",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "252 Highway"
+          ],
+          "types": [
+            "site plan",
+            "use variance (d)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "englishtown-monmouth",
+      "name": "Englishtown",
+      "county": "Monmouth",
+      "website": "https://www.englishtownnj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "farmingdale-monmouth",
+      "name": "Farmingdale",
+      "county": "Monmouth",
+      "website": "https://www.farmingdaleborough.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "freehold-borough-monmouth",
+      "name": "Freehold Borough",
+      "county": "Monmouth",
+      "website": "https://www.twp.freehold.nj.us/",
+      "upcoming_meetings": [
+        "2026-11-05"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-11-05",
+          "board": "planning",
+          "application": "B105 L27 & 28",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "105",
+              "lots": "27 & 28"
+            }
+          ],
+          "addresses": [
+            "369 Jackson Mills Rd"
+          ],
+          "types": [
+            "subdivision",
+            "bulk variance (c)"
+          ],
+          "proposal": "The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "planning",
+          "application": "B70.05 L10",
+          "applicant": "05 Lot 10",
+          "block_lots": [
+            {
+              "block": "70.05",
+              "lots": "10"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "appeal of zoning officer"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "planner": [
+              {
+                "name": "Andrew Thomas",
+                "firm": "Thomas Planning Associates, LLC",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "freehold-township-monmouth",
+      "name": "Freehold Township",
+      "county": "Monmouth",
+      "website": "https://www.twp.freehold.nj.us/",
+      "upcoming_meetings": [
+        "2026-11-05"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-11-05",
+          "board": "planning",
+          "application": "B105 L27 & 28",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "105",
+              "lots": "27 & 28"
+            }
+          ],
+          "addresses": [
+            "369 Jackson Mills Rd"
+          ],
+          "types": [
+            "subdivision",
+            "bulk variance (c)"
+          ],
+          "proposal": "The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-11-05",
+          "board": "planning",
+          "application": "B70.05 L10",
+          "applicant": "05 Lot 10",
+          "block_lots": [
+            {
+              "block": "70.05",
+              "lots": "10"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "appeal of zoning officer"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "planner": [
+              {
+                "name": "Andrew Thomas",
+                "firm": "Thomas Planning Associates, LLC",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hazlet-monmouth",
+      "name": "Hazlet",
+      "county": "Monmouth",
+      "website": "https://www.hazlettwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "highlands-monmouth",
+      "name": "Highlands",
+      "county": "Monmouth",
+      "website": "https://highlandsnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "holmdel-monmouth",
+      "name": "Holmdel",
+      "county": "Monmouth",
+      "website": "https://www.holmdeltownship.com/",
+      "upcoming_meetings": [
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B58 L29 and 29.01",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "58",
+              "lots": "29 and 29.01"
+            },
+            {
+              "block": "16",
+              "lots": "2Q"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "variance"
+          ],
+          "proposal": "Preliminary and Final Site Plan approval to construct a cemetery, along with a cremation garden, mausoleums, and associated site improvements",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "ZB-2025-09",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "Item # 1 ZB-2025-09 Coptic Orthodox Church",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "ZB-2025-02",
+          "applicant": "Item # 2 ZB-2025-02 24 Schanck Road, Holmdel, NJ 07733. Block 17",
+          "block_lots": [
+            {
+              "block": "17",
+              "lots": "3"
+            }
+          ],
+          "addresses": [
+            "24 Schanck Road"
+          ],
+          "types": [
+            "preliminary & final major site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "a Preliminary and Final Site Plan with Use and Bulk Variance approval to convert the residential dwelling into a private outdoor learning center & daycare, which are not",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "howell-monmouth",
+      "name": "Howell",
+      "county": "Monmouth",
+      "website": "https://www.twp.howell.nj.us/",
+      "upcoming_meetings": [
+        "2026-10-26"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA23-11",
+          "applicant": "/ Christ Church of Howell, Inc",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "extension"
+          ],
+          "proposal": "Case No. BA23-11 / Christ Church of Howell, Inc. Resolution granting a One-year Extension of Time Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Ryan & Mer",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA25-05",
+          "applicant": "/ Jacob and Shira Ely",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "construct a Single-Family Dwelling on an Unimproved Street Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Scottson & Mertens",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA26-07",
+          "applicant": "/ A&C Land Management, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "use variance (d)",
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA22-15A",
+          "applicant": "/ ZS Mill",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA24-13",
+          "applicant": "/ Shimshon Langsam",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA25-21",
+          "applicant": "/ J. Haugh Properties, LLC",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "use variance (d)",
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA26-04",
+          "applicant": "/ Bernard Gernay",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA24-01A",
+          "applicant": "Howell Medical Investors",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "preliminary & final major site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "Application of Howell Medical Investors, LLC as Applicants and Owners",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "B143 L23.01, 783",
+          "applicant": "US Highway 9 North. This application was originally scheduled",
+          "block_lots": [
+            {
+              "block": "143",
+              "lots": "23.01, 783"
+            }
+          ],
+          "addresses": [
+            "783 US Highway"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA26-12",
+          "applicant": "Countryside Developers",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "Application of Countryside Developers, Inc. as Applicants and Owners",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "B172 L15",
+          "applicant": "well, walkways and a rear deck on premises known as Block 172",
+          "block_lots": [
+            {
+              "block": "172",
+              "lots": "15"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "well, walkways and a rear deck",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "BA26-16",
+          "applicant": "Conrad and Lauren Greifenstein as applicants and owners",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "Application of Conrad and Lauren Greifenstein as applicants and owners",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-26",
+          "board": "zoning",
+          "application": "B138.08 L1.13- 24",
+          "applicant": "of the existing SFD on premises known as Block 138.08",
+          "block_lots": [
+            {
+              "block": "138.08",
+              "lots": "1.13- 24"
+            }
+          ],
+          "addresses": [
+            "24 Spruce Hollow Drive"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "interlaken-monmouth",
+      "name": "Interlaken",
+      "county": "Monmouth",
+      "website": "https://www.interlakenboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "keansburg-monmouth",
+      "name": "Keansburg",
+      "county": "Monmouth",
+      "website": "https://www.keansburgnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "keyport-monmouth",
+      "name": "Keyport",
+      "county": "Monmouth",
+      "website": "https://www.keyportonline.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "little-silver-monmouth",
+      "name": "Little Silver",
+      "county": "Monmouth",
+      "website": "https://www.littlesilvernj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "long-branch-monmouth",
+      "name": "Long Branch",
+      "county": "Monmouth",
+      "website": "https://www.longbranch.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "manalapan-monmouth",
+      "name": "Manalapan",
+      "county": "Monmouth",
+      "website": "https://www.mtnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "middletown-monmouth",
+      "name": "Middletown",
+      "county": "Monmouth",
+      "website": "https://www.middletownnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "monmouth-beach-monmouth",
+      "name": "Monmouth Beach",
+      "county": "Monmouth",
+      "website": "https://www.monmouthbeach.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "neptune-city-monmouth",
+      "name": "Neptune City",
+      "county": "Monmouth",
+      "website": "https://www.neptunetownship.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "oceanport-monmouth",
+      "name": "Oceanport",
+      "county": "Monmouth",
+      "website": "https://www.oceanportboro.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "red-bank-monmouth",
+      "name": "Red Bank",
+      "county": "Monmouth",
+      "website": "https://www.redbanknj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "west-long-branch-monmouth",
+      "name": "West Long Branch",
+      "county": "Monmouth",
+      "website": "https://www.westlongbranch.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "boonton-town-morris",
+      "name": "Boonton Town",
+      "county": "Morris",
+      "website": "https://www.boonton.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "boonton-township-morris",
+      "name": "Boonton Township",
+      "county": "Morris",
+      "website": "https://www.boonton.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "chatham-borough-morris",
+      "name": "Chatham Borough",
+      "county": "Morris",
+      "website": "https://www.chathamborough.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "chatham-township-morris",
+      "name": "Chatham Township",
+      "county": "Morris",
+      "website": "https://www.chathamtownship.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "denville-morris",
+      "name": "Denville",
+      "county": "Morris",
+      "website": "https://www.denvillenj.gov/",
+      "upcoming_meetings": [
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "BA26-07",
+          "applicant": "Tranquility Estates, LLC",
+          "block_lots": [
+            {
+              "block": "70301",
+              "lots": "67"
+            }
+          ],
+          "addresses": [
+            "14 Mirador Road"
+          ],
+          "types": [
+            "use variance (d)",
+            "bulk variance (c)",
+            "conditional use",
+            "interpretation"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "florham-park-morris",
+      "name": "Florham Park",
+      "county": "Morris",
+      "website": "https://www.florhamparknj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "kinnelon-morris",
+      "name": "Kinnelon",
+      "county": "Morris",
+      "website": "https://www.kinnelonboro.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lincoln-park-morris",
+      "name": "Lincoln Park",
+      "county": "Morris",
+      "website": "https://www.lincolnpark.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "madison-morris",
+      "name": "Madison",
+      "county": "Morris",
+      "website": "https://www.rosenet.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mendham-borough-morris",
+      "name": "Mendham Borough",
+      "county": "Morris",
+      "website": "https://www.mendhamnj.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mendham-township-morris",
+      "name": "Mendham Township",
+      "county": "Morris",
+      "website": "https://www.mendhamnj.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mine-hill-morris",
+      "name": "Mine Hill",
+      "county": "Morris",
+      "website": "https://www.minehill.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "montville-morris",
+      "name": "Montville",
+      "county": "Morris",
+      "website": "https://www.montvillenj.org/",
+      "upcoming_meetings": [
+        "2026-10-21",
+        "2026-10-22",
+        "2026-11-04"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B56 L6.2, 12, 12.1 & 13",
+          "applicant": "Sterling Properties Group LLC",
+          "block_lots": [
+            {
+              "block": "56",
+              "lots": "6.2, 12, 12.1 & 13"
+            },
+            {
+              "block": "160",
+              "lots": "1"
+            }
+          ],
+          "addresses": [
+            "362 Changebridge Rd"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "B82.02 L58",
+          "applicant": "Home Tec Homebuilders, LLC",
+          "block_lots": [
+            {
+              "block": "82.02",
+              "lots": "58"
+            },
+            {
+              "block": "52.2",
+              "lots": "35"
+            },
+            {
+              "block": "32",
+              "lots": "10"
+            }
+          ],
+          "addresses": [
+            "60 Passaic Valley Rd",
+            "14 Skyline Dr",
+            "19 Old Jacksonville Rd"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "morris-township-morris",
+      "name": "Morris Township",
+      "county": "Morris",
+      "website": "https://www.morristwp.com/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "PB-03-26",
+          "applicant": "Toll NJ I, LLC Site Plan",
+          "block_lots": [
+            {
+              "block": "8601",
+              "lots": "4, 300"
+            }
+          ],
+          "addresses": [
+            "300 Madison Avenue"
+          ],
+          "types": [
+            "site plan"
+          ],
+          "proposal": "develop an inclusionary residential townhome community consisting of 118 townhome units dispersed among 16 traditional and stacked townhome buildings at the Property",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "netcong-morris",
+      "name": "Netcong",
+      "county": "Morris",
+      "website": "https://www.netcong.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "parsippany-troy-hills-morris",
+      "name": "Parsippany-Troy Hills",
+      "county": "Morris",
+      "website": "https://www.parsippany.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "randolph-morris",
+      "name": "Randolph",
+      "county": "Morris",
+      "website": "https://www.randolphnj.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-22"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "B44 L8, 9, 879",
+          "applicant": "Route 10",
+          "block_lots": [
+            {
+              "block": "44",
+              "lots": "8, 9, 879"
+            }
+          ],
+          "addresses": [
+            "879 Route"
+          ],
+          "types": [
+            "final major site plan"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "rockaway-township-morris",
+      "name": "Rockaway Township",
+      "county": "Morris",
+      "website": "https://www.rockawaytownship.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "B22103 L5",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "22103",
+              "lots": "5"
+            }
+          ],
+          "addresses": [
+            "65 Mt. Hope Road"
+          ],
+          "types": [
+            "minor site plan",
+            "variance"
+          ],
+          "proposal": "Other Matters: \u2022 Burgis Associates, Inc Memorandum \u2013 Undersize Lot Draft Ordinance Consistency Review, dated October 15, 2026 \u2022 Burgis Associates, Inc Memorandum \u2013 Corner",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "B11001 L6.01",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "11001",
+              "lots": "6.01"
+            }
+          ],
+          "addresses": [
+            "15 Colonial Road"
+          ],
+          "types": [
+            "minor site plan",
+            "minor subdivision",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B40802 L5",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "40802",
+              "lots": "5"
+            }
+          ],
+          "addresses": [
+            "46 Pawnee Ave"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B21501 L18",
+          "applicant": "1 Lot 18",
+          "block_lots": [
+            {
+              "block": "21501",
+              "lots": "18"
+            }
+          ],
+          "addresses": [
+            "50 Mt Hope Ave"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "B11201 L1",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "11201",
+              "lots": "1"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "minor site plan",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "wharton-morris",
+      "name": "Wharton",
+      "county": "Morris",
+      "website": "https://www.whartonnj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": null,
+          "application": "pdf",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": null,
+          "application": "pdf",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "barnegat-light-ocean",
+      "name": "Barnegat Light",
+      "county": "Ocean",
+      "website": "https://www.barnegatlight.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "barnegat-township-ocean",
+      "name": "Barnegat Township",
+      "county": "Ocean",
+      "website": "https://www.barnegat.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "brick-township-ocean",
+      "name": "Brick Township",
+      "county": "Ocean",
+      "website": "https://www.bricknj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "eagleswood-township-ocean",
+      "name": "Eagleswood Township",
+      "county": "Ocean",
+      "website": "https://eagleswoodtwpnj.us/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "jackson-township-ocean",
+      "name": "Jackson Township",
+      "county": "Ocean",
+      "website": "https://www.jacksontwpnj.net/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-21",
+        "2026-11-04"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "combined",
+          "application": "NATIONAL SIGN CORPORATION/ ADIDAS SIGNS (VARIANCE ",
+          "applicant": "NATIONAL SIGN CORPORATION/ ADIDAS SIGNS (VARIANCE 3564)",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "proposal": "All Documents relating to the application may be inspected by the public between hours of 10:00 am thru 4:00 pm Monday through Friday in the office of Planning and Zoning",
+          "engineers": [
+            "NATIONAL SIGN CORP./JEFF BARAL"
+          ],
+          "team": {
+            "engineer": [
+              {
+                "name": "NATIONAL SIGN CORP./JEFF BARAL",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        },
+        {
+          "meeting_date": "2026-11-04",
+          "board": "combined",
+          "application": "TIFERES CHAIM INC. (USE VARIANCE 3551)",
+          "applicant": "TIFERES CHAIM INC. (USE VARIANCE 3551)",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "A USE VARIANCE TO PERMIT DEVELOPMENT OF SINGLE FAMILY DWELLINGS AT A DENSITY HIGHER THAN 1 UNIT PER 3 ACRES TO CREATE 15 LOTS TO BE 13 SINGLE FAMILY DWELING LOTS AND 2 ST",
+          "engineers": [
+            "HALER CONSULTING/ERIC HALPERT"
+          ],
+          "team": {
+            "engineer": [
+              {
+                "name": "HALER CONSULTING/ERIC HALPERT",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lacey-township-ocean",
+      "name": "Lacey Township",
+      "county": "Ocean",
+      "website": "https://www.laceytownship.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "D. APPLICATIONS FOR ADMINISTRATIVE APPROVAL /SITE ",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "site plan waiver"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "G. APPLICATIONS FOR PUBLIC HEARING:",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "concept / informal review"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {
+            "attorney": [
+              {
+                "name": "Christopher Supsie",
+                "firm": "",
+                "credentials": "",
+                "testified": false
+              }
+            ]
+          }
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lakewood-township-ocean",
+      "name": "Lakewood Township",
+      "county": "Ocean",
+      "website": "https://www.lakewoodnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2027-01-13",
+          "board": "planning",
+          "application": "Resolution 261001 Lakewood Industrial Commission (",
+          "applicant": null,
+          "types": [],
+          "decision": "approved",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lavallette-ocean",
+      "name": "Lavallette",
+      "county": "Ocean",
+      "website": "https://www.lavallette.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2027-01-13",
+          "board": "planning",
+          "application": "Download",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "manchester-township-ocean",
+      "name": "Manchester Township",
+      "county": "Ocean",
+      "website": "https://www.manchestertwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "seaside-park-ocean",
+      "name": "Seaside Park",
+      "county": "Ocean",
+      "website": "https://www.seasideparknj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "ship-bottom-ocean",
+      "name": "Ship Bottom",
+      "county": "Ocean",
+      "website": "https://www.shipbottom.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B96 L1.02",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "96",
+              "lots": "1.02"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B57 L7",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "57",
+              "lots": "7"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B9 L22",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "9",
+              "lots": "22"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B9 L29.01",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "9",
+              "lots": "29.01"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-20",
+          "board": "combined",
+          "application": "B66 L11-15",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "66",
+              "lots": "11-15"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stafford-township-ocean",
+      "name": "Stafford Township",
+      "county": "Ocean",
+      "website": "https://www.staffordnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bloomingdale-passaic",
+      "name": "Bloomingdale",
+      "county": "Passaic",
+      "website": "https://www.bloomingdalenj.net/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "clifton-passaic",
+      "name": "Clifton",
+      "county": "Passaic",
+      "website": "https://www.cliftonnj.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "1. Use variance, lot Ali Aljibori 345-347 Crooks A",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "345-347 Crooks Ave"
+          ],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "renovate and convert the setback Acquaviva, Esq. existing two-family dwelling into a mixed-use building consisting of retail uses on the first floor and three (3) residen",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "2. Use variance The Learning 171-199 Scoles Ave,",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "171-199 Scoles Ave",
+            "192 Randolph Avenue"
+          ],
+          "types": [
+            "preliminary & final major site plan",
+            "use variance (d)",
+            "bulk variance (c)"
+          ],
+          "proposal": "an addition and alterations to the Lot coverage, and existing one-family dwelling which require the following bulk variances; side yard setback proposed at 4' where 6' re",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "6. Use variance Ukrainian 35 Hazel Street,",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "35 Hazel Street"
+          ],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "two non-conforming uses (in two existing buildings) on one lot",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "7. Use variance Goxu, LLC 77 Grove Street,",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "77 Grove Street"
+          ],
+          "types": [
+            "use variance (d)"
+          ],
+          "proposal": "a use variance for an expansion Iannarella, Esq. and conversion of an existing accessory structure into a two- family house on a lot where two single family homes current",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "8. Site plan, iLearn Facility 43 Clifton Avenue,",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "43 Clifton Avenue"
+          ],
+          "types": [
+            "site plan",
+            "bulk variance (c)",
+            "conditional use"
+          ],
+          "proposal": "the construction of an approximately variances 8,800-square-foot, two-story addition to the existing school building, proposal does not meet all of the conditions require",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "2. Resolution memorializing the approval of the ap",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "117 Valley Road"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "14.17, Lot 16, Zone: BB, for conversion of the existing mixed use property to a two-family residential dwelling with parking variance of zero (0) parking spaces where sev",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "zoning",
+          "application": "6. Resolution memorializing the approval of the ap",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "77 Union Ave"
+          ],
+          "types": [
+            "bulk variance (c)"
+          ],
+          "proposal": "convert an existing one family house into a two-family house for front yard variance and pre-existing side yard variance",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [
+        {
+          "meeting_date": "2026-10-07",
+          "board": "zoning",
+          "application": "Clifton BOA - Notice of Adopted Resolutions (10.7.",
+          "applicant": null,
+          "types": [
+            "preliminary & final major site plan",
+            "use variance (d)",
+            "bulk variance (c)"
+          ],
+          "decision": "denied",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hawthorne-passaic",
+      "name": "Hawthorne",
+      "county": "Passaic",
+      "website": "https://www.hawthornenj.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "passaic-passaic",
+      "name": "Passaic",
+      "county": "Passaic",
+      "website": "https://cityofpassaic.com/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "zoning",
+          "application": "LING973-833-8600",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "330 Passaic Street"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "paterson-passaic",
+      "name": "Paterson",
+      "county": "Passaic",
+      "website": "https://www.patersonnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "planning",
+          "application": "LING1-973-321",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "255-257 Spring Street"
+          ],
+          "types": [
+            "site plan",
+            "subdivision",
+            "bulk variance (c)"
+          ],
+          "proposal": "Variances are requested for lot area, as 22,000 square feet is required and 3,991 square feet is existing; maximum lot coverage, as seventy (70) percent is permitted and",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "totowa-passaic",
+      "name": "Totowa",
+      "county": "Passaic",
+      "website": "https://www.totowanj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mannington-township-salem",
+      "name": "Mannington Township",
+      "county": "Salem",
+      "website": "https://www.manningtontwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "penns-grove-salem",
+      "name": "Penns Grove",
+      "county": "Salem",
+      "website": "https://www.pennsgrove-nj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "pennsville-township-salem",
+      "name": "Pennsville Township",
+      "county": "Salem",
+      "website": "https://www.pennsville.org/",
+      "upcoming_meetings": [
+        "2026-10-26"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-26",
+          "board": "combined",
+          "application": "B5701 L37 & 38",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "5701",
+              "lots": "37 & 38"
+            }
+          ],
+          "addresses": [
+            "972 S Broadway"
+          ],
+          "types": [
+            "preliminary & final major site plan",
+            "bulk variance (c)"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "pilesgrove-salem",
+      "name": "Pilesgrove",
+      "county": "Salem",
+      "website": "https://www.pilesgrovenj.org/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "quinton-township-salem",
+      "name": "Quinton Township",
+      "county": "Salem",
+      "website": "https://www.quintonnj.com/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "upper-pittsgrove-salem",
+      "name": "Upper Pittsgrove",
+      "county": "Salem",
+      "website": "https://upperpittsgrovenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2027-12-31",
+          "board": "combined",
+          "application": "R-13-2026 LU Alternate Member",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bedminster-somerset",
+      "name": "Bedminster",
+      "county": "Somerset",
+      "website": "https://www.bedminsternj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bernards-township-somerset",
+      "name": "Bernards Township",
+      "county": "Somerset",
+      "website": "https://www.bernards.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "B3101 L2",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "3101",
+              "lots": "2"
+            },
+            {
+              "block": "3101",
+              "lots": "3"
+            }
+          ],
+          "addresses": [
+            "99 Lord Stirling Road",
+            "25 Sherwood Drive"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bernardsville-somerset",
+      "name": "Bernardsville",
+      "county": "Somerset",
+      "website": "https://bernardsville.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bound-brook-somerset",
+      "name": "Bound Brook",
+      "county": "Somerset",
+      "website": "https://www.boundbrook-nj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "bridgewater-township-somerset",
+      "name": "Bridgewater Township",
+      "county": "Somerset",
+      "website": "https://www.bridgewaternj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "far-hills-somerset",
+      "name": "Far Hills",
+      "county": "Somerset",
+      "website": "https://www.farhillsnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "franklin-township-somerset",
+      "name": "Franklin Township",
+      "county": "Somerset",
+      "website": "https://www.franklintwpnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "green-brook-township-somerset",
+      "name": "Green Brook Township",
+      "county": "Somerset",
+      "website": "https://www.greenbrooktwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "manville-somerset",
+      "name": "Manville",
+      "county": "Somerset",
+      "website": "https://www.manvillenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "montgomery-township-somerset",
+      "name": "Montgomery Township",
+      "county": "Somerset",
+      "website": "https://www.montgomerynj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "north-plainfield-somerset",
+      "name": "North Plainfield",
+      "county": "Somerset",
+      "website": "https://www.northplainfieldnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "peapack-and-gladstone-somerset",
+      "name": "Peapack and Gladstone",
+      "county": "Somerset",
+      "website": "https://www.peapackgladstone.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-14",
+          "board": "combined",
+          "application": "L1-888",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "somerville-somerset",
+      "name": "Somerville",
+      "county": "Somerset",
+      "website": "https://www.somervillenj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "warren-township-somerset",
+      "name": "Warren Township",
+      "county": "Somerset",
+      "website": "https://www.warrennj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-05",
+          "board": "zoning",
+          "application": "Notice for 2025 Annual Report Resolution",
+          "applicant": null,
+          "types": [],
+          "decision": "memorialized",
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "byram-township-sussex",
+      "name": "Byram Township",
+      "county": "Sussex",
+      "website": "https://www.byramtwp.org/",
+      "upcoming_meetings": [
+        "2026-10-20"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-20",
+          "board": "planning",
+          "application": "31-430-661P",
+          "applicant": "430-661 P & R Utilities",
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "site plan",
+            "subdivision"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [
+        {
+          "meeting_date": "2026-10-01",
+          "board": "planning",
+          "application": "B36 L40",
+          "applicant": "Byram Waterloo LLC (Starbucks of Byram)",
+          "types": [
+            "preliminary & final major site plan"
+          ],
+          "decision": "approved",
+          "vote": null,
+          "proposal": "Ms. Hubbanrodt ed they do'nt have construction permitss,o can't store construction materias lon site.M ayor Rubenstei nadded that is a code voilation .Chairman Shivas sai",
+          "engineers": [],
+          "team": {},
+          "source": "minutes"
+        },
+        {
+          "meeting_date": "2026-10-01",
+          "board": "planning",
+          "application": "B226 L3",
+          "applicant": "Mountainside Country Store",
+          "types": [
+            "amended site plan",
+            "variance"
+          ],
+          "decision": null,
+          "vote": null,
+          "proposal": "Mr. L. Coviello said areas in front of the building ar'te nstorage, the'yre displays mixed with the landscapin. gItems won't pile up",
+          "engineers": [],
+          "team": {},
+          "source": "minutes"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "franklin-borough-sussex",
+      "name": "Franklin Borough",
+      "county": "Sussex",
+      "website": "https://www.franklinborough.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "green-township-sussex",
+      "name": "Green Township",
+      "county": "Sussex",
+      "website": "https://www.greentwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hardyston-sussex",
+      "name": "Hardyston",
+      "county": "Sussex",
+      "website": "https://www.hardyston.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hopatcong-sussex",
+      "name": "Hopatcong",
+      "county": "Sussex",
+      "website": "https://hopatcong.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "lafayette-township-sussex",
+      "name": "Lafayette Township",
+      "county": "Sussex",
+      "website": "https://www.lafayettetwp.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "newton-sussex",
+      "name": "Newton",
+      "county": "Sussex",
+      "website": "https://newtontownhall.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "ogdensburg-sussex",
+      "name": "Ogdensburg",
+      "county": "Sussex",
+      "website": "https://www.ogdensburgnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "sparta-sussex",
+      "name": "Sparta",
+      "county": "Sussex",
+      "website": "https://www.spartanj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stanhope-sussex",
+      "name": "Stanhope",
+      "county": "Sussex",
+      "website": "https://www.stanhopenj.gov/",
+      "upcoming_meetings": [
+        "2026-10-27"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-27",
+          "board": "combined",
+          "application": "B10314 L2",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "10314",
+              "lots": "2"
+            }
+          ],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "stillwater-township-sussex",
+      "name": "Stillwater Township",
+      "county": "Sussex",
+      "website": "https://stillwatertownshipnj.com/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "wantage-township-sussex",
+      "name": "Wantage Township",
+      "county": "Sussex",
+      "website": "https://www.wantagetwp.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "berkeley-heights-union",
+      "name": "Berkeley Heights",
+      "county": "Union",
+      "website": "https://www.berkeleyheights.gov/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-11-18"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "26-009",
+          "applicant": "Chelsea Kameny",
+          "block_lots": [
+            {
+              "block": "2101",
+              "lots": "5"
+            }
+          ],
+          "addresses": [
+            "24 Webster Drive"
+          ],
+          "types": [
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "25-017",
+          "applicant": "Theodore and Shakira Czapla",
+          "block_lots": [],
+          "addresses": [
+            "227 Chaucer Dr"
+          ],
+          "types": [
+            "bulk variance (c)",
+            "extension"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-22",
+          "board": "zoning",
+          "application": "26-011",
+          "applicant": "Cecil & Alina Joshi",
+          "block_lots": [],
+          "addresses": [
+            "98 Briarwood Dr"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "1404, L. 4 (R-15 Zone) Proposed additions consisting of second story over existing garage, one story addition to the rear of the house, two story addition behind existing",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "clark-union",
+      "name": "Clark",
+      "county": "Union",
+      "website": "https://www.ourclark.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "cranford-union",
+      "name": "Cranford",
+      "county": "Union",
+      "website": "https://www.cranfordnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [
+        {
+          "meeting_date": "2026-10-13",
+          "board": "planning",
+          "application": "Downtown",
+          "applicant": null,
+          "types": [],
+          "decision": null,
+          "n_conditions": 0,
+          "engineers": [],
+          "team": {},
+          "source": "resolution"
+        }
+      ],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "fanwood-union",
+      "name": "Fanwood",
+      "county": "Union",
+      "website": "https://www.fanwoodnj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "garwood-union",
+      "name": "Garwood",
+      "county": "Union",
+      "website": "https://garwood.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "kenilworth-union",
+      "name": "Kenilworth",
+      "county": "Union",
+      "website": "https://kenilworthborough.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "linden-union",
+      "name": "Linden",
+      "county": "Union",
+      "website": "https://www.linden-nj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "mountainside-union",
+      "name": "Mountainside",
+      "county": "Union",
+      "website": "https://www.mountainside-nj.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "plainfield-union",
+      "name": "Plainfield",
+      "county": "Union",
+      "website": "https://www.plainfieldnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "rahway-union",
+      "name": "Rahway",
+      "county": "Union",
+      "website": "https://cityofrahway.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-27"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "15/23",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-27",
+          "board": "planning",
+          "application": "08/26",
+          "applicant": null,
+          "block_lots": [
+            {
+              "block": "278",
+              "lots": "5, 6, 7, 8"
+            }
+          ],
+          "addresses": [],
+          "types": [
+            "minor subdivision",
+            "variance"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "roselle-park-union",
+      "name": "Roselle Park",
+      "county": "Union",
+      "website": "https://www.rosellepark.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "scotch-plains-union",
+      "name": "Scotch Plains",
+      "county": "Union",
+      "website": "https://www.scotchplainsnj.gov/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "summit-union",
+      "name": "Summit",
+      "county": "Union",
+      "website": "https://www.cityofsummit.org/",
+      "upcoming_meetings": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2345",
+          "applicant": "Emma and Craig Ahrens",
+          "block_lots": [],
+          "addresses": [
+            "168 Ashland Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct first story addition and second story addition",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2348",
+          "applicant": "Adam and Caitlin Daniels",
+          "block_lots": [],
+          "addresses": [
+            "27 Warwick Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct one story addition",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2322",
+          "applicant": "Irene R. Convers Esposito",
+          "block_lots": [],
+          "addresses": [
+            "18 Linden Place"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "building coverage to demolish and replace addition and adjust garage",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-19",
+          "board": "zoning",
+          "application": "ZB-26-2351",
+          "applicant": "James and Kaela Kennedy",
+          "block_lots": [],
+          "addresses": [
+            "41 Webster Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct one-story addition and a second floor addition",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "1. 202 Blackburn Road: (c) variances for front yar",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "202 Blackburn Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct new second story above the existing first floor footprint, front portico, and replace existing sunroom with a new sunroom/dining room",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "2. 56 Huntley Road: (c) variance for no required g",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "56 Huntley Road",
+            "190 River Road"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "construct second-story addition and portico",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "4. 8 Chapel Street: (d) variance for FAR and (c) v",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "8 Chapel Street"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "8 Chapel Street: (d) variance for FAR and (c) variances for front yard setback, side yard setback, rear setback, building coverage, and lot coverage to enlarge existing s",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "P517-518",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "5. 268 Woodland Avenue: (d) variance for FAR and (",
+          "applicant": null,
+          "block_lots": [],
+          "addresses": [
+            "268 Woodland Avenue"
+          ],
+          "types": [
+            "variance"
+          ],
+          "proposal": "building coverage to construct an addition to the rear, add a portico, and make 2nd floor alterations",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Demolition applications/permits",
+          "applicant": "Demolition applications/permits",
+          "block_lots": [],
+          "addresses": [
+            "49 Canoe Brook Parkway",
+            "795 Old Springfield Avenue",
+            "565 Morris Avenue"
+          ],
+          "types": [],
+          "proposal": "Demolition applications/permits: \u2022 49 Canoe Brook Parkway: Please be advised we received a permit application for a demolition of single family house at the above address",
+          "engineers": [],
+          "team": {}
+        },
+        {
+          "meeting_date": "2026-10-21",
+          "board": "planning",
+          "application": "Planning Board Applications",
+          "applicant": "Planning Board Applications",
+          "block_lots": [],
+          "addresses": [
+            "190 River Road",
+            "527 Morris Avenue"
+          ],
+          "types": [],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "union-union",
+      "name": "Union",
+      "county": "Union",
+      "website": "https://uniontownship.com/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "westfield-union",
+      "name": "Westfield",
+      "county": "Union",
+      "website": "https://www.westfieldnj.gov/",
+      "upcoming_meetings": [
+        "2026-10-21"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "alpha-warren",
+      "name": "Alpha",
+      "county": "Warren",
+      "website": "https://www.alphaboronj.org/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "blairstown-warren",
+      "name": "Blairstown",
+      "county": "Warren",
+      "website": "https://www.blairstowntownship.org/",
+      "upcoming_meetings": [
+        "2026-10-19"
+      ],
+      "upcoming": [
+        {
+          "meeting_date": "2026-10-19",
+          "board": "combined",
+          "application": "B101 L10.06",
+          "applicant": "Fritschy",
+          "block_lots": [
+            {
+              "block": "101",
+              "lots": "10.06"
+            },
+            {
+              "block": "2003",
+              "lots": "26"
+            }
+          ],
+          "addresses": [
+            "42 Gaisler Road",
+            "44 Hope Road"
+          ],
+          "types": [
+            "site plan",
+            "minor subdivision",
+            "use variance (d)",
+            "interpretation"
+          ],
+          "proposal": "",
+          "engineers": [],
+          "team": {}
+        }
+      ],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "hackettstown-warren",
+      "name": "Hackettstown",
+      "county": "Warren",
+      "website": "https://www.hackettstown.net/",
+      "upcoming_meetings": [],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    },
+    {
+      "slug": "phillipsburg-warren",
+      "name": "Phillipsburg",
+      "county": "Warren",
+      "website": "https://www.phillipsburgnj.org/",
+      "upcoming_meetings": [
+        "2026-10-22"
+      ],
+      "upcoming": [],
+      "recent": [],
+      "new_documents": [],
+      "n_new_documents": 0
+    }
+  ]
+}

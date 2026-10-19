@@ -1,24 +1,13 @@
-# NJ Land Use Boards — Weekly Digest (2026-10-18)
+# NJ Land Use Boards — Weekly Digest (2026-10-19)
 
-Covers activity since 2026-10-18 and agendas through the next 35 days. 245 of 564 municipalities have parsed records. Upcoming agenda items: 248 · recent decisions: 25.
+Covers activity since 2026-10-18 and agendas through the next 35 days. 245 of 564 municipalities have parsed records. Upcoming agenda items: 186 · recent decisions: 25.
 
-Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect where the agenda, minutes, resolution, review letter or application packet names them; blank when not stated.
+Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect: the person, their firm in parentheses, and [testified] when the minutes record them being sworn; blank when no document names them.
 
 ## Major site plans and subdivisions on upcoming agendas
 
 | Date | Town | Board | Application | Applicant | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | Princeton | planning | Adarsh K. Bajaj TO BE | Adarsh K. Bajaj TO BE |  | subdivision |  |
-| 2026-10-15 | Hazlet | combined | 26-06L |  |  | preliminary & final major site plan, bulk variance (c) | Eng: Najarian Associates |
-| 2026-10-15 | Howell | planning | Patrick F Bennett | Patrick F Bennett | Application of Patrick F Bennett as applicant and William & Linda Bennett as | minor subdivision |  |
-| 2026-10-15 | Howell | planning | Township of Howell | Township of Howell | Application of Township of Howell as applicant and owner seeking approval | preliminary & final major subdivision, bulk variance (c) |  |
-| 2026-10-15 | Howell | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed | proposed to be removed | final major site plan, amended site plan, bulk variance (c) |  |
-| 2026-10-15 | Howell | planning | A-Life Residential LLC | A-Life Residential LLC | Application of A-Life Residential LLC as applicant and 270B Anthony LLC as | preliminary & final major subdivision |  |
-| 2026-10-15 | Manalapan | zoning | PRC Development Co., Inc | PRC Development Co., Inc | Car Wash | final major site plan, use variance (d) |  |
-| 2026-10-15 | Lincoln Park | planning | B22305 L1 |  |  | minor subdivision, variance |  |
-| 2026-10-15 | Upper Pittsgrove | combined | B5 L46 & 47 | 222/226 Route 40 |  | major site plan, minor subdivision, use variance (d), bulk variance (c) |  |
-| 2026-10-15 | Byram Township | planning | B226 L3 | Mountainside Country Store | Mr. L. Coviello said areas in front of the building ar'te nstorage, the'yre displays mixed with the landscapin. gItems won't pile up | preliminary & final major site plan, amended site plan |  |
-| 2026-10-15 | Byram Township | planning | B36 L40 | Byram Waterloo LLC (Starbucks of Byram) | Ms. Hubbanrodt ed they do'nt have construction permitss,o can't store construction materias lon site.M ayor Rubenstei nadded that is a code voilation .Chairman Shivas sai | preliminary & final major site plan |  |
 | 2026-10-16 | Edison | planning | P02-2024 | BLUEBERRY VILLAGE INC |  | final major site plan, extension |  |
 | 2026-10-16 | Edison | planning | P08-2025 | ARMA CONTRACTING, LLC |  | final major site plan, extension |  |
 | 2026-10-16 | Edison | planning | P07-2024 | WHITMAN RENEWAL, LLC |  | preliminary & final major site plan |  |
@@ -98,11 +87,6 @@ Upcoming meetings with posted agendas: 2026-10-20
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | zoning | ZBA-26-003 | Ditlow & Angel | B1703 L4 | C(1) and C(2) variances to permit construction of in-ground pool, pool patio, and pool cabana | bulk variance (c) |  |
-| 2026-10-15 | zoning | ZBA-26-018 | Avner & Diana Khaimov | B2706 L6 | C(1) and C(2) variances to permit construction of in-ground pool, pool patio, and covered porch | bulk variance (c) |  |
-| 2026-10-15 | zoning | ZBA-26-002 | Divine Melakah LLC, dba Woofy Land |  | reconsider the Board's decision on August 4, 2026 to deny application for D(1) variance to permit use of portion of a warehouse as a dog care and boarding in RIM district | use variance (d) |  |
-| 2026-10-15 | zoning | ZBA-26-013 | Jenkins & Valentine | B2201 L8 |  | — |  |
-| 2026-10-15 | zoning | ZBA-26-019 | 485 Westview Ave LLC | B3806 L7 |  | — |  |
 | 2026-10-20 | zoning | ZBA-26-015 | United Development of America | B2111 L9 |  | — |  |
 | 2026-10-20 | zoning | ZBA-26-016 | Tots Play Haus LLC, dba Canvas | B2801 L2 |  | site plan, use variance (d) |  |
 | 2026-10-20 | zoning | ZBA-26-014 | 229 S Dean St QOZ LLC, Steinberg | B2802 L12 |  | — |  |
@@ -139,8 +123,8 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-21
 |---|---|---|---|---|---|---|---|
 | 2026-10-08 | planning | B4202 L2 | is located in the RA-2-AH Zone and is the portion of the Ridings at Oakland | The subject property contains two affordable residential buildings: • One building containing 24 units, which has been completed and received certificates of occupancy; a | site plan, subdivision | approved |  |
 | 2026-10-08 | planning | B4202 L2 | Accordingly, the Planner recommended that Block 4202 | The Planner confirmed that the two buildings on the subject lot contain the development's affordable units and that no zoning change or new development proposal was being | — | approved |  |
-| 2026-10-08 | planning | B4202 L2. | James Lower Properties | These concerns were previously provided to the developer in writing with a request for a response within ten calendar days; no response was received. • An additional stop | — | approved |  |
-| 2026-10-08 | planning | B201 L6 and 7. | LLC, concerning property located at 59–65 Edison Avenue, identified as Block 201 | 8 Owner Testimony – Jim Frank • Jim Frank testified that he was one of the former owners of James Construction and remains a co-owner of the subject property with Mr. Dow | preliminary & final major site plan, bulk variance (c) | heard | Atty: Robert Fiore, ESQ, Robert Fiore |
+| 2026-10-08 | planning | B4202 L2. | James Lower Properties | These concerns were previously provided to the developer in writing with a request for a response within ten calendar days; no response was received. • An additional stop | — | approved | Eng: Caroline Reiter (T&M Associates) |
+| 2026-10-08 | planning | B201 L6 and 7. | LLC, concerning property located at 59–65 Edison Avenue, identified as Block 201 | 8 Owner Testimony – Jim Frank • Jim Frank testified that he was one of the former owners of James Construction and remains a co-owner of the subject property with Mr. Dow | preliminary & final major site plan, bulk variance (c) | heard | Atty: Robert Fiore, ESQ |
 
 ### Oradell
 
@@ -172,7 +156,6 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20, 2026-10-21
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | zoning | B2601 L20 |  | B2601 L20 |  | — |  |
 | 2026-10-20 | planning | B3603 L1 |  | B3603 L1 |  | subdivision |  |
 | 2026-10-20 | planning | B3608 L21 |  | B3608 L21 | 24 Grant Street, Block 3608, Lot 21 Old Business Puleo Construction LLC – Carried to December 1, 2026 Site Plan, Subdivision and Soil Movement | site plan, subdivision |  |
 | 2026-10-20 | planning | B4401 L27 | Airmount Avenue; Block 4401 | B4401 L27 |  | — |  |
@@ -222,19 +205,6 @@ Upcoming meetings with posted agendas: 2026-10-21
 | 2026-10-21 | combined | B101.01 L1 | Bekas Holdings, LLC | B101.01 L1 |  | — |  |
 | 2026-10-21 | combined | JLUB-26-11 |  |  | Restaurant | — |  |
 | 2026-10-21 | combined | Application: Request for Waiver from Site Plan Rev |  |  |  | site plan, variance |  |
-
-### Medford Lakes
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | Historic District Applications | Historic District Applications |  |  | — |  |
-| 2026-10-15 | planning | PBA09-2026 | Planning Board Applications |  |  | — |  |
-| 2026-10-15 | planning | PBA06-2026 | (MORAGLIA) |  | PBA06-2026 (MORAGLIA) – Front Yard Placement (Shed) | — |  |
-| 2026-10-15 | planning | PBA07-2026 | (DEVLIN) |  | PBA07-2026 (DEVLIN) – Front and Side Yard Setback & Lot Coverage (Addition & Detached Garage) | — |  |
-| 2026-10-15 | planning | PBA08-2026 | (ISAKSEN) |  |  | variance |  |
 
 ### Shamong
 
@@ -311,15 +281,6 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20
 | 2026-10-20 | combined | Planning Board Application Documents | Planning Board Application Documents |  | Discuss | — |  |
 | 2026-10-20 | combined | Zoning Board Application Documents | Zoning Board Application Documents |  |  | — |  |
 
-### Maurice River Township
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | combined | South Jersey Gas submitted a Street Opening Permit | South Jersey Gas submitted a Street Opening Permit application for Ellen Lane. Payment is |  | G. MUNICIPAL FINANCE OFFICER REPORT | — |  |
-
 ### Vineland
 
 Upcoming meetings with posted agendas: 2026-10-21  
@@ -341,21 +302,14 @@ Upcoming meetings with posted agendas: 2026-10-20, 2026-10-22, 2026-11-05
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | zoning | B332 L94 | Dritero Biba and Anna Kramerer | B332 L94 |  | variance |  |
-| 2026-10-15 | zoning | Application: seeking Class C variance relief for m |  |  |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B1322 L8 | Kathleen McGuire | B1322 L8 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B1054 L33 | Kevin O'Dowd and Caitlin Murphy | B1054 L33 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B1203 L14 | Miguel Garcia | B1203 L14 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B822 L26 | Victor Celi | B822 L26 | This addition will overhang the existing one story section on both sides and the rear in the R-1B zone | bulk variance (c) |  |
-| 2026-10-15 | zoning | B282 L43 | Sean Egan | B282 L43 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B1172 L68 | Sharon Malone | B1172 L68 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B913 L12 | Brian and Nicole Chirlo | B913 L12 |  | bulk variance (c) |  |
-| 2026-10-15 | zoning | B824 L3 | Scott Covington | B824 L3 |  | variance |  |
-| 2026-10-15 | zoning | B912 L1 | James Hwang | B912 L1 |  | bulk variance (c) |  |
 | 2026-10-20 | planning | II. Application for Certificate of Appropriateness | II. Application for Certificate of Appropriateness |  | the installation of two (2) condensers for a new Heating, Ventilation, and Air Conditioning Unit (HVAC) | — |  |
 | 2026-10-22 | zoning | B280 L10 and 11 | Integrity Holdings and Development | B280 L10 and 11 |  | variance |  |
 | 2026-10-22 | zoning | Application: seeking a D(1) Use variance for propo |  |  | Townhouses are not a permitted use | use variance (d) |  |
+| 2026-11-05 | zoning | B1203 L14 | Miguel Garcia | B1203 L14 |  | variance |  |
 | 2026-11-05 | zoning | Application: seeking Class C Bulk variance and any |  |  |  | bulk variance (c) |  |
+| 2026-11-05 | zoning | B913 L12 | Brian and Nicole Chirlo | B913 L12 |  | bulk variance (c) |  |
+| 2026-11-05 | zoning | B912 L1 | James Hwang | B912 L1 |  | bulk variance (c) |  |
+| 2026-11-05 | zoning | B282 L43 | Sean Egan | B282 L43 |  | bulk variance (c) |  |
 | 2026-11-05 | zoning | B1265 L50 | Kyle Hallenbeck | B1265 L50 |  | bulk variance (c) |  |
 
 ### Livingston
@@ -474,19 +428,6 @@ Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20
 | 2026-10-20 | combined | V. Planning and Zoning Board Applications | V. Planning and Zoning Board Applications |  |  | — |  |
 | 2026-10-20 | combined | Planning Board Application Documents | Planning Board Application Documents |  | Discuss | — |  |
 
-### Princeton
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | Adarsh K. Bajaj TO BE | Adarsh K. Bajaj TO BE |  |  | subdivision |  |
-| 2026-10-15 | planning | B3401 L1.03 | Zone R-A (T) / R-1 (T) | B3401 L1.03 |  | — |  |
-| 2026-10-15 | planning | P2525-700S |  |  |  | — |  |
-| 2026-10-15 | planning | B48.01 L5 |  | B48.01 L5 |  | — |  |
-| 2026-10-15 | planning | P2626-741P |  |  |  | — |  |
-
 ### Robbinsville Township
 
 Upcoming meetings with posted agendas: 2026-10-20  
@@ -551,18 +492,6 @@ Upcoming meetings with posted agendas: 2026-10-22
 |---|---|---|---|---|---|---|---|
 | 2026-10-05 | combined | Draft Resolutions on the October 5, 2026 Agenda |  |  | — | approved |  |
 
-### North Brunswick
-
-Upcoming meetings with posted agendas: 2026-10-20  
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | New Applications | New Applications |  |  | use variance (d) |  |
-| 2026-10-15 | planning | B140.01 L6.0402 | ROUTE 1 | B140.01 L6.0402 | The adjoining property at Lot 6.0401 is known as "Unit 1" in the condominium and is developed with a Quick Chek convenience store with gas station pumps and a Wendy's fas | — | Planner: John Barree |
-| 2026-10-15 | planning | B140.01 L6.042 | KNOWN AS BLOCK 140.01 | B140.01 L6.042 |  | — |  |
-
 ### Plainsboro Township
 
 Upcoming meetings with posted agendas: 2026-10-19, 2026-10-20  
@@ -597,7 +526,7 @@ Upcoming meetings with posted agendas: 2026-10-21, 2026-10-22
 | 2026-10-22 | zoning | Z25-53 |  |  | construct a new single-family dwelling. *Postponed from 6/25/26 and 8/6/26 | bulk variance (c) |  |
 | 2026-10-22 | zoning | Z26-42 |  |  | construct a new two story single family dwelling | bulk variance (c) | Atty: Timothy Little |
 | 2026-10-22 | zoning | Z26-04 |  |  |  | minor site plan, use variance (d) | Atty: Brian Chewcaski |
-| 2026-10-22 | zoning | Z26-15 |  |  |  | minor site plan, bulk variance (c) | Atty: Thomas W. Sharlow, Jr |
+| 2026-10-22 | zoning | Z26-15 |  |  |  | minor site plan, bulk variance (c) | Atty: Thomas W. Sharlow (Jr., Esq), Thomas W. Sharlow, Jr |
 
 ## Monmouth County
 
@@ -622,13 +551,8 @@ Upcoming meetings with posted agendas: 2026-11-05
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | B8 L1 |  | B8 L1 |  | — |  |
-| 2026-10-15 | planning | B70.05 L10 |  | B70.05 L10 |  | — | Planner: Andrew Thomas |
-| 2026-10-15 | planning | B92 L39 & 40 |  | B92 L39 & 40 | Prepared by: T. Andrew Thomas, P.P. Thomas Planning Associates, L.L.C. P.O. Box 363 Brielle, New Jersey 08730 Prepared: July 29, 2026 Freehold Township Committee Lester A | — | Eng: Matthew J. Bryant, P.E; Atty: Andrew J. Ball, Joanne Vos; Planner: Andrew Thomas, Todd Brown |
-| 2026-10-15 | planning | B92 L39 and 40. | area of preliminary investigation consists of Block 92 | B92 L39 and 40. | Additional modifications were approved on March 13, 2000 and April 1, 2024 | — |  |
-| 2026-10-15 | planning | 2022-0033 | the Statutory Criteria to the Redevelopment Study Areas Properties |  | The area surrounding the Study Area is comprised of: vacant and wooded land owned by the NJDEP (part of the Turkey Swamp Wildlife Management Area) generally to the south | conditional use | Eng: Davison Eastman Munoz Pa |
-| 2026-10-15 | planning | B92 L39 and 40 | WHEREAS | B92 L39 and 40; B92 L40 | In addition to approved composting materials, American Soil Inc. accepted unauthorized materials | — |  |
 | 2026-11-05 | planning | B105 L27 & 28 |  | B105 L27 & 28 | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
+| 2026-11-05 | planning | B70.05 L10 | 05 Lot 10 | B70.05 L10 |  | appeal of zoning officer | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
 
 ### Freehold Township
 
@@ -638,26 +562,8 @@ Upcoming meetings with posted agendas: 2026-11-05
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | B8 L1 |  | B8 L1 |  | — |  |
-| 2026-10-15 | planning | B70.05 L10 |  | B70.05 L10 |  | — | Planner: Andrew Thomas |
-| 2026-10-15 | planning | B92 L39 & 40 |  | B92 L39 & 40 | Prepared by: T. Andrew Thomas, P.P. Thomas Planning Associates, L.L.C. P.O. Box 363 Brielle, New Jersey 08730 Prepared: July 29, 2026 Freehold Township Committee Lester A | — | Eng: Matthew J. Bryant, P.E; Atty: Andrew J. Ball, Joanne Vos; Planner: Andrew Thomas, Todd Brown |
-| 2026-10-15 | planning | B92 L39 and 40. | area of preliminary investigation consists of Block 92 | B92 L39 and 40. | Additional modifications were approved on March 13, 2000 and April 1, 2024 | — |  |
-| 2026-10-15 | planning | 2022-0033 | the Statutory Criteria to the Redevelopment Study Areas Properties |  | The area surrounding the Study Area is comprised of: vacant and wooded land owned by the NJDEP (part of the Turkey Swamp Wildlife Management Area) generally to the south | conditional use | Eng: Davison Eastman Munoz Pa |
-| 2026-10-15 | planning | B92 L39 and 40 | WHEREAS | B92 L39 and 40; B92 L40 | In addition to approved composting materials, American Soil Inc. accepted unauthorized materials | — |  |
 | 2026-11-05 | planning | B105 L27 & 28 |  | B105 L27 & 28 | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
-
-### Hazlet
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | combined | 19-04L |  | B62 L1 |  | extension |  |
-| 2026-10-15 | combined | 26-13L | New case #26-13L | B210 L14 |  | variance |  |
-| 2026-10-15 | combined | 26-14L | New case #26-14L | B257 L19 |  | variance |  |
-| 2026-10-15 | combined | 25-12L |  | B211 L7.01 & 8.01 | Carryover case #25-12L: Spotless Brands Car Wash, 540 Holmdel Road | amended site plan |  |
-| 2026-10-15 | combined | 26-06L |  | B68.13 L17 |  | preliminary & final major site plan, bulk variance (c) | Eng: Najarian Associates |
+| 2026-11-05 | planning | B70.05 L10 | 05 Lot 10 | B70.05 L10 |  | appeal of zoning officer | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
 
 ### Holmdel
 
@@ -679,14 +585,6 @@ Upcoming meetings with posted agendas: 2026-10-26
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | Patrick F Bennett | Patrick F Bennett |  | Application of Patrick F Bennett as applicant and William & Linda Bennett as | minor subdivision |  |
-| 2026-10-15 | planning | B138 L20 | driveway and drywell on premises known as Block 138 | B138 L20 |  | — |  |
-| 2026-10-15 | planning | Township of Howell | Township of Howell |  | Application of Township of Howell as applicant and owner seeking approval | preliminary & final major subdivision, bulk variance (c) |  |
-| 2026-10-15 | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | proposed to be removed | final major site plan, amended site plan, bulk variance (c) |  |
-| 2026-10-15 | planning | Diversified Acquisitions | Diversified Acquisitions |  | Application of Diversified Acquisitions, LLC as Applicant and 940 Highway 33 | site plan |  |
-| 2026-10-15 | planning | B168 L11.01 and 8.05, 940 | first time across both buildings on premises known as Block 168 | B168 L11.01 and 8.05, 940 | first time across both buildings | — |  |
-| 2026-10-15 | planning | A-Life Residential LLC | A-Life Residential LLC |  | Application of A-Life Residential LLC as applicant and 270B Anthony LLC as | preliminary & final major subdivision |  |
-| 2026-10-15 | planning | B164 L5.01, 29 | known as Block 164 | B164 L5.01, 29 |  | — |  |
 | 2026-10-26 | zoning | BA23-11 | / Christ Church of Howell, Inc |  | Case No. BA23-11 / Christ Church of Howell, Inc. Resolution granting a One-year Extension of Time Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Ryan & Mer | extension |  |
 | 2026-10-26 | zoning | BA25-05 | / Jacob and Shira Ely |  | construct a Single-Family Dwelling on an Unimproved Street Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Scottson & Mertens | bulk variance (c) |  |
 | 2026-10-26 | zoning | BA26-07 | / A&C Land Management, LLC |  |  | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
@@ -699,17 +597,7 @@ Upcoming meetings with posted agendas: 2026-10-26
 | 2026-10-26 | zoning | BA26-12 | Countryside Developers |  | Application of Countryside Developers, Inc. as Applicants and Owners | bulk variance (c) |  |
 | 2026-10-26 | zoning | B172 L15 | well, walkways and a rear deck on premises known as Block 172 | B172 L15 | well, walkways and a rear deck | — |  |
 | 2026-10-26 | zoning | BA26-16 | Conrad and Lauren Greifenstein as applicants and owners |  | Application of Conrad and Lauren Greifenstein as applicants and owners | bulk variance (c) |  |
-
-### Manalapan
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | zoning | KELTL, Inc | KELTL, Inc |  |  | — |  |
-| 2026-10-15 | zoning | Michael Pugliese | Michael Pugliese |  | Pool paver in rear/side setback | bulk variance (c) |  |
-| 2026-10-15 | zoning | PRC Development Co., Inc | PRC Development Co., Inc |  | Car Wash | final major site plan, use variance (d) |  |
+| 2026-10-26 | zoning | B138.08 L1.13- 24 | of the existing SFD on premises known as Block 138.08 | B138.08 L1.13- 24 |  | — |  |
 
 ## Morris County
 
@@ -722,15 +610,6 @@ Upcoming meetings with posted agendas: 2026-10-20, 2026-10-21
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
 | 2026-10-21 | zoning | BA26-07 | Tranquility Estates, LLC | B70301 L67 |  | use variance (d), bulk variance (c), conditional use, interpretation |  |
-
-### Lincoln Park
-
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | B22305 L1 |  | B22305 L1; B34304 L18 |  | minor subdivision, variance |  |
 
 ### Montville
 
@@ -898,18 +777,10 @@ Upcoming meetings with posted agendas: 2026-10-26
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | B2805 L1 | Exempt Veteran, Tax Block 2805 | B2805 L1; B3510 L9 |  | — |  |
-| 2026-10-15 | planning | B117 L2 | North Broadway, Pennsville, NJ 08070, Tax Block 117 | B117 L2 | CREATE A CANNABIS OVERLAY ZONE (COZ) CONSISTING OF THREE SEPARATE OVERLAY DISTRICTS AND TO ALLOW CLASS 5 CANNABIS RETAIL SALES WITHIN THE CANNABIS OVERLAY DISTRICTS Note | — |  |
 | 2026-10-26 | combined | B5701 L37 & 38 |  | B5701 L37 & 38 |  | preliminary & final major site plan, bulk variance (c) |  |
 
 ### Upper Pittsgrove
 
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-15 | combined | B5 L46 & 47 | 222/226 Route 40 | B5 L46 & 47 |  | major site plan, minor subdivision, use variance (d), bulk variance (c) |  |
 
 **Recent decisions / hearings**
 
@@ -957,11 +828,6 @@ Upcoming meetings with posted agendas: 2026-10-20
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15 | planning | B226 L3 | Mountainside Country Store | B226 L3; B36 L40 | Mr. L. Coviello said areas in front of the building ar'te nstorage, the'yre displays mixed with the landscapin. gItems won't pile up | preliminary & final major site plan, amended site plan |  |
-| 2026-10-15 | planning | Z04-2026 | Maria Lacatena | B58 L76 | Z04-2026 Maria Lacatena, 71 Brookwood Drive, Block 58 Lot 76, R3 Zone Application for a deck, pool, and shed **CARRIED TO 11/05** | — |  |
-| 2026-10-15 | planning | Z10-2026 | Rita Martino | B36 L50.01 | Z10-2026 Rita Martino, 8 Newton Avenue, Block 36 Lot 50.01, R4 Zone Application for shed in the front and side yard | — |  |
-| 2026-10-15 | planning | Z12-2026 | Lisa and Frank Maturi | B137 L29 | Z12-2026 Lisa and Frank Maturi, 21 Tote Road, Block 137 Lot 29, R5 Zone Application for addition to a single-family home | — |  |
-| 2026-10-15 | planning | B36 L40 | Byram Waterloo LLC (Starbucks of Byram) | B36 L40 | Ms. Hubbanrodt ed they do'nt have construction permitss,o can't store construction materias lon site.M ayor Rubenstei nadded that is a code voilation .Chairman Shivas sai | preliminary & final major site plan |  |
 | 2026-10-20 | planning | 31-430-661P | 430-661 P & R Utilities |  |  | site plan, subdivision |  |
 
 **Recent decisions / hearings**

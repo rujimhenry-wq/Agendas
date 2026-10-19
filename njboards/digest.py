@@ -25,7 +25,7 @@ from .pipeline import run_parse
 from .util import sentences, squash
 
 FIRM = r"(?:[A-Z][\w&.'\-]*[ ,]*){1,6}(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|& Associates)"
-PREPARED_BY = re.compile(r"\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:(?:(?:P\.?E\.?|P\.?L\.?S\.?|L\.?S\.?|P\.?P\.?|AIA|R\.?A\.?)[.,]?\s*)+(?:of\s+)?|of\s+))?([A-Z][\w&.'\-]*(?:[ ,]+[A-Z][\w&.'\-]*){0,6}[ ,]*(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|Surveys|Surveyors))", re.I)
+PREPARED_BY = re.compile(r"\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:(?:(?:P\.?E\.?|P\.?L\.?S\.?|L\.?S\.?|P\.?P\.?|AIA|R\.?A\.?)[.,]?\s*)+(?:of\s+)?|of\s+))?([A-Z][\w&.'\-]*(?:[ ,]+(?:[A-Z][\w&.'\-]*|&)){0,6}[ ,]*(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|Surveys|Surveyors))", re.I)
 ENGINEER_FIELD = re.compile(r"\b(?:applicant'?s?\s+)?engineer(?:\s+of\s+record)?\s*[:\-]\s*([A-Z][^\n;|]{3,100})", re.I)
 WEEK_NAMES = re.compile(r"\b(first|second|third|fourth|last|1st|2nd|3rd|4th)\s+(monday|tuesday|wednesday|thursday)\b", re.I)
 
@@ -164,17 +164,36 @@ _ROLE_FAMILY = {"engineer": "engineer", "civil engineer": "engineer", "professio
                 "planner": "planner", "professional planner": "planner", "architect": "architect", "landscape architect": "architect"}
 
 
-def team_for(it: dict, texts: list[str]) -> dict[str, list[str]]:
-    """The applicant's professionals on this job, by role: engineer, attorney, planner, traffic engineer, architect."""
-    team: dict[str, list[str]] = {}
+_FIRM_SUFFIX = r"(?:LLC|L\.L\.C\.|LLP|P\.?C\.?|P\.?A\.?|Inc\.?|Associates|Assoc\.?|Engineering|Engineers|Consultants|Consulting|Group|Partners|Design|Surveying|Esqs?\.?|Law\s+(?:Group|Firm|Offices?))"
+_FIRM_TOKENS = r"(?:(?:[A-Z][\w&.'\-]*|&)[ ,]*){1,7}"
+_NAME_FIRM = re.compile(_PERSON + r"(?:,?\s*(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|Esq\.?|AIA|R\.?A\.?|P\.?L\.?S\.?|L\.?S\.?|C\.?M\.?E\.?)[.,]?\s*)*,?\s+(?:of|with|from)\s+(" + _FIRM_TOKENS + _FIRM_SUFFIX + ")")
+_FIELD_NAME_FIRM = re.compile(r"\b(engineer|attorney|counsel|planner|traffic\s+(?:engineer|consultant)|architect)\s*[:\-]\s*" + _PERSON + r"(?:,?\s*(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|Esq\.?|AIA|R\.?A\.?)[.,]?\s*)*[,(\-–]\s*(" + _FIRM_TOKENS + _FIRM_SUFFIX + ")", re.I)
 
-    def add(role: str, label: str) -> None:
-        label = squash(label).strip(" ,.;")
-        if len(label) < 4 or label.lower().startswith(("the ", "board ", "township ", "borough ", "city ")):
+
+def team_for(it: dict, texts: list[str]) -> dict[str, list[dict]]:
+    """The applicant's professionals on this job, by role (engineer, attorney, planner,
+    traffic engineer, architect): person, credentials, firm, and whether they testified."""
+    team: dict[str, list[dict]] = {}
+
+    def add(role: str, name: str = "", firm: str = "", creds: str = "", testified: bool = False) -> None:
+        name, firm, creds = squash(name).strip(" ,.;"), squash(firm).strip(" ,.;"), squash(creds).strip(" ,.;")
+        if name and (len(name) < 4 or name.lower().startswith(("the ", "board ", "township ", "borough ", "city "))):
             return
-        team.setdefault(role, [])
-        if label not in team[role] and len(team[role]) < 2:
-            team[role].append(label)
+        if not name and not firm:
+            return
+        entries = team.setdefault(role, [])
+        for e in entries:  # merge: same person gains a firm, same firm gains a person
+            if name and e["name"] and e["name"].split()[-1].lower() == name.split()[-1].lower():
+                e["firm"] = e["firm"] or firm; e["credentials"] = e["credentials"] or creds; e["testified"] = e["testified"] or testified
+                return
+            if firm and not e["name"] and e["firm"].lower() == firm.lower():
+                e["name"] = name; e["credentials"] = e["credentials"] or creds; e["testified"] = e["testified"] or testified
+                return
+            if firm and name and not e["name"] and firm.lower() in e["firm"].lower():
+                e["name"] = name; e["credentials"] = creds; e["testified"] = testified
+                return
+        if len(entries) < 3:
+            entries.append({"name": name, "firm": firm, "credentials": creds, "testified": testified})
 
     for p in it.get("professionals", []):
         if p.get("side") == "board":
@@ -185,11 +204,23 @@ def team_for(it: dict, texts: list[str]) -> dict[str, list[str]]:
             fam = _ROLE_FAMILY.get(role_from_creds(p.get("credentials") or ""))
         if not fam:
             continue
-        add(fam, p["name"] + (f", {p['credentials']}" if p.get("credentials") else "") + (f" ({p['firm']})" if p.get("firm") else ""))
-    for e in engineer_for(it, texts):
-        add("engineer", e)
+        add(fam, p.get("name", ""), p.get("firm", ""), p.get("credentials", ""), bool(p.get("testified")))
     from .parse.professionals import NON_NAME_WORDS
     for t in texts:
+        for m in _FIELD_NAME_FIRM.finditer(t):
+            role = m.group(1).lower()
+            fam = "traffic engineer" if role.startswith("traffic") else _ROLE_FAMILY.get(role, role)
+            add(fam, m.group(2), m.group(3))
+        for m in _NAME_FIRM.finditer(t):
+            name, firm = m.group(1), m.group(2)
+            if any(tok.lower().strip(".,") in NON_NAME_WORDS for tok in name.split()):
+                continue
+            fl = firm.lower()
+            fam = ("attorney" if re.search(r"esq|law|attorneys?\b|legal", fl) else "planner" if "planning" in fl else
+                   "architect" if "architect" in fl else "traffic engineer" if "traffic" in fl else
+                   "engineer" if re.search(r"engineer|survey|civil|associates|consult|design", fl) else "")
+            if fam:
+                add(fam, name, firm)
         for role, pats in TEAM_FIELDS.items():
             for pat in pats:
                 for m in pat.finditer(t):
@@ -197,12 +228,44 @@ def team_for(it: dict, texts: list[str]) -> dict[str, list[str]]:
                     if any(tok.lower().strip(".,") in NON_NAME_WORDS for tok in name.split()):
                         continue
                     firm = m.group(2) if m.lastindex and m.lastindex >= 2 and m.group(2) else ""
-                    add(role, name + (f" ({squash(firm)})" if firm else ""))
+                    add(role, name, firm)
+    for e in engineer_for(it, texts):  # "prepared by <firm>", "Engineer: Name, P.E., Firm", bare mentions
+        e = e.strip(" ,.;")
+        m = re.match(r"^(.+?)\s*\((.+)\)$", e)
+        if m:
+            nm, firm = m.group(1), m.group(2)
+        else:
+            fm = re.search(r"(?:^|[,\-–(]\s*)(" + _FIRM_TOKENS + _FIRM_SUFFIX + r")\s*\)?$", e)
+            firm = fm.group(1).strip(" ,") if fm else ""
+            nm = e[: fm.start()].strip(" ,-–(") if fm else e
+        creds = ""
+        cm = re.match(r"^(.+?),\s*((?:(?:P\.?E\.?|P\.?P\.?|AICP|PTOE|P\.?L\.?S\.?|L\.?S\.?|C\.?M\.?E\.?)[.,\s]*)+)$", nm)
+        if cm:
+            nm, creds = cm.group(1), cm.group(2).strip(" ,.")
+        if nm and re.search(_FIRM_SUFFIX + r"$", nm) and not firm:
+            nm, firm = "", nm
+        add("engineer", nm, firm, creds)
     return team
 
 
-def fmt_team(team: dict[str, list[str]]) -> str:
-    return "; ".join(f"{TEAM_LABELS[r]}: {', '.join(v)}" for r, v in team.items() if v and r in TEAM_LABELS)
+def fmt_team(team: dict[str, list[dict]]) -> str:
+    parts = []
+    for role, label in TEAM_LABELS.items():
+        ents = team.get(role) or []
+        if not ents:
+            continue
+        shown = []
+        for e in ents:
+            if isinstance(e, str):  # older digests
+                shown.append(e); continue
+            txt = e["name"] + (f", {e['credentials']}" if e.get("credentials") else "")
+            if e.get("firm"):
+                txt = (txt + f" ({e['firm']})") if txt else e["firm"]
+            if e.get("testified"):
+                txt += " [testified]"
+            shown.append(txt)
+        parts.append(f"{label}: {', '.join(shown)}")
+    return "; ".join(parts)
 
 
 # --------------------------------------------------------------- digest
@@ -375,7 +438,7 @@ def render_digest(d: dict) -> str:
          f"Covers activity since {d['since']} and agendas through the next {d['horizon_days']} days. "
          f"{d['n_towns_with_data']} of {d['n_towns_total']} municipalities have parsed records. "
          f"Upcoming agenda items: {d['n_upcoming_items']} · recent decisions: {d['n_recent_decisions']}.\n",
-         "Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect where the agenda, minutes, resolution, review letter or application packet names them; blank when not stated.\n"]
+         "Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect: the person, their firm in parentheses, and [testified] when the minutes record them being sworn; blank when no document names them.\n"]
     by_county: dict[str, list[dict]] = defaultdict(list)
     for t in d["towns"]:
         by_county[t["county"] or "Unknown"].append(t)
