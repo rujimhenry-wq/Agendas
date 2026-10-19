@@ -26,7 +26,7 @@ from .util import sentences, squash
 
 FIRM = r"(?:[A-Z][\w&.'\-]*[ ,]*){1,6}(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|& Associates)"
 PREPARED_BY = re.compile(r"\bprepared\s+by\s+(?:[A-Z][\w.'\-]+(?:\s+[A-Z][\w.'\-]+){0,3},?\s+(?:(?:(?:P\.?E\.?|P\.?L\.?S\.?|L\.?S\.?|P\.?P\.?|AIA|R\.?A\.?)[.,]?\s*)+(?:of\s+)?|of\s+))?([A-Z][\w&.'\-]*(?:[ ,]+(?:[A-Z][\w&.'\-]*|&)){0,6}[ ,]*(?:LLC|L\.L\.C\.|Inc\.?|P\.?C\.?|P\.?A\.?|LLP|Associates|Assoc\.?|Group|Engineering|Engineers|Consultants|Consulting|Partners|Design|Co\.|Corp\.?|Surveying|Surveys|Surveyors))", re.I)
-ENGINEER_FIELD = re.compile(r"\b(?:applicant'?s?\s+)?engineer(?:\s+of\s+record)?\s*[:\-]\s*([A-Z][^\n;|]{3,100})", re.I)
+ENGINEER_FIELD = re.compile(r"(?<!traffic )(?<!Traffic )\b(?:applicant'?s?\s+)?engineer(?:\s+of\s+record)?\s*[:\-]\s*([A-Z][^\n;|]{3,100})", re.I)
 WEEK_NAMES = re.compile(r"\b(first|second|third|fourth|last|1st|2nd|3rd|4th)\s+(monday|tuesday|wednesday|thursday)\b", re.I)
 
 
