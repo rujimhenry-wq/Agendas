@@ -189,8 +189,12 @@ def discover(fetcher: Fetcher, homepage: str, max_pages: Optional[int] = None,
             href = a.get("href", "").strip()
             if not href or SKIP_WORDS.search(href):
                 continue
-            absu = urljoin(r.final_url, href)
-            if not absu.startswith("http"):
+            try:
+                absu = urljoin(r.final_url, href)
+                if not absu.startswith("http"):
+                    continue
+                urlparse(absu)
+            except ValueError:  # e.g. "Invalid IPv6 URL" from a bracketed href
                 continue
             text = a.get_text(" ", strip=True)
             ctx = _heading_context(a)

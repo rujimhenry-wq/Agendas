@@ -65,8 +65,8 @@ class Browser:
         self._pw = sync_playwright().start()
         exe = next((c for c in CHROMIUM_CANDIDATES if c and os.path.exists(c)), None)
         kwargs = {"headless": True, "args": ["--disable-blink-features=AutomationControlled"]}
-        if exe:
-            kwargs["executable_path"] = exe
+        if exe and os.path.isfile(exe):
+            kwargs["executable_path"] = exe  # otherwise Playwright's own download is used
         try:
             self._browser = self._pw.chromium.launch(**kwargs)
         except Exception as e:  # noqa: BLE001

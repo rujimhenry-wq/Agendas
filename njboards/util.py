@@ -44,7 +44,10 @@ def sha1_str(s: str) -> str:
 def normalize_url(url: str, base: Optional[str] = None) -> str:
     if base:
         url = urljoin(base, url)
-    p = urlparse(url.strip())
+    try:
+        p = urlparse(url.strip())
+    except ValueError:
+        return url.strip()
     # drop fragments, normalize scheme/host case, sort query
     q = urlencode(sorted(parse_qsl(p.query, keep_blank_values=True)))
     path = p.path or "/"

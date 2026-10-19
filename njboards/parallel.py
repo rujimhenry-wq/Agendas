@@ -64,14 +64,34 @@ def run_parallel(slugs: Iterable[str], step: str, workers: int = 6, progress: Op
             if progress:
                 progress(r)
         return results
-    with ProcessPoolExecutor(max_workers=workers) as ex:
-        futs = {ex.submit(_worker, s, step, kwargs, str(SETTINGS.data_dir), overrides): s for s in slugs}
-        for fut in as_completed(futs):
-            try:
-                r = fut.result()
-            except Exception as e:  # noqa: BLE001
-                r = {"slug": futs[fut], "ok": False, "error": str(e)}
-            results.append(r)
-            if progress:
-                progress(r)
+    from concurrent.futures.process import BrokenProcessPool
+    remaining = list(slugs)
+    rounds = 0
+    while remaining and rounds < 4:
+        rounds += 1
+        done_now: set[str] = set()
+        try:
+            with ProcessPoolExecutor(max_workers=workers) as ex:
+                futs = {ex.submit(_worker, s, step, kwargs, str(SETTINGS.data_dir), overrides): s for s in remaining}
+                for fut in as_completed(futs):
+                    try:
+                        r = fut.result()
+                    except BrokenProcessPool:
+                        raise
+                    except Exception as e:  # noqa: BLE001
+                        r = {"slug": futs[fut], "ok": False, "error": str(e)}
+                    results.append(r)
+                    done_now.add(r["slug"])
+                    if progress:
+                        progress(r)
+        except BrokenProcessPool as e:
+            log.warning("a worker process died (%s); retrying the unfinished towns in a fresh pool", e)
+        remaining = [s for s in remaining if s not in done_now]
+        if remaining and not done_now:  # no progress at all: run them one by one in-process
+            for s in remaining:
+                r = _worker(s, step, kwargs, str(SETTINGS.data_dir), overrides)
+                results.append(r)
+                if progress:
+                    progress(r)
+            remaining = []
     return results
