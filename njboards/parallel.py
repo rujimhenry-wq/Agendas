@@ -55,7 +55,8 @@ def _worker(slug: str, step: str, kwargs: dict, data_dir: str, settings_override
 def run_parallel(slugs: Iterable[str], step: str, workers: int = 6, progress: Optional[Callable[[dict], None]] = None,
                  **kwargs) -> list[dict]:
     slugs = list(slugs)
-    overrides = {k: getattr(SETTINGS, k) for k in ("delay_seconds", "max_pages_per_site", "min_year", "ocr_enabled", "use_browser", "user_agent")}
+    overrides = {k: getattr(SETTINGS, k) for k in ("delay_seconds", "max_pages_per_site", "min_year", "ocr_enabled", "use_browser",
+                                                     "user_agent", "cache_ttl_hours")}
     results = []
     if workers <= 1:
         for s in slugs:

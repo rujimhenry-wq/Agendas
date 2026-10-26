@@ -72,7 +72,10 @@ coming up (date, board, application, applicant, what is proposed, types) and
 what was decided, with the applicant's professionals (engineer, attorney,
 planner, traffic engineer, architect) wherever a document names them.
 `scripts/weekly.sh` is the scheduled-job wrapper; `--skip-fresh 5` resumes an
-interrupted run.
+interrupted run. The weekly crawl re-fetches board pages cached more than
+`--max-age` hours ago (default 12) so that last week's cached listings cannot
+hide this week's agendas; the one-week default cache still applies to the
+other commands.
 
 ## Adding towns
 

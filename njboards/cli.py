@@ -322,11 +322,15 @@ def run(slug: Optional[str], county: Optional[str], all_: bool, limit: Optional[
 @click.option("--pages", type=int, default=25, help="pages to re-crawl per town (known board pages are the seeds)")
 @click.option("--ocr", is_flag=True, help="OCR scanned PDFs (slow; agendas are usually text)")
 @click.option("--skip-fresh", type=int, default=0, metavar="DAYS", help="skip towns refreshed within DAYS (resume an interrupted run)")
+@click.option("--max-age", type=float, default=12.0, metavar="HOURS",
+              help="re-fetch board pages cached longer ago than HOURS (the default one-week cache would hide this week's agendas)")
 def weekly(county: Optional[str], all_: bool, workers: int, horizon: int, limit: int, since: Optional[str], no_crawl: bool,
-           pages: int, ocr: bool, skip_fresh: int) -> None:
+           pages: int, ocr: bool, skip_fresh: int, max_age: float) -> None:
     """Weekly refresh of every town plus the statewide digest (data/digests/<date>.md)."""
     from datetime import date, timedelta
     from .digest import build_digest, last_digest_date, write_digest
+    # The crawl must see pages as they are this week; a 7-day cache from last Monday's run would serve stale listings.
+    SETTINGS.cache_ttl_hours = min(SETTINGS.cache_ttl_hours, max_age)
     db = DB()
     slugs = [m["slug"] for m in db.municipalities(county)] if county else [m["slug"] for m in db.municipalities()]
     slugs = [s for s in slugs if db.municipality(s)["website"]]
