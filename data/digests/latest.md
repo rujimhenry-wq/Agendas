@@ -1,6 +1,6 @@
-# NJ Land Use Boards — Weekly Digest (2026-10-26)
+# NJ Land Use Boards — Weekly Digest (2026-11-02)
 
-Covers activity since 2026-10-20 and agendas through the next 35 days. 240 of 564 municipalities have parsed records. Upcoming agenda items: 177 · recent decisions: 60.
+Covers activity since 2026-10-26 and agendas through the next 35 days. 252 of 564 municipalities have parsed records. Upcoming agenda items: 162 · recent decisions: 85.
 
 Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffic engineer and architect: the person, their firm in parentheses, and [testified] when the minutes record them being sworn; blank when no document names them.
 
@@ -8,34 +8,36 @@ Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffi
 
 | Date | Town | Board | Application | Applicant | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | Clayton | combined | B1904 L14 & 16 | a/k/a Block 1904 |  | minor site plan, minor subdivision |  |
-| 2026-10-26 | Clayton | combined | B2002 L7 | Res. #22-2026 Granting Extension of Minor Subdivision Approval for Block 2002 |  | minor subdivision |  |
-| 2026-10-26 | Howell | zoning | BA26-07 | / A&C Land Management, LLC |  | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
-| 2026-10-26 | Howell | zoning | BA25-21 | / J. Haugh Properties, LLC |  | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
-| 2026-10-26 | Howell | zoning | BA24-01A | Howell Medical Investors | Application of Howell Medical Investors, LLC as Applicants and Owners | preliminary & final major site plan, bulk variance (c) |  |
-| 2026-10-26 | Paterson | planning | LING1-973-321 |  | Variances are requested for lot area, as 22,000 square feet is required and 3,991 square feet is existing; maximum lot coverage, as seventy (70) percent is permitted and | site plan, subdivision, bulk variance (c) |  |
-| 2026-10-26 | Pennsville Township | combined | B5701 L37 & 38 |  |  | preliminary & final major site plan, bulk variance (c) |  |
-| 2026-10-26 | Cranford | zoning | ZBA-26-009 | JDA Homes, LLC & Liberty Assets, LLC | No site improvements are proposed | subdivision, bulk variance (c) |  |
-| 2026-10-26 | Summit | planning | PB-26-289 |  | construct new four story multi-family residential structure above existing two level parking deck with (c) – variances. • Broad Morris Rentals, LLC (Application Documents | preliminary & final major site plan, variance |  |
-| 2026-10-26 | Summit | planning | PB-26-288 |  | construct 20 residential units in a multifamily building with commercial space on the first floor | preliminary & final major site plan, variance |  |
-| 2026-10-27 | Fort Lee | zoning | 19-26 | Chiawei Chuang & Michelle Wang | Minor Subdivision & Two, Two-Unit Dwellings Marc D. Macri, Esq. is representing the applicant | minor subdivision | Atty: Marc D. Macri |
-| 2026-10-27 | Fort Lee | zoning | 9-20 | 514 Main Street Fort Lee, LLC | Final Major Site Plan – Five (5) Story, Self-Storage Facility Marc D. Macri, Esq. is representing the applicant | preliminary & final major site plan | Atty: Marc D. Macri |
-| 2026-10-27 | West Orange | zoning | Sustainability | Sustainability | Construction shall include green or recycled building materials for majority of floorings, paint, coatings, and ceiling finishes | subdivision |  |
-| 2026-10-27 | Freehold Borough | planning | B92 L39 and 40 | Tax Map of the Township of Freehold as Block 92 | R-26-245 Resolution Authorizing Person-to-Person Transfer of Plenary Retail Consumption/Hotel Liquor License No. 1316-36-009-006 From GPLR LLC To FRNJ Associates LLC | site plan, subdivision | Planner: Andrew Thomas (Thomas Planning Associates, L.L.C) |
-| 2026-10-27 | Freehold Borough | planning | B71 L8 |  | BE IT FURTHER RESOLVED that a copy of this Resolution, certified by the Township Clerk to be a true copy be forwarded to each of the following: (a) Township Engineer (b) | site plan, subdivision |  |
-| 2026-10-27 | Freehold Township | planning | B92 L39 and 40 | Tax Map of the Township of Freehold as Block 92 | R-26-245 Resolution Authorizing Person-to-Person Transfer of Plenary Retail Consumption/Hotel Liquor License No. 1316-36-009-006 From GPLR LLC To FRNJ Associates LLC | site plan, subdivision | Planner: Andrew Thomas (Thomas Planning Associates, L.L.C) |
-| 2026-10-27 | Freehold Township | planning | B71 L8 |  | BE IT FURTHER RESOLVED that a copy of this Resolution, certified by the Township Clerk to be a true copy be forwarded to each of the following: (a) Township Engineer (b) | site plan, subdivision |  |
-| 2026-10-27 | Monmouth Beach | combined | B52 L9 & 10 | Borough of Monmouth Beach for David and Lisa Stickle | minor subdivision and accessory detached garage with the variances | minor subdivision, bulk variance (c) |  |
-| 2026-10-27 | Barnegat Township | planning | PB23-12 |  |  | minor subdivision, extension |  |
-| 2026-10-27 | Barnegat Township | planning | PB23-08 |  |  | minor subdivision, extension |  |
-| 2026-10-27 | Barnegat Township | planning | PB26-02 |  |  | minor subdivision |  |
-| 2026-10-27 | Rahway | planning | 08/26 |  |  | minor subdivision, variance |  |
-| 2026-10-27 | Hackettstown | combined | 2026-06 | L. Moises &amp; R. Cajamara |  | minor subdivision, use variance (d), bulk variance (c) |  |
-| 2026-10-28 | Voorhees | planning | B213.01 L95 & 96 |  |  | preliminary & final major site plan | Eng: Rashane Thapa |
-| 2026-10-28 | Neptune City | planning | PB26/06 | IV. APPLICATIONS UNDER CONSIDERATION FOR THIS EVENING | PB Regular Meeting Agenda October 28, 2026 Page 2 of 2 If any Board Member cannot attend, please call or e-mail the Board Office at 732-988-5200 Ext | minor subdivision, variance |  |
+| 2026-11-02 | Tenafly | zoning | ZB-2026-09A | • D&C Chevrolet |  | minor subdivision, extension |  |
+| 2026-11-02 | Westwood | zoning | ZB-25-0110 | CJA Ventures LLC-78-84 Washington Avenue- Use variance to |  | site plan, subdivision, use variance (d), bulk variance (c) |  |
+| 2026-11-02 | Westwood | zoning | ZB-24-0106 | Eagle Rock Realty Investments-665 Broadway- Use |  | site plan, subdivision, use variance (d), bulk variance (c) |  |
+| 2026-11-02 | Wall | planning | New and | New and | expand childcare capacity at existing day care center PB#7-2026- YMCA of the Jersey Shore Block: 977 Lot: 8.01 Zone: CR-40 Address: 3911 Herbertsville Road Application Ty | preliminary & final major site plan, minor subdivision, bulk variance (c), extension |  |
+| 2026-11-02 | Randolph | planning | SD26-04 | 101 Quaker, LLC |  | minor subdivision, bulk variance (c) |  |
+| 2026-11-02 | Summit | zoning | ZB-25-2278 | Springfield Avenue Property LLC | C & D variances to manage circulation, landscape, and lighting, height and expansion of non-conforming use | preliminary & final major site plan, use variance (d) |  |
+| 2026-11-02 | Westfield | planning | PB26-010 | AP Capital Management, LLC | convert a second-floor office space to two residential units | preliminary & final major site plan, variance | Atty: Michael Silbert |
+| 2026-11-02 | Westfield | planning | PB26-011 | Leemor Yoets / Brian Raftery |  | minor subdivision | Atty: James Foerst |
+| 2026-11-02 | Westfield | planning | PB26-007 | 408 & 412 South Elmer Street Preliminary/Final Proposed multi-family building Deemed Incomplete | Major Site Plan containing 6 dwelling units Awaiting Resubmission | major site plan |  |
+| 2026-11-02 | Westfield | planning | PB26-009 | 530 & 600 South Avenue West Preliminary/Final Proposed stacked townhouse Deemed Incomplete | Major Site Plan development totaling 78 units, Awaiting 16 of which are set aside as Resubmission affordable units Next Planning Board Meeting: December 7, 2026 | major site plan |  |
 | 2026-11-04 | Edgewater | zoning | ICANT1209-1211 | 26th Street LLC. Request approval to construct a new one-family dwelling in | construct a new one-family dwelling in the R-2 Single and Two-family Residential District | subdivision |  |
+| 2026-11-04 | Millburn | planning | 26-006 |  App #26-006, JFK-SH Phase II LLC, Upton |  | preliminary & final major site plan |  |
+| 2026-11-04 | Millburn | planning | 26-007 |  App #26-007, Consulting G2 LLC |  | preliminary & final major subdivision |  |
+| 2026-11-04 | Millburn | planning | 26-009 |  App #26-009, Stronger Together LLC, Burn Boot Camp | Final Major Site Plan Approval with C variance DISCUSSION ITEM  Master Plan Reexamination Recommendation to Township Committee for 2027 The next scheduled Planning Board | preliminary & final major site plan, bulk variance (c) |  |
+| 2026-11-04 | Clifton | zoning | 2. Use variance The Learning 171-199 Scoles Ave, |  | a new single family dwelling on an side yard setback, Esq. existing vacant lot which requires the following bulk variances; front yard setback proposed at 20' where 25' R | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
+| 2026-11-04 | Summit | zoning | B401 L1 | Section 1. The Common Council hereby authorizes that a portion of Block 401 |  | subdivision |  |
+| 2026-11-04 | Summit | zoning | a. Site plan approval shall not be required for si |  | The home occupa�on shall remain incidental and subordinate to the residen�al use of the premises. c. The home occupa�on may be conducted within the dwelling or within a l | site plan, subdivision, bulk variance (c), concept / informal review |  |
+| 2026-11-05 | Paramus | planning | B7004 L6 |  |  | final major site plan, bulk variance (c) |  |
+| 2026-11-05 | Paramus | planning | B7101 L4.Q | ******Avant Estates, LLC.-232 Oradell Avenue |  | major site plan |  |
+| 2026-11-05 | Cranbury | planning | PB411-25 | *PB411-25 Kerzner Associates |  | preliminary & final major site plan |  |
+| 2026-11-05 | Cranbury | planning | PB417-26 | *PB417-26 William & Bonnie Murphy |  | preliminary & final major subdivision, bulk variance (c) |  |
 | 2026-11-05 | Freehold Borough | planning | B105 L27 & 28 |  | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
 | 2026-11-05 | Freehold Township | planning | B105 L27 & 28 |  | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
+| 2026-11-05 | Howell | planning | NDC Real Estate Holdings LLC | NDC Real Estate Holdings LLC | Application of NDC Real Estate Holdings LLC as applicant and Carmine & Carol Caruso | minor subdivision |  |
+| 2026-11-05 | Howell | planning | Township of Howell | Township of Howell | Application of Township of Howell as applicant and owner seeking approval subdivide | preliminary & final major subdivision, bulk variance (c) |  |
+| 2026-11-05 | Howell | planning | SD-3030/30 | East Third | Application of 30 East Third St LLC as Applicants and Owners seeking approval to | preliminary & final major subdivision, variance |  |
+| 2026-11-09 | Brick Township | planning | B586 L1 &7 |  |  | minor subdivision |  |
+| 2026-11-09 | Brick Township | planning | B685 L7.02 |  |  | preliminary & final major site plan |  |
+| 2026-11-10 | Quinton Township | planning | B5 L7 |  |  | minor site plan, minor subdivision |  |
+| 2026-11-12 | Woodbridge Township | zoning | Z25-80 |  | subdivide the property into two (2) lots: a 47,075-square-foot lot containing an existing seven-unit multifamily structure with associated parking improvements, and a 40 | minor site plan, minor subdivision, bulk variance (c) |  |
 | 2026-11-19 | Bloomfield | zoning | Application: seeking preliminary & final site plan |  | build a 35 unit apartment building in the R-2B zone | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
 
 ## Atlantic County
@@ -43,22 +45,17 @@ Professionals = the applicant's engineer (Eng), attorney (Atty), planner, traffi
 ### Absecon
 
 
-New documents since last digest: 1140 (agenda, application, checklist, minutes)
+New documents since last digest: 2 (agenda)
 
 ### Brigantine
 
 
-New documents since last digest: 670 (agenda, minutes, ordinance, resolution)
-
-### Buena Vista Township
-
-
-New documents since last digest: 31 (application, checklist, notice, ordinance, resolution, review_letter, site_plan)
+New documents since last digest: 3 (application, ordinance, resolution)
 
 ### Hammonton
 
 
-New documents since last digest: 247 (agenda, minutes, notice, ordinance, site_plan)
+New documents since last digest: 33 (agenda, notice, ordinance)
 
 ### Margate City
 
@@ -69,44 +66,23 @@ New documents since last digest: 247 (agenda, minutes, notice, ordinance, site_p
 |---|---|---|---|---|---|---|---|
 | 2027-03-01 | planning | Notice of Award of Contract- |  |  | — | heard |  |
 
-New documents since last digest: 148 (agenda, notice, ordinance, resolution, schedule)
-
-### Mullica Township
-
-
-New documents since last digest: 104 (agenda, minutes)
+New documents since last digest: 2 (agenda)
 
 ### Port Republic
 
 
-New documents since last digest: 71 (agenda, minutes, notice)
+New documents since last digest: 16 (agenda, application, minutes, notice)
 
 ## Bergen County
-
-### Allendale
-
-
-New documents since last digest: 97 (agenda, minutes, resolution)
-
-### Demarest
-
-
-New documents since last digest: 6 (agenda, application, notice, ordinance, resolution, site_plan)
 
 ### East Rutherford
 
 
-**Recent decisions / hearings**
-
-| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-01 | zoning | Resolution #ZB26-05  Lowe's Seasonal Outdoor Laydo |  |  | use variance (d), bulk variance (c) | memorialized |  |
-
-New documents since last digest: 313 (agenda, minutes, notice, resolution)
+New documents since last digest: 13 (minutes, notice, resolution)
 
 ### Edgewater
 
-Upcoming meetings with posted agendas: 2026-10-26, 2026-11-04  
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-12  
 
 **Coming up**
 
@@ -115,41 +91,37 @@ Upcoming meetings with posted agendas: 2026-10-26, 2026-11-04
 | 2026-11-04 | zoning | ICANT647-649 | Undercliff LLC. Request approval to construct a new two-family duplex | B72 L25. | construct a new two-family duplex dwelling in the R-2 Single and Two-Family District | — |  |
 | 2026-11-04 | zoning | ICANT1209-1211 | 26th Street LLC. Request approval to construct a new one-family dwelling in | B9.01 L78. | construct a new one-family dwelling in the R-2 Single and Two-family Residential District | subdivision |  |
 | 2026-11-04 | zoning | ICANT57-59 | Commonly known as 57-59 Route 5, Edgewater, NJ. Block 34 | B34 L18. | construct a 20-unit multi-family residential building | — |  |
+| 2026-11-12 | zoning | B85.02 L4 & 5.01. | Commonly known as 440-456 River Road, Edgewater, NJ. Block 85.02 | B85.02 L4 & 5.01. | amended site plan and variance approval for the mixed-use building under construction at 440-456 River Road, which will require "D" and "C" variance approval, located in | amended site plan, variance |  |
 
-New documents since last digest: 1282 (agenda, minutes)
-
-### Elmwood Park
-
-
-New documents since last digest: 37 (agenda, application, minutes)
+New documents since last digest: 1316 (agenda, minutes, notice, ordinance, resolution)
 
 ### Englewood
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-New documents since last digest: 931 (agenda, notice)
+New documents since last digest: 9 (agenda, notice)
+
+### Fair Lawn
+
+
+New documents since last digest: 23 (agenda, application, checklist, notice, ordinance, resolution)
 
 ### Fort Lee
 
-Upcoming meetings with posted agendas: 2026-10-26, 2026-10-27  
 
-**Coming up**
+**Recent decisions / hearings**
 
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | 3-26 | Palisade Center Mall | B4252 L7 |  | site plan | Atty: Memorabila David Carmel |
-| 2026-10-27 | zoning | 19-26 | Chiawei Chuang & Michelle Wang | B3956 L17 & 18 | Minor Subdivision & Two, Two-Unit Dwellings Marc D. Macri, Esq. is representing the applicant | minor subdivision | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 6-26 | Jiao Family, LLC | B3852 L14 | Docket #6-26 Jiao Family, LLC 1530 Twelfth Street Block 3852, Lot 14 Two Family Dwelling Jason R. Tuvel, Esq. is representing the applicant | — | Atty: Jason R. Tuvel |
-| 2026-10-27 | zoning | 27-26 | Mario Jacovino | B2354 L4 | Docket #27-26 Mario Jacovino 260 Elsmere Place Block 2354, Lot 4 Single Family Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 28-26 | Wai Ming & Maria Yee | B1055 L11 | Docket #28-26 Wai Ming & Maria Yee 1153 Sixteenth Street Block 1055, Lot 11 Two Family Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 15-26 | 820 Fairview, LLC | B352 L7 | Docket #15-26 820 Fairview, LLC 820 Fairview Lane Block 352, Lot 7 Two Family Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 9-20 | 514 Main Street Fort Lee, LLC | B3655 L3 | Final Major Site Plan – Five (5) Story, Self-Storage Facility Marc D. Macri, Esq. is representing the applicant | preliminary & final major site plan | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 14-26 | 1474 15th Street, LLC | B3051 L17 | Docket #14-26 1474 15th Street, LLC 1474 Fifteenth Street Block 3051, Lot 17 Two Unit Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 17-26 | GVS 22, LLC | B1054 L6 | Docket #17-26 GVS 22, LLC 1184 Fourteenth Street Block 1054, Lot 6 Two Unit Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 21-26 | Kai Xiao Fang | B5951 L14 | Docket #21-26 Kai Xiao Fang 2200B Mackay Avenue Block 5951, Lot 14 Amendment to Two Unit Dwelling – Basement Bathroom of One Unit Marc D. Macri, Esq. is representing the | — | Atty: Marc D. Macri |
-| 2026-10-27 | zoning | 22-26 | Charanjit Singh | B756 L8.01 | Docket #22-26 Charanjit Singh 75 Bluff Road Block 756, Lot 8.01 Single Family Dwelling Marc D. Macri, Esq. is representing the applicant | — | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 9-26 | W&R Home Builders, LLC, 422 & 424 Myrtle Avenue | Minor Subdivision and Two, Two Unit Dwellings It was moved by Mr. Conway, seconded by Mr. Joh and approved on a vote of 3-0 by members Joh, Conway and Sugarman to approve | minor subdivision | approved (3-0) | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 24-26 | Bridgemen Equities, LLC | Final Major Site Plan – Three Unit Dwelling It was moved by Mr. Liapes, seconded by Ms. Hong and approved on a vote of 6-0 by members Liapes, Joh, Conway, Hong, Keller an | preliminary & final major site plan | approved (6-0) | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 25-26 | 248 Forest, LLC 248 Forest Road | Docket #25-26, 248 Forest, LLC 248 Forest Road, Block 1953, Lot 3, Single Family Dwelling It was moved by Mr. Keller, seconded by Ms. Hong and approved on a vote of 6-0 b | — | approved (6-0) | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 26-26 | 1222 16th, LLC | Docket #26-26, 1222 16th, LLC, 1222 Sixteenth Street, Block 1553, Lot 4 ,Two Unit Dwelling It was moved by Mr. Liapes, seconded by Mr. Keller and approved on a vote of 6- | — | approved (6-0) | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 19-26 |  | Minor Subdivision & Two, Two-Unit Dwellings Mr. Macri, representing the applicant, stated we are here tonight seeking the Board's approval for a Minor Subdivision for Two | minor subdivision, bulk variance (c) | denied (5-1) | Eng: Fort Lee [testified]; Atty: Marc D. Macri; Arch: Englewood Cliffs [testified] |
+| 2026-10-13 | zoning | 14-26 | 1474 15th Street, LLC | construction of a new Two Unit home | site plan, use variance (d), bulk variance (c) | heard | Atty: Marc D. Macri; Arch: Fort Lee [testified] |
+| 2026-10-13 | zoning | 16-26 | JZM Real Estate Holdings, LLC, 2409, 2413 & 2417 Third Street |  | preliminary & final major site plan | carried | Atty: Marc D. Macri |
+| 2026-10-13 | zoning | 17-26 | GVS 22, LLC | The second level proposal is for a master bedroom, 3 additional bedrooms, 2 bathrooms and laundry area | use variance (d), bulk variance (c) | heard | Atty: Marc D. Macri; Arch: Fort Lee [testified] |
 
-New documents since last digest: 590 (agenda, minutes)
+New documents since last digest: 4 (agenda, minutes)
 
 ### Hackensack
 
@@ -162,15 +134,19 @@ New documents since last digest: 590 (agenda, minutes)
 | 2026-10-07 | zoning | Resolution No. 196-26 | Resolution No. 196-26 |  | — | heard | Atty: Kellie M. Reyes, ESQ |
 | 2026-10-07 | zoning | Resolution No. 264-26 | Resolution No. 264-26 |  | — | heard |  |
 
-New documents since last digest: 161 (agenda, application, minutes, ordinance, resolution, schedule, site_plan)
-
-### Harrington Park
-
-
-New documents since last digest: 15 (application, notice, other, resolution, schedule, site_plan)
+New documents since last digest: 13 (application, ordinance, resolution, site_plan)
 
 ### Mahwah
 
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | planning | B24 L13 & 14 |  | B24 L13 & 14 | construct a single-family home, pool, patio, driveway alteration, septic field and retaining walls | — |  |
+| 2026-11-04 | zoning | 26-1625 | Sarah Gentile | B173 L107 | construct a covered front-entry portico over an existing concrete landing where front-yard setback is not met | variance |  |
+| 2026-11-04 | zoning | 26-1621 | Highway Displays, Inc | B128 L8-15 |  | variance |  |
 
 **Recent decisions / hearings**
 
@@ -178,15 +154,23 @@ New documents since last digest: 15 (application, notice, other, resolution, sch
 |---|---|---|---|---|---|---|---|
 | 2026-10-19 | planning | B59 L18, 19, 20.01 | Highway 17 | He explained that, as originally drafted, the condition stated that used tires and oil "shall be stored inside," but that this language was technically inaccurate, as the | preliminary & final major site plan | approved | Atty: Mark D. Madaio |
 | 2026-10-19 | planning | B21 L21, 22, 23 |  |  | — | deemed_complete | Atty: John Lamb, ESQ |
+| 2026-10-12 | zoning | Does hereby authorize the application for such a g | Does hereby authorize the application for such a grant; and recognizes and accepts that | BE IT FURTHER RESOLVED, that the Township Clerk shall keep a copy of this resolution on file and available for inspection in the office of the Township Clerk and shall fo | subdivision, interpretation | approved |  |
+| 2026-10-12 | zoning | B132 L1 | Avenue, Mahwah, New Jersey, designated as Block 132 | Avenue, Mahwah, New Jersey, designated as Block 132, Lot 1 on the Township of Mahwah Tax Maps (the "Property") and as further described in a survey attached hereto as Exh | variance | approved |  |
 | 2026-10-07 | zoning | 26-1621 | Highway Displays, Inc |  | variance | heard |  |
 | 2026-10-07 | zoning | 26-1626 | Hindu Samaj, Inc | Mr. Whitaker stated that the applicant would stipulate to several conditions, including: that the fence would be constructed within the Bergen County road widening easeme | site plan, variance | heard | Eng: Douglas W. Doolittle, P.E (McNally Engineering) [testified] |
 | 2026-10-07 | zoning | 26-1626 | Hindu Samaj, Inc | construction within the road widening easement. ● The applicant shall obtain a license agreement with the Township of Mahwah for installation within the sanitary sewer ea | bulk variance (c) | approved |  |
 | 2026-10-07 | zoning | 26-1626 | Motion to approve Docket #26-1626, Hindu Samaj, Inc., with the stipulations and | No concerns were raised regarding the proposed dates | — | approved |  |
 
-New documents since last digest: 1309 (agenda, minutes, notice)
+New documents since last digest: 20 (agenda, minutes, notice)
+
+### Maywood
+
+
+New documents since last digest: 363 (agenda, minutes, site_plan)
 
 ### Midland Park
 
+Upcoming meetings with posted agendas: 2026-11-11  
 
 **Recent decisions / hearings**
 
@@ -194,7 +178,7 @@ New documents since last digest: 1309 (agenda, minutes, notice)
 |---|---|---|---|---|---|---|---|
 | 2026-10-19 | zoning | 301 Godwin Avenue - B21,L9 - Resolution Publicatio |  |  | preliminary & final major site plan, bulk variance (c) | denied |  |
 
-New documents since last digest: 319 (agenda, minutes, notice, resolution)
+New documents since last digest: 16 (agenda, minutes, notice, resolution)
 
 ### Montvale
 
@@ -203,31 +187,26 @@ New documents since last digest: 319 (agenda, minutes, notice, resolution)
 
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
+| 2026-10-27 | planning | Award of Professional Service Contract - Reso Nos. |  |  | — | heard |  |
+| 2026-10-27 | planning | Change Order #1 - Persistent Construction |  |  | — | heard |  |
 | 2026-10-08 | planning | Change Order #1 - Persistent Construction |  |  | — | heard |  |
-| 2026-09-29 | planning | Award Prof Service Contract - Resolution No.164-20 |  |  | — | heard |  |
 
-New documents since last digest: 88 (agenda, notice, resolution)
+New documents since last digest: 4 (notice, resolution)
 
 ### New Milford
 
+Upcoming meetings with posted agendas: 2026-11-03  
 
-New documents since last digest: 35 (agenda, application, minutes, ordinance, site_plan)
+New documents since last digest: 1 (agenda)
 
 ### Northvale
 
 
-New documents since last digest: 478 (agenda, application, minutes, notice, schedule)
+New documents since last digest: 364 (agenda, application, minutes)
 
 ### Oakland
 
-Upcoming meetings with posted agendas: 2026-10-27  
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | B804 L11 | Basketball | B804 L11 | WHEREAS, the Chief Financial Officer has verified that the amount is due and that funds are available in account #6-05-55-999-014 | — |  |
-| 2026-10-27 | zoning | B1901 L12 | (Block 1901 | B1901 L12 |  | — |  |
+Upcoming meetings with posted agendas: 2026-11-02  
 
 **Recent decisions / hearings**
 
@@ -238,87 +217,102 @@ Upcoming meetings with posted agendas: 2026-10-27
 | 2026-10-08 | planning | B4202 L2. | James Lower Properties | These concerns were previously provided to the developer in writing with a request for a response within ten calendar days; no response was received. • An additional stop | — | approved | Eng: Caroline Reiter (T&M Associates) |
 | 2026-10-08 | planning | B201 L6 and 7. | LLC, concerning property located at 59–65 Edison Avenue, identified as Block 201 | 8 Owner Testimony – Jim Frank • Jim Frank testified that he was one of the former owners of James Construction and remains a co-owner of the subject property with Mr. Dow | preliminary & final major site plan, bulk variance (c) | heard | Atty: Robert Fiore, ESQ |
 
-New documents since last digest: 254 (agenda, minutes)
-
-### Old Tappan
-
-
-New documents since last digest: 17 (application, minutes, notice, ordinance, resolution, review_letter, schedule)
-
-### Oradell
-
-
-New documents since last digest: 30 (application, minutes, notice, resolution, site_plan)
+New documents since last digest: 7 (agenda, minutes)
 
 ### Palisades Park
 
 
-New documents since last digest: 815 (agenda, minutes, notice)
+New documents since last digest: 11 (agenda, minutes, notice, ordinance)
 
 ### Paramus
 
+Upcoming meetings with posted agendas: 2026-11-05  
 
-New documents since last digest: 1458 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-05 | planning | B2001 L17.06 | Jean Nunes-6 Schubert Lane-Block 2001 | B2001 L17.06; B5502 L10.02 |  | — |  |
+| 2026-11-05 | planning | B7004 L6 |  | B7004 L6; B6303 L1.01 |  | final major site plan, bulk variance (c) |  |
+| 2026-11-05 | planning | B7101 L4.Q | ******Avant Estates, LLC.-232 Oradell Avenue | B7101 L4.Q |  | major site plan |  |
+| 2026-11-05 | planning | B413 L4, 5 and 6 | Review of the Plan for the Preliminary Investigation of Block 413 | B413 L4, 5 and 6 | Review of Proposed Mayor and Council Ordinance 2026-40 | — |  |
+
+New documents since last digest: 108 (agenda, minutes)
 
 ### Ramsey
 
-Upcoming meetings with posted agendas: 2026-10-27, 2026-10-28  
+Upcoming meetings with posted agendas: 2026-11-03, 2026-11-16  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28 | combined | B4806 L1 |  | B4806 L1 | 200-2026 Resolution: authorizing the tax redemption for Block 4806 Lot 1, in the amount of $45,886.67 201-2026 Resolution: authorizing NJ Tax Lien Investors/RealAuction.c | — | Atty: Peter A. Scandariato, Douglas Bern |
-| 2026-10-28 | combined | B82 L1 and 3-30 |  | B82 L1 and 3-30 | Engineering for the Parking Lot Expansion and Site Beautification (Project | — |  |
-| 2026-10-28 | combined | B82 L1 AND 3-30 | AND SIDING PLACE, BLOCK 82 | B82 L1 AND 3-30 | The proposed connection/extension is designed to provide sanitary sewer service to a proposed townhouse residential development consisting of sixty (60) townhomes | — |  |
-| 2026-10-28 | combined | Payment to the Authority by the applicant for all  | Payment to the Authority by the applicant for all Authority application fees |  | Water conserving plumbing fixtures shall be installed in the building serviced by this connection | — |  |
+| 2026-11-03 | planning | B4401 L27 | Airmount Avenue; Block 4401 | B4401 L27; B3603 L1 |  | site plan, variance |  |
 
-New documents since last digest: 1253 (agenda, minutes)
+**Recent decisions / hearings**
+
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-14 | zoning | B5501 L4 |  | 191-2026 Resolution: authorizing the tax redemption for Block 5501, Lot 4, in the amount of $5,470.27 192-2026 Resolution: confirming receipt of the 2025 audit 193-2026 R | — | approved | Atty: Peter A. Scandariato |
+
+New documents since last digest: 10 (agenda, minutes)
+
+### Ridgefield Park
+
+
+New documents since last digest: 103 (agenda, minutes)
 
 ### Ridgewood
 
-Upcoming meetings with posted agendas: 2026-10-27, 2026-10-28, 2026-10-29, 2026-11-10  
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-10  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | B2404 L3 |  | B2404 L3; B2403 L17.01 |  | — |  |
-| 2026-10-27 | zoning | B4107 L17.01 | Chestnut VD Holdings LLC | B4107 L17.01; B4311 L17 |  | — |  |
-
-New documents since last digest: 2953 (agenda, application, notice, review_letter, site_plan)
+New documents since last digest: 17 (agenda, minutes)
 
 ### Teaneck
 
 
-New documents since last digest: 83 (agenda, application, checklist, fee_schedule, minutes, ordinance, resolution, site_plan)
+New documents since last digest: 4 (agenda, application)
 
 ### Tenafly
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 610 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | zoning | ZB-2026-09A | • D&C Chevrolet |  |  | minor subdivision, extension |  |
+| 2026-11-02 | zoning | ZB-2026-14 | • Oxford Property Holdings LLC |  | allow a Basketball Court to be constructed at 158 Oxford Drive, citing overage of impervious coverage | — |  |
+
+New documents since last digest: 93 (agenda, application, minutes)
 
 ### Wallington
 
 
-New documents since last digest: 171 (agenda, minutes, notice)
+New documents since last digest: 3 (agenda, notice)
 
 ### Westwood
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 593 (agenda, minutes)
+**Coming up**
 
-### Wyckoff
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | zoning | ZB-25-0110 | CJA Ventures LLC-78-84 Washington Avenue- Use variance to |  |  | site plan, subdivision, use variance (d), bulk variance (c) |  |
+| 2026-11-02 | zoning | ZB-24-0106 | Eagle Rock Realty Investments-665 Broadway- Use |  |  | site plan, subdivision, use variance (d), bulk variance (c) |  |
+| 2026-11-02 | zoning | ZB-25-0111 |  |  |  | amended site plan, variance |  |
+| 2026-11-02 | zoning | ZB-26-0111 | Eli Shmulik- 111 West End Avenue- Bulk variance for lot coverage |  |  | bulk variance (c) |  |
+| 2026-11-02 | zoning | ZB-26-0112 | Paul Marynchev-58 Cypress Street- Bulk variance for building |  | building coverage to construct a sunroom- proposed 26% building coverage ( Carried to 12/7/26) | bulk variance (c) |  |
 
-
-New documents since last digest: 12 (minutes, schedule)
+New documents since last digest: 2 (agenda, minutes)
 
 ## Burlington County
 
 ### Bass River Township
 
 
-New documents since last digest: 307 (agenda, notice, resolution)
+New documents since last digest: 5 (agenda, application, notice, site_plan)
 
 ### Burlington City
 
@@ -329,70 +323,67 @@ New documents since last digest: 307 (agenda, notice, resolution)
 |---|---|---|---|---|---|---|---|
 | 2026-10-08 | planning | PKST BURLINGTON NECK LLC | PKST BURLINGTON NECK LLC |  | minor site plan | heard |  |
 
-New documents since last digest: 6 (resolution)
-
 ### Burlington Township
 
-Upcoming meetings with posted agendas: 2026-10-28  
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-05  
 
-**Recent decisions / hearings**
+**Coming up**
 
-| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-09-29 | combined | NJ Division of Pensions and Benefits (pdf) |  |  | — | approved |  |
+| 2026-11-04 | combined | 2026-22 | Lou Ference | B12 L4 |  | — |  |
+| 2026-11-04 | combined | 2026-26 | Same | B138.01 L8 | HPC Application 2026-26: Exterior Repairs & Fence installation Owner: Scott Amyx Applicant: Same Site: 122 E. Broad Street | — |  |
+| 2026-11-04 | combined | 2026-27 | Same | B12 L21 | HPC Application 2026-27: HVAC Installation Owner: Crise Denis Applicant: Same Site: 31 W. Union Street | — |  |
+| 2026-11-04 | combined | 2026-28 | Anthony Zawojski, Pete's Roofing | B17 L35 |  | — |  |
+| 2026-11-04 | combined | 2026-29 | Frank F. Caruso |  |  | — |  |
+| 2026-11-05 | combined | BUR-1947-19 | OF BURLINGTON, ET AL., DOCKET NUMBER BUR-1947-19 |  |  | — |  |
 
-New documents since last digest: 41 (agenda, application, checklist, notice, ordinance, resolution, schedule, site_plan)
+New documents since last digest: 15 (agenda, application, checklist, resolution)
+
+### Cinnaminson
+
+Upcoming meetings with posted agendas: 2026-11-04  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-04 | zoning | 26-07-01 | Christiano De Oliveira & Jociene L. Palva/JCE Holdings, LLC | B3601.01 L1 - 17 | construct and use a detached pool house accessory structure to serve existing residential property and swimming pool | — |  |
+| 2026-11-04 | zoning | 26-02-01 | Seven Zero Nine Property Group, LLC | B425 L7.02 |  | bulk variance (c) |  |
+| 2026-11-04 | zoning | B304 L8 | 535 Kern Street, Cinnaminson | B304 L8; B1002 L18 |  | — |  |
+| 2026-11-04 | zoning | B2810 L10 | 2413 Arden Road, Cinnaminson | B2810 L10 |  | — |  |
+
+New documents since last digest: 3 (agenda, minutes)
 
 ### Delran Township
 
 
-New documents since last digest: 78 (agenda, checklist, notice, resolution)
+New documents since last digest: 2 (notice)
 
 ### Florence Township
 
 
-New documents since last digest: 76 (agenda, application, checklist, notice, ordinance, resolution)
-
-### Lumberton
-
-
-New documents since last digest: 5 (application, notice, ordinance, resolution)
+New documents since last digest: 8 (application, ordinance)
 
 ### Mansfield Township
 
 
-New documents since last digest: 168 (agenda, minutes, notice, resolution)
-
-### Maple Shade
-
-
-New documents since last digest: 595 (agenda, minutes, notice, ordinance, resolution)
+New documents since last digest: 186 (agenda, minutes, resolution)
 
 ### Medford Lakes
 
-Upcoming meetings with posted agendas: 2026-10-28  
 
-New documents since last digest: 239 (agenda, minutes)
+New documents since last digest: 1 (agenda)
 
 ### Moorestown
 
 
-New documents since last digest: 468 (agenda)
+New documents since last digest: 1 (agenda)
 
 ### North Hanover Township
 
 
-New documents since last digest: 357 (agenda, fee_schedule, minutes, notice, ordinance)
-
-### Riverside
-
-
-New documents since last digest: 149 (agenda, minutes)
-
-### Riverton
-
-
-New documents since last digest: 66 (agenda, minutes, ordinance, site_plan)
+New documents since last digest: 78 (fee_schedule, ordinance, resolution)
 
 ### Shamong
 
@@ -403,44 +394,28 @@ New documents since last digest: 66 (agenda, minutes, ordinance, site_plan)
 |---|---|---|---|---|---|---|---|
 | 2026-10-09 | combined | Minutes and Resolutions |  |  | — | heard |  |
 
-New documents since last digest: 90 (agenda, minutes, resolution)
-
-### Willingboro
-
-
-New documents since last digest: 194 (application, checklist, notice, resolution)
-
 ## Camden County
 
 ### Barrington
 
 
-New documents since last digest: 33 (agenda, application, minutes, ordinance, resolution, site_plan)
+New documents since last digest: 4 (agenda, minutes, resolution)
 
 ### Bellmawr
 
 
-New documents since last digest: 296 (agenda, minutes)
-
-### Berlin Borough
-
-
-New documents since last digest: 361 (agenda, minutes)
-
-### Berlin Township
-
-
-New documents since last digest: 361 (agenda, minutes)
+New documents since last digest: 79 (agenda, application, minutes, notice, ordinance, resolution, site_plan)
 
 ### Brooklawn
 
 
-New documents since last digest: 249 (agenda, minutes, notice, ordinance)
+New documents since last digest: 242 (agenda, minutes, notice, ordinance)
 
 ### Cherry Hill Township
 
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-05  
 
-New documents since last digest: 942 (agenda, application, minutes, site_plan)
+New documents since last digest: 14 (agenda, application, minutes, site_plan)
 
 ### Chesilhurst
 
@@ -452,127 +427,114 @@ New documents since last digest: 942 (agenda, application, minutes, site_plan)
 | 2027-06-30 | planning | Resolution 2026-106 Dhanrala, LLC |  |  | — | approved |  |
 | 2026-12-31 | planning | Resolution 2026-95 Appt of ERI to Zoning Officer ( |  |  | — | approved |  |
 
-New documents since last digest: 269 (agenda, minutes, resolution)
-
 ### Collingswood
 
 
-New documents since last digest: 11 (application, checklist, notice, resolution)
+New documents since last digest: 1 (notice)
 
 ### Laurel Springs
 
 
-New documents since last digest: 75 (agenda, minutes)
+New documents since last digest: 2 (agenda, minutes)
 
 ### Lawnside
 
+Upcoming meetings with posted agendas: 2026-11-04  
 
-New documents since last digest: 105 (agenda, minutes, notice)
+New documents since last digest: 5 (agenda, minutes)
 
 ### Somerdale
 
 
-New documents since last digest: 71 (agenda, application, minutes, notice, ordinance, schedule)
+New documents since last digest: 1 (ordinance)
 
 ### Stratford
 
 
-New documents since last digest: 1046 (agenda, minutes, notice, resolution)
+New documents since last digest: 22 (agenda, application, minutes, notice, ordinance)
 
 ### Tavistock
 
 
-New documents since last digest: 181 (minutes, ordinance, resolution)
-
-### Voorhees
-
-Upcoming meetings with posted agendas: 2026-10-28  
-
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-28 | planning | B213.01 L95 & 96 |  | B213.01 L95 & 96 |  | preliminary & final major site plan | Eng: Rashane Thapa |
-
-New documents since last digest: 171 (agenda, minutes)
+New documents since last digest: 1 (agenda)
 
 ### Waterford Township
 
 
-New documents since last digest: 360 (agenda, minutes, notice)
+New documents since last digest: 7 (minutes, resolution)
 
 ## Cape May County
 
 ### Cape May Point
 
-Upcoming meetings with posted agendas: 2026-10-27  
+Upcoming meetings with posted agendas: 2026-11-04  
+
+New documents since last digest: 4 (agenda, minutes, notice)
+
+### Middle Township
+
+Upcoming meetings with posted agendas: 2026-11-02  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | The Tree Removal on Private Property Application s | The Tree Removal on Private Property Application shall be accompanied by a site |  | The Tree Removal on Private Property Application shall be accompanied by a site plan or drawing describing the location of the tree(s) to be removed, the species if known | site plan |  |
-| 2026-10-27 | planning | The application fee shall be seventy-five ($75) do | The application fee shall be seventy-five ($75) dollars. Funds received shall be |  |  | — |  |
-| 2026-10-27 | planning | D. Application Process for Trees on the Municipal  |  |  | Proposed trees shall be from the current "Approved List of Replacement Tree Species for Cape May Point" | site plan |  |
+| 2026-11-02 | zoning | SEWR310-106 |  |  |  | — |  |
+| 2026-11-02 | zoning | SEWR310-108 |  |  |  | — |  |
+| 2026-11-02 | zoning | SEWR310-101 |  |  |  | — |  |
+| 2026-11-02 | zoning | SEWR310-87 |  |  |  | — |  |
+| 2026-11-02 | zoning | B1031 L2 | TO BE HELD AMONG CONTIGUOUS OWNERS OF BLOCK 1031 | B1031 L2 | Complete Ordinance is on file in the Clerk's Office | — |  |
+| 2026-11-02 | zoning | B1031 L17 | TO BE HELD AMONG CONTIGUOUS OWNERS OF BLOCK 1031 LOT 17 IN THE TOWNSHIP OF | B1031 L17 | Complete Ordinance is on file in the Clerk's Office | — |  |
+| 2026-11-02 | zoning | B936 L23 | TO BE HELD AMONG CONTIGUOUS OWNERS OF BLOCK 936 LOT 23 IN THE TOWNSHIP OF | B936 L23 | Complete Ordinance is on file in the Clerk's Office | — |  |
+| 2026-11-02 | zoning | B522 L13 | TO BE HELD AMONG CONTIGUOUS OWNERS OF BLOCK 522 LOT 13 IN THE TOWNSHIP OF | B522 L13 | Complete Ordinance is on file in the Clerk's Office | — |  |
 
-New documents since last digest: 52 (agenda, minutes, notice, ordinance, resolution)
-
-### Middle Township
-
-
-New documents since last digest: 122 (agenda, minutes)
+New documents since last digest: 2 (agenda)
 
 ### Stone Harbor
 
 
-New documents since last digest: 1175 (agenda, minutes)
+New documents since last digest: 2 (minutes)
 
 ### West Wildwood
 
 
-New documents since last digest: 449 (agenda, minutes, resolution)
+New documents since last digest: 384 (agenda, minutes)
 
 ### Wildwood Crest
 
+Upcoming meetings with posted agendas: 2026-11-03  
 
-New documents since last digest: 323 (agenda)
+New documents since last digest: 145 (agenda)
 
 ## Cumberland County
 
 ### Fairfield Township
 
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-03, 2026-11-04  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | planning | B2101 L1, 2 and 3 | of Fairfield and rezoning Block 2101 | B2101 L1, 2 and 3 | install LED lighting in the Hollywood Park and Plymouth Street Ball Fields in the amount of $977,500.00 (under NJ State Co-Op) Authorization to hire Keystone Sports Const | — |  |
-| 2026-10-26 | planning | B5104 L18.22 | Authorization to grant full exemption from Property Taxes for Block 5104 | B5104 L18.22; B4605 L7; B3507 L2 | Authorization to grant full exemption from Property Taxes for Block 5104, Lot 18.22 Authorization to grant full exemption from Property taxes for Block 4605, Lot 7 Author | — |  |
-
-New documents since last digest: 278 (agenda, minutes, notice, ordinance)
+New documents since last digest: 6 (agenda)
 
 ### Hopewell Township
 
-Upcoming meetings with posted agendas: 2026-10-28, 2026-11-04  
+Upcoming meetings with posted agendas: 2026-11-04  
 
-New documents since last digest: 1069 (agenda, minutes)
+New documents since last digest: 11 (agenda, minutes, site_plan)
 
 ### Maurice River Township
 
 
-New documents since last digest: 55 (agenda, application, notice, ordinance, resolution)
+New documents since last digest: 1 (notice)
 
 ### Millville
 
 Upcoming meetings with posted agendas: 2026-11-14  
 
-New documents since last digest: 359 (agenda)
+New documents since last digest: 33 (agenda)
 
 ### Stow Creek Township
 
 
-New documents since last digest: 60 (application, minutes, ordinance)
+New documents since last digest: 3 (application, notice)
 
 ### Upper Deerfield Township
 
@@ -582,22 +544,23 @@ New documents since last digest: 60 (application, minutes, ordinance)
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
 | 2028-12-31 | planning | 26-36 Appointment Township Administrator |  |  | — | approved |  |
+| 2028-12-31 | planning | 26-44 Appointing Housing Officer |  |  | — | approved |  |
 | 2026-12-31 | planning | 26-09 Appointing Treasurer – Amy Colaneri |  |  | — | approved |  |
 | 2026-12-31 | planning | 26-08 Appointing a Commissioner and Deputy To ACMJ |  |  | — | heard |  |
 | 2026-12-31 | planning | 26-42 Appointing Zoning Officer |  |  | — | heard |  |
 
-New documents since last digest: 1591 (agenda, minutes, resolution)
+New documents since last digest: 7 (agenda, minutes, resolution)
 
 ### Vineland
 
 
-New documents since last digest: 329 (agenda, application, minutes, notice, ordinance, resolution, schedule, site_plan)
+New documents since last digest: 22 (application, fee_schedule, notice, ordinance, resolution, site_plan)
 
 ## Essex County
 
 ### Bloomfield
 
-Upcoming meetings with posted agendas: 2026-11-05, 2026-11-19  
+Upcoming meetings with posted agendas: 2026-11-05, 2026-11-19, 2026-12-03  
 
 **Coming up**
 
@@ -613,6 +576,8 @@ Upcoming meetings with posted agendas: 2026-11-05, 2026-11-19
 | 2026-11-19 | zoning | B698 L50 |  | B698 L50 |  | — |  |
 | 2026-11-19 | zoning | Vitmar Realty, LLC | Vitmar Realty, LLC |  |  | minor site plan, use variance (d) |  |
 | 2026-11-19 | zoning | Application: seeking preliminary & final site plan |  |  | build a 35 unit apartment building in the R-2B zone | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
+| 2026-12-03 | zoning | B1171 L10 |  | B1171 L10 |  | — |  |
+| 2026-12-03 | zoning | Application: seeking a D1 Use variance for drive t |  |  |  | use variance (d), bulk variance (c) |  |
 
 **Recent decisions / hearings**
 
@@ -625,75 +590,48 @@ Upcoming meetings with posted agendas: 2026-11-05, 2026-11-19
 | 2026-10-15 | zoning | B1203 L14 | Miguel Garcia | Board discussion included 4 foot privacy fence in front/side yard, arborvitaes, new plantings and site distance | bulk variance (c) | heard |  |
 | 2026-10-15 | zoning | Application: seeking Class C Bulk variance for min |  | Board discussion included constructing a 2nd floor addition, overhanging 2 feet, driveway clearance, new condenser, split system, number of bedrooms, side entrance, addit | bulk variance (c) | denied |  |
 | 2026-10-15 | zoning | B1172 L68 | Sharon Malone | Board discussion included converting portion of attached garage into mud room and pantry, access to house through the garage, replacement of back steps, functional storag | bulk variance (c) | heard |  |
-| 2026-10-01 | zoning | 5. Applications to consider for Board Planner and/ |  |  | variance | heard |  |
-| 2026-10-01 | zoning | B280 L10 and 11 | Integrity Holdings and Development | Townhouses are not a permitted use | use variance (d) | heard |  |
-| 2026-10-01 | zoning | Application: seeking a D1 Use variance, a design w |  | Board discussion included 3 story building, commercial and residential uses, internal modifications, 2nd floor expansion, revised plans, HVAC location, fence, landscaping | site plan, use variance (d) | approved_with_conditions |  |
 
-New documents since last digest: 816 (agenda, minutes)
+New documents since last digest: 9 (agenda, minutes)
+
+### Caldwell
+
+Upcoming meetings with posted agendas: 2026-11-04  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-04 | zoning | Z26-006 |  |  |  | — |  |
+| 2026-11-04 | zoning | Z26-007 |  |  |  | — |  |
+| 2026-11-04 | zoning | Z25-002 |  |  |  | — |  |
+| 2026-11-04 | zoning | Z26-005 |  |  |  | — |  |
+
+New documents since last digest: 389 (agenda, minutes, resolution, site_plan)
 
 ### Cedar Grove
 
 
-New documents since last digest: 331 (agenda, minutes, notice, resolution)
-
-### East Orange
-
-
-New documents since last digest: 469 (agenda, notice)
+New documents since last digest: 2 (agenda)
 
 ### Fairfield
 
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-03, 2026-11-04  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | planning | B2101 L1, 2 and 3 | of Fairfield and rezoning Block 2101 | B2101 L1, 2 and 3 | install LED lighting in the Hollywood Park and Plymouth Street Ball Fields in the amount of $977,500.00 (under NJ State Co-Op) Authorization to hire Keystone Sports Const | — |  |
-| 2026-10-26 | planning | B5104 L18.22 | Authorization to grant full exemption from Property Taxes for Block 5104 | B5104 L18.22; B4605 L7; B3507 L2 | Authorization to grant full exemption from Property Taxes for Block 5104, Lot 18.22 Authorization to grant full exemption from Property taxes for Block 4605, Lot 7 Author | — |  |
-
-New documents since last digest: 278 (agenda, minutes, notice, ordinance)
+New documents since last digest: 6 (agenda)
 
 ### Livingston
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | 2018-16 |  Application No. 2018-16-PFSP-UV (Amendment #2); Crystal Plaza Group, Inc |  |  | — |  |
-| 2026-10-27 | zoning | 2026-1 |  3 Vanderbilt Drive; Application No. 2026-1-V |  |  | — |  |
-| 2026-10-27 | zoning | 2026-4 |  11 Bunyan Drive; Application No. 2026-4-V |  |  | — |  |
-| 2026-10-27 | zoning | 2026-67 |  8 Brookside Place; Application No. 2026-67-V |  |  | — |  |
-| 2026-10-27 | zoning | 2026-43 |  14 Amherst Place; Application No. 2026-43-V |  |  | variance |  |
-| 2026-10-27 | zoning | B6101 L20 | ; Lot 20 | B6101 L20 |  | — |  |
-| 2026-10-27 | zoning | 2026-27 |  |  | 43.42 proposed (to deck) | variance |  |
-| 2026-10-27 | zoning | B7500 L8 |  | B7500 L8 |  | variance |  |
-| 2026-10-27 | zoning | 2026-29 |  |  | 59.25' proposed | variance |  |
-| 2026-10-27 | zoning | B4204 L1 |  | B4204 L1 |  | variance |  |
-| 2026-10-27 | zoning | 2026-55 |  |  | 3.4% variance requested.  Garage – Proposing 9.92' (width) x 19.5' (length) undersized garage | variance |  |
-| 2026-10-27 | zoning | B2006 L28 |  | B2006 L28 |  | variance |  |
-| 2026-10-27 | zoning | 2026-37 |  |  |  | variance |  |
-| 2026-10-27 | zoning | B703 L16 |  | B703 L16 |  | variance |  |
-| 2026-10-27 | zoning | 2026-65 |  |  | 42.05' proposed | variance |  |
-| 2026-10-27 | zoning | B4603 L11 |  | B4603 L11 |  | variance |  |
-| 2026-10-27 | zoning | 2026-66 |  |  | 30.9' proposed (existing) | variance |  |
-| 2026-10-27 | zoning | B2902 L11 |  | B2902 L11 |  | variance |  |
-| 2026-10-27 | zoning | 2026-32 |  |  | 30' proposed (existing) | variance |  |
-| 2026-10-27 | zoning | B1306 L32 |  | B1306 L32 |  | variance |  |
-
-New documents since last digest: 738 (agenda)
+New documents since last digest: 1 (agenda)
 
 ### Millburn
 
-Upcoming meetings with posted agendas: 2026-10-26, 2026-11-02  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04, 2026-11-12  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | Discuss New Application | Discuss New Application |  |  | — |  |
 | 2026-11-02 | zoning | 4090-26 | Cal#4090-26, David Sodowick |  |  | — |  |
 | 2026-11-02 | zoning | 4100-26 | Cal#4100-26 |  |  | — |  |
 | 2026-11-02 | zoning | 4043-25 | Cal#4043-25, Sowmya Jairam |  |  | bulk variance (c) |  |
@@ -703,6 +641,14 @@ Upcoming meetings with posted agendas: 2026-10-26, 2026-11-02
 | 2026-11-02 | zoning | 4102-26 | Anthony Sicoli | B2201 L9 | construct an addition Violation of: 606.2e1d | — |  |
 | 2026-11-02 | zoning | 4103-26 | Fang/Nancy Guo | B1902 L17 | construct an addition Violation of: 606.2e1e1a | — |  |
 | 2026-11-02 | zoning | 4088-26 | NJAW | B5302 L5.01 | construct an addition to existing pole barn Amended site plan approval w/variances The next Zoning Board meeting is scheduled for December 7, 2026, 7:00 PM at Millburn Pu | amended site plan, variance |  |
+| 2026-11-04 | planning | 26-006 |  App #26-006, JFK-SH Phase II LLC, Upton | B5303 L4 |  | preliminary & final major site plan |  |
+| 2026-11-04 | planning | 26-007 |  App #26-007, Consulting G2 LLC | B3405 L8 |  | preliminary & final major subdivision |  |
+| 2026-11-04 | planning | 26-009 |  App #26-009, Stronger Together LLC, Burn Boot Camp | B1904 L20. | Final Major Site Plan Approval with C variance DISCUSSION ITEM  Master Plan Reexamination Recommendation to Township Committee for 2027 The next scheduled Planning Board | preliminary & final major site plan, bulk variance (c) |  |
+| 2026-11-12 | planning | B2201 L9 | Re-Amended Approval of Application #607 | B2201 L9 |  | — |  |
+| 2026-11-12 | planning | B2111 L14 | Approval of Application #643 | B2111 L14 |  | — |  |
+| 2026-11-12 | planning | B3405 L8 | 44 West Road; Block #3405 | B3405 L8 | construction of a new dwelling, and other associated exterior site improvements | — |  |
+| 2026-11-12 | planning | B2202 L12 | 61 Western Drive; Block #2202; Lot 12 Contributing Property; Short | B2202 L12 | construct a rear addition, new covered front entrance portico with columns, replace first floor windows and doors, construct rear balcony, and other associated exterior s | — |  |
+| 2026-11-12 | planning | B201 L17 | 171 Sagamore Road; Block #201; Lot 17 Non-Contributing Property; Wyoming | B201 L17 |  | — |  |
 
 **Recent decisions / hearings**
 
@@ -710,10 +656,17 @@ Upcoming meetings with posted agendas: 2026-10-26, 2026-11-02
 |---|---|---|---|---|---|---|---|
 | 2026-10-07 | planning | 24-003 |  |  | preliminary & final major site plan, bulk variance (c), conditional use | denied, 14 conditions | Eng: John Ferrante, P.E; Atty: Michael T. Lavigne, ESQ, Philip Pfeffer, ESQ [testified]; Planner: John J. McDonough, P.P (John J. McDonough Associates) [testified]; Arch: ALL FITTINGS, CLA |
 
-New documents since last digest: 778 (agenda, application, minutes, resolution, review_letter)
+New documents since last digest: 31 (agenda, application, minutes, resolution, review_letter, site_plan)
 
 ### Montclair
 
+Upcoming meetings with posted agendas: 2026-11-04  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-04 | zoning | B3302 L10. |  | B3302 L10. |  | use variance (d) |  |
 
 **Recent decisions / hearings**
 
@@ -721,80 +674,50 @@ New documents since last digest: 778 (agenda, application, minutes, resolution, 
 |---|---|---|---|---|---|---|---|
 | 2026-12-17 | zoning | BA Resolution: Contract Extension for Stickel Koen |  |  | — | heard |  |
 
-New documents since last digest: 930 (agenda, minutes, resolution)
+New documents since last digest: 176 (agenda, minutes)
 
 ### North Caldwell
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-New documents since last digest: 211 (agenda, minutes, notice)
+New documents since last digest: 7 (agenda, minutes, notice)
 
 ### Orange
 
 
-New documents since last digest: 280 (agenda, notice, resolution)
-
-### Roseland
-
-
-New documents since last digest: 247 (agenda, minutes)
-
-### South Orange
-
-
-New documents since last digest: 6 (application, resolution, schedule)
+New documents since last digest: 2 (agenda, notice)
 
 ### Verona
 
 
-New documents since last digest: 629 (agenda, application, minutes, resolution, site_plan)
+New documents since last digest: 3 (resolution, site_plan)
 
 ### West Orange
 
-Upcoming meetings with posted agendas: 2026-10-27  
+Upcoming meetings with posted agendas: 2026-11-04  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | B176.05 L10 | century dwellings and commercial properties. These resources include Block 176.05 | B176.05 L10 | century dwellings and commercial properties | — |  |
-| 2026-10-27 | zoning | B152.22 L142.01, 142.02, 142.03 |  | B152.22 L142.01, 142.02, 142.03; B154.06 L13, 14, 15 | Important considerations will be if the architectural resource possesses the requisite historical significance and integrity for listing in the NRHP and whether the propo | — |  |
-| 2026-10-27 | zoning | B171 L12 | COMMUNITY DISTRICT (CCRC) AT BLOCK 171 LOT 12 AND TO ESTABLISH STANDARDS AND | B171 L12 | November 10, 2025, which proposes a CCRC District at 1155 Pleasant Valley Way (Block 171 Lot 12), as one of the compliance components proposed to achieve Compliance Certi | — |  |
-| 2026-10-27 | zoning | B152.02 L186 |  | B152.02 L186; B169 L19 and 19.01; B106 L20.02; B89 L1.01, 3, 4, 5, 6, 10, 12, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 and 41.01 |  | — |  |
-| 2026-10-27 | zoning | B171.03 L17 |  | B171.03 L17; B155 L40.04; B171 L12 | Apartment units offer, at a minimum, one unfurnished room, a private bathroom, a kitchenette, and a lockable door on the unit entrance | conditional use |  |
-| 2026-10-27 | zoning | Sustainability | Sustainability |  | Construction shall include green or recycled building materials for majority of floorings, paint, coatings, and ceiling finishes | subdivision |  |
-
-New documents since last digest: 310 (agenda, notice, ordinance)
+New documents since last digest: 18 (agenda, notice, ordinance)
 
 ## Gloucester County
 
 ### Clayton
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | combined | B1904 L14 & 16 | a/k/a Block 1904 | B1904 L14 & 16; B1904 L24.01, 24.02 |  | minor site plan, minor subdivision |  |
-| 2026-10-26 | combined | B2002 L7 | Res. #22-2026 Granting Extension of Minor Subdivision Approval for Block 2002 | B2002 L7 |  | minor subdivision |  |
-
-New documents since last digest: 1273 (agenda, minutes, resolution)
+New documents since last digest: 12 (agenda, minutes, ordinance, resolution)
 
 ### Glassboro
 
 
-New documents since last digest: 35 (agenda, application, checklist, minutes, notice, ordinance, other, resolution, schedule)
+New documents since last digest: 1 (notice)
 
 ### Monroe Township
 
 
-New documents since last digest: 773 (agenda, minutes, resolution)
+New documents since last digest: 1 (agenda)
 
 ### South Harrison Township
 
 
-New documents since last digest: 45 (agenda, application, notice, ordinance, resolution, site_plan)
+New documents since last digest: 17 (agenda, application, notice)
 
 ### Westville
 
@@ -804,35 +727,50 @@ New documents since last digest: 45 (agenda, application, notice, ordinance, res
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
 | 2026-12-31 | combined | Resolution No. 2026-02 |  |  | — | memorialized |  |
+| 2026-10-13 | combined | Resolution 132-2026 |  |  | — | heard |  |
 
-New documents since last digest: 848 (agenda, minutes, notice, resolution)
+New documents since last digest: 771 (agenda, minutes, resolution)
 
 ### Woodbury
 
 
-New documents since last digest: 124 (agenda, minutes, notice, resolution)
+New documents since last digest: 63 (agenda, minutes, notice, resolution, schedule)
 
 ## Hudson County
 
-### Bayonne
-
-
-New documents since last digest: 94 (application, checklist, resolution, site_plan)
-
 ### Harrison
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 418 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | planning | B156 L1 |  CSG Law Letter RE | B156 L1; B131 L17 |  | — |  |
+| 2026-11-02 | planning | 2026-03 |  Case #2026-03 304 F.E. Rodgers Blvd. No., BLK 21 |  |  | — |  |
+
+New documents since last digest: 46 (agenda, minutes)
 
 ### Jersey City
 
 
-New documents since last digest: 84 (agenda, application, checklist, fee_schedule, minutes, notice, ordinance, site_plan)
+New documents since last digest: 25 (agenda, application, resolution, site_plan)
 
 ### West New York
 
 
-New documents since last digest: 270 (agenda, minutes, notice)
+**Recent decisions / hearings**
+
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-07 | zoning | B2 L9, 10 and 11 | official tax maps of the Town as |  | subdivision | approved |  |
+| 2026-10-07 | zoning | B108 L3, 5 and 6 | official tax maps of the Town as Block 108 |  | — | approved |  |
+| 2026-10-07 | zoning | B118 L3 | FOR THE PROPERTY IDENTIFIED AS BLOCK 118 | WHEREAS, the Town of West New York (the "Town") is a political subdivision of the State of New Jersey (the "State"), located in the County of Hudson (the "County") | subdivision | heard |  |
+| 2026-10-07 | zoning | B118 L3 | Area, entitled "560 55th Street Redevelopment Plan | WHEREAS, the Redeveloper has proposed to undertake the following actions in accordance with the terms of the Redevelopment Agreement and the Redevelopment Plan: construct | concept / informal review | heard |  |
+| 2026-10-07 | zoning | B32 L27, 28 AND 29 | AND 29 ON THE OFFICIAL TAX MAPS OF THE TOWN | WHEREAS, the Town of West New York (the "Town") is a political subdivision of the State of New Jersey (the "State"), located in the County of Hudson (the "County"); and O | subdivision | heard |  |
+| 2026-10-07 | zoning | B32 L27, 28 and 29 | official tax maps of the Town as Block 32 |  | — | approved | Atty: Aristides F. Hernandez, ESQ |
+
+New documents since last digest: 7 (agenda, minutes, notice)
 
 ## Hunterdon County
 
@@ -844,138 +782,94 @@ New documents since last digest: 26 (agenda, minutes)
 ### Clinton Town
 
 
-New documents since last digest: 230 (agenda, minutes)
+New documents since last digest: 108 (agenda, minutes)
 
 ### Clinton Township
 
 
-New documents since last digest: 230 (agenda, minutes)
+New documents since last digest: 108 (agenda, minutes)
 
-### Delaware Township
-
-
-New documents since last digest: 9 (application, notice, ordinance, resolution, schedule, site_plan)
-
-### East Amwell Township
+### Flemington
 
 
-New documents since last digest: 418 (agenda, minutes, other)
-
-### Franklin Township
-
-
-New documents since last digest: 458 (agenda, notice, ordinance, resolution)
-
-### Lambertville
-
-
-New documents since last digest: 15 (application, checklist, ordinance, resolution, site_plan)
+New documents since last digest: 7 (notice, resolution)
 
 ### Milford
 
+Upcoming meetings with posted agendas: 2026-11-03  
 
-New documents since last digest: 35 (agenda, application, minutes, ordinance, site_plan)
-
-### Readington Township
-
-
-New documents since last digest: 4 (notice, resolution)
+New documents since last digest: 1 (agenda)
 
 ### West Amwell Township
 
 
-New documents since last digest: 209 (agenda, minutes, notice, ordinance)
+New documents since last digest: 43 (agenda, application, checklist, fee_schedule, notice, ordinance)
 
 ## Mercer County
 
 ### Ewing Township
 
 
-New documents since last digest: 455 (agenda, minutes, notice, resolution)
+New documents since last digest: 240 (agenda, notice)
 
 ### Hopewell Township
 
-Upcoming meetings with posted agendas: 2026-10-28, 2026-11-04  
+Upcoming meetings with posted agendas: 2026-11-04  
 
-New documents since last digest: 1069 (agenda, minutes)
+New documents since last digest: 11 (agenda, minutes, site_plan)
 
 ### Princeton
 
-Upcoming meetings with posted agendas: 2026-10-28  
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-05  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28 | zoning | B5904 L13 |  | B5904 L13 |  | bulk variance (c) |  |
-| 2026-10-28 | zoning | Z26-767 |  |  |  | — |  |
-| 2026-10-28 | zoning | B5501 L7 |  | B5501 L7 | a C (1) variance for lot area, lot width at building line, and lot frontage to construct a new single-family dwelling | bulk variance (c) |  |
-| 2026-10-28 | zoning | Z26-765 |  |  |  | — |  |
-| 2026-10-28 | zoning | B7.02 L7.02 |  | B7.02 L7.02 |  | interpretation |  |
-| 2026-10-28 | zoning | Z26-766 |  |  |  | — |  |
-| 2026-10-28 | zoning | B7507 L10 | DEER PATH; Block 7507 | B7507 L10 | allow front-facing garage in exception to section T10B-255.2(d)(1) The garage must be set back 16' from the nearest façade | bulk variance (c) |  |
-| 2026-10-28 | zoning | Z25-719 |  |  |  | — |  |
-| 2026-10-28 | zoning | B50.01 L12 | FITZRANDOLPH RD; Block 50.01 | B50.01 L12 | allow conversion of garage to living space, new sunroom addition and parking pad | bulk variance (c) |  |
-| 2026-10-28 | zoning | Z26-752 |  |  |  | — |  |
-| 2026-10-28 | zoning | B7901 L3 | RIVERSIDE DRIVE; Block 7901 | B7901 L3 | allow addition and alterations (garage / addition) | bulk variance (c) |  |
-| 2026-10-28 | zoning | Z26-758 |  |  |  | — |  |
+| 2026-11-04 | planning | B5502 L5 | Toll NJ I | B5502 L5 |  | — |  |
+| 2026-11-04 | planning | P2525-712P |  |  |  | — | Atty: Kevin J. Moore |
+| 2026-11-05 | planning | ROVAL245-247 | *APPLICATION |  |  | — |  |
+| 2026-11-05 | planning | B48.01 L5 |  | B48.01 L5 |  | — |  |
+| 2026-11-05 | planning | P2626-741P |  |  |  | — |  |
 
-New documents since last digest: 1066 (agenda, minutes, notice)
-
-### Trenton
-
-
-New documents since last digest: 157 (agenda, minutes)
+New documents since last digest: 10 (agenda, notice)
 
 ### West Windsor
 
 
-New documents since last digest: 150 (agenda, minutes)
+New documents since last digest: 2 (agenda)
 
 ## Middlesex County
 
-### Carteret
-
-
-New documents since last digest: 42 (agenda, application, minutes, notice, ordinance, resolution, schedule)
-
 ### Cranbury
 
-Upcoming meetings with posted agendas: 2026-10-26, 2026-11-10  
-
-New documents since last digest: 304 (agenda, minutes, notice)
-
-### Dunellen
-
-
-New documents since last digest: 10 (agenda, minutes, notice, resolution, site_plan)
-
-### East Brunswick
-
-
-New documents since last digest: 798 (agenda, minutes)
-
-### Edison
-
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-05, 2026-11-10  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | planning | B52.05 L24. | such remaining provisions of this Ordinance | B52.05 L24.; B340 L1.03,1.30 and 2.01; B730.G L28.A; B757 L41 | R.554-102026 Resolution authorizing the addition of an approved cooperative purchasing agreement/state contract to the list of previously authorized purchasing contracts | — |  |
+| 2026-11-04 | zoning | ZBA424-26 | *ZBA424-26 Hiten Makwana | B20.05 L16 |  | bulk variance (c) |  |
+| 2026-11-04 | zoning | ZBA421-26 | *ZBA421-26 PRC Development Co | B21.03 L10.06 |  | bulk variance (c) |  |
+| 2026-11-05 | planning | PB411-25 | *PB411-25 Kerzner Associates | B19 L13.02 |  | preliminary & final major site plan |  |
+| 2026-11-05 | planning | PB417-26 | *PB417-26 William & Bonnie Murphy | B23 L98.02 |  | preliminary & final major subdivision, bulk variance (c) |  |
 
-New documents since last digest: 238 (agenda, notice)
+New documents since last digest: 13 (agenda, minutes)
+
+### East Brunswick
+
+
+New documents since last digest: 2 (agenda)
+
+### Edison
+
+
+New documents since last digest: 2 (agenda)
 
 ### Helmetta
 
 
-New documents since last digest: 19 (agenda, minutes, notice, ordinance, resolution)
-
-### Metuchen
-
-
-New documents since last digest: 6 (application, minutes, ordinance, resolution, site_plan)
+New documents since last digest: 2 (agenda, minutes)
 
 ### Monroe Township
 
@@ -986,139 +880,133 @@ New documents since last digest: 6 (application, minutes, ordinance, resolution,
 |---|---|---|---|---|---|---|---|
 | 2026-10-05 | zoning | Draft Resolutions on the October 5, 2026 Agenda |  |  | — | approved |  |
 
-New documents since last digest: 47 (application, checklist, fee_schedule, minutes, notice, ordinance, resolution, review_letter, schedule)
-
 ### North Brunswick
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | B262.01 L5 | Veteran Block 262.01 | B262.01 L5; B262.01 L5.P |  | — | Atty: Progebin Ronald Gordon |
-| 2026-10-26 | zoning | B62 L2.39 | Veteran Block 62 | B62 L2.39; B62 L2.39.P |  | — | Atty: Progebin Ronald Gordon |
-| 2026-10-26 | zoning | B130 L4 | Veteran Block 130 | B130 L4; B130 L4.P |  | — | Atty: Progebin Ronald Gordon |
-| 2026-10-26 | zoning | B227 L26 | Known As Block 227 Lot 26 On The Official | B227 L26 | CAVEL GALLIMORE - CHIEF FINANCIAL OFFICER. a | concept / informal review | Atty: Ronald H. Gordon |
-
-New documents since last digest: 199 (agenda, minutes)
+New documents since last digest: 4 (agenda, minutes)
 
 ### Plainsboro Township
 
-Upcoming meetings with posted agendas: 2026-10-28, 2026-11-04  
+Upcoming meetings with posted agendas: 2026-11-04  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-28 | zoning | P87-28 | Releasing Inspection Escrow, Cash Bond & Performance Bond |  | Award of Contract Under Bergen County Purchasing COOP – Additions for new Cab and Chassis. g | — |  |
-
-New documents since last digest: 335 (agenda, minutes)
+New documents since last digest: 3 (agenda)
 
 ### Sayreville
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | combined | B83.16 L32 |  | B83.16 L32; B449 L10.61 | ADJOURNMENT **DISCLAIMER** All meetings of the Mayor and Council are subject to additions, deletions and amendments | — | Eng: Jay Cornell |
-
-New documents since last digest: 61 (agenda, application)
+New documents since last digest: 3 (agenda)
 
 ### South River
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 490 (agenda, minutes)
+New documents since last digest: 109 (agenda, minutes)
 
 ### Spotswood
 
 
-New documents since last digest: 32 (agenda, application, checklist, fee_schedule, minutes, notice, ordinance, site_plan)
+New documents since last digest: 6 (application, checklist, notice)
 
 ### Woodbridge Township
 
+Upcoming meetings with posted agendas: 2026-11-12  
 
-New documents since last digest: 633 (agenda)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-12 | zoning | Z25-79 | PSE&G #Z25-79 Granted 9/3/26 |  |  | — |  |
+| 2026-11-12 | zoning | Z25-22 | World Liberation Ministries, Inc. #Z25-22 |  |  | — |  |
+| 2026-11-12 | zoning | Z26-38 | Aarti Patel #Z26-38 Granted 10/8/26 |  |  | — |  |
+| 2026-11-12 | zoning | Z26-36 | Abida Arshas #Z26-36 Granted 10/8/26 |  |  | — |  |
+| 2026-11-12 | zoning | Z26-40 | Gurcharan Singh #Z26-40 Granted 10/8/26 |  |  | — |  |
+| 2026-11-12 | zoning | Z26-12 |  |  |  | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-41 |  |  |  | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-37 |  |  | reconstruct the first floor, construct a second floor addition, a rear two story addition, and an attached 1 car garage at a single family dwelling. *Postponed from 10/8/ | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-42 |  |  | construct a new two story single family dwelling. *Postponed from 10/22/26 | bulk variance (c) | Atty: Timothy Little |
+| 2026-11-12 | zoning | Z26-45 |  |  |  | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-52 |  |  | widen the driveway and legalize two sheds at a single family dwelling | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-49 |  |  | widen the driveway and legalize a gazebo and a shed at a single family dwelling | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-46 |  |  | construct an attached one car garage at a single-family dwelling | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-47 |  |  | make amendment to a previous approval: conversion of an approved garage into living space at a single-family dwelling | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-48 |  |  | construct a two-story single-family dwelling | bulk variance (c) |  |
+| 2026-11-12 | zoning | Z26-44 | Amended Minor Site Plan/Use & Bulk Variance #Z26-44 |  |  | amended site plan, minor site plan, bulk variance (c) | Atty: Donna M. Jennings |
+| 2026-11-12 | zoning | Z26-31 |  |  | construct an attached two-family dwelling | use variance (d) |  |
+| 2026-11-12 | zoning | Z26-04 |  |  |  | minor site plan, use variance (d) | Atty: Brian Chewcaski |
+| 2026-11-12 | zoning | Z26-15 |  |  |  | minor site plan, bulk variance (c) | Atty: Thomas W. Sharlow, Jr |
+| 2026-11-12 | zoning | Z25-80 |  |  | subdivide the property into two (2) lots: a 47,075-square-foot lot containing an existing seven-unit multifamily structure with associated parking improvements, and a 40 | minor site plan, minor subdivision, bulk variance (c) |  |
+
+New documents since last digest: 4 (agenda)
 
 ## Monmouth County
 
 ### Aberdeen
 
 
-New documents since last digest: 266 (agenda, minutes)
+New documents since last digest: 1 (agenda)
+
+### Allentown
+
+Upcoming meetings with posted agendas: 2026-11-02  
+
+New documents since last digest: 154 (agenda, minutes, resolution, site_plan)
 
 ### Asbury Park
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | B2008 L11 | Dunlewy Street / Block 2008 | B2008 L11 | renovate the existing two-story dwelling on an existing undersized and irregularly-shaped lot by converting the existing ground floor garage to habitable living area | bulk variance (c) |  |
-
-New documents since last digest: 1102 (agenda, application, minutes, resolution, review_letter)
+New documents since last digest: 7 (agenda, minutes, review_letter)
 
 ### Bradley Beach
 
 
-New documents since last digest: 863 (agenda, application, notice, site_plan)
+New documents since last digest: 286 (notice, ordinance, resolution)
 
 ### Eatontown
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 792 (agenda, minutes, notice)
+New documents since last digest: 6 (agenda, minutes, notice)
 
 ### Englishtown
 
 
-New documents since last digest: 363 (agenda, minutes, notice, ordinance, resolution, schedule)
+New documents since last digest: 344 (agenda, minutes, notice, ordinance, resolution)
 
 ### Farmingdale
 
 
-New documents since last digest: 537 (agenda, minutes, notice, ordinance, site_plan)
+New documents since last digest: 4 (agenda, minutes)
 
 ### Freehold Borough
 
-Upcoming meetings with posted agendas: 2026-10-27, 2026-10-28, 2026-11-05, 2026-11-10, 2026-11-25  
+Upcoming meetings with posted agendas: 2026-11-05, 2026-11-10, 2026-11-25  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | B101 L10 | Not Needed for Municipal Purposes (Block 101 | B101 L10 | WHEREAS, the Township of Freehold is applying for funding to conduct sidewalk renovations, crosswalk renovations, and the addition of electric signage along the school ro | — |  |
-| 2026-10-27 | planning | B92 L39 and 40 | Tax Map of the Township of Freehold as Block 92 | B92 L39 and 40; B71 L8 | R-26-245 Resolution Authorizing Person-to-Person Transfer of Plenary Retail Consumption/Hotel Liquor License No. 1316-36-009-006 From GPLR LLC To FRNJ Associates LLC | site plan, subdivision | Planner: Andrew Thomas (Thomas Planning Associates, L.L.C) |
-| 2026-10-27 | planning | B70.05 L10 | Tax Map of the Township of Freehold as Block 70.05 | B70.05 L10 | WHEREAS, at the Planning Board Hearing, the Report and findings thereof were presented, and members of the public, property owners, and persons interested in the investig | — | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
-| 2026-10-27 | planning | B92 L39 AND 40 | OF FREEHOLD AS BLOCK 92, LOTS 39 AND 40 (1092 BURKE | B92 L39 AND 40 |  | — |  |
-| 2026-10-27 | planning | B71 L8 |  | B71 L8 | BE IT FURTHER RESOLVED that a copy of this Resolution, certified by the Township Clerk to be a true copy be forwarded to each of the following: (a) Township Engineer (b) | site plan, subdivision |  |
 | 2026-11-05 | planning | B105 L27 & 28 |  | B105 L27 & 28 | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
+| 2026-11-05 | planning | B70.05 L10 | 05 Lot 10 | B70.05 L10 |  | appeal of zoning officer | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
 
-New documents since last digest: 481 (agenda, minutes)
+New documents since last digest: 14 (agenda, minutes)
 
 ### Freehold Township
 
-Upcoming meetings with posted agendas: 2026-10-27, 2026-10-28, 2026-11-05, 2026-11-10, 2026-11-25  
+Upcoming meetings with posted agendas: 2026-11-05, 2026-11-10, 2026-11-25  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | B101 L10 | Not Needed for Municipal Purposes (Block 101 | B101 L10 | WHEREAS, the Township of Freehold is applying for funding to conduct sidewalk renovations, crosswalk renovations, and the addition of electric signage along the school ro | — |  |
-| 2026-10-27 | planning | B92 L39 and 40 | Tax Map of the Township of Freehold as Block 92 | B92 L39 and 40; B71 L8 | R-26-245 Resolution Authorizing Person-to-Person Transfer of Plenary Retail Consumption/Hotel Liquor License No. 1316-36-009-006 From GPLR LLC To FRNJ Associates LLC | site plan, subdivision | Planner: Andrew Thomas (Thomas Planning Associates, L.L.C) |
-| 2026-10-27 | planning | B70.05 L10 | Tax Map of the Township of Freehold as Block 70.05 | B70.05 L10 | WHEREAS, at the Planning Board Hearing, the Report and findings thereof were presented, and members of the public, property owners, and persons interested in the investig | — | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
-| 2026-10-27 | planning | B92 L39 AND 40 | OF FREEHOLD AS BLOCK 92, LOTS 39 AND 40 (1092 BURKE | B92 L39 AND 40 |  | — |  |
-| 2026-10-27 | planning | B71 L8 |  | B71 L8 | BE IT FURTHER RESOLVED that a copy of this Resolution, certified by the Township Clerk to be a true copy be forwarded to each of the following: (a) Township Engineer (b) | site plan, subdivision |  |
 | 2026-11-05 | planning | B105 L27 & 28 |  | B105 L27 & 28 | The proposed subdivision would bring both existing Lots 27 & 28 into further compliance with the designated zones | subdivision, bulk variance (c) |  |
+| 2026-11-05 | planning | B70.05 L10 | 05 Lot 10 | B70.05 L10 |  | appeal of zoning officer | Planner: Andrew Thomas (Thomas Planning Associates, LLC) |
 
-New documents since last digest: 481 (agenda, minutes)
+New documents since last digest: 14 (agenda, minutes)
 
 ### Hazlet
 
 
-New documents since last digest: 496 (agenda, minutes)
+New documents since last digest: 74 (agenda, minutes)
 
 ### Highlands
 
@@ -1130,133 +1018,98 @@ New documents since last digest: 496 (agenda, minutes)
 | 2026-12-31 | combined | Current Resolution |  |  | — | approved |  |
 | 2026-10-26 | combined | L732-559 |  |  | — | heard |  |
 
-New documents since last digest: 169 (agenda, application, minutes, notice, ordinance, resolution)
+New documents since last digest: 72 (application, notice, ordinance)
 
 ### Holmdel
 
-Upcoming meetings with posted agendas: 2026-10-27  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | ZB-2025-08 | PROFESSIONAL SRVS- 33 BAYBERRY 1,731.00 ZB-2025-08 P Mariya Kotys R 10/16/26 10/20/26 188012 N |  | Foley) 20.00 6-01-25-240-240-301 B POL: Administrative R 07/30/26 10/20/26 140371 N 100.00 Vendor Total: 100.00 POSI0001 Positive Promotions, Inc. 26-02291 09/08/26 Hallo | — | Atty: Raymond Raya |
-| 2026-10-27 | zoning | 26-18 | The County award is based upon the Grantee's application 26-18 to the County for |  | The Grantee agrees to provide all funds necessary for completion of the Approved Project (Exhibit 1) and to complete the Approved Project in accordance with this Agreemen | use variance (d) |  |
-| 2026-10-27 | zoning | B20 L4 | LEASE WITH SAMAHA FARM LLC FOR BLOCK 20 | B20 L4 | WHEREAS, the Township Committee has reviewed the proposed Lease Extension Agreement between the Township and Tenant (the "Extension Agreement") and has determined that ap | — |  |
+| 2026-11-04 | zoning | ZB-2026-07 | Item # 1 ZB-2026-07 Daniel and Danielle Gilmartin | B49.01 L13 | construct an in-ground swimming pool, patio, pool fence, and ancillary improvements related thereto at the rear of the residential dwelling within the southeasterly porti | bulk variance (c) |  |
 
 **Recent decisions / hearings**
 
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
 | 2026-10-07 | zoning | ZB-2026-05 | Demetri Orfanitopoulos- 4 Devon Court Block 45.04. Lot 26.01. The applicant | One is the property shape and the pool height, sloping, and dry well installation | variance | approved |  |
+| 2026-10-07 | zoning | ZB-2026-05 | Demetri Orfanitopoulos- 4 Devon Court Block 45.04. Lot 26.01. The applicant | One is the property shape and the pool height, sloping, and dry well installation | variance | approved |  |
 
-New documents since last digest: 756 (agenda, minutes, notice)
+New documents since last digest: 16 (agenda, minutes)
 
 ### Howell
 
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-05, 2026-11-09  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | BA23-11 | / Christ Church of Howell, Inc |  | Case No. BA23-11 / Christ Church of Howell, Inc. Resolution granting a One-year Extension of Time Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Ryan & Mer | extension |  |
-| 2026-10-26 | zoning | BA25-05 | / Jacob and Shira Ely |  | construct a Single-Family Dwelling on an Unimproved Street Eligible Voters: Borrillo, Cantor, Hughes, O'Donnell, Orozco, Scottson & Mertens | bulk variance (c) |  |
-| 2026-10-26 | zoning | BA26-07 | / A&C Land Management, LLC |  |  | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
-| 2026-10-26 | zoning | BA22-15A | / ZS Mill |  |  | extension |  |
-| 2026-10-26 | zoning | BA24-13 | / Shimshon Langsam |  |  | extension |  |
-| 2026-10-26 | zoning | BA25-21 | / J. Haugh Properties, LLC |  |  | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
-| 2026-10-26 | zoning | BA26-04 | / Bernard Gernay |  |  | use variance (d) |  |
-| 2026-10-26 | zoning | BA24-01A | Howell Medical Investors |  | Application of Howell Medical Investors, LLC as Applicants and Owners | preliminary & final major site plan, bulk variance (c) |  |
-| 2026-10-26 | zoning | B143 L23.01, 783 | US Highway 9 North. This application was originally scheduled | B143 L23.01, 783 |  | — |  |
-| 2026-10-26 | zoning | BA26-12 | Countryside Developers |  | Application of Countryside Developers, Inc. as Applicants and Owners | bulk variance (c) |  |
-| 2026-10-26 | zoning | B172 L15 | well, walkways and a rear deck on premises known as Block 172 | B172 L15 | well, walkways and a rear deck | — |  |
-| 2026-10-26 | zoning | BA26-16 | Conrad and Lauren Greifenstein as applicants and owners |  | Application of Conrad and Lauren Greifenstein as applicants and owners | bulk variance (c) |  |
-| 2026-10-26 | zoning | B138.08 L1.13- 24 | of the existing SFD on premises known as Block 138.08 | B138.08 L1.13- 24 |  | — |  |
+| 2026-11-05 | planning | NDC Real Estate Holdings LLC | NDC Real Estate Holdings LLC |  | Application of NDC Real Estate Holdings LLC as applicant and Carmine & Carol Caruso | minor subdivision |  |
+| 2026-11-05 | planning | B233 L14.03 | known as Block 233 | B233 L14.03 |  | — |  |
+| 2026-11-05 | planning | Township of Howell | Township of Howell |  | Application of Township of Howell as applicant and owner seeking approval subdivide | preliminary & final major subdivision, bulk variance (c) |  |
+| 2026-11-05 | planning | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 | premises known as Block 69 | B69 L5,5.01,6,7 & 8, 322,326,330,338 &344 |  | — |  |
+| 2026-11-05 | planning | SD-3030/30 | East Third |  | Application of 30 East Third St LLC as Applicants and Owners seeking approval to | preliminary & final major subdivision, variance |  |
+| 2026-11-05 | planning | B120 L14, 30 | dwelling with Bulk variance required on premises known as Block 120 | B120 L14, 30 | dwelling with Bulk variance required | bulk variance (c) |  |
+| 2026-11-09 | zoning | BA23-24 | / Christopher Kapsaskis |  |  | extension |  |
+| 2026-11-09 | zoning | BA26-11 | / Brandon Rollo |  |  | bulk variance (c) |  |
+| 2026-11-09 | zoning | BA26-10 | / Shimon & Bella Kraus |  | the Construction of a Single-Family Dwelling with Septic System on an Undersized Lot Eligible Voters: Borrillo, O'Donnell, Orozco, Ryan, Scottson, Kabourakis& Mertens Zon | bulk variance (c) |  |
+| 2026-11-09 | zoning | BA26-14 | Michael and Beth Shumer as Applicants and Owners |  | Application of Michael and Beth Shumer as Applicants and Owners seeking | bulk variance (c) |  |
+| 2026-11-09 | zoning | B110 L170.37, 18 | Side Yard Setback on premises known as Block 110 | B110 L170.37, 18 |  | — |  |
+| 2026-11-09 | zoning | BA26-15 | Archangel Michael Adult Day Healthcare Center Inc as | B76 L30.01 & 32.01, 167 | Application of Archangel Michael Adult Day Healthcare Center Inc as | minor site plan, use variance (d) |  |
 
-New documents since last digest: 1074 (agenda, minutes)
-
-### Interlaken
-
-
-New documents since last digest: 32 (application, minutes, ordinance, schedule)
+New documents since last digest: 4 (agenda)
 
 ### Keansburg
 
 
-New documents since last digest: 618 (agenda, application, minutes, notice, ordinance, resolution, site_plan)
-
-### Keyport
-
-
-New documents since last digest: 7 (application, checklist, ordinance, resolution)
+New documents since last digest: 1 (minutes)
 
 ### Lake Como
 
 
-New documents since last digest: 389 (agenda, minutes, notice)
-
-### Little Silver
-
-
-New documents since last digest: 156 (agenda, minutes, ordinance, resolution)
+New documents since last digest: 63 (agenda, application, minutes, notice)
 
 ### Long Branch
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-**Coming up**
+**Recent decisions / hearings**
 
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | combined | ZB25-10 | / Corbosiero Block |  | add a roof deck on the rear section that would require a stairway and elevator vestibule on the third floor (habitable attic) for access to the roof deck | — |  |
-| 2026-10-26 | combined | ZB26-16 |  |  | APPLICATIONS TO BE CONSIDERED ZB 26-16 Sasson Block: 8 Lot: 10.01 228 Albert Place Zone: R-2 The property currently contains a nonconforming two-family use in two separat | — |  |
-| 2026-10-26 | combined | ZB26-15 | Hakoun Block |  | construct an in-ground swimming pool with pool patio, pool equipment, pool fence, spa and water feature, covered dining area, pergola, AC units, driveway, walkways, and r | use variance (d) |  |
-| 2026-10-26 | combined | ZB25-25 | Barbosa Block |  |  | — |  |
-| 2026-10-26 | combined | ZB26-08 | Staiano Block |  | ZB 26-08 Staiano Block: 468 Lot: 13 472 Church Street Zone: R-3 | — |  |
-| 2026-10-26 | combined | ZB26-12 | Santana Block |  |  | — |  |
+| 2026-10-28 | zoning | 10-28-26 R-255-26 Enterprise Network Resolutions C |  |  | — | heard |  |
 
-New documents since last digest: 311 (agenda, notice)
+New documents since last digest: 7 (agenda, notice, resolution)
 
 ### Manalapan
 
 
-New documents since last digest: 1095 (agenda, minutes, notice, ordinance, resolution)
-
-### Middletown
-
-
-New documents since last digest: 760 (agenda, minutes)
+New documents since last digest: 5 (agenda, application, notice, schedule)
 
 ### Monmouth Beach
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | combined | B52 L9 & 10 | Borough of Monmouth Beach for David and Lisa Stickle | B52 L9 & 10 | minor subdivision and accessory detached garage with the variances | minor subdivision, bulk variance (c) |  |
-
-New documents since last digest: 69 (agenda, application, checklist, minutes, notice, ordinance, resolution, site_plan)
+New documents since last digest: 1 (agenda)
 
 ### Neptune City
 
-Upcoming meetings with posted agendas: 2026-10-28  
+
+New documents since last digest: 2 (agenda)
+
+### Wall
+
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28 | planning | B611 L1, 38, 39, 40 and 41 | Amendment of the West Lake Avenue Redevelopment Plan for Block 611 | B611 L1, 38, 39, 40 and 41; B610 L14 |  | — |  |
-| 2026-10-28 | planning | PB26/06 | IV. APPLICATIONS UNDER CONSIDERATION FOR THIS EVENING | B144 L21 | PB Regular Meeting Agenda October 28, 2026 Page 2 of 2 If any Board Member cannot attend, please call or e-mail the Board Office at 732-988-5200 Ext | minor subdivision, variance |  |
+| 2026-11-02 | planning | New and | New and |  | expand childcare capacity at existing day care center PB#7-2026- YMCA of the Jersey Shore Block: 977 Lot: 8.01 Zone: CR-40 Address: 3911 Herbertsville Road Application Ty | preliminary & final major site plan, minor subdivision, bulk variance (c), extension |  |
+| 2026-11-02 | planning | B922 L5 |  | B922 L5 |  | — |  |
 
-New documents since last digest: 110 (agenda, notice, resolution)
-
-### Wall
-
-
-New documents since last digest: 4369 (agenda, minutes, notice)
+New documents since last digest: 3354 (agenda, resolution)
 
 ### West Long Branch
 
@@ -1267,87 +1120,105 @@ New documents since last digest: 4369 (agenda, minutes, notice)
 |---|---|---|---|---|---|---|---|
 | 2026-10-07 | zoning | EMS Membership Application | EMS Membership Application | Seconded by Councilmember BRAY and carried upon the following roll call vote: AYES: BRAY, GOMEZ, PENTA, RUANE, SNIFFEN NAYS: NONE ABSENT: CIOFFI ABSTAIN: NONE ---------- | — | approved |  |
 
-New documents since last digest: 212 (agenda, minutes)
+New documents since last digest: 4 (agenda, application, minutes)
 
 ## Morris County
 
-### Chatham Borough
+### Boonton Town
 
-
-New documents since last digest: 12 (agenda, application, ordinance, resolution, schedule, site_plan)
-
-### Chatham Township
-
-
-New documents since last digest: 81 (minutes, notice, ordinance, resolution)
-
-### Denville
-
-
-New documents since last digest: 248 (agenda, minutes, notice)
-
-### Florham Park
-
-
-New documents since last digest: 35 (application, checklist, minutes, ordinance, resolution, review_letter, site_plan)
-
-### Kinnelon
-
-
-New documents since last digest: 18 (agenda, minutes, resolution)
-
-### Lincoln Park
-
-
-New documents since last digest: 566 (agenda, minutes)
-
-### Madison
-
-
-New documents since last digest: 664 (agenda, minutes)
-
-### Mendham Borough
-
-
-New documents since last digest: 91 (agenda, minutes, notice, site_plan)
-
-### Mendham Township
-
-
-New documents since last digest: 91 (agenda, minutes, notice, site_plan)
-
-### Mine Hill
-
-
-New documents since last digest: 16 (agenda, application, checklist, minutes, notice, ordinance)
-
-### Montville
-
-Upcoming meetings with posted agendas: 2026-10-26, 2026-10-27, 2026-11-04, 2026-11-12  
-
-New documents since last digest: 1231 (agenda, minutes)
-
-### Morris Township
-
-Upcoming meetings with posted agendas: 2026-10-26, 2026-10-28, 2026-10-29  
+Upcoming meetings with posted agendas: 2026-11-02  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | BA-11-26 | Health Compass Hub, LLC | B8104 L24, 44 | a D(3) conditional use variance to occupy 330 square feet of their single-family dwelling to operate an in-home office for a nutrition consulting business | use variance (d), conditional use |  |
-| 2026-10-26 | zoning | BA-12-24 | OSBNJ | B4501 L2.01, 230 |  | — |  |
-| 2026-10-26 | zoning | BA-29-25 | Guru Kirpa Properties, LLC | B2703 L4, 492 | demolish existing improvements and is seeking multiple principal use variances to construct a gas station, convenience store and apartment which are not permitted uses in | use variance (d), bulk variance (c) |  |
-| 2026-10-26 | zoning | BA-01-26 | Harding Group II, LLC | B5403 L8 and 9, 232 | construct a multi-family inclusionary housing project | use variance (d), bulk variance (c) |  |
-| 2026-10-26 | zoning | BA-18-22 | • BA-18-22 | B1001 L11, 222 |  | — |  |
+| 2026-11-02 | planning | 6) Site Plan approval shall be required to ensure  |  |  |  | site plan, conditional use |  |
 
-New documents since last digest: 650 (agenda, minutes, site_plan)
+**Recent decisions / hearings**
+
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-05 | planning | Expedited waiver of site plan (EWSP) procedure | Expedited waiver of site plan (EWSP) procedure | (1) Administration of EWSP procedure. a) The EWSP procedure shall be administered by a three-member EWSP Committee consisting of the following Town of Boonton officials: | site plan waiver | heard |  |
+| 2026-10-05 | planning | b) Any approval shall be based on a determination  |  |  | site plan waiver | heard |  |
+
+New documents since last digest: 102 (agenda, minutes)
+
+### Boonton Township
+
+Upcoming meetings with posted agendas: 2026-11-02  
+
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | planning | 6) Site Plan approval shall be required to ensure  |  |  |  | site plan, conditional use |  |
+
+**Recent decisions / hearings**
+
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-05 | planning | Expedited waiver of site plan (EWSP) procedure | Expedited waiver of site plan (EWSP) procedure | (1) Administration of EWSP procedure. a) The EWSP procedure shall be administered by a three-member EWSP Committee consisting of the following Town of Boonton officials: | site plan waiver | heard |  |
+| 2026-10-05 | planning | b) Any approval shall be based on a determination  |  |  | site plan waiver | heard |  |
+
+New documents since last digest: 102 (agenda, minutes)
+
+### Florham Park
+
+
+New documents since last digest: 1 (minutes)
+
+### Lincoln Park
+
+
+New documents since last digest: 5 (agenda, minutes, notice)
+
+### Madison
+
+
+New documents since last digest: 3 (agenda, minutes)
+
+### Mendham Borough
+
+
+New documents since last digest: 3 (application, ordinance)
+
+### Mendham Township
+
+
+New documents since last digest: 3 (application, ordinance)
+
+### Mine Hill
+
+
+New documents since last digest: 1 (application)
+
+### Montville
+
+Upcoming meetings with posted agendas: 2026-11-04, 2026-11-12  
+
+**Recent decisions / hearings**
+
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-13 | zoning | B82.05 L86 | safety update; Block 82.05 | Fano Historic Preservation Commission approved plan for the owner of the Canal House; plan to move forward with their operations to enhance the character of the community | — | approved |  |
+| 2026-10-13 | zoning | B59 L22.1 | adopted a Resolution designating an area in the Township identified as Block 59 | the construction and development of the Project | variance | heard |  |
+
+New documents since last digest: 7 (agenda, minutes)
+
+### Morris Township
+
+
+New documents since last digest: 9 (agenda, minutes, notice)
+
+### Morristown
+
+
+New documents since last digest: 77 (agenda, application, checklist, minutes, notice, ordinance, resolution, site_plan)
 
 ### Mount Arlington
 
-Upcoming meetings with posted agendas: 2026-10-28  
 
-New documents since last digest: 691 (agenda, minutes, resolution)
+New documents since last digest: 244 (agenda, application, fee_schedule, minutes, ordinance, resolution)
 
 ### Netcong
 
@@ -1358,91 +1229,72 @@ New documents since last digest: 691 (agenda, minutes, resolution)
 |---|---|---|---|---|---|---|---|
 | 2026-10-07 | planning | XYZScripts.com |  |  | — | heard |  |
 
-New documents since last digest: 6 (agenda, minutes, resolution)
-
-### Parsippany-Troy Hills
-
-
-New documents since last digest: 8 (application, notice, resolution, review_letter)
+New documents since last digest: 4 (resolution)
 
 ### Randolph
 
-
-New documents since last digest: 500 (agenda, minutes)
-
-### Rockaway Township
-
-Upcoming meetings with posted agendas: 2026-10-27  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-03  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | B11403 L40 | AS BLOCK 11403, LOT 40 ON THE OFFICIAL | B11403 L40 | ALLOW FOR TREATMENT WORKS APPROVAL TO DISCHARGE ADDITIONAL DAILY WASTEWATER IN CONNECTION WITH CIBAO MEAT PRODUCTS EXSISTING OFFICE/FACTORY ON THE REAL PROPERTY DESIGNATE | — |  |
+| 2026-11-02 | planning | SD26-04 | 101 Quaker, LLC | B108 L4 |  | minor subdivision, bulk variance (c) |  |
+| 2026-11-03 | zoning | Endorsing an Application for a Treatment Works App | Endorsing an Application for a Treatment Works Approval (TWA) for |  | R 241-26 Endorsing an Application for a Treatment Works Approval (TWA) for Black River Barn Restaurant | — |  |
+| 2026-11-03 | zoning | Supporting Morris County Affordable Housing Corpor | Supporting Morris County Affordable Housing Corporation's Application to |  | Develop Two (2) Affordable Rental Units in a Two-Family Building in the Township of Randolph | — |  |
 
-New documents since last digest: 684 (agenda, minutes)
+New documents since last digest: 2 (agenda)
+
+### Rockaway Township
+
+
+New documents since last digest: 2 (agenda, minutes)
 
 ## Ocean County
 
 ### Barnegat Township
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | B92.45 L21 | EASEMENT FOR 38 PHOEBE DRIVE, BLOCK 92.45, LOT 21 | B92.45 L21 |  | — |  |
-| 2026-10-27 | planning | P-2026-13 |  |  |  | — |  |
-| 2026-10-27 | planning | PB23-12 |  | B265 L4.01 |  | minor subdivision, extension |  |
-| 2026-10-27 | planning | P-2026-14 |  |  |  | — |  |
-| 2026-10-27 | planning | PB23-08 |  | B114.48 L11 & 12 |  | minor subdivision, extension |  |
-| 2026-10-27 | planning | P-2026-15 |  |  |  | — |  |
-| 2026-10-27 | planning | PB26-02 |  | B248 L1 & 2 |  | minor subdivision |  |
-| 2026-10-27 | planning | P-2026-16 | APPROVAL OF VOUCHERS |  |  | — |  |
-| 2026-10-27 | planning | PB26-04 |  |  |  | — |  |
-| 2026-10-27 | planning | B165 L26 |  | B165 L26 |  | site plan |  |
-
-New documents since last digest: 66 (agenda, application, notice)
+New documents since last digest: 4 (agenda, notice)
 
 ### Beachwood
 
 
-New documents since last digest: 377 (agenda, minutes, notice)
+New documents since last digest: 32 (agenda, application, minutes)
 
 ### Berkeley Township
 
 
-New documents since last digest: 678 (agenda, minutes, notice, ordinance)
+New documents since last digest: 11 (agenda, minutes, resolution)
 
 ### Brick Township
 
-Upcoming meetings with posted agendas: 2026-10-28  
+Upcoming meetings with posted agendas: 2026-11-09  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28 | planning | B380 L11 |  | B380 L11 |  | site plan |  |
-| 2026-10-28 | planning | B854, 856 L4 & 4.01 | 856 | B854, 856 L4 & 4.01 | New Business: Capitol Review Project Ocean County Vocational Technical School | amended site plan, minor site plan |  |
-| 2026-10-28 | planning | B724 L1.01 |  | B724 L1.01 |  | — |  |
-| 2026-10-28 | planning | B640 L38 |  | B640 L38 |  | site plan |  |
+| 2026-11-09 | planning | B724 L1.01 |  | B724 L1.01 |  | — |  |
+| 2026-11-09 | planning | B640 L38 |  | B640 L38 |  | site plan |  |
+| 2026-11-09 | planning | B586 L1 &7 |  | B586 L1 &7 |  | minor subdivision |  |
+| 2026-11-09 | planning | B685 L7.02 |  | B685 L7.02 |  | preliminary & final major site plan |  |
 
-New documents since last digest: 825 (agenda, application, minutes, site_plan)
+New documents since last digest: 6 (agenda, minutes)
 
 ### Eagleswood Township
 
 
-New documents since last digest: 245 (agenda, minutes, resolution)
+New documents since last digest: 12 (resolution)
 
 ### Harvey Cedars
 
 
-New documents since last digest: 273 (minutes, notice)
+New documents since last digest: 13 (application, checklist, minutes, ordinance)
 
 ### Jackson Township
 
-Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04, 2026-11-18  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04, 2026-11-18, 2026-12-02  
 
 **Coming up**
 
@@ -1450,6 +1302,7 @@ Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04, 2026-11-18
 |---|---|---|---|---|---|---|---|
 | 2026-11-04 | combined | TIFERES CHAIM INC. (USE VARIANCE 3551) | TIFERES CHAIM INC. (USE VARIANCE 3551) |  | A USE VARIANCE TO PERMIT DEVELOPMENT OF SINGLE FAMILY DWELLINGS AT A DENSITY HIGHER THAN 1 UNIT PER 3 ACRES TO CREATE 15 LOTS TO BE 13 SINGLE FAMILY DWELING LOTS AND 2 ST | use variance (d) | Eng: HALER CONSULTING/ERIC HALPERT |
 | 2026-11-18 | combined | GREGORY AND DENISE DAVIS (VARIANCE 3567) | GREGORY AND DENISE DAVIS (VARIANCE 3567) |  | IS REQUIRED, PROPOSED SHED 10' X 14'X 12' IN HEIGHT SIDE SETBACK 2' 1" WHERE 40' REQ., POOL HOUSE 8' X 12' X 12' IN HEIGHT SIDE SETBACK 5' WHERE 50' REQ | variance |  |
+| 2026-12-02 | combined | GARDEN VIEW HOMES LLC (USE VARIANCE 3554) | GARDEN VIEW HOMES LLC (USE VARIANCE 3554) |  | All Documents relating to the application may be inspected by the public between hours of 10:00 am thru 4:00 pm Monday through Friday in the office of Planning and Zoning | use variance (d) | Eng: PDS/BILL STEVENS |
 
 **Recent decisions / hearings**
 
@@ -1458,72 +1311,76 @@ Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04, 2026-11-18
 | 2026-10-07 | zoning | GM LAND HOLDINGS LLC (USE VARIANCE 3553) BLOCK | GM LAND HOLDINGS LLC (USE VARIANCE 3553) BLOCK | A D-5 DENSITY USE VARIANCE TO ALLOW A DENSITY OF 2 ACRES PER SINGLE FAMILY DWELLING WHERE MAX DENSITY OF 6 ACRES PER SINGLE FAMILY DWELLING IS PERMITTED | use variance (d) | denied | Eng: PDS/ BILL STEVENS |
 | 2026-10-07 | zoning | BUTTERFLY CORNER LLC (P/F SITE PLAN 960 w/ USE VAR | BUTTERFLY CORNER LLC (P/F SITE PLAN 960 w/ USE VARIANCE 3555) BLOCK | the building for loading and unloading, will work with Township Engineers on location, signage and striping for loading zone, the basin will be fenced, all septic and wel | preliminary & final major site plan, subdivision, use variance (d), conditional use, interpretation | heard | Eng: PDS/GRAHAM MACFARLANE, PDS/GRAHAM MACFARLANE APPLICANT IS SEEKING PRELIMINARY /FINAL SITE PLAN; Planner: Ian Borden |
 
-New documents since last digest: 990 (agenda, minutes)
+New documents since last digest: 7 (agenda, minutes)
 
 ### Lacey Township
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 131 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | zoning | V26-16 |  |  |  | variance |  |
+| 2026-11-02 | zoning | V26-07 | c/o pro se |  |  | variance |  |
+| 2026-11-02 | zoning | c/o pro se | c/o pro se |  |  | — |  |
+| 2026-11-02 | zoning | V26-13 |  |  |  | variance |  |
+| 2026-11-02 | zoning | V26-17 | c/o Christopher Supsie, Esq |  |  | variance | Atty: Christopher Supsie |
+| 2026-11-02 | zoning | V26-18 | c/o Steven V. Tedeschi, Esq |  |  | bulk variance (c) | Atty: Steven V. Tedeschi |
+| 2026-11-02 | zoning | V26-19 | c/o pro se |  |  | variance |  |
+
+New documents since last digest: 4 (agenda, minutes)
 
 ### Lakewood Township
 
 
-New documents since last digest: 26 (agenda, application, checklist, notice, ordinance, resolution, schedule)
+New documents since last digest: 1 (notice)
 
 ### Lavallette
 
 
-New documents since last digest: 285 (agenda, minutes, notice, schedule, site_plan)
+New documents since last digest: 2 (agenda, notice)
 
 ### Long Beach Township
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 199 (agenda, minutes, resolution)
+New documents since last digest: 46 (agenda, application, ordinance)
 
 ### Manchester Township
 
 
-New documents since last digest: 45 (agenda, application, checklist, fee_schedule, minutes, ordinance, site_plan)
+New documents since last digest: 4 (checklist, minutes, ordinance)
 
 ### Mantoloking
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-New documents since last digest: 189 (agenda, minutes, resolution)
+New documents since last digest: 4 (agenda, minutes, notice)
 
 ### Plumsted
 
 
-**Recent decisions / hearings**
-
-| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-01 | combined | B1 L43 | WATSON | BULK VARIANCE The application seeking a bulk variance for a 12' front addition | preliminary & final major site plan, bulk variance (c) | heard |  |
-| 2026-10-01 | combined | B37 L8 & 9 | CONSOLE, 26-28 |  | minor subdivision | heard |  |
-| 2026-10-01 | combined | B73 L12 | VALENTINE |  | bulk variance (c) | heard |  |
-| 2026-10-01 | combined | PLUM-2026-008 |  | The discussion included state proposals involving state owned land and large scale housing development | — | approved |  |
-
-New documents since last digest: 319 (agenda, application, minutes, notice)
+New documents since last digest: 11 (agenda, minutes)
 
 ### Seaside Park
 
 
-New documents since last digest: 73 (agenda, application, checklist, minutes, notice, ordinance, resolution, site_plan)
+New documents since last digest: 1 (ordinance)
 
 ### Ship Bottom
 
 
-New documents since last digest: 118 (agenda, application, minutes, notice, resolution, site_plan)
+New documents since last digest: 36 (agenda, application, ordinance, site_plan)
 
 ### Stafford Township
 
 
-New documents since last digest: 299 (agenda, application, minutes, review_letter, site_plan)
+New documents since last digest: 2 (minutes, review_letter)
 
 ### Toms River
 
 
-New documents since last digest: 464 (agenda, application, minutes)
+New documents since last digest: 3 (agenda, schedule)
 
 ## Passaic County
 
@@ -1538,82 +1395,76 @@ New documents since last digest: 464 (agenda, application, minutes)
 | 2026-10-06 | planning | B3046 L38 | WHEREAS | WHEREAS, Block 3046, Lot 38 is among the Borough-owned property being considered, and the Borough Council wishes to determine whether a subdivision of that property may b | subdivision | heard |  |
 | 2026-10-06 | planning | B3046 L38. | possible subdivision and public sale of Block 3046 | WHEREAS, the Chief Financial Officer recommends the utilization of this contract on the grounds of the best means available to obtain the goods and/or services | subdivision | approved |  |
 
-New documents since last digest: 163 (agenda, minutes, notice)
+New documents since last digest: 2 (agenda, minutes)
 
 ### Clifton
 
+Upcoming meetings with posted agendas: 2026-11-04  
 
-New documents since last digest: 780 (agenda, minutes)
+**Coming up**
 
-### Hawthorne
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-04 | zoning | 1. Use variance, lot Ali Aljibori 345-347 Crooks A |  |  | renovate and convert the setback Acquaviva, Esq. existing two-family dwelling into a mixed-use building consisting of retail uses on the first floor and three (3) residen | use variance (d) |  |
+| 2026-11-04 | zoning | 2. Use variance The Learning 171-199 Scoles Ave, |  |  | a new single family dwelling on an side yard setback, Esq. existing vacant lot which requires the following bulk variances; front yard setback proposed at 20' where 25' R | preliminary & final major site plan, use variance (d), bulk variance (c) |  |
+| 2026-11-04 | zoning | 4. Use variance Goxu, LLC 77 Grove Street, |  |  | a new two-story addition which location and requires the following bulk variances; front yard setback proposed at 21.3' where 25' required, rear yard setback Driveway buf | use variance (d), bulk variance (c) |  |
+| 2026-11-04 | zoning | 1. Resolution memorializing the approval of the ap |  |  | 3.14 Lot: 21 Zone RB1 for an addition and alterations to the existing one- family dwelling which require the following bulk variances; side yard setback proposed at 4' wh | bulk variance (c) |  |
+| 2026-11-04 | zoning | 2. Resolution memorializing the DENIAL of the appl |  |  | 9.13 Lot: 15 Zone RB1 for an alteration to an existing open deck to a sunroom addition which requires the following bulk variances; side yard setback proposed at 4.18' wh | bulk variance (c) |  |
+| 2026-11-04 | zoning | 4. Resolution memorializing the approval of the ap |  |  | construction of an approximately 8,800-square-foot, two-story addition to the existing school building, proposal does not meet all of the conditions required for a school | bulk variance (c) |  |
 
+**Recent decisions / hearings**
 
-New documents since last digest: 193 (agenda, minutes)
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-10-22 | planning | B68.04 L7, 8 and 9. |  | preliminary and final site plan approval and a variance for a proposed two-story leasing office and amenity building | preliminary & final major site plan, variance | memorialized |  |
+| 2026-10-22 | planning | B16.13 L15. |  | The applicant sought an amendment to a previously approved site plan, involving the location of the foundation for a proposed two-family dwelling on a lot created through | site plan, subdivision, variance | approved |  |
+| 2026-10-22 | planning | B80.02 L1, 1.01, 1.02 and 2.01. | the five-year | The continued examination of Mr. Kelly addressed the revised stormwater management report and additional hydrologic soil group (HSG) testing | preliminary & final major site plan, subdivision, interpretation | carried | Eng: Vincent Kelly (Colliers Engineering & Design); Atty: Meryl Gonchar [testified] |
+
+New documents since last digest: 5 (agenda, application, minutes)
 
 ### Passaic
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | zoning | ZB26-05 |  | B4107.01 L6 | Docket#ZB26-05, 151-153 Central Avenue, Block 4107.01 Lot 6 in the R-3 Zone Eliminate office in the second floor and construct one unit | — |  |
-| 2026-10-27 | zoning | ZB26-10 |  | B4093 L18 | c. Docket#ZB26-10 45 Jackson Street, Block 4093, Lot 18 in the R-3 Zone Eliminate commercial use and construct a new 2 bedroom unit VII | — |  |
-| 2026-10-27 | zoning | LING973-833-8600 |  |  |  | — |  |
-
-New documents since last digest: 596 (agenda, notice, resolution)
+New documents since last digest: 1 (agenda)
 
 ### Paterson
 
-Upcoming meetings with posted agendas: 2026-10-26, 2026-10-29  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | planning | LING1-973-321 |  |  | Variances are requested for lot area, as 22,000 square feet is required and 3,991 square feet is existing; maximum lot coverage, as seventy (70) percent is permitted and | site plan, subdivision, bulk variance (c) |  |
-
-New documents since last digest: 186 (agenda, application, minutes, notice, ordinance, schedule)
+New documents since last digest: 2 (agenda)
 
 ### Totowa
 
 
-New documents since last digest: 270 (agenda, minutes, notice)
+New documents since last digest: 8 (notice, resolution)
 
 ## Salem County
-
-### Mannington Township
-
-
-New documents since last digest: 607 (agenda, minutes, ordinance)
 
 ### Penns Grove
 
 
-New documents since last digest: 441 (agenda, minutes, resolution)
+New documents since last digest: 1 (agenda)
 
 ### Pennsville Township
 
-Upcoming meetings with posted agendas: 2026-10-26  
+
+New documents since last digest: 2 (agenda, minutes)
+
+### Pilesgrove
+
+
+New documents since last digest: 1 (agenda)
+
+### Quinton Township
+
+Upcoming meetings with posted agendas: 2026-11-10  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | combined | B5701 L37 & 38 |  | B5701 L37 & 38 |  | preliminary & final major site plan, bulk variance (c) |  |
+| 2026-11-10 | planning | B5 L7 |  | B5 L7; B53 L20 |  | minor site plan, minor subdivision |  |
 
-New documents since last digest: 403 (agenda, minutes)
-
-### Pilesgrove
-
-
-New documents since last digest: 91 (agenda, minutes)
-
-### Quinton Township
-
-
-New documents since last digest: 288 (agenda, minutes)
+New documents since last digest: 3 (agenda, resolution)
 
 ### Upper Pittsgrove
 
@@ -1625,44 +1476,29 @@ New documents since last digest: 288 (agenda, minutes)
 | 2027-12-31 | combined | R-13-2026 LU Alternate Member |  |  | — | heard |  |
 | 2026-12-31 | combined | R-27-2026 LU Alternate Member 3 |  |  | — | heard |  |
 
-New documents since last digest: 445 (agenda, minutes, notice, resolution)
+New documents since last digest: 11 (application, checklist, minutes, ordinance)
 
 ## Somerset County
 
 ### Bedminster
 
 
-New documents since last digest: 41 (agenda, application, checklist, minutes, notice, ordinance, review_letter, site_plan)
-
-### Bernards Township
-
-
-New documents since last digest: 34 (agenda, application, notice, ordinance, resolution)
-
-### Bernardsville
-
-
-New documents since last digest: 11 (application, notice, ordinance, resolution, site_plan)
+New documents since last digest: 2 (notice)
 
 ### Bound Brook
 
 
-New documents since last digest: 19 (agenda, application, minutes, ordinance, review_letter)
+New documents since last digest: 73 (minutes)
 
 ### Far Hills
 
 
-New documents since last digest: 827 (agenda, minutes, notice)
+New documents since last digest: 92 (agenda, application, minutes, notice, resolution, schedule, site_plan)
 
 ### Franklin Township
 
 
-New documents since last digest: 12 (agenda, minutes)
-
-### Green Brook Township
-
-
-New documents since last digest: 11 (application, ordinance, resolution, site_plan)
+New documents since last digest: 3 (agenda)
 
 ### Manville
 
@@ -1672,8 +1508,9 @@ New documents since last digest: 11 (application, ordinance, resolution, site_pl
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
 | 2027-12-31 | combined | 2025-041 Authorize PCA with VanCleef Engineer |  |  | — | approved | Eng: Joseph A. Brosnan, PE, PP, CME |
+| 2026-12-31 | combined | 2025-065 Authorize Engineering Service for MS4 Wat |  |  | — | heard |  |
 
-New documents since last digest: 584 (agenda, minutes, notice, resolution)
+New documents since last digest: 3 (agenda, minutes)
 
 ### Peapack and Gladstone
 
@@ -1684,196 +1521,173 @@ New documents since last digest: 584 (agenda, minutes, notice, resolution)
 |---|---|---|---|---|---|---|---|
 | 2026-10-14 | combined | L1-888 |  |  | — | heard |  |
 
-New documents since last digest: 101 (application, notice, other, resolution)
-
-### Somerville
-
-
-New documents since last digest: 23 (agenda, minutes, ordinance)
+New documents since last digest: 70 (notice)
 
 ### Warren Township
 
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 683 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | zoning | BA26-05 | David Goodman |  | BA 26-05 David Goodman 25 Nottingham Way B 50 Lot 14 Variance- Building Coverage, Total Impervious Coverage Next meeting will be December 9, 2026 ADJOURNMENT | variance |  |
+
+New documents since last digest: 13 (agenda, minutes, site_plan)
 
 ## Sussex County
 
 ### Franklin Borough
 
 
-New documents since last digest: 2217 (agenda, application, minutes, notice)
-
-### Hardyston
-
-
-New documents since last digest: 8 (application, minutes, notice, resolution, site_plan)
+New documents since last digest: 3 (agenda, notice)
 
 ### Hopatcong
 
 
-New documents since last digest: 2027 (agenda, application, checklist, fee_schedule, notice, ordinance, resolution, site_plan)
+New documents since last digest: 931 (agenda, minutes, notice, resolution)
 
 ### Lafayette Township
 
 
-New documents since last digest: 128 (application, checklist, fee_schedule, minutes, ordinance, resolution, site_plan)
+New documents since last digest: 53 (application, fee_schedule, ordinance)
 
 ### Newton
 
 
-New documents since last digest: 63 (agenda, application, minutes, ordinance, site_plan)
+New documents since last digest: 1 (agenda)
 
 ### Ogdensburg
 
 
-New documents since last digest: 135 (application, minutes, notice, ordinance, resolution, site_plan)
+New documents since last digest: 105 (application, notice, ordinance, site_plan)
 
 ### Sparta
 
-Upcoming meetings with posted agendas: 2026-10-28  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-28 | planning | A. Pending applications & litigation | A. Pending applications & litigation |  |  | — |  |
-| 2026-10-28 | planning | 1. Minor Site Plan |  |  |  | minor site plan |  |
-
-New documents since last digest: 775 (agenda, minutes)
+New documents since last digest: 11 (agenda, minutes)
 
 ### Stanhope
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | combined | B10314 L2 |  | B10314 L2 |  | — |  |
-
-New documents since last digest: 266 (agenda, fee_schedule, minutes, notice, ordinance, resolution)
-
-### Stillwater Township
-
-
-New documents since last digest: 38 (application, checklist, minutes, notice, ordinance, resolution, site_plan)
+New documents since last digest: 6 (agenda, notice, resolution)
 
 ### Wantage Township
 
 
-New documents since last digest: 79 (application, checklist, fee_schedule, minutes, ordinance, resolution)
+New documents since last digest: 56 (application, checklist, ordinance)
 
 ## Union County
 
 ### Berkeley Heights
 
-Upcoming meetings with posted agendas: 2026-11-18  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-18  
 
-New documents since last digest: 1006 (agenda, minutes, notice)
+New documents since last digest: 11 (agenda, minutes, notice)
 
 ### Cranford
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-26 | zoning | ZBA-26-009 | JDA Homes, LLC & Liberty Assets, LLC |  | No site improvements are proposed | subdivision, bulk variance (c) |  |
-| 2026-10-26 | zoning | B559 L4.01, 41 | For Block 559 | B559 L4.01, 41; B559 L4.02 | Maximum building coverage permitted is 30% and existing is 30.8% | — |  |
-| 2026-10-26 | zoning | ZBA26-005 | PDD Construction, LLC |  | Required lot width is 100 feet, where existing and proposed is 60 feet §255-34 | minor site plan, use variance (d) |  |
-
-New documents since last digest: 140 (agenda, application, minutes, site_plan)
+New documents since last digest: 3 (agenda, minutes)
 
 ### Elizabeth
 
 
-New documents since last digest: 372 (agenda, notice)
+New documents since last digest: 16 (agenda, notice)
 
 ### Fanwood
 
 
-New documents since last digest: 43 (agenda, application, minutes, notice, ordinance, site_plan)
+New documents since last digest: 2 (agenda, notice)
+
+### Garwood
+
+
+New documents since last digest: 60 (ordinance, resolution)
 
 ### Kenilworth
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
+**Recent decisions / hearings**
 
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+| Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | B62 L3.01 |  | B62 L3.01 |  | — |  |
+| 2027-12-31 | combined | 25-35 BOH |  |  | — | heard |  |
 
-New documents since last digest: 888 (agenda, minutes, notice)
+New documents since last digest: 6 (agenda, minutes)
 
 ### Linden
 
 
-New documents since last digest: 23 (application, notice, ordinance, resolution)
+New documents since last digest: 12 (notice)
 
 ### Mountainside
 
 
-New documents since last digest: 280 (agenda, minutes)
-
-### Plainfield
-
-
-New documents since last digest: 333 (agenda, application, minutes, review_letter, site_plan)
+New documents since last digest: 1 (agenda)
 
 ### Rahway
 
-Upcoming meetings with posted agendas: 2026-10-27  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | planning | 08/26 |  | B278 L5, 6, 7, 8 |  | minor subdivision, variance |  |
-
-New documents since last digest: 609 (agenda, minutes)
+New documents since last digest: 7 (agenda, minutes)
 
 ### Roselle Park
 
 
-New documents since last digest: 335 (agenda, minutes, notice)
+New documents since last digest: 177 (agenda, minutes, notice)
 
 ### Scotch Plains
 
 
-New documents since last digest: 83 (agenda, minutes, ordinance, resolution)
+New documents since last digest: 3 (notice)
 
 ### Summit
 
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-02, 2026-11-04  
 
 **Coming up**
 
 | Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26 | planning | PB-26-289 |  |  | construct new four story multi-family residential structure above existing two level parking deck with (c) – variances. • Broad Morris Rentals, LLC (Application Documents | preliminary & final major site plan, variance |  |
-| 2026-10-26 | planning | PB-26-288 |  |  | construct 20 residential units in a multifamily building with commercial space on the first floor | preliminary & final major site plan, variance |  |
+| 2026-11-02 | zoning | ZB-25-2278 | Springfield Avenue Property LLC |  | C & D variances to manage circulation, landscape, and lighting, height and expansion of non-conforming use | preliminary & final major site plan, use variance (d) |  |
+| 2026-11-02 | zoning | ZB-26-2342 | • 118 Pine Grove Avenue, Hector Ruiz, BL |  |  | — |  |
+| 2026-11-02 | zoning | ZB-26-2343 | • 128 Beekman Road, David Landman, BL |  |  | — |  |
+| 2026-11-02 | zoning | ZB-26-2344 | • 100 Essex Road, Joseph and Marina Lombardi, BL |  |  | — |  |
+| 2026-11-02 | zoning | ZB-22-2147 | • Resolution of Extension- 226 Hobart Avenue, ZB-22-2147 |  |  | — |  |
+| 2026-11-04 | zoning | B123 L26 |  | B123 L26 | operate its charitable purpose of preserving historical documents of Summit and the surrounding area and educating the communication through compilation, dissemination an | — |  |
+| 2026-11-04 | zoning | B401 L1 | Section 1. The Common Council hereby authorizes that a portion of Block 401 | B401 L1; B123 L26 |  | subdivision |  |
+| 2026-11-04 | zoning | B1904 L9 | Avenue, designated on the Municipal | B1904 L9 | WHEREAS, upon review of the prior land use and tax assessment records, it was determined that the Property contained one (1) existing dwelling unit, and pursuant to appli | — |  |
+| 2026-11-04 | zoning | a. Site plan approval shall not be required for si |  |  | The home occupa�on shall remain incidental and subordinate to the residen�al use of the premises. c. The home occupa�on may be conducted within the dwelling or within a l | site plan, subdivision, bulk variance (c), concept / informal review |  |
 
-New documents since last digest: 1306 (application, resolution, review_letter, site_plan)
+New documents since last digest: 17 (agenda, minutes, site_plan)
 
 ### Union
 
 
-New documents since last digest: 758 (agenda, minutes, notice)
+New documents since last digest: 10 (agenda, notice, ordinance)
 
 ### Westfield
 
-Upcoming meetings with posted agendas: 2026-10-26  
+Upcoming meetings with posted agendas: 2026-11-02  
 
-New documents since last digest: 625 (agenda, minutes)
+**Coming up**
+
+| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
+|---|---|---|---|---|---|---|---|
+| 2026-11-02 | planning | PB26-010 | AP Capital Management, LLC |  | convert a second-floor office space to two residential units | preliminary & final major site plan, variance | Atty: Michael Silbert |
+| 2026-11-02 | planning | PB26-011 | Leemor Yoets / Brian Raftery |  |  | minor subdivision | Atty: James Foerst |
+| 2026-11-02 | planning | B2305 L7 | Avenue show on the tax maps as Block 2305 | B2305 L7 |  | — |  |
+| 2026-11-02 | planning | PB26-007 | 408 & 412 South Elmer Street Preliminary/Final Proposed multi-family building Deemed Incomplete |  | Major Site Plan containing 6 dwelling units Awaiting Resubmission | major site plan |  |
+| 2026-11-02 | planning | PB26-009 | 530 & 600 South Avenue West Preliminary/Final Proposed stacked townhouse Deemed Incomplete |  | Major Site Plan development totaling 78 units, Awaiting 16 of which are set aside as Resubmission affordable units Next Planning Board Meeting: December 7, 2026 | major site plan |  |
+
+New documents since last digest: 9 (agenda, minutes)
 
 ## Warren County
 
 ### Alpha
 
 
-New documents since last digest: 214 (agenda, minutes, resolution)
+New documents since last digest: 1 (minutes)
 
 ### Blairstown
 
@@ -1882,40 +1696,33 @@ New documents since last digest: 214 (agenda, minutes, resolution)
 
 | Date | Board | Application | Applicant | What's proposed | Types | Outcome | Professionals |
 |---|---|---|---|---|---|---|---|
+| 2026-10-19 | combined | click here |  |  | preliminary & final major site plan, amended site plan, minor site plan, minor subdivision, use variance (d), bulk variance (c), interpretation, certificate of nonconformity | denied |  |
 | 2026-10-19 | combined | click here |  |  | — | heard |  |
 
-New documents since last digest: 349 (agenda, application, fee_schedule, minutes, notice, ordinance, resolution, site_plan)
+New documents since last digest: 6 (minutes, notice, ordinance, resolution)
 
 ### Hackettstown
 
-Upcoming meetings with posted agendas: 2026-10-27  
+Upcoming meetings with posted agendas: 2026-11-02  
 
-**Coming up**
-
-| Date | Board | Application | Applicant | Block/Lot | What's proposed | Types | Professionals |
-|---|---|---|---|---|---|---|---|
-| 2026-10-27 | combined | 2026-11 | Fredrick Phoebus |  |  | — |  |
-| 2026-10-27 | combined | 2026-06 | L. Moises &amp; R. Cajamara |  |  | minor subdivision, use variance (d), bulk variance (c) |  |
-
-New documents since last digest: 509 (agenda, minutes)
+New documents since last digest: 45 (agenda, minutes)
 
 ### Independence Township
 
 
-New documents since last digest: 309 (agenda, minutes, ordinance, resolution)
+New documents since last digest: 250 (agenda, minutes, ordinance, resolution)
 
 ### Knowlton Township
 
-Upcoming meetings with posted agendas: 2026-10-26  
 
-New documents since last digest: 776 (agenda, minutes, notice)
+New documents since last digest: 113 (agenda, minutes, notice)
 
 ### Mansfield Township
 
 
-New documents since last digest: 168 (agenda, minutes, notice, resolution)
+New documents since last digest: 186 (agenda, minutes, resolution)
 
 ### Phillipsburg
 
 
-New documents since last digest: 499 (agenda, minutes, notice)
+New documents since last digest: 4 (minutes, resolution)
