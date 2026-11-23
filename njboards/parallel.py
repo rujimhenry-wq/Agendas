@@ -68,7 +68,7 @@ def run_parallel(slugs: Iterable[str], step: str, workers: int = 6, progress: Op
     from concurrent.futures.process import BrokenProcessPool
     remaining = list(slugs)
     rounds = 0
-    while remaining and rounds < 4:
+    while remaining and rounds < 40:  # a pool dies with every town still queued; keep going while rounds make progress
         rounds += 1
         done_now: set[str] = set()
         try:
@@ -95,4 +95,9 @@ def run_parallel(slugs: Iterable[str], step: str, workers: int = 6, progress: Op
                 if progress:
                     progress(r)
             remaining = []
+    for s in remaining:  # never silently drop a town
+        r = {"slug": s, "ok": False, "error": "not run: worker pool kept dying"}
+        results.append(r)
+        if progress:
+            progress(r)
     return results

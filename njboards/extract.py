@@ -18,22 +18,32 @@ from .util import clean_text
 log = logging.getLogger("njboards.extract")
 
 
+PDFPLUMBER_MAX_BYTES = 10 * 1024 * 1024  # bigger files go straight to pdftotext
+PDFPLUMBER_MAX_PAGES = 300  # pdfplumber keeps ~4 MB per page; a 1,700-page report took a worker past 5 GB
+
+
 def pdf_text(path: Path) -> tuple[str, int]:
-    """Return (text, n_pages). Tries pdfplumber, then pdftotext."""
+    """Return (text, n_pages). Tries pdfplumber (small files only), then pdftotext."""
     text, pages = "", 0
     try:
+        if path.stat().st_size > PDFPLUMBER_MAX_BYTES:
+            raise RuntimeError("large file, using pdftotext")
         import pdfplumber  # type: ignore
         with pdfplumber.open(str(path)) as pdf:
             pages = len(pdf.pages)
+            if pages > PDFPLUMBER_MAX_PAGES:
+                raise RuntimeError(f"{pages} pages, using pdftotext")
             chunks = []
             for p in pdf.pages:
                 try:
                     chunks.append(p.extract_text(x_tolerance=1.5, y_tolerance=3) or "")
                 except Exception:  # noqa: BLE001 - per-page failures are common with odd PDFs
                     chunks.append("")
+                finally:
+                    p.flush_cache()
             text = "\n\f\n".join(chunks)
     except Exception as e:  # noqa: BLE001
-        log.debug("pdfplumber failed on %s: %s", path, e)
+        log.debug("pdfplumber skipped/failed on %s: %s", path, e)
     if len(text.strip()) < 50 * max(pages, 1) and shutil.which("pdftotext"):
         try:
             out = subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True, timeout=120)
